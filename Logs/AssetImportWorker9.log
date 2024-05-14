@@ -1545,3 +1545,35 @@ AssetImportParameters requested are different than current active one (requested
   custom:scripting/monoscript/fileName/3DJSetupTool.cs: d6f84ce68780fded40fef033c48b30f4 -> 
   custom:scripting/monoscript/fileName/Setup3DJTool.cs: d6f84ce68780fded40fef033c48b30f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3425.967177 seconds.
+  path: Assets/3D DJ/Playback/Depth Extract Step.mat
+  artifactKey: Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Extract Step.mat using Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee3e1fba3e6fe59a091699487df7d47b') in 0.372607 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 527.752975 seconds.
+  path: Assets/3D DJ/Playback/Depth Extract Step.mat
+  artifactKey: Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Extract Step.mat using Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2958aa3911f653900f9fd3c6f14ed6e') in 0.050467 seconds
+Number of updated asset objects reloaded before import = 2
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/3D DJ/Playback/Video Extract.mat
+  artifactKey: Guid(8b90a1f31ffd61245871b867d8fa99bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Video Extract.mat using Guid(8b90a1f31ffd61245871b867d8fa99bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3acd025e2717ed4240ff8a5a2cb13dc') in 0.053851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.536466 seconds.
+  path: Assets/3D DJ/Playback/Depth Extract Step.mat
+  artifactKey: Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Extract Step.mat using Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd982271360161780032e8a90b9c7b97') in 0.013321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7

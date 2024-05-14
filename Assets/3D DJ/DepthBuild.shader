@@ -13,6 +13,7 @@ Shader "DepthBuild"
 		[Toggle]_Deform("Deform", Float) = 1
 		[Toggle]_UVPixelation("UV Pixelation", Float) = 0
 		_Data("Data", 2D) = "white" {}
+		_BlackThreshold("BlackThreshold", Float) = 0.01
 		[HideInInspector] _texcoord( "", 2D ) = "white" {}
 		[HideInInspector] __dirty( "", Int ) = 1
 	}
@@ -48,6 +49,7 @@ Shader "DepthBuild"
 		uniform float _Deform;
 		uniform float _NormalsDebug;
 		uniform sampler2D _Color;
+		uniform float _BlackThreshold;
 
 
 		float3 BinaryStripToInt( sampler2D Texture, float4 TexelSize, float2 StripStart, int StripWidth, int PixelSize )
@@ -216,7 +218,7 @@ Shader "DepthBuild"
 			float pixelHeight306 = 1.0f / _Depth_TexelSize.w;
 			half2 pixelateduv306 = half2((int)(uv_Depth.x / pixelWidth306) * pixelWidth306, (int)(uv_Depth.y / pixelHeight306) * pixelHeight306);
 			float Depth_Map503 = tex2D( _Depth, (( _UVPixelation )?( pixelateduv306 ):( uv_Depth )) ).r;
-			dither474 = step( dither474, ( Alpha_Map502 > 0.0 ? Alpha_Map502 : ( Depth_Map503 > 0.0 ? 1.0 : 0.0 ) ) );
+			dither474 = step( dither474, ( Alpha_Map502 > _BlackThreshold ? Alpha_Map502 : ( Depth_Map503 > _BlackThreshold ? 1.0 : 0.0 ) ) );
 			o.Alpha = dither474;
 		}
 
@@ -354,7 +356,6 @@ Node;AmplifyShaderEditor.GetLocalVarNode;553;2224,1600;Inherit;False;552;Finaliz
 Node;AmplifyShaderEditor.DitheringNode;474;4320,1248;Inherit;False;1;False;4;0;FLOAT;0;False;1;SAMPLER2D;;False;2;FLOAT4;0,0,0,0;False;3;SAMPLERSTATE;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;554;-320,1664;Inherit;False;503;Depth Map;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;555;-592,1040;Inherit;False;503;Depth Map;1;0;OBJECT;;False;1;FLOAT;0
-Node;AmplifyShaderEditor.GetLocalVarNode;505;3520,1328;Inherit;False;503;Depth Map;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.TexturePropertyNode;540;2112,2640;Inherit;True;Property;_Data;Data;9;0;Create;True;0;0;0;False;0;False;b638e271c536ea24cb3cf67f3d34c317;b638e271c536ea24cb3cf67f3d34c317;False;white;Auto;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1
 Node;AmplifyShaderEditor.SimpleSubtractOpNode;543;3504,2352;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT;5;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.IntNode;546;2688,2528;Inherit;False;Constant;_StripLength;StripLength;8;0;Create;True;0;0;0;False;0;False;20;0;False;0;1;INT;0
@@ -378,7 +379,6 @@ Node;AmplifyShaderEditor.TexelSizeNode;307;-2864,1344;Inherit;False;-1;1;0;SAMPL
 Node;AmplifyShaderEditor.ToggleSwitchNode;456;-2304,1328;Inherit;False;Property;_UVPixelation;UV Pixelation;8;0;Create;True;0;0;0;False;0;False;0;True;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.TFHCPixelate;306;-2544,1392;Inherit;False;3;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.SamplerNode;84;-2832,1776;Inherit;True;Property;_TextureSample1;Texture Sample 1;2;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.Compare;506;3744,1344;Inherit;False;2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.Compare;501;3968,1216;Inherit;True;2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;504;3520,1120;Inherit;True;502;Alpha Map;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.FunctionNode;545;3040,2352;Inherit;False;Binary To Int;-1;;373;55f49686de3e34b43b433d705b23ee3e;0;4;2;SAMPLER2D;0;False;5;FLOAT2;0,0;False;6;INT;0;False;7;INT;0;False;1;FLOAT3;0
@@ -387,6 +387,9 @@ Node;AmplifyShaderEditor.SimpleDivideOpNode;531;3408,3040;Inherit;False;2;0;FLOA
 Node;AmplifyShaderEditor.RegisterLocalVarNode;560;3824,3232;Inherit;False;Settings;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.FunctionNode;533;3056,3056;Inherit;False;Binary To Int;-1;;371;55f49686de3e34b43b433d705b23ee3e;0;4;2;SAMPLER2D;0;False;5;FLOAT2;0,0;False;6;INT;0;False;7;INT;0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;502;-2304,1872;Inherit;False;Alpha Map;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.GetLocalVarNode;505;3504,1328;Inherit;True;503;Depth Map;1;0;OBJECT;;False;1;FLOAT;0
+Node;AmplifyShaderEditor.Compare;506;3744,1344;Inherit;False;2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;566;3136,1040;Inherit;False;Property;_BlackThreshold;BlackThreshold;10;0;Create;True;0;0;0;False;0;False;0.01;0;0;0;0;1;FLOAT;0
 WireConnection;70;0;555;0
 WireConnection;70;1;94;0
 WireConnection;94;1;77;0
@@ -450,8 +453,8 @@ WireConnection;306;0;308;0
 WireConnection;306;1;307;3
 WireConnection;306;2;307;4
 WireConnection;84;0;81;0
-WireConnection;506;0;505;0
 WireConnection;501;0;504;0
+WireConnection;501;1;566;0
 WireConnection;501;2;504;0
 WireConnection;501;3;506;0
 WireConnection;545;2;540;0
@@ -466,5 +469,7 @@ WireConnection;533;5;530;0
 WireConnection;533;6;534;0
 WireConnection;533;7;535;0
 WireConnection;502;0;84;4
+WireConnection;506;0;505;0
+WireConnection;506;1;566;0
 ASEEND*/
-//CHKSM=B022A580CCC3B06A060198A25183F15CF6603736
+//CHKSM=386CC95A2C0EFD447E04BA9EC1414CC9F3D0C29D

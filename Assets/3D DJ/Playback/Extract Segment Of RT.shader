@@ -8,8 +8,7 @@ Shader "Extract Segment Of RT"
 		_Center("Center", Vector) = (0,0,0,0)
 		_Size("Size", Vector) = (0,0,0,0)
 		[Toggle]_RGSplit("RGSplit", Float) = 0
-		[Toggle]_ToGamma("To Gamma", Float) = 0
-		[Toggle]_ToLinear("To Linear", Float) = 0
+		[KeywordEnum(LinearToGamma,Raw,GammaToLinear)] _ColorSpaceConvert("ColorSpaceConvert", Float) = 1
 
     }
 
@@ -40,6 +39,7 @@ Shader "Extract Segment Of RT"
             #pragma fragment frag
             #pragma target 3.0
 			#include "UnityCG.cginc"
+			#pragma shader_feature_local _COLORSPACECONVERT_LINEARTOGAMMA _COLORSPACECONVERT_RAW _COLORSPACECONVERT_GAMMATOLINEAR
 
 
 			struct ase_appdata_customrendertexture
@@ -58,8 +58,6 @@ Shader "Extract Segment Of RT"
 				
 			};
 
-			uniform float _ToLinear;
-			uniform float _ToGamma;
 			uniform float _RGSplit;
 			uniform sampler2D _RT;
 			uniform float2 _Size;
@@ -187,9 +185,18 @@ Shader "Extract Segment Of RT"
 				float4 tex2DNode39 = tex2D( _RT, texCoord54 );
 				float4 appendResult36 = (float4(( IN.localTexcoord.xy.y < 0.5 ? tex2DNode39.r : tex2DNode39.g ) , 0.0 , 0.0 , 0.0));
 				float3 linearToGamma66 = LinearToGammaSpace( (( _RGSplit )?( appendResult36 ):( tex2D( _RT, texCoord7 ) )).rgb );
-				float3 gammaToLinear67 = GammaToLinearSpace( (( _ToGamma )?( float4( linearToGamma66 , 0.0 ) ):( (( _RGSplit )?( appendResult36 ):( tex2D( _RT, texCoord7 ) )) )).rgb );
+				float3 gammaToLinear67 = GammaToLinearSpace( (( _RGSplit )?( appendResult36 ):( tex2D( _RT, texCoord7 ) )).rgb );
+				#if defined(_COLORSPACECONVERT_LINEARTOGAMMA)
+				float4 staticSwitch68 = float4( linearToGamma66 , 0.0 );
+				#elif defined(_COLORSPACECONVERT_RAW)
+				float4 staticSwitch68 = (( _RGSplit )?( appendResult36 ):( tex2D( _RT, texCoord7 ) ));
+				#elif defined(_COLORSPACECONVERT_GAMMATOLINEAR)
+				float4 staticSwitch68 = float4( gammaToLinear67 , 0.0 );
+				#else
+				float4 staticSwitch68 = (( _RGSplit )?( appendResult36 ):( tex2D( _RT, texCoord7 ) ));
+				#endif
 				
-                finalColor = (( _ToLinear )?( float4( gammaToLinear67 , 0.0 ) ):( (( _ToGamma )?( float4( linearToGamma66 , 0.0 ) ):( (( _RGSplit )?( appendResult36 ):( tex2D( _RT, texCoord7 ) )) )) ));
+                finalColor = staticSwitch68;
 				return finalColor;
             }
             ENDCG
@@ -244,11 +251,10 @@ Node;AmplifyShaderEditor.DynamicAppendNode;36;1968,288;Inherit;False;COLOR;4;0;F
 Node;AmplifyShaderEditor.SamplerNode;39;1376,384;Inherit;True;Property;_TextureSample1;Texture Sample 0;2;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.TexCoordVertexDataNode;37;1440,224;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.Compare;38;1776,352;Inherit;False;4;4;0;FLOAT;0;False;1;FLOAT;0.5;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;4240,-576;Float;False;True;-1;2;ASEMaterialInspector;0;2;Extract Segment Of RT;32120270d1b3a8746af2aca8bc749736;True;Custom RT Update;0;0;Custom RT Update;1;False;True;0;1;False;;0;False;;0;1;False;;0;False;;True;0;False;;0;False;;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;0;True;2;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;0;;0;0;Standard;0;0;1;True;False;;False;0
-Node;AmplifyShaderEditor.LinearToGammaNode;66;2944,-416;Inherit;False;0;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.GammaToLinearNode;67;3552,-416;Inherit;False;0;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.ToggleSwitchNode;64;3280,-512;Inherit;False;Property;_ToGamma;To Gamma;4;0;Create;True;0;0;0;False;0;False;0;True;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.ToggleSwitchNode;65;3824,-496;Inherit;False;Property;_ToLinear;To Linear;5;0;Create;True;0;0;0;False;0;False;0;True;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;3696,-528;Float;False;True;-1;2;ASEMaterialInspector;0;2;Extract Segment Of RT;32120270d1b3a8746af2aca8bc749736;True;Custom RT Update;0;0;Custom RT Update;1;False;True;0;1;False;;0;False;;0;1;False;;0;False;;True;0;False;;0;False;;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;0;True;2;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;0;;0;0;Standard;0;0;1;True;False;;False;0
+Node;AmplifyShaderEditor.LinearToGammaNode;66;2912,-560;Inherit;False;0;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.GammaToLinearNode;67;2928,-416;Inherit;False;0;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.StaticSwitch;68;3248,-560;Inherit;False;Property;_ColorSpaceConvert;ColorSpaceConvert;4;0;Create;True;0;0;0;False;0;False;0;1;1;True;;KeywordEnum;3;LinearToGamma;Raw;GammaToLinear;Create;True;True;All;9;1;COLOR;0,0,0,0;False;0;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;4;COLOR;0,0,0,0;False;5;COLOR;0,0,0,0;False;6;COLOR;0,0,0,0;False;7;COLOR;0,0,0,0;False;8;COLOR;0,0,0,0;False;1;COLOR;0
 WireConnection;5;0;3;0
 WireConnection;35;0;4;0
 WireConnection;35;1;36;0
@@ -297,12 +303,11 @@ WireConnection;39;1;54;0
 WireConnection;38;0;37;2
 WireConnection;38;2;39;1
 WireConnection;38;3;39;2
-WireConnection;0;0;65;0
+WireConnection;0;0;68;0
 WireConnection;66;0;35;0
-WireConnection;67;0;64;0
-WireConnection;64;0;35;0
-WireConnection;64;1;66;0
-WireConnection;65;0;64;0
-WireConnection;65;1;67;0
+WireConnection;67;0;35;0
+WireConnection;68;1;66;0
+WireConnection;68;0;35;0
+WireConnection;68;2;67;0
 ASEEND*/
-//CHKSM=40C869CCBCF7F09C4BF5B3B1CCD020FCAC20A115
+//CHKSM=545A3116FA1651D8CB8AD28DFD6698A72629894F
