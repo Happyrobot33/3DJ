@@ -14,8 +14,8 @@ CustomRenderTexture:
   m_DownscaleFallback: 0
   m_IsAlphaChannelOptional: 0
   serializedVersion: 5
-  m_Width: 864
-  m_Height: 376
+  m_Width: 639
+  m_Height: 655
   m_AntiAliasing: 1
   m_MipCount: -1
   m_DepthStencilFormat: 0
@@ -32,9 +32,9 @@ CustomRenderTexture:
     m_FilterMode: 0
     m_Aniso: 0
     m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
+    m_WrapU: 2
+    m_WrapV: 2
+    m_WrapW: 2
   m_Dimension: 2
   m_VolumeDepth: 1
   m_ShadowSamplingMode: 2
@@ -48,20 +48,20 @@ CustomRenderTexture:
   m_UpdateZoneSpace: 1
   m_CurrentUpdateZoneSpace: 1
   m_UpdateZones:
-  - updateZoneCenter: {x: 648, y: 304, z: 0.5}
-    updateZoneSize: {x: 432, y: 144, z: 1}
+  - updateZoneCenter: {x: 319.5, y: 8, z: 0.5}
+    updateZoneSize: {x: 639, y: 16, z: 1}
+    rotation: 0
+    passIndex: 2
+    needSwap: 0
+  - updateZoneCenter: {x: 319.5, y: 122.5, z: 0.5}
+    updateZoneSize: {x: 639, y: 213, z: 1}
     rotation: 0
     passIndex: 0
     needSwap: 0
-  - updateZoneCenter: {x: 216, y: 232, z: 0.5}
-    updateZoneSize: {x: 432, y: 288, z: 1}
+  - updateZoneCenter: {x: 319.5, y: 442, z: 0.5}
+    updateZoneSize: {x: 639, y: 426, z: 1}
     rotation: 0
     passIndex: 1
-    needSwap: 0
-  - updateZoneCenter: {x: 80, y: 8, z: 0.5}
-    updateZoneSize: {x: 160, y: 16, z: 1}
-    rotation: 0
-    passIndex: 2
     needSwap: 0
   m_UpdatePeriod: 0
   m_ShaderPass: 0

@@ -1,5 +1,17 @@
 {
   "dependencies": {
+    "com.happyrobot33.fpscontroller": {
+      "version": "file:com.happyrobot33.fpscontroller",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.poiyomi.toon": {
+      "version": "file:com.poiyomi.toon",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.burst": {
       "version": "1.8.12",
       "depth": 1,

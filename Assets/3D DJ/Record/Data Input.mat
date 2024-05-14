@@ -61,6 +61,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AdditionalSettingExample: 0
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -77,7 +78,17 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _ToggleSwitch0: 0
+    - _Transparency: 0
+    - _TransparencyDither: 0
+    - _TransparencyHide: 0
     - _UVSec: 0
+    - _UnusedSetting: 0
+    - _UnusedSetting1: 0
+    - _UnusedSetting2: 0
+    - _UnusedSetting3: 0
+    - _UnusedSetting4: 0
+    - _UnusedSetting5: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
