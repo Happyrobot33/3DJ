@@ -1,16 +1,26 @@
 {
   "dependencies": {
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.28"
+    },
     "com.vrchat.base": {
       "version": "3.5.2"
     },
     "com.vrchat.worlds": {
       "version": "3.5.2"
     },
-    "com.vrchat.core.vpm-resolver": {
-      "version": "0.1.28"
+    "com.poiyomi.toon": {
+      "version": "9.0.57"
+    },
+    "com.happyrobot33.fpscontroller": {
+      "version": "1.0.0"
     }
   },
   "locked": {
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.28",
+      "dependencies": {}
+    },
     "com.vrchat.base": {
       "version": "3.5.2",
       "dependencies": {}
@@ -21,8 +31,12 @@
         "com.vrchat.base": "3.5.2"
       }
     },
-    "com.vrchat.core.vpm-resolver": {
-      "version": "0.1.28",
+    "com.poiyomi.toon": {
+      "version": "9.0.57",
+      "dependencies": {}
+    },
+    "com.happyrobot33.fpscontroller": {
+      "version": "1.0.0",
       "dependencies": {}
     }
   }

@@ -6,7 +6,7 @@ CustomRenderTexture:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Extracted Depth Unified
+  m_Name: Extracted Area
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -14,12 +14,12 @@ CustomRenderTexture:
   m_DownscaleFallback: 0
   m_IsAlphaChannelOptional: 0
   serializedVersion: 5
-  m_Width: 384
-  m_Height: 128
+  m_Width: 639
+  m_Height: 655
   m_AntiAliasing: 1
   m_MipCount: -1
   m_DepthStencilFormat: 0
-  m_ColorFormat: 22
+  m_ColorFormat: 24
   m_MipMap: 0
   m_GenerateMips: 1
   m_SRGB: 0
@@ -32,13 +32,13 @@ CustomRenderTexture:
     m_FilterMode: 0
     m_Aniso: 0
     m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
   m_Dimension: 2
   m_VolumeDepth: 1
   m_ShadowSamplingMode: 2
-  m_Material: {fileID: 2100000, guid: de59399d0ae32544a8afd850a17068d2, type: 2}
+  m_Material: {fileID: 2100000, guid: 8b90a1f31ffd61245871b867d8fa99bb, type: 2}
   m_InitSource: 0
   m_InitMaterial: {fileID: 0}
   m_InitColor: {r: 0, g: 0, b: 0, a: 1}
@@ -51,7 +51,7 @@ CustomRenderTexture:
   - updateZoneCenter: {x: 0.5, y: 0.5, z: 0.5}
     updateZoneSize: {x: 1, y: 1, z: 1}
     rotation: 0
-    passIndex: -1
+    passIndex: 0
     needSwap: 0
   m_UpdatePeriod: 0
   m_ShaderPass: 0

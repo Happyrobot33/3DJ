@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Color Extract
-  m_Shader: {fileID: 4800000, guid: 3d961d808c1cbc944ac163d8507d68f1, type: 3}
+  m_Shader: {fileID: 4800000, guid: 2a6750c67c66a1443b3e8c3b05e55eef, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -83,13 +83,20 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _RGSplit: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - _AlphaCenter: {r: 319.5, g: 122.5, b: 0, a: 0}
+    - _AlphaSize: {r: 639, g: 213, b: 0, a: 0}
+    - _Center: {r: 1080, g: 400, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorCenter: {r: 319.5, g: 442, b: 0, a: 0}
+    - _ColorSize: {r: 639, g: 426, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Size: {r: 720, g: 480, b: 0, a: 0}
     - _StartEndPixelRange: {r: 0, g: 0, b: 432, a: 288}
   m_BuildTextureStacks: []
