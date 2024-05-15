@@ -96,6 +96,7 @@
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\VRC.SDKBase.asmdef" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Sample Assets\Shaders\Mobile\VRChat-Mobile-SupersampledUnlit.shader" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Sample Assets\Shaders\Mobile\VRChat-Mobile-Particle-Multiply.shader" />
+    <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\VRCSDKBase.xml" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\VRC.Utility.dll" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\license.txt" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Sample Assets\Shaders\Video-RealtimeEmissiveGamma.shader" />

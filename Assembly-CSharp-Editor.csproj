@@ -1140,6 +1140,7 @@
     <ProjectReference Include="Unity.VSCode.Editor.csproj" />
     <ProjectReference Include="Unity.XR.Oculus.Editor.csproj" />
     <ProjectReference Include="VRC.Udon.Editor.csproj" />
+    <ProjectReference Include="Happyrobot33.VRCSDKDocumentationProject.csproj" />
     <ProjectReference Include="VRC.ClientSim.Editor.csproj" />
     <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj" />
     <ProjectReference Include="UniTask.DOTween.csproj" />

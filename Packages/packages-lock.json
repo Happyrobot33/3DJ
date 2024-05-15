@@ -6,6 +6,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.happyrobot33.vrcsdkdocumentation": {
+      "version": "file:com.happyrobot33.vrcsdkdocumentation",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.poiyomi.toon": {
       "version": "file:com.poiyomi.toon",
       "depth": 0,

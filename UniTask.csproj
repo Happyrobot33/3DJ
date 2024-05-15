@@ -66,8 +66,8 @@
   <ItemGroup>
     <Compile Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\UniTask\Runtime\Internal\ArrayPoolUtil.cs" />
     <Compile Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\UniTask\Runtime\Triggers\AsyncAwakeTrigger.cs" />
-    <Compile Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\UniTask\Runtime\Triggers\AsyncTriggerBase.cs" />
     <Compile Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\UniTask\Runtime\Internal\RuntimeHelpersAbstraction.cs" />
+    <Compile Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\UniTask\Runtime\Triggers\AsyncTriggerBase.cs" />
     <Compile Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\UniTask\Runtime\UniTask.Threading.cs" />
     <Compile Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\UniTask\Runtime\UniTaskExtensions.Shorthand.cs" />
     <Compile Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\UniTask\Runtime\UniTaskScheduler.cs" />
