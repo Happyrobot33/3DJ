@@ -111,7 +111,7 @@ Material:
     m_Floats:
     - _ASEOutlineWidth: 0
     - _BillboardMode: 1
-    - _BlackThreshold: 0.01
+    - _BlackThreshold: 0.039215688
     - _BumpScale: 1
     - _Color: 0
     - _ColorToggle: 1
