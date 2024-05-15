@@ -113,8 +113,8 @@
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestMustExpectAllLogsAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\Utils\AssemblyProvider\IAssemblyWrapper.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\BaseDelegator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Filters\CategoryFilterExtended.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\Utils\Vector4ComparerWithEqualsOperator.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\TestRunner\ITestRunnerListener.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Filters\AssemblyNameFilter.cs" />

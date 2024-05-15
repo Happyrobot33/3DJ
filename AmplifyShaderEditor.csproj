@@ -91,8 +91,8 @@
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\ConsoleLogWindow.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\TFHCCompareGreaterEqual.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\Transformation\ObjectToWorldTransfNode.cs" />
-    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\VertexToFragmentNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ColorNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\VertexToFragmentNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\TFHCCompareEqual.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SimpleNodes\SimpleAddOpNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\ComputeScreenPosHlpNode.cs" />
@@ -104,9 +104,9 @@
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\TerrainDrawInstancedHelper.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\RSqrtOpNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\TransposeMVMatrix.cs" />
-    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\CoshOpNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\FogAndAmbient\FogParamsNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\TanhOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\CoshOpNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\ColorInputsNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\BillboardOpHelper.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Templates\TemplateOptionsUI.cs" />
@@ -291,10 +291,10 @@
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\IntNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\FunctionSubtitle.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Templates\TemplateVertexData.cs" />
-    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackVariable.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ExpOpNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\SamplerStateAutoGenerator.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\LinearToGammaNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackVariable.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\RectExtension.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Templates\TemplateModulesData.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\SwizzleNode.cs" />

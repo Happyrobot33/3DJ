@@ -3,6 +3,7 @@ using System;
 using System.Diagnostics;
 using UdonSharp;
 using UnityEngine;
+using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
@@ -21,7 +22,7 @@ public class Manager : UdonSharpBehaviour
     //TODO: Should make these render texture type but I want to do some testing so they arent for now
     public Texture VideoTexture;
     public RenderTexture RecordTexture;
-    public float scaleOffset = 0;
+    public Slider OffsetSlider;
 
     private VRCPlayerApi player;
     private Camera[] Cameras;
@@ -36,7 +37,7 @@ public class Manager : UdonSharpBehaviour
         SwitchToPlayback();
     }
 
-    public override void PostLateUpdate()
+    void Update()
     {
         if (mode == Mode.Record)
         {
@@ -45,6 +46,9 @@ public class Manager : UdonSharpBehaviour
 
             //get the players head
             Vector3 headPos = player.GetBonePosition(HumanBodyBones.Head);
+
+            //add the offset to the head position
+            headPos.y += OffsetSlider.value;
 
             //determine the midpoint between the player and the head
             Vector3 recorderPos = (playerPos + headPos) / 2;
