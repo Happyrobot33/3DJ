@@ -1128,8 +1128,8 @@
     <ProjectReference Include="VRC.SDKBase.Editor.ShaderStripping.csproj" />
     <ProjectReference Include="AVProVideo.Extensions.VisualEffectGraph.csproj" />
     <ProjectReference Include="Poi.Tools.csproj" />
-    <ProjectReference Include="ArchiTech.ProTV.Runtime.csproj" />
     <ProjectReference Include="AVProVideo.Extensions.Timeline.csproj" />
+    <ProjectReference Include="ArchiTech.ProTV.Runtime.csproj" />
     <ProjectReference Include="Unity.Timeline.csproj" />
     <ProjectReference Include="Unity.InputSystem.csproj" />
     <ProjectReference Include="Unity.InputSystem.ForUI.csproj" />
@@ -1137,8 +1137,8 @@
     <ProjectReference Include="VRC.SDKBase.csproj" />
     <ProjectReference Include="UniTask.Linq.csproj" />
     <ProjectReference Include="Unity.Postprocessing.Editor.csproj" />
-    <ProjectReference Include="UniTask.TextMeshPro.csproj" />
     <ProjectReference Include="ArchiTech.VideoPlayerShim.Runtime.csproj" />
+    <ProjectReference Include="UniTask.TextMeshPro.csproj" />
     <ProjectReference Include="AVProVideo.Extensions.UnityUI.csproj" />
     <ProjectReference Include="Unity.Mathematics.csproj" />
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj" />
