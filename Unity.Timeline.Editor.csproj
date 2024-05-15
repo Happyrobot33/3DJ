@@ -165,8 +165,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\DirectorNamedColor.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Animation\TimelineAnimationUtilities.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Utilities\TimeFormat.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Animation\AnimationClipActions.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\TimelineHelpers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Animation\AnimationClipActions.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\treeview\ManipulationsTracks.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Items\ItemsGroup.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Actions\MarkerActions.cs" />

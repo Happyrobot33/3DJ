@@ -89,6 +89,7 @@
     <None Include="Packages\com.vrchat.worlds\Runtime\VRCSDK\Plugins\VRCEconomy-Editor.dll" />
     <None Include="Packages\com.vrchat.worlds\Runtime\VRCSDK\Plugins\VRCSDK3.dll" />
     <None Include="Packages\com.vrchat.worlds\Runtime\VRCSDK\SDK3\Midi\PortMidi\Plugins\Windows\portmidi.dll" />
+    <None Include="Packages\com.vrchat.worlds\Runtime\VRCSDK\Plugins\VRCSDK3.xml" />
     <None Include="Packages\com.vrchat.worlds\Runtime\VRCSDK\Plugins\VRCEconomy.dll" />
   </ItemGroup>
   <ItemGroup>
