@@ -91,6 +91,18 @@ public class Manager : UdonSharpBehaviour
         mode = Mode.Record;
     }
 
+    public void CyclePlayer()
+    {
+        //get player list
+        VRCPlayerApi[] players = VRCPlayerApi.GetPlayers(new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()]);
+
+        //get the current player index
+        int index = Array.IndexOf(players, player);
+
+        //get the next player
+        player = players[(index + 1) % players.Length];
+    }
+
     private void SetupSource(Texture source, Vector2Int topLeft, Vector2Int size)
     {
         //setup the source switcher to be based on the uv position info
