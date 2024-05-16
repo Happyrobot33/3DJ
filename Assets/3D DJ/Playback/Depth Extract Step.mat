@@ -14,6 +14,7 @@ Material:
   m_ValidKeywords:
   - _COLORSPACECONVERT_RAW
   m_InvalidKeywords:
+  - _DEPTHMAPMODE_ON
   - _DEPTHSPLITTING_ON
   - _INTERPRETASOVERLAID_ON
   - _KEYWORD0_LINEARTOGAMMA
@@ -78,6 +79,7 @@ Material:
     - _CastToR: 1
     - _ColorSpaceConvert: 1
     - _Cutoff: 0.5
+    - _DepthMapMode: 1
     - _DepthSplitting: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
