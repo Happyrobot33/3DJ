@@ -19,8 +19,7 @@ public class Manager : UdonSharpBehaviour
     public Material DataInput;
     public Material SourceSwitcher;
     public Vector2Int UVPositionTopLeft;
-    //TODO: Should make these render texture type but I want to do some testing so they arent for now
-    public Texture VideoTexture;
+    public RenderTexture VideoTexture;
     public RenderTexture RecordTexture;
     public Slider OffsetSlider;
 
@@ -116,3 +115,27 @@ public class Manager : UdonSharpBehaviour
         SourceSwitcher.SetTexture("_RT", source);
     }
 }
+
+#if !COMPILER_UDONSHARP && UNITY_EDITOR
+//custom editor to have a button to cycle the player
+[UnityEditor.CustomEditor(typeof(Manager))]
+public class ManagerEditor : UnityEditor.Editor
+{
+    public override void OnInspectorGUI()
+    {
+        base.OnInspectorGUI();
+
+        Manager manager = (Manager)target;
+
+        if (GUILayout.Button("Record"))
+        {
+            manager.SwitchToRecord();
+        }
+
+        if (GUILayout.Button("Playback"))
+        {
+            manager.SwitchToPlayback();
+        }
+    }
+}
+#endif
