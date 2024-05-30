@@ -5,9 +5,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
+using VRC.SDK3.Components;
 
 namespace com.happyrobot33.holographicreprojector
 {
+    using TMPro;
+
 
 #if !COMPILER_UDONSHARP && UNITY_EDITOR
     using UdonSharpEditor;
@@ -56,90 +59,98 @@ namespace com.happyrobot33.holographicreprojector
             }
             EditorGUILayout.EndHorizontal();
 
-            #region Video region management
-            //calculate the UV size
-            Vector2Int UVSize = new Vector2Int(manager.RecordTexture.width, manager.RecordTexture.height);
+            try
+            {
+                #region Video region management
+                //calculate the UV size
+                Vector2Int UVSize = new Vector2Int(manager.RecordTexture.width, manager.RecordTexture.height);
 
-            //determine the aspect ratio of the video texture
-            float videoPlayerAspect = manager.VideoTexture.width / (float)manager.VideoTexture.height;
+                //determine the aspect ratio of the video texture
+                float videoPlayerAspect = manager.VideoTexture.width / (float)manager.VideoTexture.height;
 
-            //display a box with the aspect ratio
-            Rect videoRect = GUILayoutUtility.GetAspectRect(videoPlayerAspect);
+                //display a box with the aspect ratio
+                Rect videoRect = GUILayoutUtility.GetAspectRect(videoPlayerAspect);
 
-            GUIStyle imageStyle = new GUIStyle("box");
-            //make content have 0 padding
-            imageStyle.padding = new RectOffset(0, 0, 0, 0);
+                GUIStyle imageStyle = new GUIStyle("box");
+                //make content have 0 padding
+                imageStyle.padding = new RectOffset(0, 0, 0, 0);
 
-            //show a box in it, with the texture as the content
-            GUI.Box(videoRect, manager.PreviewLayoutTexture, imageStyle);
+                //show a box in it, with the texture as the content
+                GUI.Box(videoRect, manager.PreviewLayoutTexture, imageStyle);
 
-            //display another box inside the first box based on the UVPositionTopLeft and UVPositionSize
-            /* Rect recordRect = new Rect(videoRect.x + videoRect.width * manager.UVPosition.x / manager.VideoTexture.width,
-                videoRect.y + videoRect.height * manager.UVPosition.y / manager.VideoTexture.height,
-                videoRect.width * UVSize.x / manager.VideoTexture.width,
-                videoRect.height * UVSize.y / manager.VideoTexture.height); */
+                //display another box inside the first box based on the UVPositionTopLeft and UVPositionSize
+                /* Rect recordRect = new Rect(videoRect.x + videoRect.width * manager.UVPosition.x / manager.VideoTexture.width,
+                    videoRect.y + videoRect.height * manager.UVPosition.y / manager.VideoTexture.height,
+                    videoRect.width * UVSize.x / manager.VideoTexture.width,
+                    videoRect.height * UVSize.y / manager.VideoTexture.height); */
 
-            Vector2Int topLeft = Manager.CalculateTopLeftUV(manager);
-            Rect recordRect = new Rect(videoRect.x + videoRect.width * topLeft.x / manager.VideoTexture.width,
-                videoRect.y + videoRect.height * topLeft.y / manager.VideoTexture.height,
-                videoRect.width * UVSize.x / manager.VideoTexture.width,
-                videoRect.height * UVSize.y / manager.VideoTexture.height);
+                Vector2Int topLeft = Manager.CalculateTopLeftUV(manager);
+                Rect recordRect = new Rect(videoRect.x + videoRect.width * topLeft.x / manager.VideoTexture.width,
+                    videoRect.y + videoRect.height * topLeft.y / manager.VideoTexture.height,
+                    videoRect.width * UVSize.x / manager.VideoTexture.width,
+                    videoRect.height * UVSize.y / manager.VideoTexture.height);
 
-            //get the record rect in terms of the video textures pixels
-            Rect pixelBasedRecordRect = new Rect(topLeft.x, topLeft.y, UVSize.x, UVSize.y);
+                //get the record rect in terms of the video textures pixels
+                Rect pixelBasedRecordRect = new Rect(topLeft.x, topLeft.y, UVSize.x, UVSize.y);
 
-            //show a box in it, with a outline and text in it
-            GUI.Box(recordRect, manager.PreviewSystemTexture, imageStyle);
+                //show a box in it, with a outline and text in it
+                GUI.Box(recordRect, manager.PreviewSystemTexture, imageStyle);
 
-            int handleThickness = 5;
-            GUIStyle handleStyle = new GUIStyle("box");
-            handleStyle.normal.background = EditorGUIUtility.whiteTexture;
+                int handleThickness = 5;
+                GUIStyle handleStyle = new GUIStyle("box");
+                handleStyle.normal.background = EditorGUIUtility.whiteTexture;
 
-            //draw a dot at the corners
-            Handles.DrawSolidDisc(new Vector3(recordRect.xMin, recordRect.yMin, 0), Vector3.forward, handleThickness);
-            Handles.DrawSolidDisc(new Vector3(recordRect.xMax, recordRect.yMin, 0), Vector3.forward, handleThickness);
-            Handles.DrawSolidDisc(new Vector3(recordRect.xMin, recordRect.yMax, 0), Vector3.forward, handleThickness);
-            Handles.DrawSolidDisc(new Vector3(recordRect.xMax, recordRect.yMax, 0), Vector3.forward, handleThickness);
+                //draw a dot at the corners
+                Handles.DrawSolidDisc(new Vector3(recordRect.xMin, recordRect.yMin, 0), Vector3.forward, handleThickness);
+                Handles.DrawSolidDisc(new Vector3(recordRect.xMax, recordRect.yMin, 0), Vector3.forward, handleThickness);
+                Handles.DrawSolidDisc(new Vector3(recordRect.xMin, recordRect.yMax, 0), Vector3.forward, handleThickness);
+                Handles.DrawSolidDisc(new Vector3(recordRect.xMax, recordRect.yMax, 0), Vector3.forward, handleThickness);
 
 
-            GUIStyle labelStyle = new GUIStyle(EditorStyles.whiteLabel);
-            //centered
-            labelStyle.alignment = TextAnchor.MiddleCenter;
-            //full white
-            labelStyle.normal.textColor = Color.white;
-            //black background
-            Texture2D background = new Texture2D(1, 1);
-            background.SetPixel(0, 0, Color.black);
-            background.Apply();
-            labelStyle.normal.background = background;
+                GUIStyle labelStyle = new GUIStyle(EditorStyles.whiteLabel);
+                //centered
+                labelStyle.alignment = TextAnchor.MiddleCenter;
+                //full white
+                labelStyle.normal.textColor = Color.white;
+                //black background
+                Texture2D background = new Texture2D(1, 1);
+                background.SetPixel(0, 0, Color.black);
+                background.Apply();
+                labelStyle.normal.background = background;
 
-            //font size
-            labelStyle.fontSize = 15;
+                //font size
+                labelStyle.fontSize = 15;
 
-            //display text on all 4 sides of the record box that shows its width and height
-            Handles.Label(new Vector3(recordRect.center.x, recordRect.yMin, 0), UVSize.x.ToString(), labelStyle);
-            Handles.Label(new Vector3(recordRect.xMin, recordRect.center.y, 0), UVSize.y.ToString(), labelStyle);
-            Handles.Label(new Vector3(recordRect.center.x, recordRect.yMax, 0), UVSize.x.ToString(), labelStyle);
-            Handles.Label(new Vector3(recordRect.xMax, recordRect.center.y, 0), UVSize.y.ToString(), labelStyle);
+                //display text on all 4 sides of the record box that shows its width and height
+                Handles.Label(new Vector3(recordRect.center.x, recordRect.yMin, 0), UVSize.x.ToString(), labelStyle);
+                Handles.Label(new Vector3(recordRect.xMin, recordRect.center.y, 0), UVSize.y.ToString(), labelStyle);
+                Handles.Label(new Vector3(recordRect.center.x, recordRect.yMax, 0), UVSize.x.ToString(), labelStyle);
+                Handles.Label(new Vector3(recordRect.xMax, recordRect.center.y, 0), UVSize.y.ToString(), labelStyle);
 
-            //draw a line starting from the upper edge of the video vertically, but the record box horizontally, to the top left of the record box
-            Rect topVerticalOffsetRect = DrawLine(new Vector2(recordRect.xMin, videoRect.yMin), new Vector2(recordRect.xMin, recordRect.yMin), handleThickness, handleStyle);
-            //draw a line starting from the left edge of the video horizontally, but the record box vertically, to the top left of the record box
-            Rect leftHorizontalOffsetRect = DrawLine(new Vector2(videoRect.xMin, recordRect.yMin), new Vector2(recordRect.xMin, recordRect.yMin), handleThickness, handleStyle);
-            Rect rightHorizontalOffsetRect = DrawLine(new Vector2(videoRect.xMax, recordRect.yMax), new Vector2(recordRect.xMax, recordRect.yMax), handleThickness, handleStyle);
-            Rect bottomVerticalOffsetRect = DrawLine(new Vector2(recordRect.xMax, videoRect.yMax), new Vector2(recordRect.xMax, recordRect.yMax), handleThickness, handleStyle);
-            //display text boxes at the two offset lines
-            if (pixelBasedRecordRect.yMin != 0) Handles.Label(new Vector3(topVerticalOffsetRect.center.x, topVerticalOffsetRect.center.y, 0), pixelBasedRecordRect.yMin.ToString(), labelStyle);
-            if (pixelBasedRecordRect.xMin != 0) Handles.Label(new Vector3(leftHorizontalOffsetRect.center.x, leftHorizontalOffsetRect.center.y, 0), pixelBasedRecordRect.xMin.ToString(), labelStyle);
-            if (pixelBasedRecordRect.xMax != manager.VideoTexture.width) Handles.Label(new Vector3(rightHorizontalOffsetRect.center.x, rightHorizontalOffsetRect.center.y, 0), pixelBasedRecordRect.xMax.ToString(), labelStyle);
-            if (pixelBasedRecordRect.yMax != manager.VideoTexture.height) Handles.Label(new Vector3(bottomVerticalOffsetRect.center.x, bottomVerticalOffsetRect.center.y, 0), pixelBasedRecordRect.yMax.ToString(), labelStyle);
-            #endregion
+                //draw a line starting from the upper edge of the video vertically, but the record box horizontally, to the top left of the record box
+                Rect topVerticalOffsetRect = DrawLine(new Vector2(recordRect.xMin, videoRect.yMin), new Vector2(recordRect.xMin, recordRect.yMin), handleThickness, handleStyle);
+                //draw a line starting from the left edge of the video horizontally, but the record box vertically, to the top left of the record box
+                Rect leftHorizontalOffsetRect = DrawLine(new Vector2(videoRect.xMin, recordRect.yMin), new Vector2(recordRect.xMin, recordRect.yMin), handleThickness, handleStyle);
+                Rect rightHorizontalOffsetRect = DrawLine(new Vector2(videoRect.xMax, recordRect.yMax), new Vector2(recordRect.xMax, recordRect.yMax), handleThickness, handleStyle);
+                Rect bottomVerticalOffsetRect = DrawLine(new Vector2(recordRect.xMax, videoRect.yMax), new Vector2(recordRect.xMax, recordRect.yMax), handleThickness, handleStyle);
+                //display text boxes at the two offset lines
+                if (pixelBasedRecordRect.yMin != 0) Handles.Label(new Vector3(topVerticalOffsetRect.center.x, topVerticalOffsetRect.center.y, 0), pixelBasedRecordRect.yMin.ToString(), labelStyle);
+                if (pixelBasedRecordRect.xMin != 0) Handles.Label(new Vector3(leftHorizontalOffsetRect.center.x, leftHorizontalOffsetRect.center.y, 0), pixelBasedRecordRect.xMin.ToString(), labelStyle);
+                if (pixelBasedRecordRect.xMax != manager.VideoTexture.width) Handles.Label(new Vector3(rightHorizontalOffsetRect.center.x, rightHorizontalOffsetRect.center.y, 0), pixelBasedRecordRect.xMax.ToString(), labelStyle);
+                if (pixelBasedRecordRect.yMax != manager.VideoTexture.height) Handles.Label(new Vector3(bottomVerticalOffsetRect.center.x, bottomVerticalOffsetRect.center.y, 0), pixelBasedRecordRect.yMax.ToString(), labelStyle);
+                #endregion
 
-            #region Debug Information
-            //calculate the cell size based on horizontal width / 3
-            int cellSize = UVSize.x / 3;
-            EditorGUILayout.LabelField(string.Format("Cell Size: {0}x{0}", cellSize));
-            #endregion
+                #region Debug Information
+                //calculate the cell size based on horizontal width / 3
+                int cellSize = UVSize.x / 3;
+                EditorGUILayout.LabelField(string.Format("Cell Size: {0}x{0}", cellSize));
+                #endregion
+            }
+            catch (Exception e)
+            {
+                GUILayout.Label("Error: " + e.Message);
+                //Debug.LogError(e);
+            }
 
             /* #region Render texture management
             //watch for changes on the UVSize variable
@@ -232,6 +243,8 @@ namespace com.happyrobot33.holographicreprojector
         public RenderTexture RecordTexture;
         [DeveloperOnly]
         public Slider OffsetSlider;
+        [DeveloperOnly]
+        public TMP_Dropdown PlayerDropdown;
 
         private VRCPlayerApi player;
         private Camera[] Cameras;
@@ -330,16 +343,53 @@ namespace com.happyrobot33.holographicreprojector
             //mode = Mode.Record;
         }
 
-        public void CyclePlayer()
+        public void PlayerDropdownUpdate()
         {
-            //get player list
+            //get the player index
+            int playerIndex = PlayerDropdown.value;
+
+            //get the player list
             VRCPlayerApi[] players = VRCPlayerApi.GetPlayers(new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()]);
 
-            //get the current player index
-            int index = Array.IndexOf(players, player);
+            //get the player
+            player = players[playerIndex];
+        }
 
-            //get the next player
-            player = players[(index + 1) % players.Length];
+        public override void OnPlayerJoined(VRCPlayerApi player)
+        {
+            //clear
+            PlayerDropdown.ClearOptions();
+
+            //rebuild the list
+            VRCPlayerApi[] players = VRCPlayerApi.GetPlayers(new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()]);
+            TMP_Dropdown.OptionData[] options = new TMP_Dropdown.OptionData[players.Length];
+            for (int i = 0; i < players.Length; i++)
+            {
+                options[i] = new TMP_Dropdown.OptionData(players[i].displayName);
+            }
+
+            PlayerDropdown.AddOptions(options);
+        }
+
+        public override void OnPlayerLeft(VRCPlayerApi player)
+        {
+            //REMEMBER, The player leaving is STILL in the player list, so we need to remove them inside here
+            //clear
+            PlayerDropdown.ClearOptions();
+
+            //rebuild the list
+            VRCPlayerApi[] players = VRCPlayerApi.GetPlayers(new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()]);
+            TMP_Dropdown.OptionData[] options = new TMP_Dropdown.OptionData[players.Length];
+            for (int i = 0; i < players.Length; i++)
+            {
+                if (players[i] == player)
+                {
+                    continue;
+                }
+                options[i] = new TMP_Dropdown.OptionData(players[i].displayName);
+            }
+
+            PlayerDropdown.AddOptions(options);
         }
 
         private void SetupSource(Texture source, Vector2Int topLeft, Vector2Int size)

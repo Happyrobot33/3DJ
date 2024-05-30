@@ -507,7 +507,7 @@ PlayerSettings:
   - m_BuildTarget: iOSSupport
     m_GraphicsJobs: 0
   - m_BuildTarget: WindowsStandaloneSupport
-    m_GraphicsJobs: 0
+    m_GraphicsJobs: 1
   - m_BuildTarget: XboxOnePlayer
     m_GraphicsJobs: 1
   - m_BuildTarget: LuminSupport
@@ -829,7 +829,7 @@ PlayerSettings:
     PS5: UNITY_POST_PROCESSING_STACK_V2
     QNX: UNITY_POST_PROCESSING_STACK_V2
     Stadia: UNITY_POST_PROCESSING_STACK_V2
-    Standalone: UNITY_POST_PROCESSING_STACK_V2;UDONSHARP;UDON;VRC_SDK_VRCSDK3;AMPLIFY_SHADER_EDITOR;AVPRO_IMPORTED
+    Standalone: UNITY_POST_PROCESSING_STACK_V2;UDONSHARP;UDON;VRC_SDK_VRCSDK3;AMPLIFY_SHADER_EDITOR;AVPRO_IMPORTED;AVPRO_V2
     VisionOS: UNITY_POST_PROCESSING_STACK_V2
     WebGL: UNITY_POST_PROCESSING_STACK_V2
     XboxOne: UNITY_POST_PROCESSING_STACK_V2
