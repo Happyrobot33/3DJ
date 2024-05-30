@@ -6,6 +6,7 @@ using VRC.Udon;
 
 namespace com.happyrobot33.holographicreprojector
 {
+    //TODO: This whole system doesnt work right now because the shader doesnt fully work
     public class AttachExportBoxToHead : UdonSharpBehaviour
     {
         private Vector3 staticPosition;
