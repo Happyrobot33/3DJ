@@ -232,6 +232,12 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 279915198}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &131620906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5121342979841127930, guid: 93af4b9116135ea4788cdf90717ca754,
+    type: 3}
+  m_PrefabInstance: {fileID: 3995664198784359637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &229950064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2737,6 +2743,36 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 678958785149806262, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678958785149806262, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678958785149806262, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678958785149806262, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678958785149806262, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678958785149806262, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1511063775065232265, guid: 93af4b9116135ea4788cdf90717ca754,
         type: 3}
       propertyPath: m_Name
@@ -2802,6 +2838,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4055987795879360841, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 4055987795879360841, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
     - target: {fileID: 5943105699805100759, guid: 93af4b9116135ea4788cdf90717ca754,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -2809,9 +2851,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
         type: 3}
+      propertyPath: UVSize.x
+      value: 639
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: UVSize.y
+      value: 1309
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
       propertyPath: VideoTexture
       value: 
       objectReference: {fileID: 8400000, guid: 232bd40c01a5c0647b3580635bf3d801, type: 2}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: UVPositionSize.x
+      value: 639
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: UVPositionSize.y
+      value: 655
+      objectReference: {fileID: 0}
     - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2847,6 +2914,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774830366981606444, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774830366981606444, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: _syncMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7638465422609839357, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7876024417268266538, guid: 93af4b9116135ea4788cdf90717ca754,
         type: 3}
@@ -2903,6 +2985,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8543565249168775103, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8543565249168775103, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2948,9 +3040,9 @@ MonoBehaviour:
   useAssignedLayers: 0
   DynamicPrefabs: []
   DynamicMaterials:
-  - {fileID: 2100000, guid: 70c9ee0446953804bab48a59b9399d69, type: 2}
   - {fileID: 2100000, guid: 4a9abdc17a53eb5478880684442bb223, type: 2}
   - {fileID: 2100000, guid: d414105e558726e4ca6e8b15e6705fe1, type: 2}
+  - {fileID: 2100000, guid: 70c9ee0446953804bab48a59b9399d69, type: 2}
   - {fileID: 2100000, guid: a75548cb2f707d14cb94315bd260dd56, type: 2}
   - {fileID: 2100000, guid: d15905c089f6a4e4b81b3342826eff14, type: 2}
   - {fileID: 2100000, guid: 7a35d3f0194b9f0408fac554a3b1f2ee, type: 2}
@@ -3073,6 +3165,10 @@ MonoBehaviour:
     - VRC.Udon.UdonBehaviour
   - gameObject: {fileID: 1453940685}
     ID: 79
+    SerializedTypeNames:
+    - VRC.Udon.UdonBehaviour
+  - gameObject: {fileID: 131620906}
+    ID: 80
     SerializedTypeNames:
     - VRC.Udon.UdonBehaviour
   portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
