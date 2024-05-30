@@ -12,7 +12,8 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _DEBUGAREAS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -72,6 +73,7 @@ Material:
     - _BumpScale: 1
     - _CastToR: 0
     - _Cutoff: 0.5
+    - _DebugAreas: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
@@ -90,8 +92,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _AlphaCenter: {r: 319.5, g: 122.5, b: 0, a: 0}
-    - _AlphaSize: {r: 639, g: 213, b: 0, a: 0}
+    - _AlphaCenter: {r: 0, g: 0, b: 0, a: 0}
+    - _AlphaSize: {r: 0, g: 0, b: 0, a: 0}
     - _Center: {r: 1080, g: 400, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorCenter: {r: 319.5, g: 442, b: 0, a: 0}

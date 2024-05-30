@@ -280,6 +280,7 @@ namespace com.happyrobot33.holographicreprojector
                 Recorder.transform.rotation = Quaternion.Euler(0, player.GetRotation().eulerAngles.y + 45, 0);
 
                 //determine the scale by getting the distance between the player and the head on the y axis
+                //TODO: Make based on the players size too, instead of just being based on the world
                 float scale = Math.Abs(playerPos.y - headPos.y) / 2;
 
                 //set the scale of the recorder
