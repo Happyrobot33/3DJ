@@ -47,12 +47,12 @@ namespace com.happyrobot33.holographicreprojector
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("Record"))
             {
-                manager.SwitchToRecord();
+                manager.SwitchSourceToRecord();
             }
 
             if (GUILayout.Button("Playback"))
             {
-                manager.SwitchToPlayback();
+                manager.SwitchSourceToPlayback();
             }
             EditorGUILayout.EndHorizontal();
 
@@ -251,7 +251,10 @@ namespace com.happyrobot33.holographicreprojector
             //get all the children cameras of the recorder
             Cameras = Recorder.GetComponentsInChildren<Camera>();
 
-            SwitchToPlayback();
+            SwitchSourceToPlayback();
+
+            //make sure the recorder is off
+            Recorder.SetActive(false);
         }
 
         void Update()
@@ -297,19 +300,33 @@ namespace com.happyrobot33.holographicreprojector
             }
         }
 
-        public void SwitchToPlayback()
+        public void ToggleRecordSystem()
+        {
+            Recorder.SetActive(!Recorder.activeSelf);
+
+            if (Recorder.activeSelf)
+            {
+                mode = Mode.Record;
+            }
+            else
+            {
+                mode = Mode.Playback;
+            }
+        }
+
+        public void SwitchSourceToPlayback()
         {
             SetupSource(VideoTexture, CalculateTopLeftUV(this), new Vector2Int(RecordTexture.width, RecordTexture.height));
             //disable the recorder
-            Recorder.SetActive(false);
-            mode = Mode.Playback;
+            //Recorder.SetActive(false);
+            //mode = Mode.Playback;
         }
 
-        public void SwitchToRecord()
+        public void SwitchSourceToRecord()
         {
-            Recorder.SetActive(true);
+            //Recorder.SetActive(true);
             SetupSource(RecordTexture, Vector2Int.zero, new Vector2Int(RecordTexture.width, RecordTexture.height));
-            mode = Mode.Record;
+            //mode = Mode.Record;
         }
 
         public void CyclePlayer()
