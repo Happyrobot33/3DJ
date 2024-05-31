@@ -246,7 +246,7 @@ namespace com.happyrobot33.holographicreprojector
         [DeveloperOnly]
         public TMP_Dropdown PlayerDropdown;
 
-        private VRCPlayerApi player;
+        private VRCPlayerApi playerToRecord;
         private Camera[] Cameras;
         private Mode mode = Mode.Playback;
 
@@ -259,7 +259,7 @@ namespace com.happyrobot33.holographicreprojector
         #endregion
         void Start()
         {
-            player = Networking.LocalPlayer;
+            playerToRecord = Networking.LocalPlayer;
 
             //get all the children cameras of the recorder
             Cameras = Recorder.GetComponentsInChildren<Camera>();
@@ -275,10 +275,10 @@ namespace com.happyrobot33.holographicreprojector
             if (mode == Mode.Record)
             {
                 //get the player position
-                Vector3 playerPos = player.GetPosition();
+                Vector3 playerPos = playerToRecord.GetPosition();
 
                 //get the players head
-                Vector3 headPos = player.GetBonePosition(HumanBodyBones.Head);
+                Vector3 headPos = playerToRecord.GetBonePosition(HumanBodyBones.Head);
 
                 //add the offset to the head position
                 headPos.y += OffsetSlider.value;
@@ -290,7 +290,7 @@ namespace com.happyrobot33.holographicreprojector
                 Recorder.transform.position = recorderPos;
 
                 //set the rotation to the player rotation + 45 on the y axis
-                Recorder.transform.rotation = Quaternion.Euler(0, player.GetRotation().eulerAngles.y + 45, 0);
+                Recorder.transform.rotation = Quaternion.Euler(0, playerToRecord.GetRotation().eulerAngles.y + 45, 0);
 
                 //determine the scale by getting the distance between the player and the head on the y axis
                 //TODO: Make based on the players size too, instead of just being based on the world
@@ -310,7 +310,7 @@ namespace com.happyrobot33.holographicreprojector
                 //set the material variables
                 DataInput.SetVector("_Position", recorderPos);
                 DataInput.SetFloat("_Scale", scale * 2);
-                DataInput.SetFloat("_Rotation", player.GetRotation().eulerAngles.y + 45);
+                DataInput.SetFloat("_Rotation", playerToRecord.GetRotation().eulerAngles.y + 45);
             }
         }
 
@@ -352,7 +352,7 @@ namespace com.happyrobot33.holographicreprojector
             VRCPlayerApi[] players = VRCPlayerApi.GetPlayers(new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()]);
 
             //get the player
-            player = players[playerIndex];
+            playerToRecord = players[playerIndex];
         }
 
         public override void OnPlayerJoined(VRCPlayerApi player)
@@ -369,6 +369,8 @@ namespace com.happyrobot33.holographicreprojector
             }
 
             PlayerDropdown.AddOptions(options);
+
+            CheckDropdownSelection(players);
         }
 
         public override void OnPlayerLeft(VRCPlayerApi player)
@@ -379,18 +381,53 @@ namespace com.happyrobot33.holographicreprojector
 
             //rebuild the list
             VRCPlayerApi[] players = VRCPlayerApi.GetPlayers(new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()]);
-            TMP_Dropdown.OptionData[] options = new TMP_Dropdown.OptionData[players.Length];
-            for (int i = 0; i < players.Length; i++)
+
+            //create a new list with the player removed
+            VRCPlayerApi[] realPlayersList = new VRCPlayerApi[players.Length - 1];
+            for (int i = 0, j = 0; i < players.Length; i++)
             {
                 if (players[i] == player)
                 {
                     continue;
                 }
+                realPlayersList[j] = players[i];
+                j++;
+            }
+            players = realPlayersList;
+
+            TMP_Dropdown.OptionData[] options = new TMP_Dropdown.OptionData[players.Length];
+            for (int i = 0; i < players.Length; i++)
+            {
                 options[i] = new TMP_Dropdown.OptionData(players[i].displayName);
             }
 
             PlayerDropdown.AddOptions(options);
+
+            CheckDropdownSelection(players);
         }
+
+        /// <summary>
+        /// Check the dropdown selection and re-select the player that was previously selected
+        /// </summary>
+        private void CheckDropdownSelection(VRCPlayerApi[] players)
+        {
+            //re-select the player that was previously selected
+            bool broke = false;
+            for (int i = 0; i < players.Length; i++)
+            {
+                if (players[i].displayName == playerToRecord.displayName)
+                {
+                    PlayerDropdown.value = i;
+                    broke = true;
+                    break;
+                }
+            }
+            if (!broke)
+            {
+                playerToRecord = players[0];
+            }
+        }
+
 
         private void SetupSource(Texture source, Vector2Int topLeft, Vector2Int size)
         {
