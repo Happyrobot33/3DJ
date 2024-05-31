@@ -16,6 +16,7 @@ Material:
   - _BILLBOARDMODE_ON
   - _COLORTOGGLE_ON
   - _DEFORM_ON
+  - _FADEWHENNEAR_ON
   - _PIXELCLIP_ON
   - _PREVIEWSOBEL_ON
   - _SOBEL_ON
@@ -119,6 +120,7 @@ Material:
     - _DisableUVPixelation: 0
     - _DstBlend: 0
     - _EdgeLength: 10
+    - _FadeWhenNear: 1
     - _FilterUVPixelation: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
