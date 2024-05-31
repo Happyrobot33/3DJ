@@ -432,7 +432,7 @@ namespace com.happyrobot33.holographicreprojector
         private void SetupSource(Texture source, Vector2Int topLeft, Vector2Int size)
         {
             //setup the source switcher to be based on the uv position info
-            Vector2 center = new Vector2(topLeft.x + size.x / 2, topLeft.y + size.y / 2);
+            Vector2 center = new Vector2(topLeft.x + (float)size.x / 2, topLeft.y + (float)size.y / 2);
             SourceSwitcher.SetVector("_Center", center);
             SourceSwitcher.SetVector("_Size", new Vector2(size.x, size.y));
             SourceSwitcher.SetTexture("_RT", source);
