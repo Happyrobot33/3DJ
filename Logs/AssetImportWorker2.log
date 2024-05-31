@@ -746,3 +746,179 @@ Received Import Request.
 Start importing Assets/3D DJ/Playback/Source Switcher.mat using Guid(8b90a1f31ffd61245871b867d8fa99bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '598a2b11ac25039ee461415aa6b1ee17') in 0.015055 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 1148.730733 seconds.
+  path: Assets/BicubicTest.shader
+  artifactKey: Guid(5dea1c31fbb76dc44bec7ce791bbf7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BicubicTest.shader using Guid(5dea1c31fbb76dc44bec7ce791bbf7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b899cf0b27ac41ad5b0435d22170af1') in 0.002283 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.997703 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dceb73e5104cec42597e3dfd78deb0bf') in 0.015309 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 42.278016 seconds.
+  path: Packages/dev.architech.protv/Resources/Playlists/Images/Jim Yosef & Stessie - Free.jpg
+  artifactKey: Guid(ac7b7ebb13975364b80e0034c3e19b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/Playlists/Images/Jim Yosef & Stessie - Free.jpg using Guid(ac7b7ebb13975364b80e0034c3e19b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b74f4dbd9bc48c9bcb95cfc0b0031db') in 0.039512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.360411 seconds.
+  path: Packages/dev.architech.protv/Resources/Playlists/Images/Kotori & Stessie - Bloom.jpg
+  artifactKey: Guid(681be3ea688f7194baff775242703af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/Playlists/Images/Kotori & Stessie - Bloom.jpg using Guid(681be3ea688f7194baff775242703af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f6045f264b863e741d822cddce6d285') in 0.026691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/LiberationSans SDF.asset
+  artifactKey: Guid(b519371b370990c44a6e753ec694634c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/LiberationSans SDF.asset using Guid(b519371b370990c44a6e753ec694634c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abce70b7c889261a849b624b828d1fce') in 0.044814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 17.327833 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8de391bc302c43e48d87dae70c1a0b8') in 0.191875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 11.737339 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c779c0e5cb9813a55064200451d4bac1') in 0.217203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 3.346699 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8582883f07c2614af2b047708fb608ac') in 0.177587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 65.681738 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acc761ccc986a723de26f03733ccb824') in 0.215102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 14.160286 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43bdecc863d461bd84e31967a5ff667c') in 0.184945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 6.742172 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90679eaf66a268ef83fd888b785a0c9a') in 0.199553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 23.450949 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9abb7923740671729d20303cab756d3e') in 0.218744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 54.501397 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f0c7d4a218d99534084461dee40747') in 0.171609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 11.818016 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(30e4061b06d7cef4fa5c23581ff9b019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27398b016f38bffa2ecf350db9fef90e') in 0.218273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 1119.992308 seconds.
+  path: Assets/BicubicTest.shader
+  artifactKey: Guid(5dea1c31fbb76dc44bec7ce791bbf7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BicubicTest.shader using Guid(5dea1c31fbb76dc44bec7ce791bbf7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3c4a0da4e7917933b0073d4c8b2641') in 0.002659 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 179.166587 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Depth Build.mat
+  artifactKey: Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Depth Build.mat using Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d9a8ddf7b8b1cfd06bc7d1434d9b37e') in 0.326393 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Preview.mat
+  artifactKey: Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5079164095123545422ba7bdc3935ce') in 0.016880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 37.626209 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aadfd2d5dae6d6a4d01e28090c24f75') in 0.392095 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Preview.mat
+  artifactKey: Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b9e838153068213defe0c017eda3bb2') in 0.018017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 10.084585 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0253991a5c812ca3ef07b84fcefffe4') in 0.415188 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 232.655442 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
+  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e23f694aa1d1b16a80636a8b3c02453e') in 0.037763 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 2.541274 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Depth Build.mat
+  artifactKey: Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Depth Build.mat using Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b6fe2b5669c102c721506deb0c71abc') in 0.017667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16

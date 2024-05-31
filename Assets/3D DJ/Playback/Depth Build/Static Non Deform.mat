@@ -121,6 +121,7 @@ Material:
     - _DisableUVPixelation: 0
     - _DstBlend: 0
     - _EdgeLength: 10
+    - _FadeWhenNear: 0
     - _FilterUVPixelation: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
