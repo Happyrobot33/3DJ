@@ -125,6 +125,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _IgnoreTopBottom: 0
     - _LODDistance: 20
     - _LODDistance1: 0
     - _LockPosition: 0
