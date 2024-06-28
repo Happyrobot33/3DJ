@@ -229,6 +229,8 @@ namespace com.happyrobot33.holographicreprojector
         public Material DataInput;
         [DeveloperOnly]
         public Material SourceSwitcher;
+        [DeveloperOnly]
+        public Material[] playbackMaterials;
         public Vector2Int UVPosition;
         public Anchor UVAnchor;
 
@@ -325,6 +327,17 @@ namespace com.happyrobot33.holographicreprojector
             else
             {
                 mode = Mode.Playback;
+            }
+        }
+
+        public void ToggleHolographic()
+        {
+            //toggle the holographic effect
+            const string keyword = "_HoloAffect";
+            
+            foreach (Material mat in playbackMaterials)
+            {
+                mat.SetFloat(keyword, mat.GetFloat(keyword) == 0 ? 1 : 0);
             }
         }
 

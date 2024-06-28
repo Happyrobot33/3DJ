@@ -203,6 +203,7 @@
     <None Include="Assets\Kita&apos;vali 4.8 Assets\Materials\ColourMasking\OptimizedShaders\Feathers Colour Masking\CGI_PoiV2F.cginc" />
     <None Include="Assets\Kita&apos;vali 4.8 Assets\Materials\ColourMasking\OptimizedShaders\Feathers Colour Masking\CGI_PoiGrab.cginc" />
     <None Include="Assets\Kita&apos;vali 4.8 Assets\Materials\ColourMasking\OptimizedShaders\Eyes Colour Masking\CGI_FunctionsArtistic.cginc" />
+    <None Include="Assets\Holographic.shader" />
     <None Include="Assets\UdonSharp\UtilityScripts\ExampleUtilityTemplate.txt" />
     <None Include="Assets\Kita&apos;vali 4.8 Assets\Materials\ColourMasking\OptimizedShaders\Feathers Colour Masking\CGI_PoiMainTex.cginc" />
     <None Include="Assets\Kita&apos;vali 4.8 Assets\Materials\ColourMasking\OptimizedShaders\Eyes Colour Masking\CGI_PoiHelpers.cginc" />

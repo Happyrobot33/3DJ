@@ -17,6 +17,8 @@ Material:
   - _COLORTOGGLE_ON
   - _DEFORM_ON
   - _DISABLEAUTOSCALE_ON
+  - _FADEWHENNEAR_ON
+  - _HoloAffect
   - _OBJECTRELEVANTMODE_ON
   - _PIXELCLIP_ON
   - _PREVIEWSOBEL_ON
@@ -123,10 +125,14 @@ Material:
     - _DisableUVPixelation: 0
     - _DstBlend: 0
     - _EdgeLength: 10
+    - _FadeWhenNear: 1
     - _FilterUVPixelation: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _HoloAffect: 1
+    - _HoloScrollSpeed: 0
+    - _IgnoreTopBottom: 0
     - _LODDistance: 20
     - _LODDistance1: 0
     - _LockPosition: 0
@@ -165,6 +171,7 @@ Material:
     - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HoloColor: {r: 0, g: 0, b: 0, a: 0}
     - _Offset: {r: 0.44328868, g: 0.0049999356, b: 10.0934, a: 0}
     - _WorldScale: {r: 5, g: 5, b: 5, a: 0}
   m_BuildTextureStacks: []
