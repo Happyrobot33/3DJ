@@ -17,6 +17,9 @@ Material:
   - _COLORTOGGLE_ON
   - _DEFORM_ON
   - _FADEWHENNEAR_ON
+  - _HOLOAFFECT_ON
+  - _HOLORIMLIGHT_ON
+  - _HoloAffect
   - _PIXELCLIP_ON
   - _PREVIEWSOBEL_ON
   - _SOBEL_ON
@@ -125,6 +128,9 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _HoloAffect: 1
+    - _HoloRimLight: 1
+    - _HoloScrollSpeed: 0.008
     - _IgnoreTopBottom: 0
     - _LODDistance: 20
     - _LODDistance1: 0
@@ -140,6 +146,7 @@ Material:
     - _PlayerSize: 2.073455
     - _PlayerSize1: 1
     - _PreviewSobel: 1
+    - _RimLight: 0
     - _Rotation: 1.3735744
     - _ScaleMultiplier: 1
     - _SmoothnessTextureChannel: 0
@@ -159,11 +166,12 @@ Material:
     - _UVSec: 0
     - _VertexOutlineThickness: 0
     - _ZWrite: 1
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HoloColor: {r: 0, g: 1, b: 0.9797904, a: 0}
     - _Offset: {r: 0.44328868, g: 0.0049999356, b: 10.0934, a: 0}
     - _WorldScale: {r: 5, g: 5, b: 5, a: 0}
   m_BuildTextureStacks: []
