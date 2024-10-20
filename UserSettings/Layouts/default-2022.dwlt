@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1040
   m_ShowMode: 0
-  m_Title: DepthBuild
+  m_Title: DepthBuil..*
   m_RootView: {fileID: 4}
   m_MinSize: {x: 100, y: 50}
   m_MaxSize: {x: 8096, y: 8096}
@@ -41,9 +41,9 @@ MonoBehaviour:
     x: 0
     y: 43
     width: 1920
-    height: 1117
+    height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1040
-  m_MinSize: {x: 480, y: 291}
-  m_MaxSize: {x: 4000, y: 4021}
+  m_MinSize: {x: 480, y: 270}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 22}
@@ -122,11 +122,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1920
-    height: 1067
+    height: 947
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 221
+  controlID: 222
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: VRCSdkControlPanel
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -145,16 +145,16 @@ MonoBehaviour:
     x: 1405
     y: 0
     width: 515
-    height: 1067
-  m_MinSize: {x: 517, y: 621}
-  m_MaxSize: {x: 517, y: 2021}
-  m_ActualView: {fileID: 21}
+    height: 947
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 25}
   m_Panes:
   - {fileID: 25}
   - {fileID: 21}
   - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,9 +173,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 330
-    height: 664
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 589
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 26}
   m_Panes:
   - {fileID: 26}
@@ -197,9 +197,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 664
+    y: 589
     width: 1405
-    height: 403
+    height: 358
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 24}
@@ -229,7 +229,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1920
-    height: 1117
+    height: 997
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1097
+    y: 977
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -299,11 +299,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1405
-    height: 1067
+    height: 947
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 222
+  controlID: 223
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -324,11 +324,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1405
-    height: 664
+    height: 589
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 223
+  controlID: 224
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,7 +347,7 @@ MonoBehaviour:
     x: 330
     y: 0
     width: 1075
-    height: 664
+    height: 589
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 27}
@@ -717,20 +717,20 @@ MonoBehaviour:
   m_lastTimeSaved: 3962.2020201
   m_cacheSaveOp: 0
   m_mainGraphInstance: {fileID: 0}
-  m_cameraOffset: {x: -5411.625, y: 985.2307}
-  m_cameraZoom: 1
+  m_cameraOffset: {x: 1057.067, y: -164.6809}
+  m_cameraZoom: 1.896044
   m_minNodePos: {x: -5872, y: -816}
   m_maxNodePos: {x: 8464, y: 3280}
   m_isDirty: 0
   m_saveIsDirty: 0
-  m_repaintIsDirty: 0
+  m_repaintIsDirty: 1
   m_liveShaderEditing: 0
   m_shaderIsModified: 0
   m_lastOpenedLocation: Assets/3D DJ/Playback/Depth Build/DepthBuild.shader
   m_zoomChanged: 0
   m_lastWindowWidth: 1920
   m_graphCount: 1
-  m_currentInactiveTime: 370.07724480000024
+  m_currentInactiveTime: -3546.7921055999996
   m_currentNodeAvailability: 1
   m_nodeParametersWindowMaximized: 1
   m_paletteWindowMaximized: 1
@@ -867,7 +867,7 @@ MonoBehaviour:
     x: 1405
     y: 73
     width: 514
-    height: 1046
+    height: 926
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1035,9 +1035,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 737
+    y: 662
     width: 1404
-    height: 382
+    height: 337
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1059,7 +1059,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/3D DJ
+    - Assets/3D DJ/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1067,16 +1067,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/3D DJ
+  - Assets/3D DJ/Prefabs
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\mherber\Documents\sonar-3dj-project
+  m_LastProjectPath: E:\Storage\Personal\Coding\VRChat\SONAR 3DJ Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2a7e0000
-    m_LastClickedID: 32298
-    m_ExpandedIDs: 00000000aa6500002a7e00002c7e00002e7e0000307e0000327e0000687f000000ca9a3bffffff7f
+    m_SelectedIDs: e29e0000
+    m_LastClickedID: 40674
+    m_ExpandedIDs: 00000000a86500006e93000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1104,7 +1104,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000aa6500002a7e00002c7e00002e7e0000307e0000327e0000
+    m_ExpandedIDs: 00000000a8650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1184,7 +1184,7 @@ MonoBehaviour:
     x: 1405
     y: 73
     width: 514
-    height: 1046
+    height: 926
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1232,7 +1232,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 329
-    height: 643
+    height: 568
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1248,7 +1248,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9298faffaa98faff4aa5faff7aecfbff92ecfbff32f9fbffae74fcffc674fcff6681fcff5af4ffff72f4ffff9af4ffffd6faffffd86d0000fad2000070d300006cd500002ed80000
+      m_ExpandedIDs: b8eaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1296,7 +1296,7 @@ MonoBehaviour:
     x: 330
     y: 73
     width: 1073
-    height: 643
+    height: 568
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1312,7 +1312,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: -161, y: -26}
-      snapOffsetDelta: {x: -10, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -1629,9 +1629,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -9.949224, y: -8.072125, z: 19.87212}
+    m_Target: {x: -3.2924147, y: -6.4665337, z: 23.33546}
     speed: 2
-    m_Value: {x: -9.949363, y: -8.072181, z: 19.872137}
+    m_Value: {x: -3.2924147, y: -6.4665337, z: 23.33546}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1677,9 +1677,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.2483128, y: -0.30565083, z: 0.08142409, w: 0.9158985}
+    m_Target: {x: 0.2263642, y: -0.11763126, z: 0.026087644, w: 0.9668635}
     speed: 2
-    m_Value: {x: 0.24573325, y: -0.30305454, z: 0.079745576, w: 0.917286}
+    m_Value: {x: 0.22770813, y: -0.11900689, z: 0.0265982, w: 0.9660636}
   m_Size:
     m_Target: 10.428839
     speed: 2
