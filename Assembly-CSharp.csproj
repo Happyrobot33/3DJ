@@ -71,6 +71,7 @@
     <Compile Include="Assets\UdonSharp\UtilityScripts\PlayerModSetter.cs" />
     <Compile Include="Assets\UdonSharp\UtilityScripts\BoneFollower.cs" />
     <Compile Include="Assets\UdonSharp\UtilityScripts\TrackingDataFollower.cs" />
+    <Compile Include="Assets\3D DJ\Scripts\ManagerEditor.cs" />
     <Compile Include="Assets\UdonSharp\UtilityScripts\WorldAudioSettings.cs" />
     <Compile Include="Assets\UdonSharp\UtilityScripts\Synced\GlobalToggleObject.cs" />
   </ItemGroup>
