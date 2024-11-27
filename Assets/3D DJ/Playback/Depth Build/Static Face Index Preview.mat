@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Static Face Index Preview
+  m_Shader: {fileID: 4800000, guid: e6d71ffa52071fd48bb56b7befb88bf0, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _MODE_FACEINDEX
+  m_InvalidKeywords:
+  - _BILLBOARDMODE_ON
+  - _COLORTOGGLE_ON
+  - _DEFORM_ON
+  - _DISABLEAUTOSCALE_ON
+  - _FADEWHENNEAR_ON
+  - _NORMALSDEBUG_ON
+  - _OBJECTRELEVANTMODE_ON
+  - _PIXELCLIP_ON
+  - _PREVIEWSOBEL_ON
+  - _SOBEL_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color:
+        m_Texture: {fileID: 8600000, guid: 40d4c212118c5b545bb60be32058e0d1, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Data:
+        m_Texture: {fileID: 8600000, guid: 2edf86f5d629f944692f8f4c802725c8, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Depth:
+        m_Texture: {fileID: 8600000, guid: 2fc056076e63f5f49849b667613db859, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Spritesheet:
+        m_Texture: {fileID: 8600000, guid: 390ab3ee23174884b929f470ab2cb5f8, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture0:
+        m_Texture: {fileID: 2800000, guid: 1ff8ebef6b28683499c6fa04a4098e70, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Video:
+        m_Texture: {fileID: 8600000, guid: 90987008e20f9ff498331969e3566da2, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Video1:
+        m_Texture: {fileID: 8600000, guid: 90987008e20f9ff498331969e3566da2, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VideoStream:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ASEOutlineWidth: 0
+    - _BillboardMode: 1
+    - _BlackThreshold: 0.039215688
+    - _BumpScale: 1
+    - _Color: 0
+    - _ColorToggle: 1
+    - _Cutoff: 0
+    - _Deform: 1
+    - _DetailNormalMapScale: 1
+    - _DisableAutoScale: 1
+    - _DisableAutoScale1: 0
+    - _DisableUVPixelation: 0
+    - _DstBlend: 0
+    - _EdgeLength: 10
+    - _FadeWhenNear: 1
+    - _FilterUVPixelation: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HoloAffect: 0
+    - _IgnoreTopBottom: 0
+    - _LODDistance: 20
+    - _LODDistance1: 0
+    - _LockPosition: 0
+    - _LockRotation: 0
+    - _Metallic: 0
+    - _Mode: 4
+    - _NormalsDebug: 1
+    - _ObjectRelevantMode: 1
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _PixelClip: 1
+    - _PlayerSize: 2.073455
+    - _PlayerSize1: 1
+    - _PreviewSobel: 1
+    - _Rotation: 1.3735744
+    - _ScaleMultiplier: 1
+    - _SmoothnessTextureChannel: 0
+    - _Sobel: 1
+    - _SobelThickness: 0.001
+    - _SobelThreshold: 0.1
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _TessMax: 25
+    - _TessMaxDisp: 25
+    - _TessMin: 10
+    - _TessPhongStrength: 1
+    - _TessValue: 10
+    - _Tesselation: 10
+    - _ToggleSwitch0: 0
+    - _UVPixelation: 0
+    - _UVSec: 0
+    - _VertexOutlineThickness: 0
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Offset: {r: 0.44328868, g: 0.0049999356, b: 10.0934, a: 0}
+    - _WorldScale: {r: 5, g: 5, b: 5, a: 0}
+  m_BuildTextureStacks: []
