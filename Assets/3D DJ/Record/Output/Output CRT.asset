@@ -58,8 +58,8 @@ CustomRenderTexture:
     rotation: 0
     passIndex: 1
     needSwap: 0
-  - updateZoneCenter: {x: 960, y: 10, z: 0}
-    updateZoneSize: {x: 1920, y: 20, z: 0}
+  - updateZoneCenter: {x: 400, y: 10, z: 0}
+    updateZoneSize: {x: 800, y: 20, z: 0}
     rotation: 0
     passIndex: 2
     needSwap: 0

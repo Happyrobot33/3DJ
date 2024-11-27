@@ -612,7 +612,13 @@ namespace com.happyrobot33.holographicreprojector
 
             PlayerDropdown.AddOptions(options);
 
-            CheckDropdownSelection(players);
+            //CheckDropdownSelection(players);
+            PlayerDropdown.SetValueWithoutNotify(0);
+
+            if (player == playerToRecord)
+            {
+                playerToRecord = players[0];
+            }
         }
 
         /// <summary>
@@ -631,10 +637,10 @@ namespace com.happyrobot33.holographicreprojector
                     break;
                 }
             }
-            if (!broke)
-            {
-                playerToRecord = players[0];
-            }
+            //if (!broke)
+            //{
+            //    playerToRecord = players[0];
+           // }
         }
 
 
