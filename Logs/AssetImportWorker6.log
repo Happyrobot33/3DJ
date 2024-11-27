@@ -15,7 +15,7 @@ C:/Users/mherber/sonar-3dj-project
 -logFile
 Logs/AssetImportWorker6.log
 -srvPort
-50547
+52021
 Successfully changed project path to: C:/Users/mherber/sonar-3dj-project
 C:/Users/mherber/sonar-3dj-project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,15 +49,15 @@ C:/Users/mherber/sonar-3dj-project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [33364] Host "[IP] 10.0.2.89 [Port] 0 [Flags] 2 [Guid] 37503030 [EditorId] 37503030 [Version] 1048832 [Id] WindowsEditor(7,PTM541) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [21800] Host "[IP] 10.0.2.89 [Port] 0 [Flags] 2 [Guid] 768940079 [EditorId] 768940079 [Version] 1048832 [Id] WindowsEditor(7,PTM541) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [33364] Host "[IP] 10.0.2.89 [Port] 0 [Flags] 2 [Guid] 37503030 [EditorId] 37503030 [Version] 1048832 [Id] WindowsEditor(7,PTM541) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [21800] Host "[IP] 10.0.2.89 [Port] 0 [Flags] 2 [Guid] 768940079 [EditorId] 768940079 [Version] 1048832 [Id] WindowsEditor(7,PTM541) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
 Default GameObject BitMask: InternalUI already registered
 Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 544.92 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 3.44 ms.
+Refreshing native plugins compatible for Editor in 173.43 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 3.67 ms.
 Initialize engine version: 2022.3.22f1 (887be4894c44)
 [Subsystems] Discovering subsystems at path C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/mherber/sonar-3dj-project/Assets
@@ -72,46 +72,46 @@ Initialize mono
 Mono path[0] = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56568
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56668
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010254 seconds.
-- Loaded All Assemblies, in  0.388 seconds
+Registered in 0.010659 seconds.
+- Loaded All Assemblies, in  0.349 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.290 seconds
-Domain Reload Profiling: 677ms
-	BeginReloadAssembly (156ms)
+- Finished resetting the current domain, in  0.288 seconds
+Domain Reload Profiling: 636ms
+	BeginReloadAssembly (129ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (35ms)
+	RebuildCommonClasses (31ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (132ms)
-		LoadAssemblies (156ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (128ms)
+		LoadAssemblies (129ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (128ms)
-			TypeCache.Refresh (127ms)
-				TypeCache.ScanAssembly (113ms)
+		AnalyzeDomain (124ms)
+			TypeCache.Refresh (123ms)
+				TypeCache.ScanAssembly (110ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (291ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (289ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (244ms)
+		SetupLoadedEditorAssemblies (243ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (95ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (91ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (100ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
+			ProcessInitializeOnLoadAttributes (98ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,8 +119,8 @@ Domain Reload Profiling: 677ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  4.074 seconds
-Refreshing native plugins compatible for Editor in 84.75 ms, found 9 plugins.
+- Loaded All Assemblies, in  1.054 seconds
+Refreshing native plugins compatible for Editor in 82.06 ms, found 9 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -165,49 +165,49 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.352 seconds
-Domain Reload Profiling: 6420ms
-	BeginReloadAssembly (201ms)
+- Finished resetting the current domain, in  2.278 seconds
+Domain Reload Profiling: 3326ms
+	BeginReloadAssembly (163ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (3766ms)
-		LoadAssemblies (3623ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (781ms)
+		LoadAssemblies (641ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (286ms)
-			TypeCache.Refresh (255ms)
-				TypeCache.ScanAssembly (233ms)
-			ScanForSourceGeneratedMonoScriptInfo (23ms)
+		AnalyzeDomain (253ms)
+			TypeCache.Refresh (225ms)
+				TypeCache.ScanAssembly (205ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (2352ms)
+	FinalizeReload (2278ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1416ms)
+		SetupLoadedEditorAssemblies (1442ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (193ms)
-			ProcessInitializeOnLoadAttributes (711ms)
-			ProcessInitializeOnLoadMethodAttributes (476ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (194ms)
+			ProcessInitializeOnLoadAttributes (785ms)
+			ProcessInitializeOnLoadMethodAttributes (426ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
 Default GameObject BitMask: InternalUI already registered
 Default GameObject BitMask: HardwareObjects already registered
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 96.78 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.18 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 91.95 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.30 ms.
 Unloading 4390 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 220 unused Assets / (2.3 MB). Loaded Objects now: 4830.
-Memory consumption went from 314.0 MB to 311.7 MB.
-Total: 22.305900 ms (FindLiveObjects: 0.381000 ms CreateObjectMapping: 0.107700 ms MarkObjects: 20.818900 ms  DeleteObjects: 0.997000 ms)
+Memory consumption went from 314.2 MB to 311.9 MB.
+Total: 17.987400 ms (FindLiveObjects: 0.565700 ms CreateObjectMapping: 0.165500 ms MarkObjects: 16.396800 ms  DeleteObjects: 0.858600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -224,132 +224,92 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 13811.956372 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '716001de90877961ec1578cbfb33cde2') in 0.570539 seconds
+  Time since last request: 13674.563326 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54bf519e54eaf3efa709809f1f65979d') in 0.225157 seconds
 Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 20.319856 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01dd2d2c358b06b0c903846af9d31c79') in 0.162396 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 14
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
-  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e832831bf6900b1e969bbac6f3c303c1') in 0.173299 seconds
+  path: Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat
+  artifactKey: Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat using Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02be88cf949e27900052563e012b423c') in 0.172483 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 109.560392 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6fe28e623d024fb0de2ff5b12172271') in 0.455779 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
-  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2193b1c50efdc883f13eca317e10f6c7') in 0.466010 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 5.604793 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '212ba9e3d2679834367cfdbce597632d') in 0.439617 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 14
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
-  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89cdb5d8e53ad9fec4151e68d2bba47') in 0.516726 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 36.977700 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e418b47338a36b202a2ea7ca986377') in 0.449860 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
-  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3404bd7e04ac88dcb59b79d36992fa') in 0.404645 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 39.839620 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abfe9d6f536b355d6e794a2eadde2a6e') in 0.552583 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 35.807010 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a089cf970f7a48b91abd33884090713d') in 0.442603 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
   path: Assets/3D DJ/Playback/Depth Build/Static Preview.mat
   artifactKey: Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a466dfa504be0c44d3011c45edbf851') in 0.415800 seconds
+Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '547112208eeaac03cf26e2aebffc1c13') in 0.032817 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 14
 ========================================================================
 Received Import Request.
-  Time since last request: 9.824779 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c678a50854725f03271f9ba00d3fad8') in 0.469774 seconds
+  Time since last request: 119.140510 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6a30119f86d54d7c2061c5777eb51e0') in 0.494476 seconds
 Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 14
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
+  Time since last request: 0.000022 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
+  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c9a0c502b075021612214c69402eed') in 0.533469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 34.057465 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0845c8fbdaa2c5976fa07ad780f72755') in 0.492497 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
   path: Assets/3D DJ/Playback/Depth Build/Static Preview.mat
   artifactKey: Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bdd5b346251776c2601d5d8c611f401') in 0.435549 seconds
+Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce6ab82f759cd2c078ff3cc2c68e8dd5') in 0.460442 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 14
 ========================================================================
 Received Import Request.
-  Time since last request: 10.058193 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ad2b8d422da95089e11056d5475fec') in 0.505549 seconds
+  Time since last request: 5.615076 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8108ab1b91d7200bba33df274fe088') in 0.180826 seconds
 Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 14
 ========================================================================
 Received Import Request.
-  Time since last request: 27.109718 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b8656981aa202be176884fb016c8c6') in 0.500610 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Preview.mat
+  artifactKey: Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7044b8588b8936001cea793400bd0ad0') in 0.031314 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 25.674836 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '968c6c59ceecab111aef59b9fc0bfc9c') in 0.450928 seconds
 Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 11.997370 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed3eb41e07708198c0b7db5381955a4') in 0.518975 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 14
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server

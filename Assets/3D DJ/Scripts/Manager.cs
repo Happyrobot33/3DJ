@@ -59,11 +59,29 @@ namespace com.happyrobot33.holographicreprojector
             }
             EditorGUILayout.EndHorizontal();
 
+            EditorGUILayout.BeginHorizontal();
+            if (GUILayout.Button("Edit Data"))
+            {
+                manager.CurrentlyEditingArea = Areas.Data;
+            }
+            if (GUILayout.Button("Edit Color"))
+            {
+                manager.CurrentlyEditingArea = Areas.Color;
+            }
+            if (GUILayout.Button("Edit Depth"))
+            {
+                manager.CurrentlyEditingArea = Areas.Depth;
+            }
+            EditorGUILayout.EndHorizontal();
+
+            if (GUILayout.Button("Setup all render internals"))
+            {
+                UpdateAllTextureInternals(manager);
+            }
+
             try
             {
                 #region Video region management
-                //calculate the UV size
-                Vector2Int UVSize = new Vector2Int(manager.RecordTexture.width, manager.RecordTexture.height);
 
                 //determine the aspect ratio of the video texture
                 float videoPlayerAspect = manager.VideoTexture.width / (float)manager.VideoTexture.height;
@@ -71,12 +89,12 @@ namespace com.happyrobot33.holographicreprojector
                 //display a box with the aspect ratio
                 Rect videoRect = GUILayoutUtility.GetAspectRect(videoPlayerAspect);
 
-                GUIStyle imageStyle = new GUIStyle("box");
+                GUIStyle rtStyle = new GUIStyle("box");
                 //make content have 0 padding
-                imageStyle.padding = new RectOffset(0, 0, 0, 0);
+                rtStyle.padding = new RectOffset(0, 0, 0, 0);
 
                 //show a box in it, with the texture as the content
-                GUI.Box(videoRect, manager.PreviewLayoutTexture, imageStyle);
+                GUI.Box(videoRect, manager.PreviewLayoutTexture, rtStyle);
 
                 //display another box inside the first box based on the UVPositionTopLeft and UVPositionSize
                 /* Rect recordRect = new Rect(videoRect.x + videoRect.width * manager.UVPosition.x / manager.VideoTexture.width,
@@ -84,66 +102,20 @@ namespace com.happyrobot33.holographicreprojector
                     videoRect.width * UVSize.x / manager.VideoTexture.width,
                     videoRect.height * UVSize.y / manager.VideoTexture.height); */
 
-                Vector2Int topLeft = Manager.CalculateTopLeftUV(manager);
-                Rect recordRect = new Rect(videoRect.x + videoRect.width * topLeft.x / manager.VideoTexture.width,
-                    videoRect.y + videoRect.height * topLeft.y / manager.VideoTexture.height,
-                    videoRect.width * UVSize.x / manager.VideoTexture.width,
-                    videoRect.height * UVSize.y / manager.VideoTexture.height);
+                Vector2Int topLeft = Manager.CalculateTopLeftUV(manager, manager.ColorAnchor, manager.ColorUVPosition, manager.ColorTexture);
+                DrawRTArea(manager, manager.ColorExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == Areas.Color);
 
-                //get the record rect in terms of the video textures pixels
-                Rect pixelBasedRecordRect = new Rect(topLeft.x, topLeft.y, UVSize.x, UVSize.y);
+                topLeft = Manager.CalculateTopLeftUV(manager, manager.DepthAnchor, manager.DepthUVPosition, manager.DepthTexture);
+                DrawRTArea(manager, manager.DepthExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == Areas.Depth);
 
-                //show a box in it, with a outline and text in it
-                GUI.Box(recordRect, manager.PreviewSystemTexture, imageStyle);
-
-                int handleThickness = 5;
-                GUIStyle handleStyle = new GUIStyle("box");
-                handleStyle.normal.background = EditorGUIUtility.whiteTexture;
-
-                //draw a dot at the corners
-                Handles.DrawSolidDisc(new Vector3(recordRect.xMin, recordRect.yMin, 0), Vector3.forward, handleThickness);
-                Handles.DrawSolidDisc(new Vector3(recordRect.xMax, recordRect.yMin, 0), Vector3.forward, handleThickness);
-                Handles.DrawSolidDisc(new Vector3(recordRect.xMin, recordRect.yMax, 0), Vector3.forward, handleThickness);
-                Handles.DrawSolidDisc(new Vector3(recordRect.xMax, recordRect.yMax, 0), Vector3.forward, handleThickness);
-
-
-                GUIStyle labelStyle = new GUIStyle(EditorStyles.whiteLabel);
-                //centered
-                labelStyle.alignment = TextAnchor.MiddleCenter;
-                //full white
-                labelStyle.normal.textColor = Color.white;
-                //black background
-                Texture2D background = new Texture2D(1, 1);
-                background.SetPixel(0, 0, Color.black);
-                background.Apply();
-                labelStyle.normal.background = background;
-
-                //font size
-                labelStyle.fontSize = 15;
-
-                //display text on all 4 sides of the record box that shows its width and height
-                Handles.Label(new Vector3(recordRect.center.x, recordRect.yMin, 0), UVSize.x.ToString(), labelStyle);
-                Handles.Label(new Vector3(recordRect.xMin, recordRect.center.y, 0), UVSize.y.ToString(), labelStyle);
-                Handles.Label(new Vector3(recordRect.center.x, recordRect.yMax, 0), UVSize.x.ToString(), labelStyle);
-                Handles.Label(new Vector3(recordRect.xMax, recordRect.center.y, 0), UVSize.y.ToString(), labelStyle);
-
-                //draw a line starting from the upper edge of the video vertically, but the record box horizontally, to the top left of the record box
-                Rect topVerticalOffsetRect = DrawLine(new Vector2(recordRect.xMin, videoRect.yMin), new Vector2(recordRect.xMin, recordRect.yMin), handleThickness, handleStyle);
-                //draw a line starting from the left edge of the video horizontally, but the record box vertically, to the top left of the record box
-                Rect leftHorizontalOffsetRect = DrawLine(new Vector2(videoRect.xMin, recordRect.yMin), new Vector2(recordRect.xMin, recordRect.yMin), handleThickness, handleStyle);
-                Rect rightHorizontalOffsetRect = DrawLine(new Vector2(videoRect.xMax, recordRect.yMax), new Vector2(recordRect.xMax, recordRect.yMax), handleThickness, handleStyle);
-                Rect bottomVerticalOffsetRect = DrawLine(new Vector2(recordRect.xMax, videoRect.yMax), new Vector2(recordRect.xMax, recordRect.yMax), handleThickness, handleStyle);
-                //display text boxes at the two offset lines
-                if (pixelBasedRecordRect.yMin != 0) Handles.Label(new Vector3(topVerticalOffsetRect.center.x, topVerticalOffsetRect.center.y, 0), pixelBasedRecordRect.yMin.ToString(), labelStyle);
-                if (pixelBasedRecordRect.xMin != 0) Handles.Label(new Vector3(leftHorizontalOffsetRect.center.x, leftHorizontalOffsetRect.center.y, 0), pixelBasedRecordRect.xMin.ToString(), labelStyle);
-                if (pixelBasedRecordRect.xMax != manager.VideoTexture.width) Handles.Label(new Vector3(rightHorizontalOffsetRect.center.x, rightHorizontalOffsetRect.center.y, 0), pixelBasedRecordRect.xMax.ToString(), labelStyle);
-                if (pixelBasedRecordRect.yMax != manager.VideoTexture.height) Handles.Label(new Vector3(bottomVerticalOffsetRect.center.x, bottomVerticalOffsetRect.center.y, 0), pixelBasedRecordRect.yMax.ToString(), labelStyle);
+                topLeft = Manager.CalculateTopLeftUV(manager, manager.DataAnchor, manager.DataUVPosition, manager.DataTexture);
+                DrawRTArea(manager, manager.DataExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == Areas.Data);
                 #endregion
 
                 #region Debug Information
                 //calculate the cell size based on horizontal width / 3
-                int cellSize = UVSize.x / 3;
-                EditorGUILayout.LabelField(string.Format("Cell Size: {0}x{0}", cellSize));
+                /* int cellSize = UVSize.x / 3;
+                EditorGUILayout.LabelField(string.Format("Cell Size: {0}x{0}", cellSize)); */
                 #endregion
             }
             catch (Exception e)
@@ -182,10 +154,186 @@ namespace com.happyrobot33.holographicreprojector
             if (EditorGUI.EndChangeCheck())
             {
                 serializedObject.ApplyModifiedProperties();
+                UpdateAllTextureInternals(manager);
             }
         }
 
-        private Rect DrawLine(Vector2 start, Vector2 end, int thickness, GUIStyle style)
+        private static void UpdateAllTextureInternals(Manager manager)
+        {
+            manager.RecordTexture.ClearUpdateZones();
+            CustomRenderTextureUpdateZone[] zones = new CustomRenderTextureUpdateZone[3];
+
+            //depth
+            zones[0] = new CustomRenderTextureUpdateZone()
+            {
+                updateZoneCenter = (Vector2)Manager.CalculateTopLeftUV(manager, manager.DepthAnchor, manager.DepthUVPosition, manager.DepthTexture) + new Vector2(manager.DepthTextureSize.x / 2, manager.DepthTextureSize.y / 2),
+                updateZoneSize = new Vector2(manager.DepthTextureSize.x, manager.DepthTextureSize.y),
+                passIndex = 0
+            };
+
+            //color
+            zones[1] = new CustomRenderTextureUpdateZone()
+            {
+                updateZoneCenter = (Vector2)Manager.CalculateTopLeftUV(manager, manager.ColorAnchor, manager.ColorUVPosition, manager.ColorTexture) + new Vector2(manager.ColorTextureSize.x / 2, manager.ColorTextureSize.y / 2),
+                updateZoneSize = new Vector2(manager.ColorTextureSize.x, manager.ColorTextureSize.y),
+                passIndex = 1
+            };
+
+            //data
+            zones[2] = new CustomRenderTextureUpdateZone()
+            {
+                updateZoneCenter = (Vector2)Manager.CalculateTopLeftUV(manager, manager.DataAnchor, manager.DataUVPosition, manager.DataTexture) + new Vector2(manager.DataTextureSize.x / 2, manager.DataTextureSize.y / 2),
+                updateZoneSize = new Vector2(manager.DataTextureSize.x, manager.DataTextureSize.y),
+                passIndex = 2
+            };
+
+            manager.RecordTexture.SetUpdateZones(zones);
+
+            //set resolution to match what the playback will look like
+            manager.RecordTexture.Release();
+            manager.RecordTexture.width = manager.VideoTexture.width;
+            manager.RecordTexture.height = manager.VideoTexture.height;
+            //unrelease it
+            manager.RecordTexture.Initialize();
+
+            manager.ColorTexture.Release();
+            manager.ColorTexture.width = manager.ColorTextureSize.x;
+            manager.ColorTexture.height = manager.ColorTextureSize.y;
+            manager.ColorTexture.Create();
+
+            manager.DepthTexture.Release();
+            manager.DepthTexture.width = manager.DepthTextureSize.x;
+            manager.DepthTexture.height = manager.DepthTextureSize.y;
+            manager.DepthTexture.Create();
+
+            manager.DataTexture.Release();
+            manager.DataTexture.width = manager.DataTextureSize.x;
+            manager.DataTexture.height = manager.DataTextureSize.y;
+            manager.DataTexture.Create();
+
+            //setup the individual internal render textures for playback
+            manager.ColorExtractTexture.Release();
+            manager.ColorExtractTexture.width = manager.ColorTexture.width;
+            manager.ColorExtractTexture.height = manager.ColorTexture.height;
+            manager.ColorExtractTexture.Initialize();
+
+            manager.DepthExtractTexture.Release();
+            manager.DepthExtractTexture.width = manager.DepthTexture.width;
+            manager.DepthExtractTexture.height = manager.DepthTexture.height;
+            manager.DepthExtractTexture.Initialize();
+
+            manager.DataExtractTexture.Release();
+            manager.DataExtractTexture.width = manager.DataTexture.width;
+            manager.DataExtractTexture.height = manager.DataTexture.height;
+            manager.DataExtractTexture.Initialize();
+        }
+
+
+        private Vector2Int DrawRTArea(Manager manager, Texture texture, Rect ParentRect, GUIStyle imageStyle, Vector2Int topLeft, bool showHandles)
+        {
+            Vector2Int innerTextureSize = new Vector2Int(texture.width, texture.height);
+            Vector2Int outerTextureSize = new Vector2Int(manager.VideoTexture.width, manager.VideoTexture.height);
+            Rect innerRect = new Rect(ParentRect.x + ParentRect.width * topLeft.x / manager.VideoTexture.width,
+                ParentRect.y + ParentRect.height * topLeft.y / manager.VideoTexture.height,
+                ParentRect.width * innerTextureSize.x / manager.VideoTexture.width,
+                ParentRect.height * innerTextureSize.y / manager.VideoTexture.height);
+
+            Rect pixelBasedRecordRect = CreatePixelBasedRect(topLeft, innerTextureSize);
+            Rect pixelBasedOuterRect = CreatePixelBasedRect(Vector2Int.zero, outerTextureSize);
+
+            //show a box in it, with a outline and text in it
+            GUI.Box(innerRect, texture, imageStyle);
+
+            int handleThickness = 5;
+            GUIStyle handleStyle = new GUIStyle("box");
+            handleStyle.normal.background = EditorGUIUtility.whiteTexture;
+
+            if (showHandles)
+            {
+                //draw a dot at the corners
+                CornerDots(innerRect, handleThickness);
+
+                //display text on all 4 sides of the record box that shows its width and height
+                EdgeSizeLabels(innerTextureSize, innerRect);
+
+                //Offset Lines
+                DrawOffsetLines(pixelBasedRecordRect, pixelBasedOuterRect, ParentRect, innerRect, handleThickness, handleStyle);
+            }
+            return innerTextureSize;
+        }
+
+        private static Rect CreatePixelBasedRect(Vector2Int topLeft, Vector2Int TextureSize)
+        {
+
+
+            //get the record rect in terms of the video textures pixels
+            return new Rect(topLeft.x, topLeft.y, TextureSize.x, TextureSize.y);
+        }
+
+
+        static GUIStyle labelStyle
+        {
+            get
+            {
+                GUIStyle labelStyle = new GUIStyle(EditorStyles.whiteLabel);
+                //centered
+                labelStyle.alignment = TextAnchor.MiddleCenter;
+                //full white
+                labelStyle.normal.textColor = Color.white;
+                //black background
+                Texture2D background = new Texture2D(1, 1);
+                background.SetPixel(0, 0, Color.black);
+                background.Apply();
+                labelStyle.normal.background = background;
+
+                //font size
+                labelStyle.fontSize = 15;
+                return labelStyle;
+            }
+        }
+
+
+        private void DrawOffsetLines(Rect pixelBasedInnerRect, Rect pixelBasedOuterRect, Rect parentRect, Rect innerRect, int handleThickness, GUIStyle handleStyle)
+        {
+            if (innerRect.yMin != parentRect.yMin)
+            {
+                DrawLine(new Vector2(innerRect.xMin, parentRect.yMin), new Vector2(innerRect.xMin, innerRect.yMin), handleThickness, handleStyle, pixelBasedInnerRect.yMin.ToString());
+            }
+            if (innerRect.xMin != parentRect.xMin)
+            {
+                DrawLine(new Vector2(parentRect.xMin, innerRect.yMin), new Vector2(innerRect.xMin, innerRect.yMin), handleThickness, handleStyle, pixelBasedInnerRect.xMin.ToString());
+            }
+
+            if (innerRect.xMax != parentRect.xMax)
+            {
+                DrawLine(new Vector2(parentRect.xMax, innerRect.yMax), new Vector2(innerRect.xMax, innerRect.yMax), handleThickness, handleStyle, (pixelBasedOuterRect.xMax - pixelBasedInnerRect.xMax).ToString());
+            }
+
+            if (innerRect.yMax != parentRect.yMax)
+            {
+                DrawLine(new Vector2(innerRect.xMax, parentRect.yMax), new Vector2(innerRect.xMax, innerRect.yMax), handleThickness, handleStyle, (pixelBasedOuterRect.yMax - pixelBasedInnerRect.yMax).ToString());
+            }
+        }
+
+
+        private static void EdgeSizeLabels(Vector2Int size, Rect rect)
+        {
+            Handles.Label(new Vector3(rect.center.x, rect.yMin, 0), size.x.ToString(), labelStyle);
+            Handles.Label(new Vector3(rect.xMin, rect.center.y, 0), size.y.ToString(), labelStyle);
+            Handles.Label(new Vector3(rect.center.x, rect.yMax, 0), size.x.ToString(), labelStyle);
+            Handles.Label(new Vector3(rect.xMax, rect.center.y, 0), size.y.ToString(), labelStyle);
+        }
+
+
+        private static void CornerDots(Rect rect, int handleThickness)
+        {
+            Handles.DrawSolidDisc(new Vector3(rect.xMin, rect.yMin, 0), Vector3.forward, handleThickness);
+            Handles.DrawSolidDisc(new Vector3(rect.xMax, rect.yMin, 0), Vector3.forward, handleThickness);
+            Handles.DrawSolidDisc(new Vector3(rect.xMin, rect.yMax, 0), Vector3.forward, handleThickness);
+            Handles.DrawSolidDisc(new Vector3(rect.xMax, rect.yMax, 0), Vector3.forward, handleThickness);
+        }
+
+        private Rect DrawLine(Vector2 start, Vector2 end, int thickness, GUIStyle style, string text)
         {
             Vector2 delta = end - start;
             float angle = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
@@ -198,7 +346,14 @@ namespace com.happyrobot33.holographicreprojector
             GUIUtility.RotateAroundPivot(-angle, start);
 
             //return a rect that has opposite corners at the start and end
-            return new Rect(Mathf.Min(start.x, end.x), Mathf.Min(start.y, end.y), Mathf.Abs(start.x - end.x), Mathf.Abs(start.y - end.y));
+            Rect finalrect = new Rect(Mathf.Min(start.x, end.x), Mathf.Min(start.y, end.y), Mathf.Abs(start.x - end.x), Mathf.Abs(start.y - end.y));
+
+            if (!string.IsNullOrEmpty(text))
+            {
+                Handles.Label(new Vector3(finalrect.center.x, finalrect.center.y, 0), text, labelStyle);
+            }
+
+            return finalrect;
         }
     }
 #endif
@@ -220,6 +375,13 @@ namespace com.happyrobot33.holographicreprojector
         BottomRight
     }
 
+    public enum Areas
+    {
+        Color,
+        Depth,
+        Data
+    }
+
     [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class Manager : UdonSharpBehaviour
     {
@@ -228,21 +390,47 @@ namespace com.happyrobot33.holographicreprojector
         [DeveloperOnly]
         public Material DataInput;
         [DeveloperOnly]
-        public Material SourceSwitcher;
-        [DeveloperOnly]
         public Material[] playbackMaterials;
-        public Vector2Int UVPosition;
-        public Anchor UVAnchor;
-
-        /// <summary>
-        /// The texture that the video player is creating
-        /// </summary>
         public RenderTexture VideoTexture;
+
+        [Header("Color:")]
+        [DeveloperOnly]
+        public RenderTexture ColorTexture;
+        public Vector2Int ColorTextureSize;
+        public Anchor ColorAnchor;
+        public Vector2Int ColorUVPosition;
+        [DeveloperOnly]
+        public Material ColorExtractMaterial;
+        [DeveloperOnly]
+        public CustomRenderTexture ColorExtractTexture;
+
+        [Header("Depth:")]
+        [DeveloperOnly]
+        public RenderTexture DepthTexture;
+        public Vector2Int DepthTextureSize;
+        public Anchor DepthAnchor;
+        public Vector2Int DepthUVPosition;
+        [DeveloperOnly]
+        public Material DepthExtractMaterial;
+        [DeveloperOnly]
+        public CustomRenderTexture DepthExtractTexture;
+
+        [Header("Data:")]
+        [DeveloperOnly]
+        public RenderTexture DataTexture;
+        public Vector2Int DataTextureSize;
+        public Anchor DataAnchor;
+        public Vector2Int DataUVPosition;
+        [DeveloperOnly]
+        public Material DataExtractMaterial;
+        [DeveloperOnly]
+        public CustomRenderTexture DataExtractTexture;
 
         /// <summary>
         /// The texture that the 3DJ system is creating
         /// </summary>
-        public RenderTexture RecordTexture;
+        [DeveloperOnly]
+        public CustomRenderTexture RecordTexture;
         [DeveloperOnly]
         public Slider OffsetSlider;
         [DeveloperOnly]
@@ -255,9 +443,10 @@ namespace com.happyrobot33.holographicreprojector
         #region Inspector Variables
         [Header("Preview Textures")]
         public Texture PreviewLayoutTexture;
-        public Texture PreviewSystemTexture;
         [DeveloperOnly]
         public bool DeveloperMode;
+        [DeveloperOnly]
+        public Areas CurrentlyEditingArea;
         #endregion
         void Start()
         {
@@ -334,7 +523,7 @@ namespace com.happyrobot33.holographicreprojector
         {
             //toggle the holographic effect
             const string keyword = "_HoloAffect";
-            
+
             foreach (Material mat in playbackMaterials)
             {
                 mat.SetFloat(keyword, mat.GetFloat(keyword) == 0 ? 1 : 0);
@@ -343,17 +532,24 @@ namespace com.happyrobot33.holographicreprojector
 
         public void SwitchSourceToPlayback()
         {
-            SetupSource(VideoTexture, CalculateTopLeftUV(this), new Vector2Int(RecordTexture.width, RecordTexture.height));
+            SetupRenderTextureExtractionZones(VideoTexture);
             //disable the recorder
             //Recorder.SetActive(false);
             //mode = Mode.Playback;
         }
 
+        private void SetupRenderTextureExtractionZones(Texture source)
+        {
+            SetupSource(source, ColorExtractMaterial, CalculateTopLeftUV(this, ColorAnchor, ColorUVPosition, ColorTexture), new Vector2Int(ColorTexture.width, ColorTexture.height));
+            SetupSource(source, DepthExtractMaterial, CalculateTopLeftUV(this, DepthAnchor, DepthUVPosition, DepthTexture), new Vector2Int(DepthTexture.width, DepthTexture.height));
+            SetupSource(source, DataExtractMaterial, CalculateTopLeftUV(this, DataAnchor, DataUVPosition, DataTexture), new Vector2Int(DataTexture.width, DataTexture.height));
+
+        }
+
         public void SwitchSourceToRecord()
         {
             //Recorder.SetActive(true);
-            SetupSource(RecordTexture, Vector2Int.zero, new Vector2Int(RecordTexture.width, RecordTexture.height));
-            //mode = Mode.Record;
+            SetupRenderTextureExtractionZones(RecordTexture);
         }
 
         public void PlayerDropdownUpdate()
@@ -442,35 +638,35 @@ namespace com.happyrobot33.holographicreprojector
         }
 
 
-        private void SetupSource(Texture source, Vector2Int topLeft, Vector2Int size)
+        private void SetupSource(Texture source, Material extractor, Vector2Int topLeft, Vector2Int size)
         {
             //setup the source switcher to be based on the uv position info
             Vector2 center = new Vector2(topLeft.x + (float)size.x / 2, topLeft.y + (float)size.y / 2);
-            SourceSwitcher.SetVector("_Center", center);
-            SourceSwitcher.SetVector("_Size", new Vector2(size.x, size.y));
-            SourceSwitcher.SetTexture("_RT", source);
+            extractor.SetVector("_Center", center);
+            extractor.SetVector("_Size", new Vector2(size.x, size.y));
+            extractor.SetTexture("_RT", source);
         }
 
         /// <summary>
         /// Calculate the top left UV position based on the anchor
         /// </summary>
-        internal static Vector2Int CalculateTopLeftUV(Manager manager)
+        internal static Vector2Int CalculateTopLeftUV(Manager manager, Anchor anchor, Vector2Int position, Texture texture)
         {
             Vector2Int topLeft = Vector2Int.zero;
 
-            switch (manager.UVAnchor)
+            switch (anchor)
             {
                 case Anchor.TopLeft:
-                    topLeft = new Vector2Int(manager.UVPosition.x, manager.UVPosition.y);
+                    topLeft = new Vector2Int(position.x, position.y);
                     break;
                 case Anchor.TopRight:
-                    topLeft = new Vector2Int(manager.VideoTexture.width - manager.RecordTexture.width - manager.UVPosition.x, manager.UVPosition.y);
+                    topLeft = new Vector2Int(manager.VideoTexture.width - texture.width - position.x, position.y);
                     break;
                 case Anchor.BottomLeft:
-                    topLeft = new Vector2Int(manager.UVPosition.x, manager.VideoTexture.height - manager.RecordTexture.height - manager.UVPosition.y);
+                    topLeft = new Vector2Int(position.x, manager.VideoTexture.height - texture.height - position.y);
                     break;
                 case Anchor.BottomRight:
-                    topLeft = new Vector2Int(manager.VideoTexture.width - manager.RecordTexture.width - manager.UVPosition.x, manager.VideoTexture.height - manager.RecordTexture.height - manager.UVPosition.y);
+                    topLeft = new Vector2Int(manager.VideoTexture.width - texture.width - position.x, manager.VideoTexture.height - texture.height - position.y);
                     break;
             }
 

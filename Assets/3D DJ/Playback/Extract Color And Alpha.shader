@@ -175,7 +175,7 @@ Shader "Extract Color And Alpha"
 				float2 temp_output_18_0 = (_RT_TexelSize).zw;
 				float2 Color_Center40 = _ColorCenter;
 				float2 texCoord7 = IN.localTexcoord.xy * (float2( 0,0 ) + (Color_Size41 - float2( 0,0 )) * (float2( 1,1 ) - float2( 0,0 )) / (temp_output_18_0 - float2( 0,0 ))) + (float2( 0,0 ) + (( ( ( (_RT_TexelSize).zw * float2( 0,1 ) ) - ( Color_Center40 * float2( -1,1 ) ) ) - ( Color_Size41 / float2( 2,2 ) ) ) - float2( 0,0 )) * (float2( 1,1 ) - float2( 0,0 )) / (temp_output_18_0 - float2( 0,0 )));
-				float4 appendResult36 = (float4((tex2D( _RT, texCoord7 )).rgb , 0.0));
+				float4 appendResult36 = (float4((tex2D( _RT, texCoord7 )).rgb , 1.0));
 				
                 finalColor = appendResult36;
 				return finalColor;
@@ -220,7 +220,6 @@ Node;AmplifyShaderEditor.Compare;58;-352,1120;Inherit;False;2;4;0;FLOAT;0;False;
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;63;-608,1200;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;-1,-1;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.SamplerNode;39;1376,384;Inherit;True;Property;_TextureSample1;Texture Sample 0;2;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.TexCoordVertexDataNode;37;1440,224;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.DynamicAppendNode;36;2432,-432;Inherit;False;COLOR;4;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.ComponentMaskNode;64;2160,-464;Inherit;False;True;True;True;False;1;0;COLOR;0,0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.Vector2Node;13;-1840,-1168;Inherit;False;Property;_ColorCenter;Color Center;1;0;Create;True;0;0;0;False;0;False;0,0;319.5,442;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
 Node;AmplifyShaderEditor.Vector2Node;14;-1840,-1024;Inherit;False;Property;_ColorSize;Color Size;3;0;Create;True;0;0;0;False;0;False;0,0;639,426;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
@@ -240,6 +239,7 @@ Node;AmplifyShaderEditor.Compare;38;2544,304;Inherit;False;4;4;0;FLOAT;0;False;1
 Node;AmplifyShaderEditor.BreakToComponentsNode;71;2304,400;Inherit;False;FLOAT2;1;0;FLOAT2;0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15
 Node;AmplifyShaderEditor.CustomExpressionNode;69;1984,416;Float;False;float2 result@$    result.x = round(input/65536.0f) / 10000.0f@$    result.y = (input - 10000.0f*65536.0f*result.x) / 10000.0f@$    return result@;2;Create;1;True;input;FLOAT;0;In;;Float;False;My Custom Expression;True;False;0;;False;1;0;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;3056,-400;Float;False;True;-1;2;ASEMaterialInspector;0;2;Extract Color And Alpha;32120270d1b3a8746af2aca8bc749736;True;Custom RT Update;0;0;Custom RT Update;1;False;True;0;1;False;;0;False;;0;1;False;;0;False;;True;0;False;;0;False;;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;0;True;2;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;0;;0;0;Standard;0;0;1;True;False;;False;0
+Node;AmplifyShaderEditor.DynamicAppendNode;36;2432,-432;Inherit;False;COLOR;4;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;1;False;1;COLOR;0
 WireConnection;5;0;3;0
 WireConnection;4;0;3;0
 WireConnection;4;1;7;0
@@ -280,7 +280,6 @@ WireConnection;58;2;63;0
 WireConnection;63;0;62;0
 WireConnection;39;0;3;0
 WireConnection;39;1;54;0
-WireConnection;36;0;64;0
 WireConnection;64;0;4;0
 WireConnection;41;0;14;0
 WireConnection;40;0;13;0
@@ -293,5 +292,6 @@ WireConnection;38;3;71;1
 WireConnection;71;0;69;0
 WireConnection;69;0;72;0
 WireConnection;0;0;36;0
+WireConnection;36;0;64;0
 ASEEND*/
-//CHKSM=5B906B1A7B814D4815E61046F2F815E246F8CA3C
+//CHKSM=409F205F99884F240908AACE97BC44EB8F32746F

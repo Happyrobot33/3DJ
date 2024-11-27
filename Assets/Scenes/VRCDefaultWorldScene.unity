@@ -1642,7 +1642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100018, guid: 63c597cfa4ebb1341a72d8dcb1043ec4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100020, guid: 63c597cfa4ebb1341a72d8dcb1043ec4, type: 3}
       propertyPath: m_Layer
@@ -4146,9 +4146,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
         type: 3}
+      propertyPath: DataAnchor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: ColorAnchor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: DepthAnchor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
       propertyPath: VideoTexture
       value: 
       objectReference: {fileID: 8400000, guid: 232bd40c01a5c0647b3580635bf3d801, type: 2}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: DeveloperMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: DataUVPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: DataUVPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
         type: 3}
       propertyPath: UVPositionSize.x
@@ -4158,6 +4188,56 @@ PrefabInstance:
         type: 3}
       propertyPath: UVPositionSize.y
       value: 655
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: ColorUVPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: ColorUVPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: DataTextureSize.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: DataTextureSize.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: DepthUVPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: ColorTextureSize.x
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: ColorTextureSize.y
+      value: 640
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: DepthTextureSize.x
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: DepthTextureSize.y
+      value: 640
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
+        type: 3}
+      propertyPath: CurrentlyEditingArea
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
         type: 3}
