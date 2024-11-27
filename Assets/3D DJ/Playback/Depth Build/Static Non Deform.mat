@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: e6d71ffa52071fd48bb56b7befb88bf0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _MODE_NODEFORMATION
   m_InvalidKeywords:
   - _BILLBOARDMODE_ON
   - _COLORTOGGLE_ON
@@ -126,13 +127,14 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _HoloAffect: 0
     - _IgnoreTopBottom: 0
     - _LODDistance: 20
     - _LODDistance1: 0
     - _LockPosition: 0
     - _LockRotation: 0
     - _Metallic: 0
-    - _Mode: 0
+    - _Mode: 2
     - _NormalsDebug: 0
     - _ObjectRelevantMode: 1
     - _OcclusionStrength: 1

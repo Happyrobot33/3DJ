@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: e6d71ffa52071fd48bb56b7befb88bf0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _MODE_STANDARD
   m_InvalidKeywords:
   - _BILLBOARDMODE_ON
   - _COLORTOGGLE_ON
@@ -130,7 +131,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HoloAffect: 1
+    - _HoloAffect: 0
     - _HoloScrollSpeed: 0
     - _IgnoreTopBottom: 0
     - _LODDistance: 20
