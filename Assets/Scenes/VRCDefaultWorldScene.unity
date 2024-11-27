@@ -3975,16 +3975,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
         type: 3}
-      propertyPath: DeveloperMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
-        type: 3}
-      propertyPath: DataTextureSize.x
-      value: 800
-      objectReference: {fileID: 0}
-    - target: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,
-        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 6091238494305143072, guid: 93af4b9116135ea4788cdf90717ca754,

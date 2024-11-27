@@ -95,9 +95,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Center: {r: 400, g: 10, b: 0, a: 0}
+    - _Center: {r: 200, g: 10, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Size: {r: 800, g: 20, b: 0, a: 0}
+    - _Size: {r: 400, g: 20, b: 0, a: 0}
     - _StartEndPixelRange: {r: 0, g: 360, b: 160, a: 16}
   m_BuildTextureStacks: []

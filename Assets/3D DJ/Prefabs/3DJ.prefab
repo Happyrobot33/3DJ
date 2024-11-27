@@ -771,7 +771,7 @@ MonoBehaviour:
     type: 2}
   DepthExtractTexture: {fileID: 8600000, guid: 2fc056076e63f5f49849b667613db859, type: 2}
   DataTexture: {fileID: 8600000, guid: b638e271c536ea24cb3cf67f3d34c317, type: 2}
-  DataTextureSize: {x: 1920, y: 20}
+  DataTextureSize: {x: 400, y: 20}
   DataAnchor: 0
   DataUVPosition: {x: 0, y: 0}
   DataExtractMaterial: {fileID: 2100000, guid: b312d249b2905c449b9756b3b436cc15, type: 2}
