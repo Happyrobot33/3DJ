@@ -10,6 +10,8 @@ using VRC.SDK3.Components;
 namespace com.happyrobot33.holographicreprojector
 {
     using TMPro;
+    using UdonSharpEditor;
+
 
     [AttributeUsage(AttributeTargets.Field)]
     public class DeveloperOnly : PropertyAttribute { }
@@ -50,8 +52,8 @@ namespace com.happyrobot33.holographicreprojector
         [Header("Color:")]
         [DeveloperOnly]
         public RenderTexture ColorTexture;
-        public Vector2Int ColorTextureSize;
         public Anchor ColorAnchor;
+        public Vector2Int ColorTextureSize;
         public Vector2Int ColorUVPosition;
         [DeveloperOnly]
         public Material ColorExtractMaterial;
@@ -61,8 +63,8 @@ namespace com.happyrobot33.holographicreprojector
         [Header("Depth:")]
         [DeveloperOnly]
         public RenderTexture DepthTexture;
-        public Vector2Int DepthTextureSize;
         public Anchor DepthAnchor;
+        public Vector2Int DepthTextureSize;
         public Vector2Int DepthUVPosition;
         [DeveloperOnly]
         public Material DepthExtractMaterial;
@@ -72,8 +74,8 @@ namespace com.happyrobot33.holographicreprojector
         [Header("Data:")]
         [DeveloperOnly]
         public RenderTexture DataTexture;
-        public Vector2Int DataTextureSize;
         public Anchor DataAnchor;
+        public Vector2Int DataTextureSize;
         public Vector2Int DataUVPosition;
         [DeveloperOnly]
         public Material DataExtractMaterial;
