@@ -247,6 +247,8 @@ namespace com.happyrobot33.holographicreprojector
             manager.DataExtractTexture.Initialize();
 
             manager.SetupRenderTextureExtractionZones();
+
+            manager.EnforceCameraAspectRatio();
         }
 
 

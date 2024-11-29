@@ -99,6 +99,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.TextMeshPro", "Unity.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Happyrobot33.VRCSDKDocumentationProject", "Happyrobot33.VRCSDKDocumentationProject.csproj", "{3E21D764-F4F4-D488-6BDD-F69617842E4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.happyrobot33.inspectortweaks.editor", "com.happyrobot33.inspectortweaks.editor.csproj", "{E9526CA4-71A7-1034-F559-869E005873FC}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRC.Udon", "VRC.Udon.csproj", "{622924CC-18A5-E250-D6E7-B348E6D7D57D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VSCode.Editor", "Unity.VSCode.Editor.csproj", "{E20E79DB-69C1-9DCE-D781-26AF23648002}"
@@ -365,6 +367,10 @@ Global
 		{3E21D764-F4F4-D488-6BDD-F69617842E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E21D764-F4F4-D488-6BDD-F69617842E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E21D764-F4F4-D488-6BDD-F69617842E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9526CA4-71A7-1034-F559-869E005873FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9526CA4-71A7-1034-F559-869E005873FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9526CA4-71A7-1034-F559-869E005873FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9526CA4-71A7-1034-F559-869E005873FC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{622924CC-18A5-E250-D6E7-B348E6D7D57D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{622924CC-18A5-E250-D6E7-B348E6D7D57D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{622924CC-18A5-E250-D6E7-B348E6D7D57D}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -10,7 +10,6 @@ using VRC.SDK3.Components;
 namespace com.happyrobot33.holographicreprojector
 {
     using TMPro;
-    using UdonSharpEditor;
 
 
     [AttributeUsage(AttributeTargets.Field)]
@@ -115,6 +114,8 @@ namespace com.happyrobot33.holographicreprojector
 
             //make sure the recorder is off
             Recorder.SetActive(false);
+
+            EnforceCameraAspectRatio();
         }
 
         void Update()
@@ -206,6 +207,16 @@ namespace com.happyrobot33.holographicreprojector
         {
             //Recorder.SetActive(true);
             SetupRenderTextureExtractionZones(RecordTexture);
+        }
+
+        public void EnforceCameraAspectRatio()
+        {
+            //ensure all the cameras under us are locked to 1:1 aspect ratio, as otherwise they will try to automatically update and fuck things up
+            Camera[] cams = Recorder.GetComponentsInChildren<Camera>();
+            foreach (Camera cam in cams)
+            {
+                cam.aspect = 1;
+            }
         }
 
         public void PlayerDropdownUpdate()
