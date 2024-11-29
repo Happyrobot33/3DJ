@@ -15,7 +15,7 @@ E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50832
+54551
 Successfully changed project path to: E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
 E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,15 +49,15 @@ E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [34640] Host "[IP] 192.168.1.210 [Port] 0 [Flags] 2 [Guid] 3615303463 [EditorId] 3615303463 [Version] 1048832 [Id] WindowsEditor(7,Matthew-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [27784] Host "[IP] 192.168.1.210 [Port] 0 [Flags] 2 [Guid] 1019319297 [EditorId] 1019319297 [Version] 1048832 [Id] WindowsEditor(7,Matthew-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [34640] Host "[IP] 192.168.1.210 [Port] 0 [Flags] 2 [Guid] 3615303463 [EditorId] 3615303463 [Version] 1048832 [Id] WindowsEditor(7,Matthew-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [27784] Host "[IP] 192.168.1.210 [Port] 0 [Flags] 2 [Guid] 1019319297 [EditorId] 1019319297 [Version] 1048832 [Id] WindowsEditor(7,Matthew-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
 Default GameObject BitMask: InternalUI already registered
 Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 51.35 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 1.42 ms.
+Refreshing native plugins compatible for Editor in 60.20 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 1.03 ms.
 Initialize engine version: 2022.3.22f1 (887be4894c44)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project/Assets
@@ -72,46 +72,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56844
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012169 seconds.
-- Loaded All Assemblies, in  0.305 seconds
+Registered in 0.016613 seconds.
+- Loaded All Assemblies, in  0.340 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.266 seconds
-Domain Reload Profiling: 569ms
-	BeginReloadAssembly (90ms)
+- Finished resetting the current domain, in  0.297 seconds
+Domain Reload Profiling: 633ms
+	BeginReloadAssembly (108ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (27ms)
+	RebuildCommonClasses (30ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (58ms)
-	LoadAllAssembliesAndSetupDomain (120ms)
-		LoadAssemblies (88ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (123ms)
+		LoadAssemblies (105ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (117ms)
-			TypeCache.Refresh (116ms)
-				TypeCache.ScanAssembly (104ms)
+		AnalyzeDomain (121ms)
+			TypeCache.Refresh (119ms)
+				TypeCache.ScanAssembly (110ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (266ms)
+	FinalizeReload (297ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (220ms)
+		SetupLoadedEditorAssemblies (246ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (81ms)
+			InitializePlatformSupportModulesInManaged (89ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (94ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
+			ProcessInitializeOnLoadAttributes (103ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,8 +119,8 @@ Domain Reload Profiling: 569ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.781 seconds
-Refreshing native plugins compatible for Editor in 24.70 ms, found 9 plugins.
+- Loaded All Assemblies, in  0.837 seconds
+Refreshing native plugins compatible for Editor in 27.64 ms, found 9 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -165,1900 +165,50 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.951 seconds
-Domain Reload Profiling: 2729ms
-	BeginReloadAssembly (130ms)
+- Finished resetting the current domain, in  2.136 seconds
+Domain Reload Profiling: 2969ms
+	BeginReloadAssembly (139ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (18ms)
-	RebuildCommonClasses (26ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (27ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (570ms)
-		LoadAssemblies (400ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (614ms)
+		LoadAssemblies (434ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (249ms)
-			TypeCache.Refresh (219ms)
-				TypeCache.ScanAssembly (200ms)
-			ScanForSourceGeneratedMonoScriptInfo (21ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1951ms)
+		AnalyzeDomain (263ms)
+			TypeCache.Refresh (231ms)
+				TypeCache.ScanAssembly (210ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (2136ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1125ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (108ms)
-			ProcessInitializeOnLoadAttributes (558ms)
-			ProcessInitializeOnLoadMethodAttributes (421ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 27.03 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 4399 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 220 unused Assets / (2.3 MB). Loaded Objects now: 4840.
-Memory consumption went from 321.2 MB to 318.9 MB.
-Total: 24.526400 ms (FindLiveObjects: 0.436300 ms CreateObjectMapping: 0.172500 ms MarkObjects: 23.006400 ms  DeleteObjects: 0.910300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.834 seconds
-Refreshing native plugins compatible for Editor in 31.26 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
-UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
-UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
-UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
-UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
-UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
-UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
-UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
-UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
-
-[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
-  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
-  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
-  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
-  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
-  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
-  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
-  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
-  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
-  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.338 seconds
-Domain Reload Profiling: 3166ms
-	BeginReloadAssembly (328ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (141ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (404ms)
-		LoadAssemblies (467ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (44ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (2338ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (942ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (109ms)
-			ProcessInitializeOnLoadAttributes (321ms)
-			ProcessInitializeOnLoadMethodAttributes (472ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 35.30 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.09 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 179 unused Assets / (2.3 MB). Loaded Objects now: 4857.
-Memory consumption went from 241.1 MB to 238.8 MB.
-Total: 23.544200 ms (FindLiveObjects: 0.282700 ms CreateObjectMapping: 0.144500 ms MarkObjects: 22.409200 ms  DeleteObjects: 0.707100 ms)
-
-Prepare: number of updated asset objects reloaded= 10
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 30.83 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (2.2 MB). Loaded Objects now: 4850.
-Memory consumption went from 177.2 MB to 175.0 MB.
-Total: 37.319800 ms (FindLiveObjects: 0.285500 ms CreateObjectMapping: 0.146200 ms MarkObjects: 36.248500 ms  DeleteObjects: 0.638700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2148.294249 seconds.
-  path: Assets/3D DJ/Record/Depth RT.renderTexture
-  artifactKey: Guid(283657a5e09fe4444882d8963bc94119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Record/Depth RT.renderTexture using Guid(283657a5e09fe4444882d8963bc94119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e9611c9b533085657f9fdf2b749a29e') in 0.058526 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/3D DJ/Record/Color RT.renderTexture
-  artifactKey: Guid(d5eade7947abe2d4ea65c23f9a0c12b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Record/Color RT.renderTexture using Guid(d5eade7947abe2d4ea65c23f9a0c12b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44b78f16bf0a44dd0e6e4b65df49d7c') in 0.022052 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 28.37 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 4853.
-Memory consumption went from 176.3 MB to 174.1 MB.
-Total: 51.917200 ms (FindLiveObjects: 0.279700 ms CreateObjectMapping: 0.129100 ms MarkObjects: 50.943200 ms  DeleteObjects: 0.564400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.834 seconds
-Refreshing native plugins compatible for Editor in 26.47 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
-UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
-UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
-UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
-UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
-UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
-UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
-UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
-UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
-
-[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
-  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
-  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
-  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
-  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
-  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
-  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
-  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
-  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
-  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.282 seconds
-Domain Reload Profiling: 3110ms
-	BeginReloadAssembly (327ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (136ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (398ms)
-		LoadAssemblies (484ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (19ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (2283ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (929ms)
+		SetupLoadedEditorAssemblies (1195ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (24ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (115ms)
-			ProcessInitializeOnLoadAttributes (318ms)
-			ProcessInitializeOnLoadMethodAttributes (457ms)
+			BeforeProcessingInitializeOnLoad (117ms)
+			ProcessInitializeOnLoadAttributes (577ms)
+			ProcessInitializeOnLoadMethodAttributes (461ms)
 			AfterProcessingInitializeOnLoad (12ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 30.15 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 179 unused Assets / (2.3 MB). Loaded Objects now: 4870.
-Memory consumption went from 243.0 MB to 240.8 MB.
-Total: 49.176600 ms (FindLiveObjects: 0.230100 ms CreateObjectMapping: 0.103600 ms MarkObjects: 48.132000 ms  DeleteObjects: 0.710100 ms)
-
-Prepare: number of updated asset objects reloaded= 1
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 27.04 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.05 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 4870.
-Memory consumption went from 179.2 MB to 177.0 MB.
-Total: 51.352200 ms (FindLiveObjects: 0.281100 ms CreateObjectMapping: 0.097600 ms MarkObjects: 50.429200 ms  DeleteObjects: 0.543600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Begin MonoManager ReloadAssembly
-IOException: Sharing violation on path E:\Storage\Personal\Coding\VRChat\SONAR 3DJ Project\Library\UdonSharpCache\UdonSharpEditorCache.dat
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
-  at System.IO.File.InternalWriteAllBytes (System.String path, System.Byte[] bytes) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.IO.File.WriteAllBytes (System.String path, System.Byte[] bytes) [0x00039] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UdonSharp.UdonSharpEditorCache.SaveAllCacheData () [0x0006e] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorCache.cs:168 
-  at UdonSharp.UdonSharpEditorCache.AssemblyReloadSave () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorCache.cs:152 
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorCache.cs Line: 168)
-
-- Loaded All Assemblies, in  0.633 seconds
-Refreshing native plugins compatible for Editor in 24.84 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
-UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
-UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
-UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
-UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
-UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
-UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
-UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
-UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
-
-[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
-  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
-  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
-  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
-  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
-  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
-  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
-  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
-  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
-  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.140 seconds
-Domain Reload Profiling: 2770ms
-	BeginReloadAssembly (226ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (94ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (326ms)
-		LoadAssemblies (378ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (23ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (2140ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (928ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (115ms)
-			ProcessInitializeOnLoadAttributes (326ms)
-			ProcessInitializeOnLoadMethodAttributes (450ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 28.10 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 179 unused Assets / (2.3 MB). Loaded Objects now: 4887.
-Memory consumption went from 245.0 MB to 242.7 MB.
-Total: 49.142500 ms (FindLiveObjects: 0.314400 ms CreateObjectMapping: 0.102900 ms MarkObjects: 47.960000 ms  DeleteObjects: 0.763600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.793 seconds
-Refreshing native plugins compatible for Editor in 27.48 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
-UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
-UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
-UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
-UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
-UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
-UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
-UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
-UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
-
-[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
-  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
-  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
-  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
-  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
-  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
-  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
-  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
-  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
-  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.158 seconds
-Domain Reload Profiling: 2947ms
-	BeginReloadAssembly (288ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (124ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (422ms)
-		LoadAssemblies (469ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (37ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (15ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (2158ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (907ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (106ms)
-			ProcessInitializeOnLoadAttributes (304ms)
-			ProcessInitializeOnLoadMethodAttributes (454ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 36.69 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.10 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 179 unused Assets / (2.3 MB). Loaded Objects now: 4904.
-Memory consumption went from 247.0 MB to 244.7 MB.
-Total: 338.474200 ms (FindLiveObjects: 0.558400 ms CreateObjectMapping: 0.140700 ms MarkObjects: 336.033100 ms  DeleteObjects: 1.740700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 35.79 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 4904.
-Memory consumption went from 183.2 MB to 181.0 MB.
-Total: 49.095800 ms (FindLiveObjects: 0.289000 ms CreateObjectMapping: 0.099600 ms MarkObjects: 48.090300 ms  DeleteObjects: 0.615900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 307.446100 seconds.
-  path: Assets/3D DJ/Record/Data CRT.asset
-  artifactKey: Guid(b638e271c536ea24cb3cf67f3d34c317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Record/Data CRT.asset using Guid(b638e271c536ea24cb3cf67f3d34c317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf6a299e56be9b8d512ad1a0afbbf0f') in 0.062805 seconds
-Number of updated asset objects reloaded before import = 7
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 11.637635 seconds.
-  path: Assets/3D DJ/Record/Output/Output Screenspace.mat
-  artifactKey: Guid(a75548cb2f707d14cb94315bd260dd56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Record/Output/Output Screenspace.mat using Guid(a75548cb2f707d14cb94315bd260dd56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd758330808aa6fccfec9effd687c5d') in 0.034583 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.690 seconds
-Refreshing native plugins compatible for Editor in 27.07 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
-UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
-UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
-UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
-UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
-UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
-UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
-UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
-UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
-
-[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
-  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
-  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
-  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
-  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
-  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
-  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
-  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
-  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
-  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.451 seconds
-Domain Reload Profiling: 3138ms
-	BeginReloadAssembly (271ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (98ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (340ms)
-		LoadAssemblies (378ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (37ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (15ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (2452ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1042ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (103ms)
-			ProcessInitializeOnLoadAttributes (293ms)
-			ProcessInitializeOnLoadMethodAttributes (611ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 37.34 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.09 ms.
-Unloading 4026 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 179 unused Assets / (2.3 MB). Loaded Objects now: 4968.
-Memory consumption went from 249.1 MB to 246.8 MB.
-Total: 64.664400 ms (FindLiveObjects: 0.352000 ms CreateObjectMapping: 0.153700 ms MarkObjects: 62.948000 ms  DeleteObjects: 1.209100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.751 seconds
-Refreshing native plugins compatible for Editor in 34.67 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
-UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
-UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
-UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
-UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
-UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
-UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
-UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
-UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
-
-[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
-  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
-  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
-  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
-  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
-  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
-  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
-  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
-  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
-  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.263 seconds
-Domain Reload Profiling: 3011ms
-	BeginReloadAssembly (258ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (101ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (409ms)
-		LoadAssemblies (435ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (61ms)
-			TypeCache.Refresh (16ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (30ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (2264ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (915ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (118ms)
-			ProcessInitializeOnLoadAttributes (311ms)
-			ProcessInitializeOnLoadMethodAttributes (450ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 32.04 ms, found 9 plugins.
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 37.70 ms, found 9 plugins.
 Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 179 unused Assets / (2.3 MB). Loaded Objects now: 4985.
-Memory consumption went from 251.3 MB to 249.0 MB.
-Total: 20.355300 ms (FindLiveObjects: 0.313600 ms CreateObjectMapping: 0.200700 ms MarkObjects: 19.150700 ms  DeleteObjects: 0.689600 ms)
+Unloading 4399 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 220 unused Assets / (2.3 MB). Loaded Objects now: 4840.
+Memory consumption went from 321.1 MB to 318.8 MB.
+Total: 31.250100 ms (FindLiveObjects: 0.269300 ms CreateObjectMapping: 0.109200 ms MarkObjects: 30.038300 ms  DeleteObjects: 0.832400 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.709 seconds
-Refreshing native plugins compatible for Editor in 26.93 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
-UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
-UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
-UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
-UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
-UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
-UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
-UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
-UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
-
-[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
-  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
-  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
-  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
-  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
-  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
-  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
-  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
-  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
-  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.157 seconds
-Domain Reload Profiling: 2863ms
-	BeginReloadAssembly (265ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (108ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (360ms)
-		LoadAssemblies (408ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (37ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (13ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (2157ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (895ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (106ms)
-			ProcessInitializeOnLoadAttributes (317ms)
-			ProcessInitializeOnLoadMethodAttributes (432ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 27.76 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 179 unused Assets / (2.3 MB). Loaded Objects now: 5002.
-Memory consumption went from 253.2 MB to 251.0 MB.
-Total: 24.932500 ms (FindLiveObjects: 0.252500 ms CreateObjectMapping: 0.195300 ms MarkObjects: 23.561500 ms  DeleteObjects: 0.922400 ms)
-
-Prepare: number of updated asset objects reloaded= 7
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.670 seconds
-Refreshing native plugins compatible for Editor in 24.18 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
-UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
-UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
-UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
-UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
-UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
-UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
-UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
-UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
-
-[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
-  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
-  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
-  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
-  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
-  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
-  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
-  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
-  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
-  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.157 seconds
-Domain Reload Profiling: 2824ms
-	BeginReloadAssembly (241ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (91ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (337ms)
-		LoadAssemblies (381ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (36ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (14ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (2157ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (881ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (113ms)
-			ProcessInitializeOnLoadAttributes (306ms)
-			ProcessInitializeOnLoadMethodAttributes (419ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 33.12 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 186 unused Assets / (2.3 MB). Loaded Objects now: 5012.
-Memory consumption went from 255.2 MB to 252.9 MB.
-Total: 29.525800 ms (FindLiveObjects: 0.300800 ms CreateObjectMapping: 0.167800 ms MarkObjects: 27.975700 ms  DeleteObjects: 1.080500 ms)
-
-Prepare: number of updated asset objects reloaded= 7
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.684 seconds
-Refreshing native plugins compatible for Editor in 28.31 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
-UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
-UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
-UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
-UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
-UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
-UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
-UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
-UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
-
-[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
-  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
-  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
-  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
-  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
-  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
-  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
-  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
-  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
-  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.121 seconds
-Domain Reload Profiling: 2801ms
-	BeginReloadAssembly (256ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (107ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (340ms)
-		LoadAssemblies (387ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (36ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (14ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (2121ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (869ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (105ms)
-			ProcessInitializeOnLoadAttributes (303ms)
-			ProcessInitializeOnLoadMethodAttributes (422ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 28.49 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 179 unused Assets / (2.3 MB). Loaded Objects now: 5029.
-Memory consumption went from 257.1 MB to 254.9 MB.
-Total: 23.610700 ms (FindLiveObjects: 0.246000 ms CreateObjectMapping: 0.137200 ms MarkObjects: 22.572200 ms  DeleteObjects: 0.654700 ms)
-
-Prepare: number of updated asset objects reloaded= 7
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 26.33 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 5029.
-Memory consumption went from 193.3 MB to 191.1 MB.
-Total: 54.380200 ms (FindLiveObjects: 0.308300 ms CreateObjectMapping: 0.100800 ms MarkObjects: 53.423300 ms  DeleteObjects: 0.547200 ms)
-
-Prepare: number of updated asset objects reloaded= 7
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 25.70 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 5036.
-Memory consumption went from 192.6 MB to 190.4 MB.
-Total: 50.067100 ms (FindLiveObjects: 0.298500 ms CreateObjectMapping: 0.100800 ms MarkObjects: 49.116300 ms  DeleteObjects: 0.550800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.046 seconds
-Refreshing native plugins compatible for Editor in 33.90 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
-UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
-UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
-UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
-UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
-UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
-UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
-UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
-UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
-
-[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
-  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
-  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
-  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
-  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
-  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
-  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
-  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
-  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
-  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in 10.003 seconds
-Domain Reload Profiling: 11042ms
-	BeginReloadAssembly (394ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (166ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (61ms)
-	LoadAllAssembliesAndSetupDomain (530ms)
-		LoadAssemblies (601ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (44ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (10004ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1175ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (132ms)
-			ProcessInitializeOnLoadAttributes (388ms)
-			ProcessInitializeOnLoadMethodAttributes (603ms)
-			AfterProcessingInitializeOnLoad (20ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 40.33 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.22 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 179 unused Assets / (2.3 MB). Loaded Objects now: 5053.
-Memory consumption went from 259.1 MB to 256.8 MB.
-Total: 45.413000 ms (FindLiveObjects: 0.426700 ms CreateObjectMapping: 0.147000 ms MarkObjects: 43.910600 ms  DeleteObjects: 0.927500 ms)
-
-Prepare: number of updated asset objects reloaded= 1
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.000 seconds
-Refreshing native plugins compatible for Editor in 44.39 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
-UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
-UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
-UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
-UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
-UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
-UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
-UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
-UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
-UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
-
-[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
-  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
-  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
-  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
-  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
-  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
-  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
-  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
-  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
-  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
-  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
-UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
-UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
-UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
-
-(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.948 seconds
-Domain Reload Profiling: 3942ms
-	BeginReloadAssembly (374ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (136ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (54ms)
-	LoadAllAssembliesAndSetupDomain (512ms)
-		LoadAssemblies (556ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (65ms)
-			TypeCache.Refresh (20ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (28ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (2948ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1237ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (32ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (147ms)
-			ProcessInitializeOnLoadAttributes (430ms)
-			ProcessInitializeOnLoadMethodAttributes (605ms)
-			AfterProcessingInitializeOnLoad (17ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 43.37 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.07 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 179 unused Assets / (2.3 MB). Loaded Objects now: 5070.
-Memory consumption went from 261.0 MB to 258.8 MB.
-Total: 23.894600 ms (FindLiveObjects: 0.410000 ms CreateObjectMapping: 0.189300 ms MarkObjects: 22.363400 ms  DeleteObjects: 0.930900 ms)
-
-Prepare: number of updated asset objects reloaded= 7
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 43.66 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.09 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (2.2 MB). Loaded Objects now: 5063.
-Memory consumption went from 197.2 MB to 195.0 MB.
-Total: 67.137600 ms (FindLiveObjects: 0.293000 ms CreateObjectMapping: 0.148700 ms MarkObjects: 65.897500 ms  DeleteObjects: 0.797600 ms)
-
-Prepare: number of updated asset objects reloaded= 8
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 36.98 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.08 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 5070.
-Memory consumption went from 196.5 MB to 194.3 MB.
-Total: 61.794200 ms (FindLiveObjects: 0.463900 ms CreateObjectMapping: 0.204300 ms MarkObjects: 60.398700 ms  DeleteObjects: 0.726600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -2074,25 +224,213 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1872.898850 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdca890ed0e78d90fa4caef4dc952eb5') in 0.557369 seconds
+  Time since last request: 8313.232494 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31844346ba8b6ccb25acb20c75d60af') in 0.343913 seconds
 Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.173848 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Preview.mat
+  artifactKey: Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9788e337fe661ee9f181f6ffddcf2925') in 0.175229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 17.099924 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f164ca96d0ef03d2073d1fa03e388473') in 0.436841 seconds
+Number of updated asset objects reloaded before import = 1
 Number of asset objects unloaded after import = 14
 ========================================================================
 Received Import Request.
   Time since last request: 0.000014 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
-  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8f66c9dabad8bfa6ff2da98da68f3b') in 0.444491 seconds
+  path: Assets/3D DJ/Playback/Depth Build/Static Preview.mat
+  artifactKey: Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b61bf2db1eefcbf591586e109a4ba9d') in 0.423223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Prepare
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Refreshing native plugins compatible for Editor in 31.99 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.09 ms.
+Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 4881.
+Memory consumption went from 175.1 MB to 172.9 MB.
+Total: 58.717000 ms (FindLiveObjects: 0.276900 ms CreateObjectMapping: 0.145100 ms MarkObjects: 57.658400 ms  DeleteObjects: 0.635800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Refreshing native plugins compatible for Editor in 30.51 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.06 ms.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 4881.
+Memory consumption went from 175.3 MB to 173.1 MB.
+Total: 65.905900 ms (FindLiveObjects: 0.443200 ms CreateObjectMapping: 0.170000 ms MarkObjects: 64.631300 ms  DeleteObjects: 0.660500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 148.427143 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
+  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74a31765929cfb46fe45c32ce1b70a02') in 0.455565 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat
+  artifactKey: Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat using Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a76e5134996c965773e5d5ba445db89') in 0.389118 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 14
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
-  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0897f7e0a58ac3db64e8bcb427cdbf') in 0.428756 seconds
+  Time since last request: 0.000019 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Preview.mat
+  artifactKey: Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca1107722fe055d53fe1198de6211fed') in 0.392457 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 43.698527 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
+  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39add37ca5792b0cfee23bf5c634895a') in 0.396232 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat
+  artifactKey: Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat using Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5381c3e1c856eba7b400a944450b17') in 0.383882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 9.723370 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
+  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b792e4aa06c2e1dbec96fc907672fc') in 0.129324 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
+  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42692f2ba38eeca7f1b0c1c35faf975') in 0.361332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 37.432400 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
+  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ec8ed1ad2b96a5b3e5303067ac7ce3') in 0.429038 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
+  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09795658652c53c1c6122e9c36eb4619') in 0.395192 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Prepare
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Refreshing native plugins compatible for Editor in 28.14 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.06 ms.
+Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 4881.
+Memory consumption went from 175.1 MB to 172.9 MB.
+Total: 55.643800 ms (FindLiveObjects: 0.474100 ms CreateObjectMapping: 0.104900 ms MarkObjects: 54.526800 ms  DeleteObjects: 0.537200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Refreshing native plugins compatible for Editor in 28.50 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.06 ms.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 4881.
+Memory consumption went from 175.4 MB to 173.2 MB.
+Total: 55.879500 ms (FindLiveObjects: 0.367100 ms CreateObjectMapping: 0.188600 ms MarkObjects: 54.717400 ms  DeleteObjects: 0.605600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 156.004897 seconds.
+  path: Assets/fixture.mat
+  artifactKey: Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fixture.mat using Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c995ca5d4f69abb1d87506822c97ed') in 0.046257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
