@@ -98,11 +98,11 @@ Material:
     m_Colors:
     - _AlphaCenter: {r: 0, g: 0, b: 0, a: 0}
     - _AlphaSize: {r: 0, g: 0, b: 0, a: 0}
-    - _Center: {r: 480, g: 760, b: 0, a: 0}
+    - _Center: {r: 480, g: 550, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorCenter: {r: 176.45, g: 442, b: 0, a: 0}
     - _ColorSize: {r: 639, g: 426, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Size: {r: 960, g: 640, b: 0, a: 0}
+    - _Size: {r: 960, g: 1060, b: 0, a: 0}
     - _StartEndPixelRange: {r: 0, g: 0, b: 432, a: 288}
   m_BuildTextureStacks: []
