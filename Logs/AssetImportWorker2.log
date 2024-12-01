@@ -15,7 +15,7 @@ E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-54551
+53809
 Successfully changed project path to: E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
 E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,15 +49,15 @@ E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [20564] Host "[IP] 192.168.1.210 [Port] 0 [Flags] 2 [Guid] 1669285670 [EditorId] 1669285670 [Version] 1048832 [Id] WindowsEditor(7,Matthew-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16560] Host "[IP] 192.168.1.210 [Port] 0 [Flags] 2 [Guid] 533478763 [EditorId] 533478763 [Version] 1048832 [Id] WindowsEditor(7,Matthew-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [20564] Host "[IP] 192.168.1.210 [Port] 0 [Flags] 2 [Guid] 1669285670 [EditorId] 1669285670 [Version] 1048832 [Id] WindowsEditor(7,Matthew-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16560] Host "[IP] 192.168.1.210 [Port] 0 [Flags] 2 [Guid] 533478763 [EditorId] 533478763 [Version] 1048832 [Id] WindowsEditor(7,Matthew-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
 Default GameObject BitMask: InternalUI already registered
 Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 58.80 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 1.24 ms.
+Refreshing native plugins compatible for Editor in 60.80 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 1.36 ms.
 Initialize engine version: 2022.3.22f1 (887be4894c44)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project/Assets
@@ -72,46 +72,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56960
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015174 seconds.
+Registered in 0.012965 seconds.
 - Loaded All Assemblies, in  0.340 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.304 seconds
-Domain Reload Profiling: 640ms
-	BeginReloadAssembly (108ms)
+- Finished resetting the current domain, in  0.297 seconds
+Domain Reload Profiling: 634ms
+	BeginReloadAssembly (106ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (30ms)
+	RebuildCommonClasses (37ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (122ms)
-		LoadAssemblies (105ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (121ms)
+		LoadAssemblies (104ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (120ms)
+		AnalyzeDomain (119ms)
 			TypeCache.Refresh (118ms)
-				TypeCache.ScanAssembly (107ms)
+				TypeCache.ScanAssembly (108ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (304ms)
+	FinalizeReload (297ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (251ms)
+		SetupLoadedEditorAssemblies (248ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (94ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (93ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (101ms)
-			ProcessInitializeOnLoadMethodAttributes (51ms)
+			ProcessInitializeOnLoadAttributes (107ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,8 +119,8 @@ Domain Reload Profiling: 640ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.846 seconds
-Refreshing native plugins compatible for Editor in 28.01 ms, found 9 plugins.
+- Loaded All Assemblies, in  1.041 seconds
+Refreshing native plugins compatible for Editor in 35.81 ms, found 10 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -130,19 +130,6 @@ Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-System.ArgumentNullException: Value cannot be null.
-Parameter name: path
-  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <27124aa0e30a41659b903b822b959bc7>:0 
-  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
-  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
-  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
   at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
@@ -165,132 +152,50 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.132 seconds
-Domain Reload Profiling: 2975ms
-	BeginReloadAssembly (137ms)
+- Finished resetting the current domain, in  2.253 seconds
+Domain Reload Profiling: 3291ms
+	BeginReloadAssembly (146ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (18ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
 	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (621ms)
-		LoadAssemblies (433ms)
+	LoadAllAssembliesAndSetupDomain (804ms)
+		LoadAssemblies (496ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (270ms)
-			TypeCache.Refresh (239ms)
-				TypeCache.ScanAssembly (217ms)
-			ScanForSourceGeneratedMonoScriptInfo (22ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (2133ms)
+		AnalyzeDomain (393ms)
+			TypeCache.Refresh (346ms)
+				TypeCache.ScanAssembly (319ms)
+			ScanForSourceGeneratedMonoScriptInfo (36ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (2254ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1183ms)
+		SetupLoadedEditorAssemblies (1315ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (25ms)
-			SetLoadedEditorAssemblies (3ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (118ms)
-			ProcessInitializeOnLoadAttributes (566ms)
-			ProcessInitializeOnLoadMethodAttributes (456ms)
-			AfterProcessingInitializeOnLoad (15ms)
+			ProcessInitializeOnLoadAttributes (637ms)
+			ProcessInitializeOnLoadMethodAttributes (516ms)
+			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
 Default GameObject BitMask: InternalUI already registered
 Default GameObject BitMask: HardwareObjects already registered
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
-Refreshing native plugins compatible for Editor in 32.64 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.07 ms.
-Unloading 4399 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 220 unused Assets / (2.3 MB). Loaded Objects now: 4840.
-Memory consumption went from 321.2 MB to 318.9 MB.
-Total: 24.498800 ms (FindLiveObjects: 0.451400 ms CreateObjectMapping: 0.143600 ms MarkObjects: 23.178600 ms  DeleteObjects: 0.724500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 8313.242764 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat
-  artifactKey: Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat using Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d7613d9b909221684e483558c9fabc3') in 0.354581 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.150912 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
-  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e80de41d8f984edce61c4303226a8846') in 0.290664 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 16.899336 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Depth Build.mat
-  artifactKey: Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Depth Build.mat using Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78b2aff44fcdc4c5ef554250e228d063') in 0.422145 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat
-  artifactKey: Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat using Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8e782ee9028125fd969ef28c06caed3') in 0.389492 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 31.46 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.09 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 4881.
-Memory consumption went from 175.1 MB to 172.9 MB.
-Total: 60.359900 ms (FindLiveObjects: 0.316800 ms CreateObjectMapping: 0.208100 ms MarkObjects: 59.213600 ms  DeleteObjects: 0.620500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 34.58 ms, found 9 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 32.37 ms, found 10 plugins.
 Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 4881.
-Memory consumption went from 175.4 MB to 173.2 MB.
-Total: 73.596500 ms (FindLiveObjects: 0.296200 ms CreateObjectMapping: 0.173600 ms MarkObjects: 72.589000 ms  DeleteObjects: 0.536800 ms)
+Unloading 4579 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 311 unused Assets / (9.2 MB). Loaded Objects now: 4950.
+Memory consumption went from 353.8 MB to 344.6 MB.
+Total: 22.922000 ms (FindLiveObjects: 0.279900 ms CreateObjectMapping: 0.150300 ms MarkObjects: 19.527000 ms  DeleteObjects: 2.964300 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -306,136 +211,889 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 148.440734 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Depth Build.mat
-  artifactKey: Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Depth Build.mat using Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2813629071cc730fe57bae1288e2e619') in 0.482482 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
-  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4392d377dc09715648dc7fdb990838ac') in 0.381954 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
-  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4da73caa93c9454cf40ca7dbe3d825c') in 0.359703 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 20.646004 seconds.
-  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (10).jpg
-  artifactKey: Guid(fefe6a3985f51034d940687be8f7202c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (10).jpg using Guid(fefe6a3985f51034d940687be8f7202c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5984a7ad5fa37ef2026c9e7eec46855b') in 0.039470 seconds
+  Time since last request: 3025.831633 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/SmoothingPanelOpener Udon C# Program Asset.asset
+  artifactKey: Guid(c04f196a23ba36d469ec17b773e50c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/SmoothingPanelOpener Udon C# Program Asset.asset using Guid(c04f196a23ba36d469ec17b773e50c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '015718f4c482d25f7c144a351c106ab6') in 0.003777 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 22.988266 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Depth Build.mat
-  artifactKey: Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Depth Build.mat using Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '771f2c168810b0a581645273c9f0d6af') in 0.410106 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
-  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11fb2695c12e026e7834ad7e9212f0bd') in 0.383711 seconds
+  Time since last request: 0.000011 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRStageLighting_AudioLink_Static.asset
+  artifactKey: Guid(2db8081a72b7c5b4eb87ca6ff1e59c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRStageLighting_AudioLink_Static.asset using Guid(2db8081a72b7c5b4eb87ca6ff1e59c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd22e5bcc3f7144da7412fdf26feb87') in 0.006062 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 9.722864 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Depth Build.mat
-  artifactKey: Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Depth Build.mat using Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39952d666339126a45627bd0eb405af') in 0.129406 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 14
+  Time since last request: 0.000009 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRStageLighting_AudioLink_Laser.asset
+  artifactKey: Guid(2b89aeca1f195d9409fe8eebf26a921f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRStageLighting_AudioLink_Laser.asset using Guid(2b89aeca1f195d9409fe8eebf26a921f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5c878eec1a0f7afa9eb709671801ca') in 0.002766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 152.047658 seconds.
+  path: Assets/3D DJ
+  artifactKey: Guid(d1b4d6e8bc0a1f74cb036e3823487085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ using Guid(d1b4d6e8bc0a1f74cb036e3823487085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01baa51ffc9a2e33bede7d7d556d6d5e') in 0.000365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 23.170762 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Bottom/Merged 1.mat
+  artifactKey: Guid(65200c26f1bb81040b22c720edd35bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Bottom/Merged 1.mat using Guid(65200c26f1bb81040b22c720edd35bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8173fb0d5f2795dc68d009d5883a282a') in 0.293215 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.001652 seconds.
+  path: Assets/3D DJ/Fixtures/HoloEmitterFixture.shader
+  artifactKey: Guid(235c1d2744521df4dad6544253e12fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/HoloEmitterFixture.shader using Guid(235c1d2744521df4dad6544253e12fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ea859559c9ee6f38a9b298106ca0b6') in 0.000478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.004951 seconds.
+  path: Assets/3D DJ/Debug/Question Mark.fbx
+  artifactKey: Guid(6807dc958b8234741bfd940146822e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Question Mark.fbx using Guid(6807dc958b8234741bfd940146822e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f35f47b0bc72dae363f29c6317eb44') in 0.178577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.001988 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Front/Merged.mat
+  artifactKey: Guid(8cc640fbf942c5942a875f2ddd197a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Front/Merged.mat using Guid(8cc640fbf942c5942a875f2ddd197a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a775ad7f9c73784f21ddc8de3b0a813') in 0.007585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.001666 seconds.
+  path: Assets/3D DJ/Playback/Depth Build
+  artifactKey: Guid(d755bc059e3746a4fa227031d5054aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build using Guid(d755bc059e3746a4fa227031d5054aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c742e50e5dcb54c7e0237bc75d6042b') in 0.000225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002160 seconds.
+  path: Assets/3D DJ/Playback/Extracted Data.asset
+  artifactKey: Guid(2edf86f5d629f944692f8f4c802725c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Extracted Data.asset using Guid(2edf86f5d629f944692f8f4c802725c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cee01221ce3921475f2fd29210db050') in 0.015103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002191 seconds.
+  path: Assets/3D DJ/CRT Templates/Record CRT Template.shader
+  artifactKey: Guid(6f8c88c029181d44bbc1c6016d56deae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/CRT Templates/Record CRT Template.shader using Guid(6f8c88c029181d44bbc1c6016d56deae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47587899027800290b6d967e93984ac8') in 0.000388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001974 seconds.
+  path: Assets/3D DJ/Editor/SaveRenderTextureToFile.cs
+  artifactKey: Guid(05f30c33c8d422e4c822584e3984c2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Editor/SaveRenderTextureToFile.cs using Guid(05f30c33c8d422e4c822584e3984c2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843a2e5bbe920a58f06126ccb269e3e5') in 0.000220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001904 seconds.
+  path: Assets/3D DJ/Amplify Functions/AngleBetweenVectors.asset
+  artifactKey: Guid(764081594a5aa0b4d9781b5f2fcaa355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/AngleBetweenVectors.asset using Guid(764081594a5aa0b4d9781b5f2fcaa355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5918008575ce230b518e2ceb39389d6f') in 0.001331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002094 seconds.
+  path: Assets/3D DJ/Prefabs/3DJ.prefab
+  artifactKey: Guid(93af4b9116135ea4788cdf90717ca754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Prefabs/3DJ.prefab using Guid(93af4b9116135ea4788cdf90717ca754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd0abdb73d703875270bb3324784008') in 1.840825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 358
 ========================================================================
 Received Import Request.
   Time since last request: 0.000013 seconds.
+  path: Assets/3D DJ/Record/Output/Output UV.shader
+  artifactKey: Guid(0ba5e6b1e89e5f04085a472151374497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Output/Output UV.shader using Guid(0ba5e6b1e89e5f04085a472151374497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ead4a4fcb47e87f1f0b896564ad3da') in 0.000541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002147 seconds.
+  path: Assets/3D DJ/Playback/Extracted Depth.asset
+  artifactKey: Guid(2fc056076e63f5f49849b667613db859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Extracted Depth.asset using Guid(2fc056076e63f5f49849b667613db859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de4bff2ec56a86cd1485413670afa07f') in 0.009547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002222 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Bottom/Color 1.mat
+  artifactKey: Guid(d218298939a80984fb4dce31b15badd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Bottom/Color 1.mat using Guid(d218298939a80984fb4dce31b15badd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6506eb583cca38feee5514ccbf980c20') in 0.009277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002344 seconds.
+  path: Assets/3D DJ/CRT Templates/Output CRT Template.shader
+  artifactKey: Guid(43d6bcb9fa7ae7448b573a3b91b57ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/CRT Templates/Output CRT Template.shader using Guid(43d6bcb9fa7ae7448b573a3b91b57ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a887b437ea836d743d27fc7d65813e') in 0.000344 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001908 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Back/Merged 1.mat
+  artifactKey: Guid(c4de6cd0e4aa8804e9767848def486d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Back/Merged 1.mat using Guid(c4de6cd0e4aa8804e9767848def486d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596a14621732560dcc57cb90725e5bae') in 0.006447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.002184 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Right/Color 1.mat
+  artifactKey: Guid(ab93c24d12189054c94fa290f59cfc7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Right/Color 1.mat using Guid(ab93c24d12189054c94fa290f59cfc7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18399e76971faf27192a2eeb2d6bad81') in 0.005259 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002097 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Back/Color 1.mat
+  artifactKey: Guid(06ea07d91d9dbfe4c9cd6a5722314282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Back/Color 1.mat using Guid(06ea07d91d9dbfe4c9cd6a5722314282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af9c8bfcd273f13b142b2a4167914faa') in 0.004811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002208 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Right/Depth 1.mat
+  artifactKey: Guid(d392ef7d43fa3ac40ac0503854bda516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Right/Depth 1.mat using Guid(d392ef7d43fa3ac40ac0503854bda516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '370e07a63c2bab6416999b4c83d448da') in 0.004738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.001641 seconds.
+  path: Assets/3D DJ/Control Desk
+  artifactKey: Guid(0a20f22866845a7478a563e420b1a751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Control Desk using Guid(0a20f22866845a7478a563e420b1a751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37680f596bb89edd05bee9040ff0cff0') in 0.000199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001894 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Top/Merged 1.mat
+  artifactKey: Guid(60443e52c2587f44180b490693125b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Top/Merged 1.mat using Guid(60443e52c2587f44180b490693125b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6225875e2974e35034427e3b4b29fb') in 0.006006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.002121 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/New Camera.fbx
+  artifactKey: Guid(470c94190a32329409251b33dbaa32e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/New Camera.fbx using Guid(470c94190a32329409251b33dbaa32e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db95ec79428ebe9ea88231b150bb092a') in 0.021253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.002194 seconds.
   path: Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat
   artifactKey: Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat using Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a447533cb212ac1aba47e2824bb2b5e') in 0.359802 seconds
+Start importing Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat using Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d29e76cc7661e43eb77d48a5d2bfb6') in 0.009324 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 14
 ========================================================================
 Received Import Request.
-  Time since last request: 37.355066 seconds.
+  Time since last request: 0.002106 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/LlamaCamera.fbx
+  artifactKey: Guid(9563bc731cca6e948986de0028f4975e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/LlamaCamera.fbx using Guid(9563bc731cca6e948986de0028f4975e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c53584aedc1f575a86468520976dce') in 0.074453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.002310 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Right/Merged 1.mat
+  artifactKey: Guid(0ddce4e8420ffcc4b984a63c45805db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Right/Merged 1.mat using Guid(0ddce4e8420ffcc4b984a63c45805db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a1bfcbe96f67ab9d2c5c91dc3ad8ab') in 0.006405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.001569 seconds.
+  path: Assets/3D DJ/Amplify Functions
+  artifactKey: Guid(7a5028446fa9fae489980b174e60755b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions using Guid(7a5028446fa9fae489980b174e60755b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd06cb57dfc13b00f58cd2c8107b85f') in 0.000204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001915 seconds.
+  path: Assets/3D DJ/Amplify Functions/Sample Video Texture.asset
+  artifactKey: Guid(779122f5c31f5d24898eb88405b38146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/Sample Video Texture.asset using Guid(779122f5c31f5d24898eb88405b38146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9da2fc41223d4c9140e7aeb3c1ebb7') in 0.000564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001802 seconds.
+  path: Assets/3D DJ/Record/Output/Output Material.mat
+  artifactKey: Guid(ce0c6ac46657fbe41962e89ad56b3fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Output/Output Material.mat using Guid(ce0c6ac46657fbe41962e89ad56b3fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc3dc782e1fee03ef7f383b251c3610d') in 0.004694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.002252 seconds.
+  path: Assets/3D DJ/Record/Color RT.renderTexture
+  artifactKey: Guid(d5eade7947abe2d4ea65c23f9a0c12b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Color RT.renderTexture using Guid(d5eade7947abe2d4ea65c23f9a0c12b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b25b5a951f6cd5b24839276219d3ea') in 0.008907 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002374 seconds.
+  path: Assets/3D DJ/Fixtures/fixture.mat
+  artifactKey: Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/fixture.mat using Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba1060403f502d6fae7ace7966a4189') in 0.248754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.002259 seconds.
+  path: Assets/3D DJ/Amplify Functions/HSVLerp.asset
+  artifactKey: Guid(96827d56160b2c847b445028c7cc8b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/HSVLerp.asset using Guid(96827d56160b2c847b445028c7cc8b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01c82c38747011f4271017dd7d037d7') in 0.000748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001841 seconds.
+  path: Assets/3D DJ/Playback/Extract Color And Alpha.shader
+  artifactKey: Guid(2a6750c67c66a1443b3e8c3b05e55eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Extract Color And Alpha.shader using Guid(2a6750c67c66a1443b3e8c3b05e55eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3921f2494cf30ed8302d4cb15579dd1f') in 0.000383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001583 seconds.
+  path: Assets/3D DJ/CRT Templates
+  artifactKey: Guid(b9a9fe44d6695c543b8c3530a300a63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/CRT Templates using Guid(b9a9fe44d6695c543b8c3530a300a63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14dd0820d3b99ee0649e5f8cf8cc9342') in 0.000216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001892 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Left/Merged 1.mat
+  artifactKey: Guid(37a2de38033fe4b4c8280eea1174070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Left/Merged 1.mat using Guid(37a2de38033fe4b4c8280eea1174070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41397f180e607330161c1f94a18849bb') in 0.006565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.002088 seconds.
+  path: Assets/3D DJ/Debug/Chaperone.shader
+  artifactKey: Guid(ddba020f3de3ea0459206da70091bf91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Chaperone.shader using Guid(ddba020f3de3ea0459206da70091bf91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1949ca80bd16817aab50b8913f91063') in 0.000316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001891 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Left/Color 1.mat
+  artifactKey: Guid(eae918f316e05034c9ea9d91c8161216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Left/Color 1.mat using Guid(eae918f316e05034c9ea9d91c8161216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9bea7b43c670e5ed97f02b755bf2ee') in 0.004958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002120 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Top/Depth 1.mat
+  artifactKey: Guid(2c6a005af4bf13849ae60b3c562787b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Top/Depth 1.mat using Guid(2c6a005af4bf13849ae60b3c562787b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f34074de58cb0879bfc599be34a85eb') in 0.005118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.001634 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras
+  artifactKey: Guid(494c15631bc1df140bfb50317cab3f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras using Guid(494c15631bc1df140bfb50317cab3f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00d3693c03f3ab25100781c3a706fcc3') in 0.000209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001354 seconds.
+  path: Assets/3D DJ/Fixtures
+  artifactKey: Guid(9350d4bad6db4694f88df100fccc066f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures using Guid(9350d4bad6db4694f88df100fccc066f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec21cd2f0d187a7d63ccf2ea6b670794') in 0.000205 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001817 seconds.
+  path: Assets/3D DJ/Record/Depth Capture/DepthToAlpha.shader
+  artifactKey: Guid(c14b830b6fc306b449ec5644a0d76930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Depth Capture/DepthToAlpha.shader using Guid(c14b830b6fc306b449ec5644a0d76930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2dcb8c6d8967a96db44b4003cc9935') in 0.000319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.004619 seconds.
+  path: Assets/3D DJ/Record/Output/Screenspace Export.shader
+  artifactKey: Guid(0096459063a8abc448a6e5ecebebc794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Output/Screenspace Export.shader using Guid(0096459063a8abc448a6e5ecebebc794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa2ea780ce39a8ad420e9db4a1a80cba') in 0.000320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001838 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa7b016f2d4b61a6b433be281ba05fc') in 0.006356 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.002099 seconds.
+  path: Assets/3D DJ/Record/Player Data Input.shader
+  artifactKey: Guid(21ea385496a8f6e469a4f45b4414ce36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Player Data Input.shader using Guid(21ea385496a8f6e469a4f45b4414ce36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702ebd91ee3a9b80ff2310cd6f9403b1') in 0.000334 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001847 seconds.
+  path: Assets/3D DJ/Amplify Functions/VertexClip.asset
+  artifactKey: Guid(6b01c471edbbafc45b3ee035e6cf458a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/VertexClip.asset using Guid(6b01c471edbbafc45b3ee035e6cf458a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbe77822969e9b7add6423d7f8a5a1af') in 0.000544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001937 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Bottom/Depth 1.mat
+  artifactKey: Guid(15f210433e9c349478290fd86a4f58e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Bottom/Depth 1.mat using Guid(15f210433e9c349478290fd86a4f58e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a165a2dbd184c8265408d8cbb85d0af9') in 0.004868 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002110 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Top/Color 1.mat
+  artifactKey: Guid(1b786e87418074e47bd8b6ef7b5e8c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Top/Color 1.mat using Guid(1b786e87418074e47bd8b6ef7b5e8c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9410bc37bfe81305f55517f4b611f63') in 0.004913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002159 seconds.
+  path: Assets/3D DJ/Fixtures/untitled.blend
+  artifactKey: Guid(ef703a85c82ebef4fb8b3633f5f3b788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/untitled.blend using Guid(ef703a85c82ebef4fb8b3633f5f3b788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8177fd2483bb36ee253a02547fb68671') in 0.011145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.002424 seconds.
+  path: Assets/3D DJ/Amplify Functions/Get Digit.asset
+  artifactKey: Guid(cb5da12b2d4929e4eb16dc07733b93d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/Get Digit.asset using Guid(cb5da12b2d4929e4eb16dc07733b93d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32f308e9fceb4f8537d0d82dd729965') in 0.000557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001402 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Bottom
+  artifactKey: Guid(98c59c74f07be0c4c9d577ca2a55be70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Bottom using Guid(98c59c74f07be0c4c9d577ca2a55be70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1e16a030fafa9ca9ecb3a69fafadd5') in 0.000198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002016 seconds.
+  path: Assets/3D DJ/Debug/Debug.shader
+  artifactKey: Guid(c293b4e3de0a04f45aab6616bdf38093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug.shader using Guid(c293b4e3de0a04f45aab6616bdf38093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc688649416039726abdf2a22c3f58c') in 0.000307 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002021 seconds.
+  path: Assets/3D DJ/Control Desk/Desk.fbx
+  artifactKey: Guid(6b4dcf0861c6e7945b2c1fb598e338dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Control Desk/Desk.fbx using Guid(6b4dcf0861c6e7945b2c1fb598e338dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58864ca305f8a8cde000f278cbc897ea') in 0.018402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.002380 seconds.
+  path: Assets/3D DJ/Amplify Functions/PingPong.asset
+  artifactKey: Guid(a60b9f6425b4a2b4d901cd72b78d5012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/PingPong.asset using Guid(a60b9f6425b4a2b4d901cd72b78d5012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a60fc12d8c3e137be65c1cd070927d63') in 0.000558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001852 seconds.
+  path: Assets/3D DJ/Playback/Extract Segment Of RT.shader
+  artifactKey: Guid(3d961d808c1cbc944ac163d8507d68f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Extract Segment Of RT.shader using Guid(3d961d808c1cbc944ac163d8507d68f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fed9c2ba086aaa81e9cb1ac3df5b9cc') in 0.000308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002065 seconds.
+  path: Assets/3D DJ/Debug/Question Mark.mat
+  artifactKey: Guid(d414105e558726e4ca6e8b15e6705fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Question Mark.mat using Guid(d414105e558726e4ca6e8b15e6705fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '971ce98bc4853e01ac794dd0df006e54') in 0.131884 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.002492 seconds.
+  path: Assets/3D DJ/Amplify Functions/LOD.asset
+  artifactKey: Guid(4a12c339900f8574ebd93a4838a9781d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/LOD.asset using Guid(4a12c339900f8574ebd93a4838a9781d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4db961d4e0b9d75009c248e53bbf3a71') in 0.000882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001955 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
+  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ccad64822bc3277a3d7cfd79d310643') in 0.007150 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.001706 seconds.
+  path: Assets/3D DJ/Prefabs
+  artifactKey: Guid(443b9230b44e86641baea4def8803a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Prefabs using Guid(443b9230b44e86641baea4def8803a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a38fce150437cd6e8a7286712c9a90') in 0.000226 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001999 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Back/Depth 1.mat
+  artifactKey: Guid(70d14ddf9a5acf240a0c696a43d826c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Back/Depth 1.mat using Guid(70d14ddf9a5acf240a0c696a43d826c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d25bdc9c1ad7c7e9f0d798bddd8127') in 0.005117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002166 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Preview.mat
+  artifactKey: Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f872707a74b462aa9cc9399222431715') in 0.006303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.002233 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2a268492248a62345e14773ec08cb9') in 0.008954 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.002089 seconds.
+  path: Assets/3D DJ/Debug/Outline.mat
+  artifactKey: Guid(31ac92affb9c1dd42a53369c13df972e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Outline.mat using Guid(31ac92affb9c1dd42a53369c13df972e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86c60dce6558b15d4662ed61aa2a8ea') in 0.080353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002108 seconds.
+  path: Assets/3D DJ/Editor
+  artifactKey: Guid(27b7b381ec293fc4fa25051faa84e2cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Editor using Guid(27b7b381ec293fc4fa25051faa84e2cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b33b3e00ef333a418917e3bc97aa2e') in 0.000254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001843 seconds.
+  path: Assets/3D DJ/Scripts/Manager.asset
+  artifactKey: Guid(b0bdda2655c983e44a32bd8b2ddae210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Scripts/Manager.asset using Guid(b0bdda2655c983e44a32bd8b2ddae210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e413196b1f5c6329df5d115475da531e') in 0.000417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001871 seconds.
+  path: Assets/3D DJ/Amplify Functions/BinaryShift.asset
+  artifactKey: Guid(36f2ceec161672543ac28910579ed228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/BinaryShift.asset using Guid(36f2ceec161672543ac28910579ed228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79471ed53bb323b4e1caae23dae1c6c5') in 0.000610 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002124 seconds.
+  path: Assets/3D DJ/Debug/Billboard Camera.mat
+  artifactKey: Guid(769aad468f7fe5c47be35cd4288dfc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Billboard Camera.mat using Guid(769aad468f7fe5c47be35cd4288dfc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec6bc3565a466e34f8e36e9e33d98fb') in 0.074082 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.001500 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Back
+  artifactKey: Guid(3dbc0c4d122fc87449627b6b69ac28c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Back using Guid(3dbc0c4d122fc87449627b6b69ac28c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9e18445cb8c97fcb0eeede1c12909b') in 0.000359 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.008693 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Depth Cube.fbx
+  artifactKey: Guid(f14dded017fb4bb4e99aa44d82dc0eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Depth Cube.fbx using Guid(f14dded017fb4bb4e99aa44d82dc0eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ea38e0c755a5ab4710107e80ab02e41') in 0.040332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/3D DJ/Record/Output
+  artifactKey: Guid(cf6ae7da25b16114b981eeefabff8bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Output using Guid(cf6ae7da25b16114b981eeefabff8bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6dad81f50de9bfc820f5886a5eeb82') in 0.000235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001976 seconds.
+  path: Assets/3D DJ/Scripts/Manager.cs
+  artifactKey: Guid(7eb1de4802ee3de469d81d88a7d50256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Scripts/Manager.cs using Guid(7eb1de4802ee3de469d81d88a7d50256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c64a2e53eb7539039c4ae4d89e50007c') in 0.000217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001859 seconds.
+  path: Assets/3D DJ/Amplify Functions/Cubic Billboard.asset
+  artifactKey: Guid(cbbbfe220eabbce4b942d77b7da3d1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/Cubic Billboard.asset using Guid(cbbbfe220eabbce4b942d77b7da3d1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '904d05bb000128cacc69b4c741a4cd34') in 0.000587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001439 seconds.
+  path: Assets/3D DJ/Debug
+  artifactKey: Guid(33c93d4f2c706ea47bb7a8798ffc63c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug using Guid(33c93d4f2c706ea47bb7a8798ffc63c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39a3f58e72ff155472ef52e6eb775327') in 0.000204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002191 seconds.
+  path: Assets/3D DJ/Playback/Extracted Color.asset
+  artifactKey: Guid(40d4c212118c5b545bb60be32058e0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Extracted Color.asset using Guid(40d4c212118c5b545bb60be32058e0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a358e39f4e36312427ff1d5d1c016684') in 0.004812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002303 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Left/Depth 1.mat
+  artifactKey: Guid(1a9a1410789b06942bb8d82efe1e8322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Left/Depth 1.mat using Guid(1a9a1410789b06942bb8d82efe1e8322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4742d5a14cc3690b8d23d72c5feced3') in 0.004960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002267 seconds.
   path: Assets/3D DJ/Playback/Depth Build/Depth Build.mat
   artifactKey: Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Depth Build.mat using Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f95e41da98d220c020deadd33e4934ee') in 0.426600 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat
-  artifactKey: Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat using Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0fe37a932408c01d6dd835082fb6b3') in 0.372900 seconds
+Start importing Assets/3D DJ/Playback/Depth Build/Depth Build.mat using Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1636fae028a1dc85a69fdf99fcdde27b') in 0.006216 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 14
 ========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 43.65 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.08 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 4883.
-Memory consumption went from 175.2 MB to 173.0 MB.
-Total: 81.602200 ms (FindLiveObjects: 0.520900 ms CreateObjectMapping: 0.224500 ms MarkObjects: 80.040700 ms  DeleteObjects: 0.815100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.002283 seconds.
+  path: Assets/3D DJ/Debug/Question Mark 1.mat
+  artifactKey: Guid(ad41c8d492d07dd49b27d4694ea9ef4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Question Mark 1.mat using Guid(ad41c8d492d07dd49b27d4694ea9ef4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d36bbe0ab702ef0fcdd353ad2c8fe2e') in 0.054404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
 ========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 30.26 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (2.2 MB). Loaded Objects now: 4883.
-Memory consumption went from 175.5 MB to 173.3 MB.
-Total: 51.495200 ms (FindLiveObjects: 0.276500 ms CreateObjectMapping: 0.140300 ms MarkObjects: 50.521200 ms  DeleteObjects: 0.556600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Import Request.
+  Time since last request: 0.001948 seconds.
+  path: Assets/3D DJ/Debug/RT Layers Debug.mat
+  artifactKey: Guid(95b31952588d50041852b629255b0149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/RT Layers Debug.mat using Guid(95b31952588d50041852b629255b0149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2799ba653d08a56866fd9c17c13248d8') in 0.008865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.002096 seconds.
+  path: Assets/3D DJ/Debug/Output Debug.mat
+  artifactKey: Guid(dbb3bbfb98c8d0a499bde00f72d2905f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Output Debug.mat using Guid(dbb3bbfb98c8d0a499bde00f72d2905f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f131e6ab80e72317ce4aaea1c342a4') in 0.009371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.001989 seconds.
+  path: Assets/3D DJ/Record/Depth Capture/DepthToAlpha.mat
+  artifactKey: Guid(1316dfffe77656d4aac75af04809f445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Depth Capture/DepthToAlpha.mat using Guid(1316dfffe77656d4aac75af04809f445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe8b554ce87a4480fec566d2db07a684') in 0.003798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002306 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Front/Depth.mat
+  artifactKey: Guid(e693774ca0053774f9850c70a37fe0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Front/Depth.mat using Guid(e693774ca0053774f9850c70a37fe0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1dc488e272f7ddd516550fc1391dc2') in 0.005085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002113 seconds.
+  path: Assets/3D DJ/Amplify Functions/Camera World Rotation.asset
+  artifactKey: Guid(ab088fbb74e35b94d8b874e0d5732543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/Camera World Rotation.asset using Guid(ab088fbb74e35b94d8b874e0d5732543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff501b40b677d46e0e9faa8a5b816e0') in 0.000572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002108 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Front/Color.mat
+  artifactKey: Guid(0da31497d794de845bb794ebbef5ce07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Front/Color.mat using Guid(0da31497d794de845bb794ebbef5ce07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2772af04b5396aac20406c8a4201c53a') in 0.004897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.001577 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Right
+  artifactKey: Guid(f010c40ccf1745b46bf339d1a512f6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Right using Guid(f010c40ccf1745b46bf339d1a512f6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4727b1ed428b6b3cfc08364042e5633') in 0.000197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.004599 seconds.
+  path: Assets/3D DJ/Playback
+  artifactKey: Guid(8d81e5f23624cc849ae8b9fd918ff296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback using Guid(8d81e5f23624cc849ae8b9fd918ff296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bfd054a50aba047c84b6042a945ae5e') in 0.000209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002069 seconds.
+  path: Assets/3D DJ/Debug/Outline.png
+  artifactKey: Guid(269081054c2f7b448a7ffa6561cdec1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Outline.png using Guid(269081054c2f7b448a7ffa6561cdec1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace186eac4e21e219be4fd176b0039c2') in 0.017748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002721 seconds.
+  path: Assets/3D DJ/Debug/UV_Check 1.png
+  artifactKey: Guid(59bfcc8bd2616cb4698bbb2efd89dc25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/UV_Check 1.png using Guid(59bfcc8bd2616cb4698bbb2efd89dc25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deeffcd9e2a3ef8cc34c53449a0e02af') in 0.009801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002231 seconds.
+  path: Assets/3D DJ/Debug/Billboard.shader
+  artifactKey: Guid(dc486a3b353f4de46b9b997446d3edea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Billboard.shader using Guid(dc486a3b353f4de46b9b997446d3edea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7532046a3cfabb046b9e5ce580424b6a') in 0.000342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001829 seconds.
+  path: Assets/3D DJ/Amplify Functions/Address Texture By Pixel.asset
+  artifactKey: Guid(043a0383a77efce45b22d55f567ec263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/Address Texture By Pixel.asset using Guid(043a0383a77efce45b22d55f567ec263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adcbd0282018503f0a24dd5f68ef4ba9') in 0.000602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001876 seconds.
+  path: Assets/3D DJ/Amplify Functions/Binary To Int.asset
+  artifactKey: Guid(55f49686de3e34b43b433d705b23ee3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/Binary To Int.asset using Guid(55f49686de3e34b43b433d705b23ee3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb72f4bac1b22074098537c0e69f08f2') in 0.000528 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001943 seconds.
+  path: Assets/3D DJ/Amplify Functions/VectorEqual.asset
+  artifactKey: Guid(0d6b774809edb5e45bfac1b3f3c4b06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Amplify Functions/VectorEqual.asset using Guid(0d6b774809edb5e45bfac1b3f3c4b06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cff2a18f11e77e77b15e2b643aac404') in 0.000753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001801 seconds.
+  path: Assets/3D DJ/Record/Data Input.mat
+  artifactKey: Guid(8a552e94a9b30954a8e0cab569428037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Data Input.mat using Guid(8a552e94a9b30954a8e0cab569428037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19fdc6ee9f32dfac26cb849a04f1b1c0') in 0.008554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002409 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/DebugCameraView.shader
+  artifactKey: Guid(78fcd504d98b52d47a2c7fc4edde3dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/DebugCameraView.shader using Guid(78fcd504d98b52d47a2c7fc4edde3dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80418bc6ef59fff95ee607f5adf9977f') in 0.000383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001974 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
+  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17fd96dd2fb65f17fc824f28ef36ec6a') in 0.007304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.002283 seconds.
+  path: Assets/3D DJ/Record/Depth RT.renderTexture
+  artifactKey: Guid(283657a5e09fe4444882d8963bc94119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Depth RT.renderTexture using Guid(283657a5e09fe4444882d8963bc94119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe83f02be43b7a2c4c9eba8b5c8ad4a') in 0.001755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001854 seconds.
+  path: Assets/3D DJ/Debug/ContinousVertRotate.shader
+  artifactKey: Guid(d3c701142943b52498e67cc8ac1fe61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/ContinousVertRotate.shader using Guid(d3c701142943b52498e67cc8ac1fe61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d4c87bc2264cda6186d9cff037b033') in 0.000318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001554 seconds.
+  path: Assets/3D DJ/Scripts
+  artifactKey: Guid(021f0e9e3498ef24b83bfc326704f8c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Scripts using Guid(021f0e9e3498ef24b83bfc326704f8c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f31f39fb412c17117ee681282aa078') in 0.000229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002722 seconds.
+  path: Assets/3D DJ/Debug/d_Camera Icon.png
+  artifactKey: Guid(cff6ae04014c12e458f46d0d96ef957a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/d_Camera Icon.png using Guid(cff6ae04014c12e458f46d0d96ef957a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b316b7d59080d66bb83f582262d0c4') in 0.008561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001640 seconds.
+  path: Assets/3D DJ/Record/Depth Capture
+  artifactKey: Guid(93c79ad520a37824d9ff7e646ac9c378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Depth Capture using Guid(93c79ad520a37824d9ff7e646ac9c378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c7f5de705cbf8e444227080e7064456') in 0.000330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.004321 seconds.
+  path: Assets/3D DJ/Record/Output/Output CRT.asset
+  artifactKey: Guid(86309c450e338be458544111d4f51804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Output/Output CRT.asset using Guid(86309c450e338be458544111d4f51804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457367495372cfe5d7b9a1279a616edc') in 0.009720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.001690 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Left
+  artifactKey: Guid(63d752b7ae79e7e408a5be9b2568141c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Left using Guid(63d752b7ae79e7e408a5be9b2568141c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9e0032fffda08de5b05af60638528b') in 0.000244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002138 seconds.
+  path: Assets/3D DJ/Record/Data CRT.asset
+  artifactKey: Guid(b638e271c536ea24cb3cf67f3d34c317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Data CRT.asset using Guid(b638e271c536ea24cb3cf67f3d34c317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf6a299e56be9b8d512ad1a0afbbf0f') in 0.003499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002167 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/DepthBuild.shader
+  artifactKey: Guid(e6d71ffa52071fd48bb56b7befb88bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/DepthBuild.shader using Guid(e6d71ffa52071fd48bb56b7befb88bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d7e68af9eb69023c53c30a41af405a') in 0.000351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001876 seconds.
+  path: Assets/3D DJ/Scripts/ManagerEditor.cs
+  artifactKey: Guid(061ef951ac8924b4f83a321e176227ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Scripts/ManagerEditor.cs using Guid(061ef951ac8924b4f83a321e176227ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e2a3c591f78496fb4110efe855d5af') in 0.000215 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001289 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Front
+  artifactKey: Guid(e1b00dfdcfad79f4fbeb4fdddb2c7442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Front using Guid(e1b00dfdcfad79f4fbeb4fdddb2c7442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935414114b10e883b0f4c4db5d37e639') in 0.000208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001340 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials/Top
+  artifactKey: Guid(60d3f6f96dbd06248b3dd31f69a6778c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials/Top using Guid(60d3f6f96dbd06248b3dd31f69a6778c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7921d9f72f56fb28876be14c60d3975') in 0.000207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001906 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/DebugHeightmap.shader
+  artifactKey: Guid(27341a96491f8164b83036e73f6641a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/DebugHeightmap.shader using Guid(27341a96491f8164b83036e73f6641a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b1c62ac81c18fe645b0101759fbedac') in 0.000332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001922 seconds.
+  path: Assets/3D DJ/Record/Output/Output Screenspace.mat
+  artifactKey: Guid(a75548cb2f707d14cb94315bd260dd56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record/Output/Output Screenspace.mat using Guid(a75548cb2f707d14cb94315bd260dd56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb21f89eab618bdbe795bc087345b103') in 0.009541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.001689 seconds.
+  path: Assets/3D DJ/Record
+  artifactKey: Guid(679eea0e1f7238140a35127a02c3fcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Record using Guid(679eea0e1f7238140a35127a02c3fcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8fb522eae5be53cde97367c690a1c57') in 0.000207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001287 seconds.
+  path: Assets/3D DJ/Debug/Debug Cameras/Materials
+  artifactKey: Guid(4bd2f4fb58df45849a55514b83793f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/Debug Cameras/Materials using Guid(4bd2f4fb58df45849a55514b83793f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b44af947143af9e505a7b1f6bc14054d') in 0.000223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

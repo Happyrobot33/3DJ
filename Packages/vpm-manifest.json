@@ -1,71 +1,73 @@
 {
   "dependencies": {
-    "com.vrchat.core.vpm-resolver": {
-      "version": "0.1.28"
-    },
     "com.poiyomi.toon": {
       "version": "9.0.57"
     },
-    "com.happyrobot33.fpscontroller": {
-      "version": "1.0.0"
-    },
-    "com.happyrobot33.vrcsdkdocumentation": {
-      "version": "0.0.3"
+    "com.vrchat.worlds": {
+      "version": "3.7.4"
     },
     "dev.architech.protv": {
-      "version": "3.0.0-beta.16"
-    },
-    "com.vrchat.worlds": {
-      "version": "3.6.1"
+      "version": "3.0.0-beta.23"
     },
     "dev.architech.videoplayershim": {
-      "version": "1.3.5"
+      "version": "1.3.8"
+    },
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.29"
+    },
+    "com.llealloo.audiolink": {
+      "version": "2.0.0"
+    },
+    "com.acchosen.vr-stage-lighting": {
+      "version": "2.7.1"
     }
   },
   "locked": {
-    "com.vrchat.core.vpm-resolver": {
-      "version": "0.1.28",
-      "dependencies": {}
-    },
     "com.poiyomi.toon": {
       "version": "9.0.57",
       "dependencies": {}
     },
-    "com.happyrobot33.fpscontroller": {
-      "version": "1.0.0",
-      "dependencies": {}
+    "com.vrchat.worlds": {
+      "version": "3.7.4",
+      "dependencies": {
+        "com.vrchat.base": "3.7.4"
+      }
     },
-    "com.happyrobot33.vrcsdkdocumentation": {
-      "version": "0.0.3",
+    "com.vrchat.base": {
+      "version": "3.7.4",
       "dependencies": {}
     },
     "dev.architech.protv": {
-      "version": "3.0.0-beta.16",
+      "version": "3.0.0-beta.23",
       "dependencies": {
-        "com.vrchat.worlds": "^3.3",
-        "dev.architech.sdk": ">=0.14 <1"
+        "com.vrchat.worlds": "^3.4",
+        "dev.architech.sdk": ">=0.16.1 <1"
       }
     },
     "dev.architech.sdk": {
-      "version": "0.15.6",
+      "version": "0.17.1",
       "dependencies": {
         "com.vrchat.worlds": "^3.4"
       }
     },
-    "com.vrchat.worlds": {
-      "version": "3.6.1",
-      "dependencies": {
-        "com.vrchat.base": "3.6.1"
-      }
-    },
-    "com.vrchat.base": {
-      "version": "3.6.1",
-      "dependencies": {}
-    },
     "dev.architech.videoplayershim": {
-      "version": "1.3.5",
+      "version": "1.3.8",
       "dependencies": {
         "com.vrchat.worlds": "^3.3"
+      }
+    },
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.29",
+      "dependencies": {}
+    },
+    "com.llealloo.audiolink": {
+      "version": "2.0.0",
+      "dependencies": {}
+    },
+    "com.acchosen.vr-stage-lighting": {
+      "version": "2.7.1",
+      "dependencies": {
+        "com.llealloo.audiolink": ">=0.3.1"
       }
     }
   }
