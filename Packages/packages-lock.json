@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "com.happyrobot33.fpscontroller": {
-      "version": "file:com.happyrobot33.fpscontroller",
+    "com.acchosen.vr-stage-lighting": {
+      "version": "file:com.acchosen.vr-stage-lighting",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
@@ -12,8 +12,8 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "com.happyrobot33.vrcsdkdocumentation": {
-      "version": "file:com.happyrobot33.vrcsdkdocumentation",
+    "com.llealloo.audiolink": {
+      "version": "file:com.llealloo.audiolink",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
@@ -218,7 +218,8 @@
         "com.unity.timeline": "1.7.6",
         "com.unity.xr.management": "4.3.3",
         "com.unity.xr.oculus": "4.0.0",
-        "com.unity.postprocessing": "3.2.2"
+        "com.unity.postprocessing": "3.2.2",
+        "com.unity.ugui": "1.0.0"
       }
     },
     "com.vrchat.core.vpm-resolver": {

@@ -10,7 +10,7 @@ using VRC.SDK3.Components;
 namespace com.happyrobot33.holographicreprojector
 {
     using TMPro;
-
+    using UnityEngine.Rendering.PostProcessing;
 
     [AttributeUsage(AttributeTargets.Field)]
     public class DeveloperOnly : PropertyAttribute { }
@@ -46,6 +46,7 @@ namespace com.happyrobot33.holographicreprojector
         public Material DataInput;
         [DeveloperOnly]
         public Material[] playbackMaterials;
+        public PostProcessVolume[] PostProcessVolumes;
         public RenderTexture VideoTexture;
 
         [Header("Color:")]
@@ -169,10 +170,25 @@ namespace com.happyrobot33.holographicreprojector
             if (Recorder.activeSelf)
             {
                 mode = Mode.Record;
+                ConfigurePostProcessingVolumes(false);
             }
             else
             {
                 mode = Mode.Playback;
+
+                //if a post processing volume is defined, turn it back on
+                ConfigurePostProcessingVolumes(true);
+            }
+        }
+
+        private void ConfigurePostProcessingVolumes(bool value)
+        {
+            foreach (PostProcessVolume volume in PostProcessVolumes)
+            {
+                if (volume != null)
+                {
+                    volume.enabled = value;
+                }
             }
         }
 
