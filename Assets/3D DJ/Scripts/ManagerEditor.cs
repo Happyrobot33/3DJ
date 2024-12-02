@@ -30,6 +30,7 @@ namespace com.happyrobot33.holographicreprojector
             foreach (Manager manager in managers)
             {
                 manager.SetupGlobalTextures();
+                manager.EnforceCameraAspectRatio();
             }
         }
 
