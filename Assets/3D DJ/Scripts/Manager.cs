@@ -213,6 +213,16 @@ namespace com.happyrobot33.holographicreprojector
             Gizmos.DrawWireCube(centerBound, maxBound - minBound);
         }
         #endif
+
+        private float remapToScaledPlayer(float input)
+        {
+            //we are assuming a normal player is 1 meter tall for all values inputted into here
+            //so we need to scale the input to the player size
+
+            float percentage = playerToRecord.GetAvatarEyeHeightAsMeters();
+
+            return input * percentage;
+        }
         void Update()
         {
             if (mode == Mode.Record)
@@ -223,7 +233,7 @@ namespace com.happyrobot33.holographicreprojector
 
                 //get the min and max bounds
                 //TODO: Expose radius as a slider
-                FromPoints(points, 0.125f);
+                FromPoints(points, remapToScaledPlayer(0.125f));
 
                 //move the recorder to the player position rotated around the player
                 Vector3 recordCenter = RotatePointAroundPivot(centerBound, playerPos, new Vector3(0, playerToRecord.GetRotation().eulerAngles.y + 45, 0));
@@ -258,7 +268,7 @@ namespace com.happyrobot33.holographicreprojector
             //encapsulate some positions
             //build up a list of points
             DataList points = new DataList();
-            points.Add(new DataToken(rotationNullifiedBonePosition(HumanBodyBones.Head, playerToRecord) + new Vector3(0, OffsetSlider.value, 0)));
+            points.Add(new DataToken(rotationNullifiedBonePosition(HumanBodyBones.Head, playerToRecord) + new Vector3(0, remapToScaledPlayer(OffsetSlider.value), 0)));
             
             for (int i = 0; i < (int)HumanBodyBones.LastBone; i++)
             {
