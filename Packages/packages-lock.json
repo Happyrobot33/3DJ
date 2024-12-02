@@ -6,8 +6,14 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "com.happyrobot33.inspectortweaks": {
-      "version": "file:com.happyrobot33.inspectortweaks",
+    "com.happyrobot33.fpscontroller": {
+      "version": "file:com.happyrobot33.fpscontroller",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.happyrobot33.vrcsdkdocumentation": {
+      "version": "file:com.happyrobot33.vrcsdkdocumentation",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
