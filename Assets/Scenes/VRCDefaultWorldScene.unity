@@ -3757,6 +3757,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holo Emitter Fixture
       objectReference: {fileID: 0}
+    - target: {fileID: 6824176175767700216, guid: 9330ab3b3cd704a409cf81572cba8ddc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

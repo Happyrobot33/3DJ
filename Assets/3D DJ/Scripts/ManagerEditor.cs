@@ -7,12 +7,32 @@ namespace com.happyrobot33.holographicreprojector
 #if !COMPILER_UDONSHARP && UNITY_EDITOR
     using UdonSharpEditor;
     using UnityEditor;
+    using UnityEditor.SceneManagement;
+    using UnityEngine.SceneManagement;
 
     //custom editor to have a button to cycle the player
 
     [CustomEditor(typeof(Manager))]
     public class ManagerEditor : Editor
     {
+        //subscribe a function to EditorApplication.update
+        [InitializeOnLoadMethod]
+        private static void SubscribeToEditorUpdate()
+        {
+            //TODO: This kind of sucks ass tbh
+            EditorApplication.update += Update;
+        }
+
+        private static void Update()
+        {
+            //find any 3dj managers
+            Manager[] managers = FindObjectsOfType<Manager>();
+            foreach (Manager manager in managers)
+            {
+                manager.SetupGlobalTextures();
+            }
+        }
+
         public override void OnInspectorGUI()
         {
             if (UdonSharpGUI.DrawDefaultUdonSharpBehaviourHeader(target)) return;
@@ -249,8 +269,9 @@ namespace com.happyrobot33.holographicreprojector
             manager.SetupRenderTextureExtractionZones();
 
             manager.EnforceCameraAspectRatio();
-        }
 
+            manager.SetupGlobalTextures();
+        }
 
         private Vector2Int DrawRTArea(Manager manager, Texture texture, Rect ParentRect, GUIStyle imageStyle, Vector2Int topLeft, bool showHandles)
         {

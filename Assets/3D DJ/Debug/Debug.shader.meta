@@ -3,8 +3,8 @@ guid: c293b4e3de0a04f45aab6616bdf38093
 ShaderImporter:
   externalObjects: {}
   defaultTextures:
-  - _ColorAlpha: {fileID: 8400000, guid: d5eade7947abe2d4ea65c23f9a0c12b3, type: 2}
-  - _Depth: {fileID: 8400000, guid: 283657a5e09fe4444882d8963bc94119, type: 2}
+  - _Udon_3DJ_Color: {fileID: 8600000, guid: 40d4c212118c5b545bb60be32058e0d1, type: 2}
+  - _Udon_3DJ_Depth: {fileID: 8600000, guid: 2fc056076e63f5f49849b667613db859, type: 2}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 
