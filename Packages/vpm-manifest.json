@@ -20,6 +20,9 @@
     },
     "com.acchosen.vr-stage-lighting": {
       "version": "2.7.1"
+    },
+    "com.texelsaur.video": {
+      "version": "2.4.14"
     }
   },
   "locked": {
@@ -69,6 +72,16 @@
       "dependencies": {
         "com.llealloo.audiolink": ">=0.3.1"
       }
+    },
+    "com.texelsaur.video": {
+      "version": "2.4.14",
+      "dependencies": {
+        "com.texelsaur.common": "^1.5.0"
+      }
+    },
+    "com.texelsaur.common": {
+      "version": "1.5.3",
+      "dependencies": {}
     }
   }
 }
