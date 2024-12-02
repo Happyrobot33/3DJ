@@ -4,8 +4,6 @@ Shader "Debug"
 {
 	Properties
 	{
-		[NoScaleOffset]_ColorAlpha("Color/Alpha", 2D) = "white" {}
-		[NoScaleOffset]_Depth("Depth", 2D) = "white" {}
 		[HideInInspector] _texcoord( "", 2D ) = "white" {}
 		[HideInInspector] __dirty( "", Int ) = 1
 	}
@@ -22,8 +20,8 @@ Shader "Debug"
 			float2 uv_texcoord;
 		};
 
-		uniform sampler2D _ColorAlpha;
-		uniform sampler2D _Depth;
+		uniform sampler2D _Udon_3DJ_Color;
+		uniform sampler2D _Udon_3DJ_Depth;
 
 		inline half4 LightingUnlit( SurfaceOutput s, half3 lightDir, half atten )
 		{
@@ -33,12 +31,12 @@ Shader "Debug"
 		void surf( Input i , inout SurfaceOutput o )
 		{
 			float2 temp_output_18_0 = (float2( 0,0 ) + (i.uv_texcoord - float2( 0,0 )) * (float2( 1,1 ) - float2( 0,0 )) / (float2( 0.1666667,1 ) - float2( 0,0 )));
-			float4 tex2DNode1 = tex2D( _ColorAlpha, temp_output_18_0 );
+			float4 tex2DNode1 = tex2D( _Udon_3DJ_Color, temp_output_18_0 );
 			float4 break6 = tex2DNode1;
 			float4 color9 = IsGammaSpace() ? float4(1,0,0,0) : float4(1,0,0,0);
 			float4 color11 = IsGammaSpace() ? float4(0,1,0,0) : float4(0,1,0,0);
 			float4 color14 = IsGammaSpace() ? float4(0,0,1,0) : float4(0,0,1,0);
-			o.Emission = ( (( i.uv_texcoord.x >= 0.0 && i.uv_texcoord.x <= 0.1666667 ) ? tex2DNode1 :  float4( 0,0,0,0 ) ) + ( (( i.uv_texcoord.x >= 0.1666667 && i.uv_texcoord.x <= 0.3333333 ) ? break6.r :  0.0 ) * color9 ) + ( (( i.uv_texcoord.x >= 0.3333333 && i.uv_texcoord.x <= 0.5 ) ? break6.g :  0.0 ) * color11 ) + ( (( i.uv_texcoord.x >= 0.5 && i.uv_texcoord.x <= 0.6666667 ) ? break6.b :  0.0 ) * color14 ) + (( i.uv_texcoord.x >= 0.6666667 && i.uv_texcoord.x <= 0.8333333 ) ? break6.a :  0.0 ) + (( i.uv_texcoord.x >= 0.8333333 && i.uv_texcoord.x <= 1.0 ) ? tex2D( _Depth, temp_output_18_0 ).r :  0.0 ) ).rgb;
+			o.Emission = ( (( i.uv_texcoord.x >= 0.0 && i.uv_texcoord.x <= 0.1666667 ) ? tex2DNode1 :  float4( 0,0,0,0 ) ) + ( (( i.uv_texcoord.x >= 0.1666667 && i.uv_texcoord.x <= 0.3333333 ) ? break6.r :  0.0 ) * color9 ) + ( (( i.uv_texcoord.x >= 0.3333333 && i.uv_texcoord.x <= 0.5 ) ? break6.g :  0.0 ) * color11 ) + ( (( i.uv_texcoord.x >= 0.5 && i.uv_texcoord.x <= 0.6666667 ) ? break6.b :  0.0 ) * color14 ) + (( i.uv_texcoord.x >= 0.6666667 && i.uv_texcoord.x <= 0.8333333 ) ? break6.a :  0.0 ) + (( i.uv_texcoord.x >= 0.8333333 && i.uv_texcoord.x <= 1.0 ) ? tex2D( _Udon_3DJ_Depth, temp_output_18_0 ).r :  0.0 ) ).rgb;
 			o.Alpha = 1;
 		}
 
@@ -67,9 +65,9 @@ Node;AmplifyShaderEditor.TFHCCompareWithRange;17;-27.90446,1696.735;Inherit;Fals
 Node;AmplifyShaderEditor.TFHCCompareWithRange;19;-32.44989,1908.087;Inherit;False;5;0;FLOAT;0;False;1;FLOAT;0.8333333;False;2;FLOAT;1;False;3;FLOAT;0;False;4;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SamplerNode;21;-680.7333,1657.97;Inherit;True;Property;_TextureSample1;Texture Sample 1;2;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.BreakToComponentsNode;6;-636.8041,331.7115;Inherit;False;COLOR;1;0;COLOR;0,0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15
-Node;AmplifyShaderEditor.TexturePropertyNode;2;-2181.523,354.2213;Inherit;True;Property;_ColorAlpha;Color/Alpha;0;1;[NoScaleOffset];Create;True;0;0;0;False;0;False;d5eade7947abe2d4ea65c23f9a0c12b3;d5eade7947abe2d4ea65c23f9a0c12b3;False;white;Auto;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1
-Node;AmplifyShaderEditor.TexturePropertyNode;20;-1094.89,1696.288;Inherit;True;Property;_Depth;Depth;1;1;[NoScaleOffset];Create;True;0;0;0;False;0;False;283657a5e09fe4444882d8963bc94119;283657a5e09fe4444882d8963bc94119;False;white;Auto;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1
 Node;AmplifyShaderEditor.TFHCRemapNode;18;-1369.405,373.1136;Inherit;False;5;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;2;FLOAT2;0.1666667,1;False;3;FLOAT2;0,0;False;4;FLOAT2;1,1;False;1;FLOAT2;0
+Node;AmplifyShaderEditor.FunctionNode;22;-1840,208;Inherit;False;Global Textures;0;;1;5151b2ab862399e41a33b2b14a355044;0;0;3;SAMPLER2D;0;SAMPLER2D;5;SAMPLER2D;6
+Node;AmplifyShaderEditor.FunctionNode;23;-1104,1600;Inherit;False;Global Textures;0;;2;5151b2ab862399e41a33b2b14a355044;0;0;3;SAMPLER2D;0;SAMPLER2D;5;SAMPLER2D;6
 WireConnection;8;0;10;0
 WireConnection;8;1;9;0
 WireConnection;12;0;13;0
@@ -83,7 +81,7 @@ WireConnection;7;3;15;0
 WireConnection;7;4;17;0
 WireConnection;7;5;19;0
 WireConnection;0;2;7;0
-WireConnection;1;0;2;0
+WireConnection;1;0;22;6
 WireConnection;1;1;18;0
 WireConnection;5;0;3;1
 WireConnection;5;3;1;0
@@ -97,9 +95,9 @@ WireConnection;17;0;3;1
 WireConnection;17;3;6;3
 WireConnection;19;0;3;1
 WireConnection;19;3;21;1
-WireConnection;21;0;20;0
+WireConnection;21;0;23;5
 WireConnection;21;1;18;0
 WireConnection;6;0;1;0
 WireConnection;18;0;3;0
 ASEEND*/
-//CHKSM=F043732AB3E46E1BEBF9226E00DD69C611B3C373
+//CHKSM=F19E603E4E3C97C722F43361F522E7AD0B62C7D3

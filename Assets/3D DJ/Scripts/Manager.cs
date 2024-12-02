@@ -118,7 +118,17 @@ namespace com.happyrobot33.holographicreprojector
             Recorder.SetActive(false);
 
             EnforceCameraAspectRatio();
+            SetupGlobalTextures();
         }
+
+        public void SetupGlobalTextures()
+        {
+            //initialize the global textures
+            VRCShader.SetGlobalTexture(VRCShader.PropertyToID("_Udon_3DJ_Color"), ColorExtractTexture);
+            VRCShader.SetGlobalTexture(VRCShader.PropertyToID("_Udon_3DJ_Depth"), DepthExtractTexture);
+            VRCShader.SetGlobalTexture(VRCShader.PropertyToID("_Udon_3DJ_Data"), DataExtractTexture);
+        }
+
 
         public Vector3 RotatePointAroundPivot(Vector3 point, Vector3 pivot, Vector3 angles)
         {
@@ -191,28 +201,6 @@ namespace com.happyrobot33.holographicreprojector
 
             return bonePos;
         }
-
-        #if !COMPILER_UDONSHARP && UNITY_EDITOR
-        private void OnDrawGizmos()
-        {
-            //draw a point at each bone position
-            Vector3[] points = GeneratePositionArray();
-            foreach (Vector3 point in points)
-            {
-                Gizmos.DrawSphere(point, 0.025f);
-            }
-
-            //draw the bounds
-            //color
-            Gizmos.color = Color.red;
-
-            Gizmos.DrawSphere(minBound, 0.025f);
-            Gizmos.DrawSphere(maxBound, 0.025f);
-            Gizmos.DrawSphere(centerBound, 0.025f);
-
-            Gizmos.DrawWireCube(centerBound, maxBound - minBound);
-        }
-        #endif
 
         private float remapToScaledPlayer(float input)
         {

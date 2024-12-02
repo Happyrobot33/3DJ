@@ -1,0 +1,1253 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.22f1 (887be4894c44) revision 8944612'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 32655 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Users\mherber\Documents\2022.3.22f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/mherber/sonar-3dj-project
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+55774
+Successfully changed project path to: C:/Users/mherber/sonar-3dj-project
+C:/Users/mherber/sonar-3dj-project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [30540] Host "[IP] 10.0.2.45 [Port] 0 [Flags] 2 [Guid] 1233776905 [EditorId] 1233776905 [Version] 1048832 [Id] WindowsEditor(7,PTM541) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [30540] Host "[IP] 10.0.2.45 [Port] 0 [Flags] 2 [Guid] 1233776905 [EditorId] 1233776905 [Version] 1048832 [Id] WindowsEditor(7,PTM541) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Refreshing native plugins compatible for Editor in 171.85 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 4.35 ms.
+Initialize engine version: 2022.3.22f1 (887be4894c44)
+[Subsystems] Discovering subsystems at path C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/mherber/sonar-3dj-project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12115 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.012211 seconds.
+- Loaded All Assemblies, in  0.361 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.288 seconds
+Domain Reload Profiling: 647ms
+	BeginReloadAssembly (132ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (131ms)
+		LoadAssemblies (132ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (127ms)
+			TypeCache.Refresh (126ms)
+				TypeCache.ScanAssembly (114ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (289ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (241ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (95ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (99ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.183 seconds
+Refreshing native plugins compatible for Editor in 84.64 ms, found 10 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.383 seconds
+Domain Reload Profiling: 3560ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (893ms)
+		LoadAssemblies (726ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (296ms)
+			TypeCache.Refresh (259ms)
+				TypeCache.ScanAssembly (237ms)
+			ScanForSourceGeneratedMonoScriptInfo (25ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (2384ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1365ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (194ms)
+			ProcessInitializeOnLoadAttributes (678ms)
+			ProcessInitializeOnLoadMethodAttributes (457ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 129.16 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.19 ms.
+Unloading 4585 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 233 unused Assets / (2.4 MB). Loaded Objects now: 5035.
+Memory consumption went from 349.5 MB to 347.1 MB.
+Total: 30.577800 ms (FindLiveObjects: 0.365300 ms CreateObjectMapping: 0.276800 ms MarkObjects: 28.551100 ms  DeleteObjects: 1.383300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 13154.071182 seconds.
+  path: Assets/3D DJ/Prefabs/3DJ.prefab
+  artifactKey: Guid(93af4b9116135ea4788cdf90717ca754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Prefabs/3DJ.prefab using Guid(93af4b9116135ea4788cdf90717ca754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c465a5bef9a6c2d16aec3df3d931df') in 0.381262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 364
+========================================================================
+Received Prepare
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Begin MonoManager ReloadAssembly
+Removing scripting define AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ArchiTech.SDK.Editor.ATEditorUtility:RemoveScriptingDefine (string) (at ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs:587)
+ArchiTech.ProTV.Editor.AudioLinkScriptingDefineHandler:ReloadDefines () (at ./Packages/dev.architech.protv/Editor/Helpers/ProTVEditorUtility.cs:727)
+UnityEditor.AssemblyReloadEvents:OnBeforeAssemblyReload ()
+
+(Filename: ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs Line: 587)
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+- Loaded All Assemblies, in  1.226 seconds
+Refreshing native plugins compatible for Editor in 99.83 ms, found 10 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Set Scripting Define Symbols for selected build target (Standalone) to: UNITY_POST_PROCESSING_STACK_V2;UDONSHARP;UDON;VRC_SDK_VRCSDK3;AMPLIFY_SHADER_EDITOR;AVPRO_IMPORTED;AVPRO_V2;VRC_ENABLE_PLAYER_PERSISTENCE;AUDIOLINK;AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioLink.Editor.AudioLinkDefineManager:AddDefinesIfMissing (UnityEditor.BuildTargetGroup,string[]) (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:41)
+AudioLink.Editor.AudioLinkDefineManager:.cctor () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs Line: 41)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
+UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
+UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
+UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
+UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
+UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
+UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
+UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
+UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
+
+[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
+  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
+  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
+  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
+  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
+  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
+  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
+  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
+  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
+  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
+
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  4.093 seconds
+Domain Reload Profiling: 5313ms
+	BeginReloadAssembly (324ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (125ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (781ms)
+		LoadAssemblies (862ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (48ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (4094ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1351ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (286ms)
+			ProcessInitializeOnLoadAttributes (375ms)
+			ProcessInitializeOnLoadMethodAttributes (640ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 116.14 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.17 ms.
+Unloading 4133 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 204 unused Assets / (2.3 MB). Loaded Objects now: 5062.
+Memory consumption went from 251.3 MB to 248.9 MB.
+Total: 47.610100 ms (FindLiveObjects: 0.418200 ms CreateObjectMapping: 0.157700 ms MarkObjects: 46.183200 ms  DeleteObjects: 0.850100 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1168.153365 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '254d09239cc5ec7ed1cf0ab39365d417') in 0.451562 seconds
+Number of updated asset objects reloaded before import = 9
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 27.378109 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2237c7a95b986d1734d3f1f46a13e28b') in 0.400946 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Prepare
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Begin MonoManager ReloadAssembly
+Removing scripting define AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ArchiTech.SDK.Editor.ATEditorUtility:RemoveScriptingDefine (string) (at ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs:587)
+ArchiTech.ProTV.Editor.AudioLinkScriptingDefineHandler:ReloadDefines () (at ./Packages/dev.architech.protv/Editor/Helpers/ProTVEditorUtility.cs:727)
+UnityEditor.AssemblyReloadEvents:OnBeforeAssemblyReload ()
+
+(Filename: ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs Line: 587)
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+- Loaded All Assemblies, in  1.299 seconds
+Refreshing native plugins compatible for Editor in 146.83 ms, found 10 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Set Scripting Define Symbols for selected build target (Standalone) to: UNITY_POST_PROCESSING_STACK_V2;UDONSHARP;UDON;VRC_SDK_VRCSDK3;AMPLIFY_SHADER_EDITOR;AVPRO_IMPORTED;AVPRO_V2;VRC_ENABLE_PLAYER_PERSISTENCE;AUDIOLINK;AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioLink.Editor.AudioLinkDefineManager:AddDefinesIfMissing (UnityEditor.BuildTargetGroup,string[]) (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:41)
+AudioLink.Editor.AudioLinkDefineManager:.cctor () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs Line: 41)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
+UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
+UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
+UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
+UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
+UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
+UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
+UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
+UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
+
+[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
+  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
+  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
+  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
+  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
+  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
+  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
+  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
+  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
+  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
+
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  4.472 seconds
+Domain Reload Profiling: 5765ms
+	BeginReloadAssembly (355ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (137ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (90ms)
+	LoadAllAssembliesAndSetupDomain (800ms)
+		LoadAssemblies (886ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (56ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (23ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (4473ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1423ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (224ms)
+			ProcessInitializeOnLoadAttributes (513ms)
+			ProcessInitializeOnLoadMethodAttributes (647ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 121.79 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.24 ms.
+Unloading 4133 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 199 unused Assets / (2.3 MB). Loaded Objects now: 5072.
+Memory consumption went from 253.1 MB to 250.8 MB.
+Total: 53.473900 ms (FindLiveObjects: 0.329100 ms CreateObjectMapping: 0.238300 ms MarkObjects: 51.674800 ms  DeleteObjects: 1.230200 ms)
+
+Prepare: number of updated asset objects reloaded= 8
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Begin MonoManager ReloadAssembly
+Removing scripting define AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ArchiTech.SDK.Editor.ATEditorUtility:RemoveScriptingDefine (string) (at ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs:587)
+ArchiTech.ProTV.Editor.AudioLinkScriptingDefineHandler:ReloadDefines () (at ./Packages/dev.architech.protv/Editor/Helpers/ProTVEditorUtility.cs:727)
+UnityEditor.AssemblyReloadEvents:OnBeforeAssemblyReload ()
+
+(Filename: ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs Line: 587)
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+- Loaded All Assemblies, in  1.283 seconds
+Refreshing native plugins compatible for Editor in 204.94 ms, found 10 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Set Scripting Define Symbols for selected build target (Standalone) to: UNITY_POST_PROCESSING_STACK_V2;UDONSHARP;UDON;VRC_SDK_VRCSDK3;AMPLIFY_SHADER_EDITOR;AVPRO_IMPORTED;AVPRO_V2;VRC_ENABLE_PLAYER_PERSISTENCE;AUDIOLINK;AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioLink.Editor.AudioLinkDefineManager:AddDefinesIfMissing (UnityEditor.BuildTargetGroup,string[]) (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:41)
+AudioLink.Editor.AudioLinkDefineManager:.cctor () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs Line: 41)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
+UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
+UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
+UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
+UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
+UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
+UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
+UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
+UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
+
+[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
+  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
+  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
+  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
+  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
+  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
+  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
+  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
+  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
+  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
+
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  4.996 seconds
+Domain Reload Profiling: 6270ms
+	BeginReloadAssembly (378ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (143ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (76ms)
+	LoadAllAssembliesAndSetupDomain (760ms)
+		LoadAssemblies (831ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (84ms)
+			TypeCache.Refresh (23ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (4997ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1459ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (274ms)
+			ProcessInitializeOnLoadAttributes (411ms)
+			ProcessInitializeOnLoadMethodAttributes (723ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 133.90 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.27 ms.
+Unloading 4134 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 192 unused Assets / (2.3 MB). Loaded Objects now: 5089.
+Memory consumption went from 255.3 MB to 253.0 MB.
+Total: 63.151200 ms (FindLiveObjects: 0.741200 ms CreateObjectMapping: 0.404500 ms MarkObjects: 60.719000 ms  DeleteObjects: 1.285400 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 475.175097 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd37289833e2a63cdee722fc04e394a') in 0.079658 seconds
+Number of updated asset objects reloaded before import = 8
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 222.606982 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd69f989e316f756135d5c4154a1c6932') in 0.481750 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 11.918566 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5099dd927488362397023756c651ad0b') in 0.321503 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 7.714616 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ad7740ff491b43801df201afbf1a0f') in 0.362199 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 18.052831 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144ed2224baea481599c9662e44b3ffb') in 0.548317 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 3.487061 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ee576f573588cef1259d848cb497624') in 0.421418 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 437.982712 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/VerticalMode/DMXRTViewer-SpinTimer-Vertical.asset
+  artifactKey: Guid(d8d7d540bd7f30c4b845dcca7a985f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/VerticalMode/DMXRTViewer-SpinTimer-Vertical.asset using Guid(d8d7d540bd7f30c4b845dcca7a985f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae7ddef5bdcca686bf974f7450317ca') in 0.035022 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/VerticalMode/DMXRTViewer-StrobeOutput-Vertical.asset
+  artifactKey: Guid(42aa50059d38ab44a95ee1cb7a7c5d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/VerticalMode/DMXRTViewer-StrobeOutput-Vertical.asset using Guid(42aa50059d38ab44a95ee1cb7a7c5d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ddcce405280fecb00add43c08735de0') in 0.012460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/Legacy/DMXRTViewer-StrobeOutput-Legacy.asset
+  artifactKey: Guid(12347cc9d183cff41b75a6e1d133bff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/Legacy/DMXRTViewer-StrobeOutput-Legacy.asset using Guid(12347cc9d183cff41b75a6e1d133bff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b543c15b327445034e973448fa1f7495') in 0.014519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/FocusNode.png
+  artifactKey: Guid(da673e6179c67d346abb220a6935e359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/FocusNode.png using Guid(da673e6179c67d346abb220a6935e359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d03701375a4608910df652b6ae4e7a5') in 0.015306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f1b5dfda6b669a65d579e29b1dba60a') in 0.010757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/FitView.png
+  artifactKey: Guid(1def740f2314c6b4691529cadeee2e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/FitView.png using Guid(1def740f2314c6b4691529cadeee2e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e606d8b512957647930f26bf3c56b32') in 0.009789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/VerticalMode/DMXRTViewer-StrobeOutput-Delay-Initial-Vertical.asset
+  artifactKey: Guid(cc132e098e98e24448b3171b5f9834d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/VerticalMode/DMXRTViewer-StrobeOutput-Delay-Initial-Vertical.asset using Guid(cc132e098e98e24448b3171b5f9834d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7f860a3c639ddc18deb4c00455c019') in 0.014779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (1).jpg
+  artifactKey: Guid(b2d5844398779944897100ab02debb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (1).jpg using Guid(b2d5844398779944897100ab02debb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b6c0e7712d699ba32f2349baab4f4e2') in 0.011613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/DMXRTViewer-StrobeOutput-Delay-Final-Horizontal.asset
+  artifactKey: Guid(8c4ff92799dcc5641ac0f7d4ec2f8163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/DMXRTViewer-StrobeOutput-Delay-Final-Horizontal.asset using Guid(8c4ff92799dcc5641ac0f7d4ec2f8163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6a3f11e82a5a59c1c6e4b76a83940d') in 0.019465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (1).png
+  artifactKey: Guid(6dd6638e8d91f324383b214a129f143d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (1).png using Guid(6dd6638e8d91f324383b214a129f143d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5caa1ad246ca7214a7bbf0dd44fdd480') in 0.012449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/Legacy/DMXRTViewer-StrobeTimings-Legacy.asset
+  artifactKey: Guid(a0e2ea8d6ec133f4fb7ad6f74d904820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/Legacy/DMXRTViewer-StrobeTimings-Legacy.asset using Guid(a0e2ea8d6ec133f4fb7ad6f74d904820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73bf656dceabef2dbb3ca02ff2a56130') in 0.014069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/VerticalMode/DMXRTViewer-StrobeTimings-Vertical.asset
+  artifactKey: Guid(d4c740f9462f25d4a9d1cc2063318a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/VerticalMode/DMXRTViewer-StrobeTimings-Vertical.asset using Guid(d4c740f9462f25d4a9d1cc2063318a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c645ef8f7d932539dd374e2182bdaf1d') in 0.012618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (2).png
+  artifactKey: Guid(c0125b075311ac74c93f83b0e6558dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (2).png using Guid(c0125b075311ac74c93f83b0e6558dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9eb3c3645f0bbfa92e3cac01758653') in 0.010657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (5).jpg
+  artifactKey: Guid(b96cad894c8c3cd4c8b72e4ef06afc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (5).jpg using Guid(b96cad894c8c3cd4c8b72e4ef06afc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9d4cf1bce227f6795f22f4746e68f5') in 0.012147 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 25.482176 seconds.
+  path: Assets/3D DJ/Playback/Depth Extract Step.mat
+  artifactKey: Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Extract Step.mat using Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a03dc1d5557dac56948c9e49995c7bee') in 0.058653 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 149.260812 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/12CHannel-EmissionMap.png
+  artifactKey: Guid(b8d795ca37221f149a059ceb047a43de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/12CHannel-EmissionMap.png using Guid(b8d795ca37221f149a059ceb047a43de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c48fad4e0b7b0a6a7a36ea33483feaf3') in 0.011726 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/13-White3.png
+  artifactKey: Guid(f0fbc0f5f5be6794da122c2d5a25ac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/13-White3.png using Guid(f0fbc0f5f5be6794da122c2d5a25ac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd140e7bb634cd9a98166138720c9c4') in 0.022058 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Other/Skybox/back.png
+  artifactKey: Guid(6211875d5dcbbf94c9287ff64e06e702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Other/Skybox/back.png using Guid(6211875d5dcbbf94c9287ff64e06e702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73992c752c5823ff2dbd57e9b045e35a') in 0.015803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/AddToList.png
+  artifactKey: Guid(cccc116a6334dc1428687697c5a11d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/AddToList.png using Guid(cccc116a6334dc1428687697c5a11d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8357521c1c82f66434cb517da7d902ee') in 0.012797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/CleanupON.png
+  artifactKey: Guid(615d853995cf2344d8641fd19cb09b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/CleanupON.png using Guid(615d853995cf2344d8641fd19cb09b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf8093dec4586ae844b78c2d7da6922f') in 0.016171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/GridReader/Buffer-Horiz.png
+  artifactKey: Guid(909e403a0a2ab2f40a96a1e4a87ddaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/GridReader/Buffer-Horiz.png using Guid(909e403a0a2ab2f40a96a1e4a87ddaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aecdca0af4afe69e856966a1bdc7d99b') in 0.015522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/GridReader/Buffer.png
+  artifactKey: Guid(b4ac96a3b5444c84cae44ce29beca3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/GridReader/Buffer.png using Guid(b4ac96a3b5444c84cae44ce29beca3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02857e3fdd979e3003f4e99106e4cfa4') in 0.010956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/blue.png
+  artifactKey: Guid(826f80ee0ad07444c8558af826a4df2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/blue.png using Guid(826f80ee0ad07444c8558af826a4df2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d16813bd4ccca5f4f9b453982fb0e7') in 0.016859 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/BlueNormalBaseSquare.png
+  artifactKey: Guid(d179c8744f837da49ab92aae04d1ae1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/BlueNormalBaseSquare.png using Guid(d179c8744f837da49ab92aae04d1ae1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1cebae2d04d1492eba0c881029cd8d1') in 0.013586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/black.png
+  artifactKey: Guid(7a170cdb7cc88024cb628cfcdbb6705c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/black.png using Guid(7a170cdb7cc88024cb628cfcdbb6705c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19b31a47bfdd633546f486d0e97e1a32') in 0.015240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/BlueNormalBaseLeft.png
+  artifactKey: Guid(330fd0c8f074a3c4f8042114a61a73d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/BlueNormalBaseLeft.png using Guid(330fd0c8f074a3c4f8042114a61a73d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e37296de8b89544b112f57498826285') in 0.008822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AVProVideo/Editor/Resources/AVProVideoIcon.png
+  artifactKey: Guid(bb83b41b53a59874692b83eab5873998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AVProVideo/Editor/Resources/AVProVideoIcon.png using Guid(bb83b41b53a59874692b83eab5873998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040d9d4f83598d2fd7329d70e38e045a') in 0.009301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/BlueNormalBase.png
+  artifactKey: Guid(60c283ffa9a758646ab70a2fe7ff5f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/BlueNormalBase.png using Guid(60c283ffa9a758646ab70a2fe7ff5f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da3a0324f0212560e993bd318cb411c') in 0.019605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/CleanupONNew.png
+  artifactKey: Guid(e86ba70d2363b9443beac28a6a370b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/CleanupONNew.png using Guid(e86ba70d2363b9443beac28a6a370b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b744af8d5714227d61184a56d89fff') in 0.012495 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/CircleBackground.png
+  artifactKey: Guid(c560c5d8ca4c353409caf2ec204f3a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/CircleBackground.png using Guid(c560c5d8ca4c353409caf2ec204f3a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf35c646d68af838901b75e4e40e501') in 0.010312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/About.png
+  artifactKey: Guid(8aba6bb20faf8824d9d81946542f1ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/About.png using Guid(8aba6bb20faf8824d9d81946542f1ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c69be19464d4cda25cf601c836f3b7') in 0.020956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.364801 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Scripts/ThryEditor/Resources/decal_gizmo.png
+  artifactKey: Guid(0e2dd3366fa0a5b4ca3e51372cef0411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Scripts/ThryEditor/Resources/decal_gizmo.png using Guid(0e2dd3366fa0a5b4ca3e51372cef0411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d74fe39a012f7a96940d95aa8516fd') in 0.012060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/GrayNormalHeaderSquare.png
+  artifactKey: Guid(b16188b8a3dee8146bd9cb0bde234a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/GrayNormalHeaderSquare.png using Guid(b16188b8a3dee8146bd9cb0bde234a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd84bb2f0013ac69f05d7cbedab2bdeb4') in 0.008379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/NodeSelectedSquare.png
+  artifactKey: Guid(080a030f87555fe419ecc1fb9f509118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/NodeSelectedSquare.png using Guid(080a030f87555fe419ecc1fb9f509118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f7659afb3a405866e02026e251285ea') in 0.009725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/Shader.png
+  artifactKey: Guid(555b6a287b4121b479d412e6ea92bb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/Shader.png using Guid(555b6a287b4121b479d412e6ea92bb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd264cd44cf54964d680c21128db763c') in 0.009512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/Icons/plain_sliders.png
+  artifactKey: Guid(850c2763995331747b5cd1fd2dda41e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/Icons/plain_sliders.png using Guid(850c2763995331747b5cd1fd2dda41e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe4f727f9e6815838b7dc5e68f739c9') in 0.092814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/ShaderFunction.png
+  artifactKey: Guid(94cd628d3d8e07d40a85d82b3fdad15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/ShaderFunction.png using Guid(94cd628d3d8e07d40a85d82b3fdad15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a6908495052e6b1c40e1ca38f4b21e') in 0.013805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/Nodes/MasterNodeIconOFF.png
+  artifactKey: Guid(712aee08d999c16438e2d694f42428e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/Nodes/MasterNodeIconOFF.png using Guid(712aee08d999c16438e2d694f42428e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ed56ed53bd814ef66ee01f98c42434') in 0.013671 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/Nodes/MasterNodeIconON.png
+  artifactKey: Guid(26c64fcee91024a49980ea2ee9d1a2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/Nodes/MasterNodeIconON.png using Guid(26c64fcee91024a49980ea2ee9d1a2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98950fc2db70dace0093cafe05ab20c0') in 0.009461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/MaterialModeIconOFF.png
+  artifactKey: Guid(7040748e1c49b9648aeeefef41c8a3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/MaterialModeIconOFF.png using Guid(7040748e1c49b9648aeeefef41c8a3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e23e504bc7881ee7aebd49a95282c084') in 0.011989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8.777428 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/CommentaryResizeIconInv.png
+  artifactKey: Guid(b52bc320a2ff91446978a893ec738134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/CommentaryResizeIconInv.png using Guid(b52bc320a2ff91446978a893ec738134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd519a8eb5776ba09a6008aff6be1b6c6') in 0.010067 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/CustomExpAddIconActive.png
+  artifactKey: Guid(52bbe770f45f531419e44a69be67ccba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/CustomExpAddIconActive.png using Guid(52bbe770f45f531419e44a69be67ccba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '977023c3dad12116632ab754cd13e5bd') in 0.012809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/LUTs/dfg-multiscatter-cloth.exr
+  artifactKey: Guid(76d65cbce584df7449699fb8406f60ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/LUTs/dfg-multiscatter-cloth.exr using Guid(76d65cbce584df7449699fb8406f60ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0404ae2ec53ca57e166e713f45bbaec3') in 0.015374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Editor/Resources/discord-logo.png
+  artifactKey: Guid(6490864294abb20478de1f93cfdc9bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Editor/Resources/discord-logo.png using Guid(6490864294abb20478de1f93cfdc9bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941f4b73b0b19907c459ec6cf842bb22') in 0.012911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/CustomExpRemoveIconNormal.png
+  artifactKey: Guid(839cb1530f95ad14ab58762161a9cb06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/CustomExpRemoveIconNormal.png using Guid(839cb1530f95ad14ab58762161a9cb06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f4a2fbf7e635ac09193c3658d13f85') in 0.010774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/CustomExpRemoveIconActive.png
+  artifactKey: Guid(1ba096552f9cbbb418ee2286856bb352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/CustomExpRemoveIconActive.png using Guid(1ba096552f9cbbb418ee2286856bb352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8d93995e105e16c4c3c177f4434a85e') in 0.010667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.554569 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/Legacy/DMXRTViewer-interpolated-Color+Intensity-Legacy.asset
+  artifactKey: Guid(3bcce6f0fa9c3d4499ca3015b073785e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/Legacy/DMXRTViewer-interpolated-Color+Intensity-Legacy.asset using Guid(3bcce6f0fa9c3d4499ca3015b073785e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e745c92e922417fc6863b95ec4780557') in 0.015118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Kita'vali 4.8 Assets/Materials/Default Textures/Kitavali_Eyes_Base_Color.png
+  artifactKey: Guid(bf7c7b8df2121c14d9ad3053bd93b80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kita'vali 4.8 Assets/Materials/Default Textures/Kitavali_Eyes_Base_Color.png using Guid(bf7c7b8df2121c14d9ad3053bd93b80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ccaa27509f393b6483b47d2d0afb28d') in 0.023106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Kita'vali 4.8 Assets/Materials/Default Textures/Kitavali_Main_Base_Color.png
+  artifactKey: Guid(96381c761ff2aff44ab939e6e6f052cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kita'vali 4.8 Assets/Materials/Default Textures/Kitavali_Main_Base_Color.png using Guid(96381c761ff2aff44ab939e6e6f052cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f042b333a88fc542fdf0bdf4127521') in 0.240565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Kita'vali 4.8 Assets/Materials/ColourMasking/Kitavali_Feathers_ Colour Mask.png
+  artifactKey: Guid(6d41b825c7dbfd044b2d5520310bb4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kita'vali 4.8 Assets/Materials/ColourMasking/Kitavali_Feathers_ Colour Mask.png using Guid(6d41b825c7dbfd044b2d5520310bb4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16402bd11531e37a9f33f576294740a3') in 0.147563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Gifs/T_2ColorLines_GIF.gif
+  artifactKey: Guid(3219b69a8562db0439012ae282fc6eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Gifs/T_2ColorLines_GIF.gif using Guid(3219b69a8562db0439012ae282fc6eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce8e29c2071bf156541986b6940636c') in 0.013294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Kita'vali 4.8 Assets/Materials/ColourMasking/Kitavali_Main_ Colour Mask.png
+  artifactKey: Guid(5e9b6fe13c2a0e04cb4985f94620a0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kita'vali 4.8 Assets/Materials/ColourMasking/Kitavali_Main_ Colour Mask.png using Guid(5e9b6fe13c2a0e04cb4985f94620a0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd23c88d426b8368180a4092295adfcac') in 0.118787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 61.023853 seconds.
+  path: Assets/3D DJ/Fixtures/fixture.mat
+  artifactKey: Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/fixture.mat using Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e094de502cd18dec8458b1b5c241cb9') in 0.397586 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 22.912549 seconds.
+  path: Assets/3D DJ/Fixtures/fixture.mat
+  artifactKey: Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/fixture.mat using Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3defff7d9b4d9087055e21597aca6c') in 0.294438 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 6.495887 seconds.
+  path: Assets/3D DJ/Fixtures/fixture.mat
+  artifactKey: Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/fixture.mat using Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4261f34bb89467e41fb07237763c6d4') in 0.336238 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 20.371503 seconds.
+  path: Assets/3D DJ/Fixtures/fixture.mat
+  artifactKey: Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/fixture.mat using Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '129fb277f3b75152b0efe89009127ccd') in 0.409912 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 31.064193 seconds.
+  path: Assets/3D DJ/Fixtures/fixture.mat
+  artifactKey: Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/fixture.mat using Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb14a27360ac18e8e8091c7627a661d') in 0.407400 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 26.606797 seconds.
+  path: Assets/3D DJ/Fixtures/fixture.mat
+  artifactKey: Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/fixture.mat using Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a7b74d43d5d037a494ca419d1067ee') in 0.412945 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 155.490916 seconds.
+  path: Assets/3D DJ/Fixtures/fixture.mat
+  artifactKey: Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/fixture.mat using Guid(7f431c6db4d6314448f996349d972e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cae3dc64446ad0ac516f14fadb13380') in 0.376264 seconds
+Number of updated asset objects reloaded before import = 2
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 76.298170 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Depth Build.mat
+  artifactKey: Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Depth Build.mat using Guid(70c9ee0446953804bab48a59b9399d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e706c6d6f5a2f46c9e44997a7ad329') in 0.411085 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76bf6f6e7ab43ed1c1625e07acfb2052') in 0.449639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
+  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1369949456293b645420867ffcdb5801') in 0.466788 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
