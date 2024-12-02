@@ -11,6 +11,8 @@ namespace com.happyrobot33.holographicreprojector
 {
     using TMPro;
     using UnityEngine.Rendering.PostProcessing;
+    using VRC.SDK3.Data;
+
 
     [AttributeUsage(AttributeTargets.Field)]
     public class DeveloperOnly : PropertyAttribute { }
@@ -46,7 +48,6 @@ namespace com.happyrobot33.holographicreprojector
         public Material DataInput;
         [DeveloperOnly]
         public Material[] playbackMaterials;
-        public PostProcessVolume[] PostProcessVolumes;
         public RenderTexture VideoTexture;
 
         [Header("Color:")]
@@ -119,31 +120,120 @@ namespace com.happyrobot33.holographicreprojector
             EnforceCameraAspectRatio();
         }
 
+        public Vector3 RotatePointAroundPivot(Vector3 point, Vector3 pivot, Vector3 angles)
+        {
+            return Quaternion.Euler(angles) * (point - pivot) + pivot;
+        }
+
+        private void FromPoints(Vector3[] points, float radius)
+        {
+            float minX = float.PositiveInfinity;
+            float maxX = float.NegativeInfinity;
+            float minY = float.PositiveInfinity;
+            float maxY = float.NegativeInfinity;
+            float minZ = float.PositiveInfinity;
+            float maxZ = float.NegativeInfinity;
+            for (int i = 0; i < points.Length; i++)
+            {
+                Vector3 vertex = points[i];
+
+                // Check for maximum
+                if (vertex.x + radius > maxX)
+                {
+                    maxX = vertex.x + radius;
+                }
+                if (vertex.y + radius > maxY)
+                {
+                    maxY = vertex.y + radius;
+                }
+                if (vertex.z + radius > maxZ)
+                {
+                    maxZ = vertex.z + radius;
+                }
+                // Check for Minimum
+                if (vertex.x - radius < minX)
+                {
+                    minX = vertex.x - radius;
+                }
+                if (vertex.y - radius < minY)
+                {
+                    minY = vertex.y - radius;
+                }
+                if (vertex.z - radius < minZ)
+                {
+                    minZ = vertex.z - radius;
+                }
+            }
+            minBound = new Vector3(minX, minY, minZ);
+            maxBound = new Vector3(maxX, maxY, maxZ);
+
+
+            //since we can only render a cube shape, make all side lengths equal to the longest side, while keeping the center the same
+            float longestSide = Math.Max(maxX - minX, Math.Max(maxY - minY, maxZ - minZ));
+            centerBound = new Vector3((maxBound.x + minBound.x) / 2, (maxBound.y + minBound.y) / 2, (maxBound.z + minBound.z) / 2);
+            minBound = centerBound - new Vector3(longestSide / 2, longestSide / 2, longestSide / 2);
+            maxBound = centerBound + new Vector3(longestSide / 2, longestSide / 2, longestSide / 2);
+        }
+
+        Vector3 minBound = new Vector3();
+        Vector3 maxBound = new Vector3();
+        Vector3 centerBound = new Vector3();
+
+        private Vector3 rotationNullifiedBonePosition(HumanBodyBones bone, VRCPlayerApi player)
+        {
+            //we want to undo the rotation of the player, so we can get the bone position in world space as if the player is always facing forward
+            Vector3 bonePos = player.GetBonePosition(bone);
+            Vector3 playerPos = player.GetPosition();
+            Vector3 playerRot = player.GetRotation().eulerAngles;
+
+            //undo the rotation of the player
+            bonePos = RotatePointAroundPivot(bonePos, playerPos, new Vector3(0, -playerRot.y - 45, 0));
+
+            return bonePos;
+        }
+
+        #if !COMPILER_UDONSHARP && UNITY_EDITOR
+        private void OnDrawGizmos()
+        {
+            //draw a point at each bone position
+            Vector3[] points = GeneratePositionArray();
+            foreach (Vector3 point in points)
+            {
+                Gizmos.DrawSphere(point, 0.025f);
+            }
+
+            //draw the bounds
+            //color
+            Gizmos.color = Color.red;
+
+            Gizmos.DrawSphere(minBound, 0.025f);
+            Gizmos.DrawSphere(maxBound, 0.025f);
+            Gizmos.DrawSphere(centerBound, 0.025f);
+
+            Gizmos.DrawWireCube(centerBound, maxBound - minBound);
+        }
+        #endif
         void Update()
         {
             if (mode == Mode.Record)
             {
                 //get the player position
                 Vector3 playerPos = playerToRecord.GetPosition();
+                Vector3[] points = GeneratePositionArray();
 
-                //get the players head
-                Vector3 headPos = playerToRecord.GetBonePosition(HumanBodyBones.Head);
+                //get the min and max bounds
+                //TODO: Expose radius as a slider
+                FromPoints(points, 0.125f);
 
-                //add the offset to the head position
-                headPos.y += OffsetSlider.value;
-
-                //determine the midpoint between the player and the head
-                Vector3 recorderPos = (playerPos + headPos) / 2;
-
-                //move the recorder to the player position
-                Recorder.transform.position = recorderPos;
+                //move the recorder to the player position rotated around the player
+                Vector3 recordCenter = RotatePointAroundPivot(centerBound, playerPos, new Vector3(0, playerToRecord.GetRotation().eulerAngles.y + 45, 0));
+                Recorder.transform.position = recordCenter;
 
                 //set the rotation to the player rotation + 45 on the y axis
                 Recorder.transform.rotation = Quaternion.Euler(0, playerToRecord.GetRotation().eulerAngles.y + 45, 0);
 
                 //determine the scale by getting the distance between the player and the head on the y axis
-                //TODO: Make based on the players size too, instead of just being based on the world
-                float scale = Math.Abs(playerPos.y - headPos.y) / 2;
+                float scale = (maxBound.y - minBound.y) / 2;
 
                 //set the scale of the recorder
                 Recorder.transform.localScale = new Vector3(scale, scale, scale);
@@ -157,11 +247,47 @@ namespace com.happyrobot33.holographicreprojector
                 }
 
                 //set the material variables
-                DataInput.SetVector("_Position", recorderPos);
+                DataInput.SetVector("_Position", recordCenter);
                 DataInput.SetFloat("_Scale", scale * 2);
                 DataInput.SetFloat("_Rotation", playerToRecord.GetRotation().eulerAngles.y + 45);
             }
         }
+
+        private Vector3[] GeneratePositionArray()
+        {
+            //encapsulate some positions
+            //build up a list of points
+            DataList points = new DataList();
+            points.Add(new DataToken(rotationNullifiedBonePosition(HumanBodyBones.Head, playerToRecord) + new Vector3(0, OffsetSlider.value, 0)));
+            
+            for (int i = 0; i < (int)HumanBodyBones.LastBone; i++)
+            {
+                //skip the head
+                if (i == (int)HumanBodyBones.Head)
+                {
+                    continue;
+                }
+
+                //check to make sure the position isnt 0,0,0
+                if (playerToRecord.GetBonePosition((HumanBodyBones)i) == Vector3.zero)
+                {
+                    continue;
+                }
+
+                points.Add(new DataToken(rotationNullifiedBonePosition((HumanBodyBones)i, playerToRecord)));
+            }
+            
+            //convert the list to an array
+            DataToken[] tokens = points.ToArray();
+            Vector3[] positions = new Vector3[tokens.Length];
+            for (int i = 0; i < tokens.Length; i++)
+            {
+                positions[i] = (Vector3)tokens[i].Reference;
+            }
+
+            return positions;
+        }
+
 
         public void ToggleRecordSystem()
         {
@@ -170,25 +296,10 @@ namespace com.happyrobot33.holographicreprojector
             if (Recorder.activeSelf)
             {
                 mode = Mode.Record;
-                ConfigurePostProcessingVolumes(false);
             }
             else
             {
                 mode = Mode.Playback;
-
-                //if a post processing volume is defined, turn it back on
-                ConfigurePostProcessingVolumes(true);
-            }
-        }
-
-        private void ConfigurePostProcessingVolumes(bool value)
-        {
-            foreach (PostProcessVolume volume in PostProcessVolumes)
-            {
-                if (volume != null)
-                {
-                    volume.enabled = value;
-                }
             }
         }
 
@@ -323,7 +434,7 @@ namespace com.happyrobot33.holographicreprojector
             //if (!broke)
             //{
             //    playerToRecord = players[0];
-           // }
+            // }
         }
 
 
