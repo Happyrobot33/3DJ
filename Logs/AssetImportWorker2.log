@@ -744,3 +744,104 @@ Received Import Request.
 Start importing Assets/3D DJ/Record/Data Input.mat using Guid(8a552e94a9b30954a8e0cab569428037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f295a6405a0dcf5c9f6249ba758c99a0') in 0.007549 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1187.467875 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02deebfe38efc320068717f3ece6d1dd') in 0.438283 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 30.753411 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19373a5d49a5ca6de1d0149c9cd6070d') in 0.092087 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 3.839821 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922124a82d68e7ff852fcbd8b4b03f23') in 0.439635 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 27.573216 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d6adb373987e009eb4ac042578b7b4') in 0.446555 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 13.411585 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd73b72313ac68dd62b476e293c8d3c1') in 0.480520 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 19.498737 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab090ef4b39073c5607078bd8f623206') in 0.411965 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 14.209504 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad51459f15be0d2f9614fef10136946') in 0.086017 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 80.694359 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
+  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6902cca1a17ec7317abebbf676d5811a') in 0.029524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat
+  artifactKey: Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Non Deform.mat using Guid(d15905c089f6a4e4b81b3342826eff14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23dfc1f0965644cf517c8e889ab4107b') in 0.022333 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
+  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f5a444e825238adc9a71a3f93ecb21') in 0.028421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.946079 seconds.
+  path: Assets/3D DJ/Playback/Data Extract.mat
+  artifactKey: Guid(b312d249b2905c449b9756b3b436cc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Data Extract.mat using Guid(b312d249b2905c449b9756b3b436cc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '830e5b6597b7975b4573d836e750397e') in 0.019440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D DJ/Playback/Depth Extract Step.mat
+  artifactKey: Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Extract Step.mat using Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6fe6a4489d2a24e5dde8a87615bccdb') in 0.013510 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
