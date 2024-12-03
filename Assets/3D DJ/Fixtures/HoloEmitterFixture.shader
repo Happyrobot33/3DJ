@@ -148,8 +148,10 @@ Shader "HoloEmitterFixture"
 			float x15_g460 = acos( ( dotResult3_g460 / ( length( temp_output_1_0_g460 ) * length( temp_output_2_0_g460 ) ) ) );
 			float localMyCustomExpression15_g460 = MyCustomExpression15_g460( x15_g460 );
 			float temp_output_275_0 = localMyCustomExpression15_g460;
+			float temp_output_285_0 = radians( 50.0 );
+			float clampResult283 = clamp( temp_output_275_0 , -temp_output_285_0 , temp_output_285_0 );
 			float3 ase_vertex3Pos = v.vertex.xyz;
-			float3 rotatedValue77 = RotateAroundAxis( float3( 0,0,0 ), ase_vertex3Pos, normalize( cross( _Vector0 , worldToObj92 ) ), temp_output_275_0 );
+			float3 rotatedValue77 = RotateAroundAxis( float3( 0,0,0 ), ase_vertex3Pos, normalize( cross( _Vector0 , worldToObj92 ) ), clampResult283 );
 			float3 Rotated_Fixture_Vertice_Positions235 = rotatedValue77;
 			float3 ase_parentObjectScale = (1.0/float3( length( unity_WorldToObject[ 0 ].xyz ), length( unity_WorldToObject[ 1 ].xyz ), length( unity_WorldToObject[ 2 ].xyz ) ));
 			float temp_output_276_0 = ( _BeamLength / ase_parentObjectScale.x );
@@ -218,8 +220,9 @@ Shader "HoloEmitterFixture"
 			float x15_g460 = acos( ( dotResult3_g460 / ( length( temp_output_1_0_g460 ) * length( temp_output_2_0_g460 ) ) ) );
 			float localMyCustomExpression15_g460 = MyCustomExpression15_g460( x15_g460 );
 			float temp_output_275_0 = localMyCustomExpression15_g460;
+			float temp_output_285_0 = radians( 50.0 );
 			float temp_output_131_0 = ( i.vertexColor.g == 0.0 ? 1.0 : 0.0 );
-			dither133 = step( dither133, ( _MaxTransmitterDistance > distance( DJ_Position166 , objToWorld142 ) ? ( degrees( temp_output_275_0 ) < 50.0 ? (1.0 + (i.vertexColor.g - 0.0) * (0.0 - 1.0) / (1.0 - 0.0)) : temp_output_131_0 ) : temp_output_131_0 ) );
+			dither133 = step( dither133, ( _MaxTransmitterDistance > distance( DJ_Position166 , objToWorld142 ) ? ( temp_output_275_0 < temp_output_285_0 ? (1.0 + (i.vertexColor.g - 0.0) * (0.0 - 1.0) / (1.0 - 0.0)) : temp_output_131_0 ) : temp_output_131_0 ) );
 			o.Alpha = ( i.vertexColor.b == 0.0 ? dither133 : 0.0 );
 		}
 
@@ -344,7 +347,6 @@ Node;AmplifyShaderEditor.GetLocalVarNode;67;-2640,-608;Inherit;False;166;DJ Posi
 Node;AmplifyShaderEditor.RotateAboutAxisNode;136;-2480,-368;Inherit;False;False;4;0;FLOAT3;0,1,0;False;1;FLOAT;45;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.GetLocalVarNode;233;640,928;Inherit;False;232;Beam End Point;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.GetLocalVarNode;88;-1840,1152;Inherit;False;166;DJ Position;1;0;OBJECT;;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.DegreesOpNode;132;1888,816;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;135;-2976,-304;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0.5;False;1;FLOAT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;134;-3248,-304;Inherit;False;194;DJ Scale;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;127;-2720,-352;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0
@@ -376,8 +378,6 @@ Node;AmplifyShaderEditor.CrossProductOpNode;94;-1024,1136;Inherit;False;2;0;FLOA
 Node;AmplifyShaderEditor.TransformPositionNode;92;-1520,1104;Inherit;False;World;Object;False;Fast;True;1;0;FLOAT3;0,0,0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.Vector3Node;91;-1504,1360;Inherit;False;Constant;_Vector0;Vector 0;5;0;Create;True;0;0;0;False;0;False;0,0,1;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.RegisterLocalVarNode;235;128,1424;Inherit;False;Rotated Fixture Vertice Positions;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.RotateAboutAxisNode;77;-528,1408;Inherit;False;True;4;0;FLOAT3;1,0,0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;1,0,0;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.PosVertexDataNode;53;-1120,1488;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.FunctionNode;275;-1120,1312;Inherit;False;AngleBetweenVectors;-1;;460;764081594a5aa0b4d9781b5f2fcaa355;0;2;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.StaticSwitch;230;-1136,-1040;Inherit;False;Property;_LimitBeamDistance;Limit Beam Distance;10;0;Create;True;0;0;0;False;0;False;0;0;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.NormalizeNode;45;-1568,-1040;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
@@ -386,6 +386,12 @@ Node;AmplifyShaderEditor.RangedFloatNode;47;-1808,-976;Inherit;False;Property;_B
 Node;AmplifyShaderEditor.SimpleDivideOpNode;276;-1536,-928;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.ObjectScaleNode;267;-1792,-896;Inherit;False;True;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.RangedFloatNode;141;2160,720;Inherit;False;Property;_MaxTransmitterDistance;Max Transmitter Distance;12;0;Create;True;0;0;0;False;0;False;5;15;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.NegateNode;284;-784,1408;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.RotateAboutAxisNode;77;-320,1408;Inherit;False;True;4;0;FLOAT3;1,0,0;False;1;FLOAT;50;False;2;FLOAT3;0,0,0;False;3;FLOAT3;1,0,0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.ClampOpNode;283;-576,1344;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.PosVertexDataNode;53;-1008,1648;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.RangedFloatNode;282;-1200,1440;Inherit;False;Constant;_MaxAngle;Max Angle;8;0;Create;True;0;0;0;False;0;False;50;0;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RadiansOpNode;285;-1008,1408;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 WireConnection;79;0;48;1
 WireConnection;79;2;234;0
 WireConnection;79;3;28;0
@@ -395,7 +401,8 @@ WireConnection;28;3;82;0
 WireConnection;100;0;48;2
 WireConnection;125;0;48;2
 WireConnection;131;0;130;2
-WireConnection;129;0;132;0
+WireConnection;129;0;275;0
+WireConnection;129;1;285;0
 WireConnection;129;2;125;0
 WireConnection;129;3;131;0
 WireConnection;133;0;137;0
@@ -431,7 +438,6 @@ WireConnection;99;2;230;0
 WireConnection;99;3;68;0
 WireConnection;232;0;99;0
 WireConnection;136;3;127;0
-WireConnection;132;0;275;0
 WireConnection;135;0;134;0
 WireConnection;127;0;237;0
 WireConnection;127;1;135;0
@@ -461,9 +467,6 @@ WireConnection;94;0;91;0
 WireConnection;94;1;92;0
 WireConnection;92;0;88;0
 WireConnection;235;0;77;0
-WireConnection;77;0;94;0
-WireConnection;77;1;275;0
-WireConnection;77;3;53;0
 WireConnection;275;1;92;0
 WireConnection;275;2;91;0
 WireConnection;230;1;68;0
@@ -473,5 +476,13 @@ WireConnection;46;0;45;0
 WireConnection;46;1;276;0
 WireConnection;276;0;47;0
 WireConnection;276;1;267;1
+WireConnection;284;0;285;0
+WireConnection;77;0;94;0
+WireConnection;77;1;283;0
+WireConnection;77;3;53;0
+WireConnection;283;0;275;0
+WireConnection;283;1;284;0
+WireConnection;283;2;285;0
+WireConnection;285;0;282;0
 ASEEND*/
-//CHKSM=346937ABCA552CD94A30227F9B9F381409D72EE5
+//CHKSM=D24168DE764DE5856FD1A9870508D8278CB56312
