@@ -458,6 +458,10 @@
       <HintPath>Packages\com.vrchat.base\Runtime\VRCSDK\Dependencies\librsync\Blake2Sharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="TekView">
+      <HintPath>Packages\com.acchosen.vr-stage-lighting\Runtime\Scripts\GridReader\TekView.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Collections.Immutable">
       <HintPath>Packages\com.vrchat.base\Runtime\VRCSDK\Dependencies\Managed\System.Collections.Immutable.dll</HintPath>
       <Private>False</Private>
@@ -500,6 +504,10 @@
     </Reference>
     <Reference Include="VRCSDK3">
       <HintPath>Packages\com.vrchat.worlds\Runtime\VRCSDK\Plugins\VRCSDK3.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SharpOSC">
+      <HintPath>Packages\com.acchosen.vr-stage-lighting\Runtime\Scripts\GridReader\SharpOSC.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VRC.SDK3.Dynamics.Constraint">
@@ -600,14 +608,6 @@
     </Reference>
     <Reference Include="Serilog.Sinks.Unity3D">
       <HintPath>Packages\com.vrchat.core.vpm-resolver\Editor\Dependencies\Serilog.Sinks.Unity3D.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="SharpOSC">
-      <HintPath>Packages\com.acchosen.vr-stage-lighting\Runtime\Scripts\GridReader\SharpOSC.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="TekView">
-      <HintPath>Packages\com.acchosen.vr-stage-lighting\Runtime\Scripts\GridReader\TekView.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
