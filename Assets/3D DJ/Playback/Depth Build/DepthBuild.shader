@@ -175,24 +175,24 @@ Shader "DepthBuild"
 		void vertexDataFunc( inout appdata_full v, out Input o )
 		{
 			UNITY_INITIALIZE_OUTPUT( Input, o );
-			sampler2D Texture1_g390 = _Udon_3DJ_Data;
-			float4 TexelSize1_g390 = _Udon_3DJ_Data_TexelSize;
-			float2 appendResult25_g388 = (float2(( _Udon_3DJ_Data_TexelSize.z / ( 20 + 1 ) ) , ( _Udon_3DJ_Data_TexelSize.w / 3.0 )));
-			float2 StripStart1_g390 = appendResult25_g388;
-			int StripWidth1_g390 = 20;
-			int PixelSize1_g390 = (int)( _Udon_3DJ_Data_TexelSize.z / 20 );
-			float3 localBinaryStripToInt1_g390 = BinaryStripToInt( Texture1_g390 , TexelSize1_g390 , StripStart1_g390 , StripWidth1_g390 , PixelSize1_g390 );
-			float3 break17_g388 = ( localBinaryStripToInt1_g390 / float3( 100,100,1 ) );
-			float DJ_Rotation536 = (( _LockRotation )?( 0.0 ):( break17_g388.x ));
-			sampler2D Texture1_g389 = _Udon_3DJ_Data;
-			float4 TexelSize1_g389 = _Udon_3DJ_Data_TexelSize;
-			float2 appendResult7_g388 = (float2(( _Udon_3DJ_Data_TexelSize.z / ( 20 + 1 ) ) , ( ( _Udon_3DJ_Data_TexelSize.w / 3.0 ) * 2.0 )));
-			float2 StripStart1_g389 = appendResult7_g388;
-			int StripWidth1_g389 = 20;
-			int PixelSize1_g389 = (int)( _Udon_3DJ_Data_TexelSize.z / 20 );
-			float3 localBinaryStripToInt1_g389 = BinaryStripToInt( Texture1_g389 , TexelSize1_g389 , StripStart1_g389 , StripWidth1_g389 , PixelSize1_g389 );
+			sampler2D Texture1_g395 = _Udon_3DJ_Data;
+			float4 TexelSize1_g395 = _Udon_3DJ_Data_TexelSize;
+			float2 appendResult25_g393 = (float2(( _Udon_3DJ_Data_TexelSize.z / ( 20 + 1 ) ) , ( _Udon_3DJ_Data_TexelSize.w / 3.0 )));
+			float2 StripStart1_g395 = appendResult25_g393;
+			int StripWidth1_g395 = 20;
+			int PixelSize1_g395 = (int)( _Udon_3DJ_Data_TexelSize.z / 20 );
+			float3 localBinaryStripToInt1_g395 = BinaryStripToInt( Texture1_g395 , TexelSize1_g395 , StripStart1_g395 , StripWidth1_g395 , PixelSize1_g395 );
+			float3 break17_g393 = ( localBinaryStripToInt1_g395 / float3( 100,100,1 ) );
+			float DJ_Rotation536 = (( _LockRotation )?( 0.0 ):( break17_g393.x ));
+			sampler2D Texture1_g394 = _Udon_3DJ_Data;
+			float4 TexelSize1_g394 = _Udon_3DJ_Data_TexelSize;
+			float2 appendResult7_g393 = (float2(( _Udon_3DJ_Data_TexelSize.z / ( 20 + 1 ) ) , ( ( _Udon_3DJ_Data_TexelSize.w / 3.0 ) * 2.0 )));
+			float2 StripStart1_g394 = appendResult7_g393;
+			int StripWidth1_g394 = 20;
+			int PixelSize1_g394 = (int)( _Udon_3DJ_Data_TexelSize.z / 20 );
+			float3 localBinaryStripToInt1_g394 = BinaryStripToInt( Texture1_g394 , TexelSize1_g394 , StripStart1_g394 , StripWidth1_g394 , PixelSize1_g394 );
 			float3 temp_cast_2 = (pow( 2.0 , 19.0 )).xxx;
-			float3 DJ_Position548 = (( _LockPosition )?( float3( 0,0,0 ) ):( ( ( localBinaryStripToInt1_g389 - temp_cast_2 ) / float3( 100,100,100 ) ) ));
+			float3 DJ_Position548 = (( _LockPosition )?( float3( 0,0,0 ) ):( ( ( localBinaryStripToInt1_g394 - temp_cast_2 ) / float3( 100,100,100 ) ) ));
 			float2 uv_Udon_3DJ_Depth = v.texcoord.xy * _Udon_3DJ_Depth_ST.xy + _Udon_3DJ_Depth_ST.zw;
 			float pixelWidth306 =  1.0f / _Udon_3DJ_Depth_TexelSize.z;
 			float pixelHeight306 = 1.0f / _Udon_3DJ_Depth_TexelSize.w;
@@ -221,7 +221,7 @@ Shader "DepthBuild"
 			float3 ase_vertex3Pos = v.vertex.xyz;
 			float3 temp_cast_3 = (sqrt( -1.0 )).xxx;
 			float3 Finalized_Geometry552 = ( ( ( Raw_Depth_Map503 - (( _Sobel )?( ( localSobel66 > _SobelThreshold ? 1.0 : 0.0 ) ):( 0.0 )) ) > 0.0 ? 0.0 : 1.0 ) == 0.0 ? ( staticSwitch676 + ase_vertex3Pos ) : temp_cast_3 );
-			float DJ_Scale538 = break17_g388.y;
+			float DJ_Scale538 = break17_g393.y;
 			float3 rotatedValue526 = RotateAroundAxis( DJ_Position548, ( ( Finalized_Geometry552 * DJ_Scale538 ) + DJ_Position548 ), float3( 0,1,0 ), radians( DJ_Rotation536 ) );
 			float3 objToWorld522 = mul( unity_ObjectToWorld, float4( float3( 0,0,0 ), 1 ) ).xyz;
 			float4 transform520 = mul(unity_WorldToObject,float4( ( rotatedValue526 - objToWorld522 ) , 0.0 ));
@@ -523,8 +523,8 @@ Node;AmplifyShaderEditor.ToggleSwitchNode;568;3120,2096;Inherit;False;Property;_
 Node;AmplifyShaderEditor.RegisterLocalVarNode;538;3536,2192;Inherit;False;DJ Scale;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;548;3552,2272;Inherit;False;DJ Position;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.ToggleSwitchNode;567;3232,2272;Inherit;False;Property;_LockPosition;Lock Position;13;0;Create;True;0;0;0;False;0;False;0;True;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.FunctionNode;729;2768,2112;Inherit;False;Get DJ Data;4;;388;fd74dea831d77af4ea5f66eb0518196e;0;1;14;SAMPLER2D;;False;3;FLOAT;31;FLOAT;32;FLOAT3;13
-Node;AmplifyShaderEditor.FunctionNode;730;-5872,1696;Inherit;False;Global Textures;0;;392;5151b2ab862399e41a33b2b14a355044;0;0;3;SAMPLER2D;0;SAMPLER2D;5;SAMPLER2D;6
+Node;AmplifyShaderEditor.FunctionNode;731;2768,2112;Inherit;False;Get DJ Data;4;;393;fd74dea831d77af4ea5f66eb0518196e;0;1;14;SAMPLER2D;;False;3;FLOAT;31;FLOAT;32;FLOAT3;13
+Node;AmplifyShaderEditor.FunctionNode;732;-5872,1696;Inherit;False;Global Textures;0;;397;5151b2ab862399e41a33b2b14a355044;0;0;3;SAMPLER2D;0;SAMPLER2D;5;SAMPLER2D;6
 WireConnection;515;0;553;0
 WireConnection;515;1;539;0
 WireConnection;516;0;537;0
@@ -579,15 +579,15 @@ WireConnection;432;0;70;0
 WireConnection;138;0;554;0
 WireConnection;7;0;139;0
 WireConnection;7;1;138;0
-WireConnection;308;2;730;5
-WireConnection;307;0;730;5
+WireConnection;308;2;732;5
+WireConnection;307;0;732;5
 WireConnection;456;0;308;0
 WireConnection;456;1;306;0
 WireConnection;559;0;84;0
-WireConnection;84;0;730;6
+WireConnection;84;0;732;6
 WireConnection;502;0;84;4
 WireConnection;556;0;559;0
-WireConnection;2;0;730;5
+WireConnection;2;0;732;5
 WireConnection;2;1;456;0
 WireConnection;306;0;308;0
 WireConnection;306;1;307;3
@@ -653,7 +653,7 @@ WireConnection;708;4;693;0
 WireConnection;709;0;687;3
 WireConnection;709;4;699;0
 WireConnection;503;0;725;0
-WireConnection;66;0;730;5
+WireConnection;66;0;732;5
 WireConnection;66;1;456;0
 WireConnection;66;2;67;0
 WireConnection;501;0;504;0
@@ -665,9 +665,9 @@ WireConnection;725;0;2;1
 WireConnection;725;1;726;0
 WireConnection;725;2;2;1
 WireConnection;536;0;568;0
-WireConnection;568;0;729;31
-WireConnection;538;0;729;32
+WireConnection;568;0;731;31
+WireConnection;538;0;731;32
 WireConnection;548;0;567;0
-WireConnection;567;0;729;13
+WireConnection;567;0;731;13
 ASEEND*/
-//CHKSM=6F70F1B17E75B248A8C2F5956412282A58A7EE78
+//CHKSM=15750F04F4143A80CA878E1EB8D3FDAB465DC063

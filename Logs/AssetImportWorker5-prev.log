@@ -1,0 +1,1111 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.22f1 (887be4894c44) revision 8944612'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 32655 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Users\mherber\Documents\2022.3.22f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/mherber/sonar-3dj-project
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+51381
+Successfully changed project path to: C:/Users/mherber/sonar-3dj-project
+C:/Users/mherber/sonar-3dj-project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [62440] Host "[IP] 10.0.2.45 [Port] 0 [Flags] 2 [Guid] 1893229922 [EditorId] 1893229922 [Version] 1048832 [Id] WindowsEditor(7,PTM541) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [62440] Host "[IP] 10.0.2.45 [Port] 0 [Flags] 2 [Guid] 1893229922 [EditorId] 1893229922 [Version] 1048832 [Id] WindowsEditor(7,PTM541) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Refreshing native plugins compatible for Editor in 833.57 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 3.69 ms.
+Initialize engine version: 2022.3.22f1 (887be4894c44)
+[Subsystems] Discovering subsystems at path C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/mherber/sonar-3dj-project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12115 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010098 seconds.
+- Loaded All Assemblies, in  0.373 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.283 seconds
+Domain Reload Profiling: 655ms
+	BeginReloadAssembly (138ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (134ms)
+		LoadAssemblies (138ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (130ms)
+			TypeCache.Refresh (128ms)
+				TypeCache.ScanAssembly (115ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (283ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (237ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (90ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (100ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  4.918 seconds
+Refreshing native plugins compatible for Editor in 92.13 ms, found 10 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <27124aa0e30a41659b903b822b959bc7>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <80a8ce1980c648dca8e68f0d8aa3b930>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[<color=#0c824c>UdonSharp</color>] Compile of 9 scripts finished in 00:03.859
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UdonSharp.UdonSharpUtils:Log (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:304)
+UdonSharp.Compiler.UdonSharpCompilerV1:TickCompile () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/UdonSharpCompilerV1.cs:202)
+UdonSharp.Compiler.UdonSharpCompilerV1:WaitForCompile () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/UdonSharpCompilerV1.cs:221)
+UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:651)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 304)
+
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  6.576 seconds
+Domain Reload Profiling: 11489ms
+	BeginReloadAssembly (176ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (4630ms)
+		LoadAssemblies (4473ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (284ms)
+			TypeCache.Refresh (249ms)
+				TypeCache.ScanAssembly (228ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (6576ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1654ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (220ms)
+			ProcessInitializeOnLoadAttributes (922ms)
+			ProcessInitializeOnLoadMethodAttributes (473ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Default GameObject BitMask: InternalUI already registered
+Default GameObject BitMask: HardwareObjects already registered
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 100.61 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.17 ms.
+Unloading 4668 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 233 unused Assets / (2.4 MB). Loaded Objects now: 5118.
+Memory consumption went from 353.2 MB to 350.8 MB.
+Total: 86.613900 ms (FindLiveObjects: 0.315000 ms CreateObjectMapping: 0.240300 ms MarkObjects: 85.119900 ms  DeleteObjects: 0.937900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11991.096368 seconds.
+  path: Assets/3D DJ/Playback/Data Extract.mat
+  artifactKey: Guid(b312d249b2905c449b9756b3b436cc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Data Extract.mat using Guid(b312d249b2905c449b9756b3b436cc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10c097f47b8de45504a043ccccca499') in 0.070659 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 57.798210 seconds.
+  path: Assets/3D DJ/Playback/Extracted Depth.asset
+  artifactKey: Guid(2fc056076e63f5f49849b667613db859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Extracted Depth.asset using Guid(2fc056076e63f5f49849b667613db859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70dc8f8f20177d8b9a4b265ea5fe8829') in 0.023082 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 209.599924 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b264bb66cf51e692e83e908a33b3c31f') in 0.494215 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 5.512020 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/DMXRTViewer-Interpolated-Movement-Horizontal.asset
+  artifactKey: Guid(5225295a38260644c99eb0aebf544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/DMXRTViewer-Interpolated-Movement-Horizontal.asset using Guid(5225295a38260644c99eb0aebf544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6129af11a5d8ee1361dce0d0ff7ee8df') in 0.015714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.036498 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/DMXRTViewer-RAWValues-Horizontal.renderTexture
+  artifactKey: Guid(87c3021d20ea2004cad2ca0d2dd14d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/DMXRTViewer-RAWValues-Horizontal.renderTexture using Guid(87c3021d20ea2004cad2ca0d2dd14d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b1199628141cace4be430ed435f6f0') in 0.008551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.005482 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/DMXRTViewer-SpinTimer-Horizontal.asset
+  artifactKey: Guid(7d9e75ad34a1ba34db218840cb76100e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/RTs/DMXRTViewer-SpinTimer-Horizontal.asset using Guid(7d9e75ad34a1ba34db218840cb76100e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e10a1838a26a37c61d382d77ffcb630e') in 0.012447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 2.433159 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (7).jpg
+  artifactKey: Guid(1aff2597cadef9442ab67b460bbd6241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (7).jpg using Guid(1aff2597cadef9442ab67b460bbd6241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c5c3f1861d41e6eea7e6eb941810a06') in 0.016036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (9).jpg
+  artifactKey: Guid(d3b42841e5cd27d4bb0f683ec498000e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (9).jpg using Guid(d3b42841e5cd27d4bb0f683ec498000e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b372767ea2412e0953691ce9ed76417') in 0.008665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (14).jpg
+  artifactKey: Guid(e449b338bcb7aa04d856b0fca929c017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (14).jpg using Guid(e449b338bcb7aa04d856b0fca929c017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd3c11de8a997c0f486c5950bad649cd') in 0.010560 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (15).jpg
+  artifactKey: Guid(10a7a1354002a1044ad5ef6a7d65eb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (15).jpg using Guid(10a7a1354002a1044ad5ef6a7d65eb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77bb8cd8ef74e95ab141e1721293fbe4') in 0.008936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (13).jpg
+  artifactKey: Guid(f6678285637dca9478005297b797c3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (13).jpg using Guid(f6678285637dca9478005297b797c3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3df481acd102addde8ef273da845e60') in 0.010378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (17).jpg
+  artifactKey: Guid(86ca19b5a4decea4ea533b7f1f0a80f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (17).jpg using Guid(86ca19b5a4decea4ea533b7f1f0a80f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78b393b72116c99792b88a3e14cf3c4d') in 0.010836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.568369 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (19).jpg
+  artifactKey: Guid(14f9237ca5b8ac04e933d8f136c013cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (19).jpg using Guid(14f9237ca5b8ac04e933d8f136c013cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3c4974f56c2f741c730457bd06e4bb') in 0.010986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (22).jpg
+  artifactKey: Guid(e3f0167066cb8de40a2a6e03c35c1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (22).jpg using Guid(e3f0167066cb8de40a2a6e03c35c1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a706fcc892d3d4317acc2a9909c389') in 0.010143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (24).jpg
+  artifactKey: Guid(85673f25242c2fd42bc72f6a2d75a1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/Fur (24).jpg using Guid(85673f25242c2fd42bc72f6a2d75a1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f58b407618db140f3a1706c4b985ad18') in 0.010084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004659 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Editor/Resources/github-logo.png
+  artifactKey: Guid(01ffe9ecc282c514da513aca68c5b22f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Editor/Resources/github-logo.png using Guid(01ffe9ecc282c514da513aca68c5b22f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd9263b8d9c60efbd41ffbf5e97ac30') in 0.007389 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Noise/Gradient2.jpg
+  artifactKey: Guid(efad3a5f6f0666945bb3a8dd0dc9afe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Noise/Gradient2.jpg using Guid(efad3a5f6f0666945bb3a8dd0dc9afe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016c11b4439ffb232e065f01c443c25f') in 0.008981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Noise/Gradient.jpg
+  artifactKey: Guid(f8f2f125174239f44bbd65262132328c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Noise/Gradient.jpg using Guid(f8f2f125174239f44bbd65262132328c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd02044d6e3c043bfda71ea0b73948b0') in 0.007831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/GraphButtonActive.png
+  artifactKey: Guid(dd3411e8d9927d3429d5872dbdbd752b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/GraphButtonActive.png using Guid(dd3411e8d9927d3429d5872dbdbd752b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '862d848ce58b4e7a1eb1d2717baa1c5b') in 0.008982 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/GraphPopup.png
+  artifactKey: Guid(2ae607812d722ec46b48647c2a800779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/GraphPopup.png using Guid(2ae607812d722ec46b48647c2a800779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5d4f4461733ec8a13572e710fb3930') in 0.007856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.228137 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/green.png
+  artifactKey: Guid(352167e52fa3b0c43ac690f5e2debc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/green.png using Guid(352167e52fa3b0c43ac690f5e2debc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa43ae3cc77878fe7d47b9e4036129de') in 0.010501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/Help.png
+  artifactKey: Guid(066674048bbb1e64e8cdcc6c3b4abbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/Help.png using Guid(066674048bbb1e64e8cdcc6c3b4abbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c411f187b7e5b740c3bf2b8c02ae5929') in 0.010642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/grey.png
+  artifactKey: Guid(31d5a2d79390ab542a81a6699a999758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/grey.png using Guid(31d5a2d79390ab542a81a6699a999758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72af1e1c5fce3003f2d9d989c5bdf931') in 0.006219 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.011256 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Editor/Resources/horizGridDummy.png
+  artifactKey: Guid(c54a04f87350a1b48b157212cf6ad329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Editor/Resources/horizGridDummy.png using Guid(c54a04f87350a1b48b157212cf6ad329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5de5018490a0a8e5959d5d7a7562c546') in 0.019593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Scripts/poi-tools/Resources/Poi/icon_link_pro.png
+  artifactKey: Guid(e5afc9f6ee88c964cbc59accc832fbbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Scripts/poi-tools/Resources/Poi/icon_link_pro.png using Guid(e5afc9f6ee88c964cbc59accc832fbbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a37e1b8644b20104696f94c32ad0150') in 0.008970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001659 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/ItemCleanupOFF.png
+  artifactKey: Guid(8b6b4ff52c49a2a43a602895465e107c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/ItemCleanupOFF.png using Guid(8b6b4ff52c49a2a43a602895465e107c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f21612c34e0ebb8f78f62f05d2899e') in 0.007502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/dev.architech.protv/Samples/Playlists/Images/Jim Yosef & Stessie - Free.jpg
+  artifactKey: Guid(ac7b7ebb13975364b80e0034c3e19b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Samples/Playlists/Images/Jim Yosef & Stessie - Free.jpg using Guid(ac7b7ebb13975364b80e0034c3e19b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1b82c93890cb625afb017f6b39d674e') in 0.060480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.236182 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Prefabs/Media/Lamp_SludgeBath_LICENSE.png
+  artifactKey: Guid(2e9453c4ba3352c42a24bcee787609b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Prefabs/Media/Lamp_SludgeBath_LICENSE.png using Guid(2e9453c4ba3352c42a24bcee787609b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5954f2f0446fa37efda94300dbba92eb') in 0.015542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/LaserEdgesUV.png
+  artifactKey: Guid(38e61c43effaff849867fb744402682a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/LaserEdgesUV.png using Guid(38e61c43effaff849867fb744402682a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb9b492bc04e50042c761705540836e9') in 0.013007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Other/Custom Lasers/LaserGradient.png
+  artifactKey: Guid(2208c6c766e8ab543a17f10932c9271f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Other/Custom Lasers/LaserGradient.png using Guid(2208c6c766e8ab543a17f10932c9271f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fddcdb622c3185d96db4a4e87385668c') in 0.011475 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/LaserShapeData/LaserMask-2.png
+  artifactKey: Guid(7e61810b79cf47f409842bea974444b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/LaserShapeData/LaserMask-2.png using Guid(7e61810b79cf47f409842bea974444b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0150f4f6eb8e255db37227769b87bfe') in 0.008294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/LaserShapeData/LaserMask-3.png
+  artifactKey: Guid(48adbe12ecf8c8a4b80056c283d6a045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/LaserShapeData/LaserMask-3.png using Guid(48adbe12ecf8c8a4b80056c283d6a045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b443af9c7ece1d95990a2675eb4550') in 0.008282 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.007466 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/LaserShapeData/LaserMask-5.png
+  artifactKey: Guid(e614d5d864f2fed43abb96f53f0dd3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/LaserShapeData/LaserMask-5.png using Guid(e614d5d864f2fed43abb96f53f0dd3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8c6d18f553eda6af2c853e062921818') in 0.008277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/LaserShapeData/LaserMask-8.png
+  artifactKey: Guid(d2d665c0d154f8f4b91380ea60b505aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/LaserShapeData/LaserMask-8.png using Guid(d2d665c0d154f8f4b91380ea60b505aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f867486f881cc63853ee9e6fb62d8c4') in 0.008405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.027072 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/LatexMatcap2.png
+  artifactKey: Guid(1db11fa2fd2d3fe47b1f585645db2a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/LatexMatcap2.png using Guid(1db11fa2fd2d3fe47b1f585645db2a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71447cc01fa800ec94f2ad46f95d5fc4') in 0.009120 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.207917 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb103381747dab3ac933c77f12742a81') in 0.055038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/LightBarTextures/LightBar_LightBarMaterialFixture_MetallicSmoothness.png
+  artifactKey: Guid(1203e1ce9a1f8264ab985632f9e0ee0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/LightBarTextures/LightBar_LightBarMaterialFixture_MetallicSmoothness.png using Guid(1203e1ce9a1f8264ab985632f9e0ee0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d5f87316847b90ad01f7126edf156c') in 0.015402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/LightBarTextures/LightBar_LightBarMaterialFixture_Normal.png
+  artifactKey: Guid(30883d403f58448469709a65b0f45736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/LightBarTextures/LightBar_LightBarMaterialFixture_Normal.png using Guid(30883d403f58448469709a65b0f45736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82b90fdcfb7f7d204c1a5af19bcad295') in 0.022702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/Library.png
+  artifactKey: Guid(9a81d7df8e62c044a9d1cada0c8a2131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/Library.png using Guid(9a81d7df8e62c044a9d1cada0c8a2131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25992aa20219fb9254f45513a5c90963') in 0.008290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/LineTex.png
+  artifactKey: Guid(02f71419854c0d845a930c9e0a0bf775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/LineTex.png using Guid(02f71419854c0d845a930c9e0a0bf775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ba014a7f6e0f213d6e650c3476ccbb') in 0.012490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.218377 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/LiveOFF.png
+  artifactKey: Guid(bb16faf366bcc6c4fbf0d7666b105354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/LiveOFF.png using Guid(bb16faf366bcc6c4fbf0d7666b105354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a5c20d6c1da20a0329deac247010f08') in 0.010745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/MainCanvasTitleBg.png
+  artifactKey: Guid(bdb42c87b8801e94e886c5c0d60b3014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/MainCanvasTitleBg.png using Guid(bdb42c87b8801e94e886c5c0d60b3014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6041ea70faff01a1d27552767c1689ca') in 0.010088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Volumetric/MagicPerlinNoiseGen.png
+  artifactKey: Guid(a1743aa18bc963146add4b61267cf038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Volumetric/MagicPerlinNoiseGen.png using Guid(a1743aa18bc963146add4b61267cf038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5751b2bc943dd90444cca1d60f5ae6a') in 0.013117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.010223 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/Material.png
+  artifactKey: Guid(157b94751c138d84bbe1768c672b5168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/Material.png using Guid(157b94751c138d84bbe1768c672b5168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '586bf9cdad9dc7c9571e5d2333f6e467') in 0.008246 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.308080 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotLeftOff.png
+  artifactKey: Guid(9f2d5e61dd9821b44a410f36519781d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotLeftOff.png using Guid(9f2d5e61dd9821b44a410f36519781d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8670439191fa30875c74006e07f216e') in 0.008582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotMidOff.png
+  artifactKey: Guid(eaf512a569994074b9b268ff098b0f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotMidOff.png using Guid(eaf512a569994074b9b268ff098b0f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95924febdc789a4d22b154cac4445df') in 0.007693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotLeftOnHover.png
+  artifactKey: Guid(7ef06ce40d713d34790e78278ee82dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotLeftOnHover.png using Guid(7ef06ce40d713d34790e78278ee82dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352e605d2c04eba4376ce53585647309') in 0.010451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.017545 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotMidOn.png
+  artifactKey: Guid(133e79bed45185d408f4c5410f89dded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotMidOn.png using Guid(133e79bed45185d408f4c5410f89dded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e26c1e7067629a002324e7ed0588dddb') in 0.008605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotMidOnHover.png
+  artifactKey: Guid(542d7546736ddd244a145ef7103678fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotMidOnHover.png using Guid(542d7546736ddd244a145ef7103678fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12d41119bb6288bde1f66eb685c53e3b') in 0.008478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotRightOff.png
+  artifactKey: Guid(bfcecef29876cc54db85363cf2feebb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MiniBotRightOff.png using Guid(bfcecef29876cc54db85363cf2feebb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd8abbe126018fa06ae880b77f52a10') in 0.009439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MinimizeWindow.png
+  artifactKey: Guid(2aae9a02747d74d46bf98a15ac5c9b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/MinimizeWindow.png using Guid(2aae9a02747d74d46bf98a15ac5c9b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b71e2422526d0007fba43b9e984c524c') in 0.008339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/HQ Meshes/MoverLight-Bar-Mesh/MoverLight-BarLight-Mesh-UV.png
+  artifactKey: Guid(2dbe7b75c3dbe3c46bb517b6e83ef3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/HQ Meshes/MoverLight-Bar-Mesh/MoverLight-BarLight-Mesh-UV.png using Guid(2dbe7b75c3dbe3c46bb517b6e83ef3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4360f6f15bdcbba13ced948f35e84a4a') in 0.014601 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/HQ Meshes/MoverLight-Bar-Mesh/MoverLight-BarLight-Mesh-Mask.png
+  artifactKey: Guid(c8d54af075d43e54e84f30c271c96e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/HQ Meshes/MoverLight-Bar-Mesh/MoverLight-BarLight-Mesh-Mask.png using Guid(c8d54af075d43e54e84f30c271c96e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d15c0e24e50f51cd5f77c1255ee019') in 0.014881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.195744 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/BarLightM/MoverLight-BarLight-Mesh_BarMover-HQ_MetallicSmoothness.png
+  artifactKey: Guid(70517d13b3b3b38468e80350e71f382b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/BarLightM/MoverLight-BarLight-Mesh_BarMover-HQ_MetallicSmoothness.png using Guid(70517d13b3b3b38468e80350e71f382b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6eeb54dddffbee164e183bda7c925a0') in 0.014445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/BarLightM/MoverLightBar-EmissionMask.png
+  artifactKey: Guid(9412f79358599224ea49df60cb35c26b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/BarLightM/MoverLightBar-EmissionMask.png using Guid(9412f79358599224ea49df60cb35c26b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bdd1d0111111d6cde7b12c522ff8bd0') in 0.013816 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/BarLightM/MoverLightBar-EmissionMask2.png
+  artifactKey: Guid(f87422659f335e8438649a4b6433abbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/BarLightM/MoverLightBar-EmissionMask2.png using Guid(f87422659f335e8438649a4b6433abbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2167fd71eea4e0f462611996647195b') in 0.013139 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003266 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/noise_simplex.png
+  artifactKey: Guid(d5e4a521aa43ec742a51e66e8da2871a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Fur/noise_simplex.png using Guid(d5e4a521aa43ec742a51e66e8da2871a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632e711d2992e7ee86f3a69945aa5729') in 0.009419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/NoPreview.png
+  artifactKey: Guid(750b1bd7ba8bd28489650de6d0a95cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/NoPreview.png using Guid(750b1bd7ba8bd28489650de6d0a95cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8a030afc60f1a06b530d1cf7efa304b') in 0.027945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/Open.png
+  artifactKey: Guid(d8b538796c7980843b59d62dbcdebef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/Open.png using Guid(d8b538796c7980843b59d62dbcdebef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de43d6a0f5cbb8fbc8b59d03d086af90') in 0.008362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.034957 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/Icons/plain_3dwidthfull.png
+  artifactKey: Guid(de2f5df3e7a870c40a08095eff436651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/Icons/plain_3dwidthfull.png using Guid(de2f5df3e7a870c40a08095eff436651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0168aae9f64d4e63448753236c063c42') in 0.175748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.063374 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/Icons/plain_arrow_doubleloop.png
+  artifactKey: Guid(a31c7748a9b3a0e40ab38b84ebbf0364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/Icons/plain_arrow_doubleloop.png using Guid(a31c7748a9b3a0e40ab38b84ebbf0364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2d4e74ab29ec21a35679d0e9225b8e') in 0.051701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/Icons/plain_graph_exponential.png
+  artifactKey: Guid(a93ee5f60463399418402f0a32881596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/Icons/plain_graph_exponential.png using Guid(a93ee5f60463399418402f0a32881596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272bb6974159241ac392a89fbde876d0') in 0.044725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/Icons/plain_arrow_spin.png
+  artifactKey: Guid(1d1e4114aa0106746b1b2e2a7d392690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/Icons/plain_arrow_spin.png using Guid(1d1e4114aa0106746b1b2e2a7d392690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df4cfbc7cf789d6478dd8fd801e82727') in 0.056556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/Icons/plain_chevron.png
+  artifactKey: Guid(c5328dd3eb621ab4597f717c1e00828d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/Icons/plain_chevron.png using Guid(c5328dd3eb621ab4597f717c1e00828d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0243f45755f546eb9ce6fdbff911c74b') in 0.066385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/Icons/plain_arrow_single.png
+  artifactKey: Guid(b54524306c7ab234d8aea49f9389c38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/Icons/plain_arrow_single.png using Guid(b54524306c7ab234d8aea49f9389c38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '226d2ef0c8fbb51406d04716ef36e4d1') in 0.091539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/Icons/plain_download.png
+  artifactKey: Guid(67223e039534cb146913c0c343932a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/Icons/plain_download.png using Guid(67223e039534cb146913c0c343932a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f07bec99ea7b357fe49e291111b40209') in 0.076808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/Icons/plain_headphone.png
+  artifactKey: Guid(566bc536c212f3742a54eb85fd171f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/Icons/plain_headphone.png using Guid(566bc536c212f3742a54eb85fd171f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a320bcb88cbcbd3f20bc762370f3e57c') in 0.085954 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/Icons/plain_checkmark.png
+  artifactKey: Guid(9ca135e4b19996e4c94869d682461aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/Icons/plain_checkmark.png using Guid(9ca135e4b19996e4c94869d682461aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5cc811c7120c663949fefecfaa90152') in 0.054808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/dev.architech.protv/Resources/UI/Icons/plain_chevron_double.png
+  artifactKey: Guid(87fb4adca8f753e4fa1a744be41fb40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/UI/Icons/plain_chevron_double.png using Guid(87fb4adca8f753e4fa1a744be41fb40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0b0e968e462138dbf5f4f3ba743bf5') in 0.061795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 1.614607 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (20).png
+  artifactKey: Guid(5f94789d7f6da9b449e4cb1139ebecc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (20).png using Guid(5f94789d7f6da9b449e4cb1139ebecc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0feca9062d09fb7dd955e50ae5f6610') in 0.007839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (22).jpg
+  artifactKey: Guid(760bc4ee5d362ff4da1ba3ca0e2efc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (22).jpg using Guid(760bc4ee5d362ff4da1ba3ca0e2efc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a67eef2634ae8894feedd0ee5b05d14') in 0.019067 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (25).jpg
+  artifactKey: Guid(0585906ec08a78346b9fe60a303e12ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (25).jpg using Guid(0585906ec08a78346b9fe60a303e12ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2266288223cec75c4003469b7a4fd2e0') in 0.008012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (29).jpg
+  artifactKey: Guid(7a28f4ace6d11af4a8b1e41c0e74e245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (29).jpg using Guid(7a28f4ace6d11af4a8b1e41c0e74e245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c19c4871c70745e800b16400c0807cce') in 0.008430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (32).png
+  artifactKey: Guid(3c1b5b63bfcf1d64a85ae92a997559ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (32).png using Guid(3c1b5b63bfcf1d64a85ae92a997559ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efe7c4529f5cd88fcd3559dc33bdf4b') in 0.015881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (30).png
+  artifactKey: Guid(8b0294a2d71b5044180c0ace903cd6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (30).png using Guid(8b0294a2d71b5044180c0ace903cd6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815951bd5af39d8759b19378df941e36') in 0.024471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (32).jpg
+  artifactKey: Guid(789f2ef616997194d9a6075249378b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (32).jpg using Guid(789f2ef616997194d9a6075249378b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d2cbd7dc09b778530e0e0092d95077') in 0.008732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (27).jpg
+  artifactKey: Guid(f6a76475a220f20468f16ec0e17d67b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (27).jpg using Guid(f6a76475a220f20468f16ec0e17d67b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81bd3918a57c57ec08cd797637156e58') in 0.017138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (24).jpg
+  artifactKey: Guid(6123b53d024ac0b489e5d7a87528c5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (24).jpg using Guid(6123b53d024ac0b489e5d7a87528c5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28898e61148d95078fd330cc0a1f0b0f') in 0.011505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (33).jpg
+  artifactKey: Guid(9093fc5a69128ad4b8d57fdfa63614ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (33).jpg using Guid(9093fc5a69128ad4b8d57fdfa63614ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc83168d043951f12e91b655376d7eee') in 0.015715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (26).jpg
+  artifactKey: Guid(58b5b74caaea4b74ab0e210d080d43da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (26).jpg using Guid(58b5b74caaea4b74ab0e210d080d43da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a52909b12b46b2584004ed46ba3af97f') in 0.010394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (26).png
+  artifactKey: Guid(be401e0134922d1429f57d073a05f469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (26).png using Guid(be401e0134922d1429f57d073a05f469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960ec05a3ed76f8f70ef015c158fc015') in 0.010236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (23).png
+  artifactKey: Guid(6fe30ec40a285ae4f90a2656a59b8048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (23).png using Guid(6fe30ec40a285ae4f90a2656a59b8048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e37c558032c237bbf835ab770915275') in 0.029185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (33).png
+  artifactKey: Guid(c2900629045488a4b89b252f60b7ba80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (33).png using Guid(c2900629045488a4b89b252f60b7ba80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ca50f3cf5d129f4aafdd4680dbdcb6') in 0.010318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (22).png
+  artifactKey: Guid(b36a67a8cb824694cbd0f71b5ba9de5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (22).png using Guid(b36a67a8cb824694cbd0f71b5ba9de5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a599623bc7ddf394ffad4e8d1fe295fb') in 0.021629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (21).png
+  artifactKey: Guid(5586e7d602e5b49408769f87e8c907d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (21).png using Guid(5586e7d602e5b49408769f87e8c907d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0641cb9e5bd59038e600bee70cd7707b') in 0.008247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.652048 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/UV_Check.png
+  artifactKey: Guid(bb7711dde80ffc949b3171744eb92cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/UV_Check.png using Guid(bb7711dde80ffc949b3171744eb92cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d8fda41aac26dc5ad892c3ac6c30c30') in 0.011016 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.377456 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9407113d49cfce8eb7b1049681db817') in 0.021663 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 49.966100 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da8cd8987b34aaa481c1766233a108c') in 0.493685 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 482.991949 seconds.
+  path: Assets/Kita'vali 4.8 Assets/Materials/Default Textures/Feathers.mat
+  artifactKey: Guid(39520a66f56d37c4ba67338e2edead9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kita'vali 4.8 Assets/Materials/Default Textures/Feathers.mat using Guid(39520a66f56d37c4ba67338e2edead9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce5b248ed20c1fb873aa04683129c02') in 1.435189 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 138.179778 seconds.
+  path: Assets/3D DJ/Debug/RT Layers Debug.mat
+  artifactKey: Guid(95b31952588d50041852b629255b0149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Debug/RT Layers Debug.mat using Guid(95b31952588d50041852b629255b0149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ce99141199d51dc3f777320e7ba170') in 0.017841 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 2.469658 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Other/Skybox/top.png
+  artifactKey: Guid(fea41ad96b350134399b8f09f05556cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Other/Skybox/top.png using Guid(fea41ad96b350134399b8f09f05556cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c74ee07fc41fffa0cd7ce1baafbdf31') in 0.011409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/TransparentOverlay.png
+  artifactKey: Guid(8c4a7fca2884fab419769ccc0355c0c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/TransparentOverlay.png using Guid(8c4a7fca2884fab419769ccc0355c0c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd763187ebca18469e5920827706d120d') in 0.008829 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/dev.architech.protv/Resources/Models/CurvedTVSet/Textures/Tv Set_Tv Set_Normal.png
+  artifactKey: Guid(39ab4493dd5100e4ab28fcba8a6dbf28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/Models/CurvedTVSet/Textures/Tv Set_Tv Set_Normal.png using Guid(39ab4493dd5100e4ab28fcba8a6dbf28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b57eae304f60214688a61b4da42e94c1') in 0.010268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/UpdateOFF.png
+  artifactKey: Guid(99d70ac09b4db9742b404c3f92d8564b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/UpdateOFF.png using Guid(99d70ac09b4db9742b404c3f92d8564b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66622e95374caf503ef70771838f3a12') in 0.008193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/VRSL-BlinderLight-ProjectionTexture.png
+  artifactKey: Guid(55dcb9bf7922981428c6269c201c6341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/VRSL-BlinderLight-ProjectionTexture.png using Guid(55dcb9bf7922981428c6269c201c6341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6413550bb2cc27fe803b169c4c5145b6') in 0.008703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Documentation/VRSL-GitHubTrailer-Short.gif
+  artifactKey: Guid(963bdfe61aa3c7f4d86d4ea0e1762049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Documentation/VRSL-GitHubTrailer-Short.gif using Guid(963bdfe61aa3c7f4d86d4ea0e1762049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442420ca84f66dd7f8a6b005bdd513d4') in 0.010317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/VRSL-BlinderLight-JustFixture_ParLightFull_EmissionMask 1.png
+  artifactKey: Guid(4fed70ee86b71514aadfcd7054e2bcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/VRSL-BlinderLight-JustFixture_ParLightFull_EmissionMask 1.png using Guid(4fed70ee86b71514aadfcd7054e2bcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf842c4ce6dfe540e2533b22ce227f0') in 0.010631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Editor/Resources/VRSL-LightBulbIcon.png
+  artifactKey: Guid(db9a882cfc78fb0458eee55c6b8786a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Editor/Resources/VRSL-LightBulbIcon.png using Guid(db9a882cfc78fb0458eee55c6b8786a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8c8e1a5e3ccd31ca06876d27b6bb512') in 0.011849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Documentation/VRSL-LightDemonstration.gif
+  artifactKey: Guid(67405ca3f865cc045874764679d58975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Documentation/VRSL-LightDemonstration.gif using Guid(67405ca3f865cc045874764679d58975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25c238603fba1a996bde53181dce1772') in 0.008487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Example Scenes/DMX-AvatarTesting/Content/VRSL-AvatarDMXTestingVideo.renderTexture
+  artifactKey: Guid(af61f47edc9195f4baa246031aa0c7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Example Scenes/DMX-AvatarTesting/Content/VRSL-AvatarDMXTestingVideo.renderTexture using Guid(af61f47edc9195f4baa246031aa0c7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc68472c8946943597aacdcd8fd7db41') in 0.011381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/dev.architech.protv/Resources/Models/CurvedTVSet/Textures/Tv Set_Tv Set_AlbedoTransparency.png
+  artifactKey: Guid(a96dcbc361c749c47b3049e49cfda049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/Models/CurvedTVSet/Textures/Tv Set_Tv Set_AlbedoTransparency.png using Guid(a96dcbc361c749c47b3049e49cfda049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c895babeaf345b0cd68c6ec2090b9158') in 0.012995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Editor/Resources/twitter-logo.png
+  artifactKey: Guid(c9569c782c4e6ab4b9fd3a0db592e2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Editor/Resources/twitter-logo.png using Guid(c9569c782c4e6ab4b9fd3a0db592e2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8297eaa9d737c50146a89cf05f819af7') in 0.008792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Documentation/VRSl-Kradt-ComeWithMe-RecDemo-Short.gif
+  artifactKey: Guid(68996b192c47da843ac91628f03c7909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Documentation/VRSl-Kradt-ComeWithMe-RecDemo-Short.gif using Guid(68996b192c47da843ac91628f03c7909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a1346370e27ea4b4b841503a07c5681') in 0.008308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/VRSL-DiscoBallCubeMap-HighQuality.png
+  artifactKey: Guid(264d2b8991fde1e4facd5a2c8d5d55ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/VRSL-DiscoBallCubeMap-HighQuality.png using Guid(264d2b8991fde1e4facd5a2c8d5d55ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e77d1b6c64aad13b96dcce1e8ea1ebf') in 0.041084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 21.374396 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/BlinderTextures/StrobeLight-Non-Volumetric_BlinderMaterial_AlbedoTransparency.png
+  artifactKey: Guid(d04e97b983ed7e74c97185b26e498ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/StaticLightTextures/BlinderTextures/StrobeLight-Non-Volumetric_BlinderMaterial_AlbedoTransparency.png using Guid(d04e97b983ed7e74c97185b26e498ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3492a541bbf762de812fdfbb84e900c8') in 0.013319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Noise/T_Abstract_Noise.png
+  artifactKey: Guid(b60b8211733a76c4b9a4322bfcf0b581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Noise/T_Abstract_Noise.png using Guid(b60b8211733a76c4b9a4322bfcf0b581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f3b9d42f44b3ec01c5af7d392b4a77') in 0.010382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Rainbow_Matcap.png
+  artifactKey: Guid(fc239b868ef86f94087bad300518901e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Matcaps/T_Rainbow_Matcap.png using Guid(fc239b868ef86f94087bad300518901e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b1c794007aee828cea03c9e5dc0ace') in 0.016286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Presets/SpecialFX/Iridescence/T_Irigradient.png
+  artifactKey: Guid(8917b42b63ddc2c49b009b5cc569e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Presets/SpecialFX/Iridescence/T_Irigradient.png using Guid(8917b42b63ddc2c49b009b5cc569e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fdec377c66472d0b27b2ac26fe9fc36') in 0.010683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Gifs/T_GrayThing_GIF.gif
+  artifactKey: Guid(51e12303b2e7b6047ace7411e66b3988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Gifs/T_GrayThing_GIF.gif using Guid(51e12303b2e7b6047ace7411e66b3988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7d767a76859b31d6fe082faa793c04') in 0.010670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Shapes/Normals/T_Random_N.jpg
+  artifactKey: Guid(f771a6313a5869d44b53020b3dc105b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Shapes/Normals/T_Random_N.jpg using Guid(f771a6313a5869d44b53020b3dc105b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7cbefd61b3b4e579a923fae3b5c3960') in 0.010172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
