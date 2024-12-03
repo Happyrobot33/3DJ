@@ -354,6 +354,7 @@ Shader "Data Input"
 
 			uniform float _Rotation;
 			uniform float _Scale;
+			uniform float _Udon_WorldID[32];
 			int InttoBit25( float inputInteger, int Bit )
 			{
 				int actualInt = int(inputInteger);
@@ -490,7 +491,7 @@ Shader "Data Input"
 				float inputInteger26 = floor( ( _Scale * 100.0 ) );
 				int Bit26 = (int)BitNum28;
 				int localInttoBit26 = InttoBit26( inputInteger26 , Bit26 );
-				float4 appendResult27 = (float4((float)localInttoBit25 , (float)localInttoBit26 , 0.0 , 0.0));
+				float4 appendResult27 = (float4((float)localInttoBit25 , (float)localInttoBit26 , _Udon_WorldID[clamp((int)floor( ( IN.localTexcoord.xy.x * 32 ) ),0,(32 - 1))] , 0.0));
 				
                 finalColor = appendResult27;
 				return finalColor;
@@ -690,7 +691,7 @@ Shader "Data Input"
 }
 /*ASEBEGIN
 Version=19202
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;1;0,0;Float;False;True;-1;2;ASEMaterialInspector;0;13;Data Input;6f8c88c029181d44bbc1c6016d56deae;True;Depth Information;0;0;Depth Information;1;False;True;0;1;False;;0;False;;0;1;False;;0;False;;True;0;False;;0;False;;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;0;True;2;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;0;;0;0;Standard;0;0;4;True;True;True;True;False;;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;1;0,0;Float;False;True;-1;2;ASEMaterialInspector;0;12;Data Input;6f8c88c029181d44bbc1c6016d56deae;True;Depth Information;0;0;Depth Information;1;False;True;0;1;False;;0;False;;0;1;False;;0;False;;True;0;False;;0;False;;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;0;True;2;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;0;;0;0;Standard;0;0;4;True;True;True;True;False;;False;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;13;-1664,-112;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;100,100,100;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;15;-1456,-144;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.PowerNode;14;-1664,-208;Inherit;False;False;2;0;FLOAT;2;False;1;FLOAT;19;False;1;FLOAT;0
@@ -701,30 +702,35 @@ Node;AmplifyShaderEditor.SimpleMultiplyOpNode;22;-1648,720;Inherit;False;2;2;0;F
 Node;AmplifyShaderEditor.FloorOpNode;23;-1488,592;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.FloorOpNode;24;-1488,720;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.CustomExpressionNode;25;-1344,592;Inherit;False;int actualInt = int(inputInteger)@$int extracted = (actualInt >> Bit) & 1@$//int extracted = (actualInt & (1 << Bit)) >> Bit@$$return extracted@;0;Create;2;True;inputInteger;FLOAT;0;In;;Inherit;False;True;Bit;INT;0;In;;Inherit;False;Int to Bit;True;False;0;;False;2;0;FLOAT;0;False;1;INT;0;False;1;INT;0
-Node;AmplifyShaderEditor.TexCoordVertexDataNode;5;-2096,176;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;6;-1840,208;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;20;False;1;FLOAT;0
-Node;AmplifyShaderEditor.FloorOpNode;7;-1664,224;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;28;-1520,224;Inherit;False;BitNum;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.CustomExpressionNode;8;-768,-144;Inherit;False;int actualInt = int(inputInteger)@$int extracted = (actualInt >> Bit) & 1@$//int extracted = (actualInt & (1 << Bit)) >> Bit@$$return extracted@;0;Create;2;True;inputInteger;FLOAT;0;In;;Inherit;False;True;Bit;INT;0;In;;Inherit;False;Int to Bit;True;False;0;;False;2;0;FLOAT;0;False;1;INT;0;False;1;INT;0
 Node;AmplifyShaderEditor.CustomExpressionNode;10;-768,-48;Inherit;False;int actualInt = int(inputInteger)@$int extracted = (actualInt >> Bit) & 1@$//int extracted = (actualInt & (1 << Bit)) >> Bit@$$return extracted@;0;Create;2;True;inputInteger;FLOAT;0;In;;Inherit;False;True;Bit;INT;0;In;;Inherit;False;Int to Bit;True;False;0;;False;2;0;FLOAT;0;False;1;INT;0;False;1;INT;0
 Node;AmplifyShaderEditor.DynamicAppendNode;9;-416,-48;Inherit;False;COLOR;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;COLOR;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;4;-240,-48;Float;False;False;-1;2;ASEMaterialInspector;0;13;New Amplify Shader;6f8c88c029181d44bbc1c6016d56deae;True;Position;0;3;Position;1;False;True;0;1;False;;0;False;;0;1;False;;0;False;;True;0;False;;0;False;;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;0;True;2;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;0;;0;0;Standard;0;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;4;-240,-48;Float;False;False;-1;2;ASEMaterialInspector;0;12;New Amplify Shader;6f8c88c029181d44bbc1c6016d56deae;True;Position;0;3;Position;1;False;True;0;1;False;;0;False;;0;1;False;;0;False;;True;0;False;;0;False;;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;0;True;2;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;0;;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.CustomExpressionNode;11;-768,48;Inherit;False;int actualInt = int(inputInteger)@$int extracted = (actualInt >> Bit) & 1@$//int extracted = (actualInt & (1 << Bit)) >> Bit@$$return extracted@;0;Create;2;True;inputInteger;FLOAT;0;In;;Inherit;False;True;Bit;INT;0;In;;Inherit;False;Int to Bit;True;False;0;;False;2;0;FLOAT;0;False;1;INT;0;False;1;INT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;29;-1232,-16;Inherit;False;28;BitNum;1;0;OBJECT;;False;1;FLOAT;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;2;32,208;Float;False;False;-1;2;ASEMaterialInspector;0;13;New Amplify Shader;6f8c88c029181d44bbc1c6016d56deae;True;Color Information;0;1;Color Information;1;False;True;0;1;False;;0;False;;0;1;False;;0;False;;True;0;False;;0;False;;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;0;True;2;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;0;;0;0;Standard;0;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;2;32,208;Float;False;False;-1;2;ASEMaterialInspector;0;12;New Amplify Shader;6f8c88c029181d44bbc1c6016d56deae;True;Color Information;0;1;Color Information;1;False;True;0;1;False;;0;False;;0;1;False;;0;False;;True;0;False;;0;False;;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;0;True;2;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;0;;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.DynamicAppendNode;27;-528,656;Inherit;False;COLOR;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;COLOR;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;3;-272,656;Float;False;False;-1;2;ASEMaterialInspector;0;13;New Amplify Shader;6f8c88c029181d44bbc1c6016d56deae;True;Rotation / Scale;0;2;Rotation / Scale;1;False;True;0;1;False;;0;False;;0;1;False;;0;False;;True;0;False;;0;False;;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;0;True;2;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;0;;0;0;Standard;0;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;3;-272,656;Float;False;False;-1;2;ASEMaterialInspector;0;12;New Amplify Shader;6f8c88c029181d44bbc1c6016d56deae;True;Rotation / Scale;0;2;Rotation / Scale;1;False;True;0;1;False;;0;False;;0;1;False;;0;False;;True;0;False;;0;False;;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;True;0;True;2;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;0;;0;0;Standard;0;False;0
+Node;AmplifyShaderEditor.Vector3Node;12;-1904,-112;Inherit;False;Property;_Position;Position;0;0;Create;True;0;0;0;False;0;False;0,0,0;2.351095,1.020636,10.05786;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.RangedFloatNode;19;-1824,592;Inherit;False;Property;_Rotation;Rotation;1;0;Create;True;0;0;0;False;0;False;0;46.8;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleAddOpNode;40;-1168,1312;Inherit;False;2;2;0;FLOAT;0;False;1;INT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.CustomExpressionNode;35;-848,1360;Inherit;False;int actualInt = int(inputInteger)@$int extracted = (actualInt >> Bit) & 1@$//int extracted = (actualInt & (1 << Bit)) >> Bit@$$return extracted@;0;Create;2;True;inputInteger;FLOAT;0;In;;Inherit;False;True;Bit;INT;0;In;;Inherit;False;Int to Bit;True;False;0;;False;2;0;FLOAT;0;False;1;INT;0;False;1;INT;0
+Node;AmplifyShaderEditor.GetLocalVarNode;36;-1232,1520;Inherit;False;28;BitNum;1;0;OBJECT;;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FunctionNode;64;-1680,1376;Inherit;False;BinaryShift;-1;;22;36f2ceec161672543ac28910579ed228;1,6,0;2;7;INT;1;False;1;INT;0;False;1;INT;0
+Node;AmplifyShaderEditor.ToggleSwitchNode;34;-2016,1264;Inherit;False;Property;_TransparencyDither;Transparency Dither;3;0;Create;True;0;0;0;False;0;False;0;True;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.ToggleSwitchNode;37;-2016,1376;Inherit;False;Property;_TransparencyHide;Transparency Hide;4;0;Create;True;0;0;0;False;0;False;0;True;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;20;-1824,720;Inherit;False;Property;_Scale;Scale;2;0;Create;True;0;0;0;False;0;False;0;2.286984;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.CustomExpressionNode;26;-1344,720;Inherit;False;int actualInt = int(inputInteger)@$int extracted = (actualInt >> Bit) & 1@$//int extracted = (actualInt & (1 << Bit)) >> Bit@$$return extracted@;0;Create;2;True;inputInteger;FLOAT;0;In;;Inherit;False;True;Bit;INT;0;In;;Inherit;False;Int to Bit;True;False;0;;False;2;0;FLOAT;0;False;1;INT;0;False;1;INT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;30;-1600,848;Inherit;False;28;BitNum;1;0;OBJECT;;False;1;FLOAT;0
-Node;AmplifyShaderEditor.SimpleAddOpNode;40;-1184,1120;Inherit;False;2;2;0;FLOAT;0;False;1;INT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.CustomExpressionNode;35;-864,1168;Inherit;False;int actualInt = int(inputInteger)@$int extracted = (actualInt >> Bit) & 1@$//int extracted = (actualInt & (1 << Bit)) >> Bit@$$return extracted@;0;Create;2;True;inputInteger;FLOAT;0;In;;Inherit;False;True;Bit;INT;0;In;;Inherit;False;Int to Bit;True;False;0;;False;2;0;FLOAT;0;False;1;INT;0;False;1;INT;0
-Node;AmplifyShaderEditor.GetLocalVarNode;36;-1248,1328;Inherit;False;28;BitNum;1;0;OBJECT;;False;1;FLOAT;0
-Node;AmplifyShaderEditor.FunctionNode;64;-1696,1184;Inherit;False;BinaryShift;-1;;22;36f2ceec161672543ac28910579ed228;1,6,0;2;7;INT;1;False;1;INT;0;False;1;INT;0
-Node;AmplifyShaderEditor.ToggleSwitchNode;34;-2032,1072;Inherit;False;Property;_TransparencyDither;Transparency Dither;3;0;Create;True;0;0;0;False;0;False;0;True;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.ToggleSwitchNode;37;-2032,1184;Inherit;False;Property;_TransparencyHide;Transparency Hide;4;0;Create;True;0;0;0;False;0;False;0;True;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.Vector3Node;12;-1904,-112;Inherit;False;Property;_Position;Position;0;0;Create;True;0;0;0;False;0;False;0,0,0;5,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.RangedFloatNode;20;-1824,720;Inherit;False;Property;_Scale;Scale;2;0;Create;True;0;0;0;False;0;False;0;1;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;19;-1824,592;Inherit;False;Property;_Rotation;Rotation;1;0;Create;True;0;0;0;False;0;False;0;45;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.TexCoordVertexDataNode;5;-2096,176;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;6;-1840,208;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;20;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FloorOpNode;7;-1664,224;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.TexCoordVertexDataNode;71;-2416,896;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;72;-2160,928;Inherit;False;2;2;0;FLOAT;0;False;1;INT;20;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FloorOpNode;73;-1984,944;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.IntNode;70;-2400,1088;Inherit;False;Constant;_Int0;Int 0;5;0;Create;True;0;0;0;False;0;False;32;0;False;0;1;INT;0
+Node;AmplifyShaderEditor.GlobalArrayNode;68;-1760,1024;Inherit;False;_Udon_WorldID;0;32;0;True;False;0;1;False;Object;-1;4;0;INT;0;False;2;INT;0;False;1;INT;0;False;3;INT;0;False;1;FLOAT;0
 WireConnection;13;0;12;0
 WireConnection;15;0;13;0
 WireConnection;15;1;14;0
@@ -736,8 +742,6 @@ WireConnection;23;0;21;0
 WireConnection;24;0;22;0
 WireConnection;25;0;23;0
 WireConnection;25;1;30;0
-WireConnection;6;0;5;1
-WireConnection;7;0;6;0
 WireConnection;28;0;7;0
 WireConnection;8;0;17;0
 WireConnection;8;1;29;0
@@ -751,13 +755,21 @@ WireConnection;11;0;17;2
 WireConnection;11;1;29;0
 WireConnection;27;0;25;0
 WireConnection;27;1;26;0
+WireConnection;27;2;68;0
 WireConnection;3;0;27;0
-WireConnection;26;0;24;0
-WireConnection;26;1;30;0
 WireConnection;40;0;34;0
 WireConnection;40;1;64;0
 WireConnection;35;0;40;0
 WireConnection;35;1;36;0
 WireConnection;64;1;37;0
+WireConnection;26;0;24;0
+WireConnection;26;1;30;0
+WireConnection;6;0;5;1
+WireConnection;7;0;6;0
+WireConnection;72;0;71;1
+WireConnection;72;1;70;0
+WireConnection;73;0;72;0
+WireConnection;68;0;73;0
+WireConnection;68;1;70;0
 ASEEND*/
-//CHKSM=1DA46EF36AF6A5C676A6B29548F6B5DEE73E2536
+//CHKSM=BD0BEAC42B4092ED7E1AF07E41738096BF79FD4F

@@ -9,6 +9,7 @@ namespace com.happyrobot33.holographicreprojector
     using UnityEditor;
     using UnityEditor.SceneManagement;
     using UnityEngine.SceneManagement;
+    using VRC.Core;
 
     //custom editor to have a button to cycle the player
 
@@ -41,6 +42,17 @@ namespace com.happyrobot33.holographicreprojector
             EditorGUI.BeginChangeCheck();
 
             Manager manager = (Manager)target;
+
+            if (GUILayout.Button("Import World ID"))
+            {
+                PipelineManager pipelineManager = GameObject.FindObjectOfType<PipelineManager>();
+                string worldId = pipelineManager.blueprintId;
+                //strip it down to remove wrld_ and all -
+                worldId = worldId.Replace("wrld_", "");
+                worldId = worldId.Replace("-","");
+
+                manager.worldID = worldId;
+            }
 
             //draw the default inspector
             //DrawDefaultInspector();

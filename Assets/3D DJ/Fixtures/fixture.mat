@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: 235c1d2744521df4dad6544253e12fb6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _LIMITBEAMDISTANCE_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -93,6 +94,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _LimitBeamDistance: 1
     - _LockPosition: 0
     - _MaxTransmitterDistance: 15
     - _Metallic: 0
