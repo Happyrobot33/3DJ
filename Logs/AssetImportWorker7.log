@@ -269,3 +269,155 @@ Received Import Request.
 Start importing Packages/com.poiyomi.toon/_PoiyomiShaders/Textures/Misc/T_PastelRainbowVertical.png using Guid(bc453e8dc8d53ae42a9930a8b0de1dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f7b52638f6d8d64630d0339d58b3e14') in 0.011621 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1046.736821 seconds.
+  path: Assets/3D DJ/Playback/Data Extract.mat
+  artifactKey: Guid(b312d249b2905c449b9756b3b436cc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Data Extract.mat using Guid(b312d249b2905c449b9756b3b436cc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6da1f322ee3923e942f00c47f7abacf1') in 0.053455 seconds
+Number of updated asset objects reloaded before import = 2
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.968983 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
+  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e13a758ea8e71ed2b86770b9d1c061aa') in 0.049978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat
+  artifactKey: Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Vert Position Preview.mat using Guid(a867467a496efe947a43fbef69dc1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b4848dde4527b5e800ddea1654f2035') in 0.026701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Preview.mat
+  artifactKey: Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8aa7c9208ccd9fe6555a01c369adf5') in 0.026975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 4.865978 seconds.
+  path: Assets/Kita'vali 4.8 Assets/Models/Kita'vali_ver.4.8.fbx
+  artifactKey: Guid(63c597cfa4ebb1341a72d8dcb1043ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kita'vali 4.8 Assets/Models/Kita'vali_ver.4.8.fbx using Guid(63c597cfa4ebb1341a72d8dcb1043ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d95161ffb04b4b144cc3d1acf2292b') in 0.384163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 227
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Packages/dev.architech.protv/Resources/Models/ProTVBox/ProTVBox.fbx
+  artifactKey: Guid(4df86ea71bec6fe44b5c0b8b047cad73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/Models/ProTVBox/ProTVBox.fbx using Guid(4df86ea71bec6fe44b5c0b8b047cad73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29dae8c556e35dc1552d798b0660c925') in 0.042395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Other/OtherMeshes/InvertedCube.fbx
+  artifactKey: Guid(72d1fefa50b279f42aac808505d738cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Other/OtherMeshes/InvertedCube.fbx using Guid(72d1fefa50b279f42aac808505d738cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7063c60604533bd019fb87a1d664ec5b') in 0.023743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/HQ Meshes/MoverLight-Spotlight-HQMesh-Textures/MoverLight-HQMesh-DMX.fbx
+  artifactKey: Guid(cc98423c9d250574a97ff77da8b48ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/HQ Meshes/MoverLight-Spotlight-HQMesh-Textures/MoverLight-HQMesh-DMX.fbx using Guid(cc98423c9d250574a97ff77da8b48ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a259a1cf9668db69061516ed4836a4') in 0.046281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/VRSL-LightBar-15Channel.fbx
+  artifactKey: Guid(c193d73e1edb45b49b9493952da9738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/VRSL-LightBar-15Channel.fbx using Guid(c193d73e1edb45b49b9493952da9738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da95208795cbd355d5853e189e86454b') in 0.021751 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh-V3.fbx
+  artifactKey: Guid(fcdbfcc1daa67ab41ad6f9d2a61c2705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh-V3.fbx using Guid(fcdbfcc1daa67ab41ad6f9d2a61c2705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36e1db242964b8ad015dadf877fa116') in 0.056095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/FlareLight.fbx
+  artifactKey: Guid(e2a10a856b8aac8478a45144bd5ea93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/FlareLight.fbx using Guid(e2a10a856b8aac8478a45144bd5ea93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7654f789eff9c7c22ecf5ecaceca2ae') in 0.023203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/dev.architech.protv/Resources/Models/ProTVLogo3D/ProTV3Logo3D.fbx
+  artifactKey: Guid(560db4575cdd26447b0dd27b065e3b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/dev.architech.protv/Resources/Models/ProTVLogo3D/ProTV3Logo3D.fbx using Guid(560db4575cdd26447b0dd27b065e3b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485b9c0cc249a0d701dca511af2b28c6') in 0.057568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh-V2.fbx
+  artifactKey: Guid(1906031483474b741b5229cbd62b083c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh-V2.fbx using Guid(1906031483474b741b5229cbd62b083c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ffcab685fc111bff77122ba160f6e8') in 0.052303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/Backups/MoverLight--RTP-SplitMesh-Backups.fbx
+  artifactKey: Guid(d27acb56bfcc3a84abede044849bb8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/Backups/MoverLight--RTP-SplitMesh-Backups.fbx using Guid(d27acb56bfcc3a84abede044849bb8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a3534716b957533228eb71bb8ba3a6') in 0.045643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh-DMX.fbx
+  artifactKey: Guid(ba280220f0f515741a93dd294172c54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh-DMX.fbx using Guid(ba280220f0f515741a93dd294172c54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e8efcda92ff1f77b4f6f51db41e60b') in 0.042430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh.fbx
+  artifactKey: Guid(f4c4c7a2b099e274fbfcfbac57bda07a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh.fbx using Guid(f4c4c7a2b099e274fbfcfbac57bda07a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef159e341fce246904617becdddecaba') in 0.061412 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/LongTriColorLightBar.fbx
+  artifactKey: Guid(c1e407567aab2a545bfc7ef127a014a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/LongTriColorLightBar.fbx using Guid(c1e407567aab2a545bfc7ef127a014a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e120c4ab2ca801e35c214a413ed52b1e') in 0.019622 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 1.188292 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Other/OtherMeshes/VRSL-NoSignalDMXPlane.blend
+  artifactKey: Guid(f8595b1483c87934e87ca6aa5c8dbbf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Other/OtherMeshes/VRSL-NoSignalDMXPlane.blend using Guid(f8595b1483c87934e87ca6aa5c8dbbf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35643c128b952ce56676b3befa234861') in 0.033650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 2.412273 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh-SingleSided-HQ.fbx
+  artifactKey: Guid(75fedb72c375d3742a6b8ea2ee9deab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh-SingleSided-HQ.fbx using Guid(75fedb72c375d3742a6b8ea2ee9deab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c464902650ac2c7de5f49a64db1b1e8') in 0.147103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
