@@ -49,6 +49,8 @@ namespace com.happyrobot33.holographicreprojector
         [DeveloperOnly]
         public Material[] playbackMaterials;
         public RenderTexture VideoTexture;
+        [DeveloperOnly]
+        public string worldID;
 
         [Header("Color:")]
         [DeveloperOnly]
@@ -127,6 +129,28 @@ namespace com.happyrobot33.holographicreprojector
             VRCShader.SetGlobalTexture(VRCShader.PropertyToID("_Udon_3DJ_Color"), ColorExtractTexture);
             VRCShader.SetGlobalTexture(VRCShader.PropertyToID("_Udon_3DJ_Depth"), DepthExtractTexture);
             VRCShader.SetGlobalTexture(VRCShader.PropertyToID("_Udon_3DJ_Data"), DataExtractTexture);
+
+            //convert to float array
+            float[] worldIDArray = new float[32];
+            //world IDs are only ever made up of lowercase letters and numbers
+            //we want to convert these to a simple discrete ammount of values
+            for (int i = 0; i < worldID.Length; i++)
+            {
+                //worldIDArray[i] = worldID[i];
+                if (worldID[i] >= '0' && worldID[i] <= '9')
+                {
+                    worldIDArray[i] = worldID[i] - '0';
+                }
+                else
+                {
+                    worldIDArray[i] = worldID[i] - 'a' + 10;
+                }
+
+                //remap to be 0 to 1
+                const int totalPossibleValues = '9' - '0' + 'z' - 'a' + 1;
+                worldIDArray[i] /= totalPossibleValues;
+            }
+            VRCShader.SetGlobalFloatArray(VRCShader.PropertyToID("_Udon_WorldID"), worldIDArray);
         }
 
 
