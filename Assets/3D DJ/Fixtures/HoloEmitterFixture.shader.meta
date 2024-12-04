@@ -4,7 +4,6 @@ ShaderImporter:
   externalObjects: {}
   defaultTextures:
   - _Udon_3DJ_Data: {fileID: 8600000, guid: 2edf86f5d629f944692f8f4c802725c8, type: 2}
-  - _Udon_3DJ_Color: {fileID: 8600000, guid: 40d4c212118c5b545bb60be32058e0d1, type: 2}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 
