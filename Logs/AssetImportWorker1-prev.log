@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.22f1 (887be4894c44) revision 8944612'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 32688 MB
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 32655 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2022.3.22f1\Editor\Unity.exe
+C:\Users\mherber\Documents\2022.3.22f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
+C:/Users/mherber/sonar-3dj-project
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-58168
-Successfully changed project path to: E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
-E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
+51664
+Successfully changed project path to: C:/Users/mherber/sonar-3dj-project
+C:/Users/mherber/sonar-3dj-project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,69 +49,69 @@ E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [37492] Host "[IP] 192.168.1.210 [Port] 0 [Flags] 2 [Guid] 1059808031 [EditorId] 1059808031 [Version] 1048832 [Id] WindowsEditor(7,Matthew-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25720] Host "[IP] 10.0.2.45 [Port] 0 [Flags] 2 [Guid] 3486551216 [EditorId] 3486551216 [Version] 1048832 [Id] WindowsEditor(7,PTM541) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [37492] Host "[IP] 192.168.1.210 [Port] 0 [Flags] 2 [Guid] 1059808031 [EditorId] 1059808031 [Version] 1048832 [Id] WindowsEditor(7,Matthew-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25720] Host "[IP] 10.0.2.45 [Port] 0 [Flags] 2 [Guid] 3486551216 [EditorId] 3486551216 [Version] 1048832 [Id] WindowsEditor(7,PTM541) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
 Default GameObject BitMask: InternalUI already registered
 Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 54.13 ms, found 10 plugins.
-Preloading 2 native plugins for Editor in 1.46 ms.
+Refreshing native plugins compatible for Editor in 255.94 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 9.88 ms.
 Initialize engine version: 2022.3.22f1 (887be4894c44)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/Storage/Personal/Coding/VRChat/SONAR 3DJ Project/Assets
+[Subsystems] Discovering subsystems at path C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/mherber/sonar-3dj-project/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
     Vendor:   NVIDIA
-    VRAM:     5969 MB
-    Driver:   31.0.15.4633
+    VRAM:     12115 MB
+    Driver:   32.0.15.6094
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+Mono path[0] = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56872
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012119 seconds.
-- Loaded All Assemblies, in  0.308 seconds
+Register platform support module: C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Users/mherber/Documents/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.012678 seconds.
+- Loaded All Assemblies, in  0.399 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.272 seconds
-Domain Reload Profiling: 578ms
-	BeginReloadAssembly (92ms)
+- Finished resetting the current domain, in  0.335 seconds
+Domain Reload Profiling: 732ms
+	BeginReloadAssembly (149ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (29ms)
+	RebuildCommonClasses (31ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (61ms)
-	LoadAllAssembliesAndSetupDomain (115ms)
-		LoadAssemblies (90ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (148ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (113ms)
-			TypeCache.Refresh (112ms)
-				TypeCache.ScanAssembly (103ms)
+		AnalyzeDomain (140ms)
+			TypeCache.Refresh (139ms)
+				TypeCache.ScanAssembly (125ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (273ms)
+	FinalizeReload (336ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (227ms)
+		SetupLoadedEditorAssemblies (283ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (84ms)
+			InitializePlatformSupportModulesInManaged (106ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (98ms)
-			ProcessInitializeOnLoadMethodAttributes (39ms)
+			ProcessInitializeOnLoadAttributes (128ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,8 +119,8 @@ Domain Reload Profiling: 578ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.840 seconds
-Refreshing native plugins compatible for Editor in 27.45 ms, found 10 plugins.
+- Loaded All Assemblies, in  1.163 seconds
+Refreshing native plugins compatible for Editor in 85.89 ms, found 10 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -145,19 +145,6 @@ UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
-Preset cache invalid, rebuilding...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-Thry.ThryEditor.Presets:CheckPresetCache () (at ./Packages/com.poiyomi.toon/_PoiyomiShaders/Scripts/ThryEditor/Editor/Presets.cs:651)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: ./Packages/com.poiyomi.toon/_PoiyomiShaders/Scripts/ThryEditor/Editor/Presets.cs Line: 651)
-
-DisplayProgressbar: Creating Preset Cache
 Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
@@ -165,49 +152,49 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.230 seconds
-Domain Reload Profiling: 3067ms
-	BeginReloadAssembly (127ms)
+- Finished resetting the current domain, in  2.474 seconds
+Domain Reload Profiling: 3630ms
+	BeginReloadAssembly (167ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
-	RebuildCommonClasses (29ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (30ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (633ms)
-		LoadAssemblies (421ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (882ms)
+		LoadAssemblies (714ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (289ms)
-			TypeCache.Refresh (247ms)
-				TypeCache.ScanAssembly (223ms)
-			ScanForSourceGeneratedMonoScriptInfo (31ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (2231ms)
+		AnalyzeDomain (285ms)
+			TypeCache.Refresh (254ms)
+				TypeCache.ScanAssembly (232ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (2474ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1270ms)
+		SetupLoadedEditorAssemblies (1359ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (23ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (116ms)
-			ProcessInitializeOnLoadAttributes (596ms)
-			ProcessInitializeOnLoadMethodAttributes (522ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			BeforeProcessingInitializeOnLoad (208ms)
+			ProcessInitializeOnLoadAttributes (633ms)
+			ProcessInitializeOnLoadMethodAttributes (484ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
 Default GameObject BitMask: InternalUI already registered
 Default GameObject BitMask: HardwareObjects already registered
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 35.30 ms, found 10 plugins.
-Preloading 2 native plugins for Editor in 0.08 ms.
-Unloading 4738 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 434 unused Assets / (9.7 MB). Loaded Objects now: 5036.
-Memory consumption went from 366.3 MB to 356.6 MB.
-Total: 30.016200 ms (FindLiveObjects: 0.567100 ms CreateObjectMapping: 0.155000 ms MarkObjects: 26.078000 ms  DeleteObjects: 3.215300 ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 145.76 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.30 ms.
+Unloading 4668 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 233 unused Assets / (2.4 MB). Loaded Objects now: 5118.
+Memory consumption went from 353.3 MB to 351.0 MB.
+Total: 39.560400 ms (FindLiveObjects: 0.522100 ms CreateObjectMapping: 0.299700 ms MarkObjects: 37.537200 ms  DeleteObjects: 1.200300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -224,109 +211,254 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 349.578435 seconds.
-  path: Assets/StageV2.fbx
-  artifactKey: Guid(c8e6181ba5190a04f9b162257e796134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StageV2.fbx using Guid(c8e6181ba5190a04f9b162257e796134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '588cf1e4fa6776d3bc8edcffba39607b') in 0.194901 seconds
+  Time since last request: 4890.501923 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Washlight/VerticalMode/VRSL-WashMover-VolumetricMat-HQ-Vertical.mat
+  artifactKey: Guid(1bf524f68afbdd24783ea74d739ccd3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Washlight/VerticalMode/VRSL-WashMover-VolumetricMat-HQ-Vertical.mat using Guid(1bf524f68afbdd24783ea74d739ccd3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b306ef63d16c6b3a9fcb4e0abd3afd9e') in 0.716298 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
+Number of asset objects unloaded after import = 13
 ========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 27.81 ms, found 10 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 95 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 95 unused Assets / (8.5 MB). Loaded Objects now: 5081.
-Memory consumption went from 207.2 MB to 198.7 MB.
-Total: 60.392400 ms (FindLiveObjects: 0.336200 ms CreateObjectMapping: 0.209500 ms MarkObjects: 57.079200 ms  DeleteObjects: 2.766600 ms)
-
-Prepare: number of updated asset objects reloaded= 9
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/15ChannelLightBar/VRSL-LightBar-FixtureMat-Vertical-15CH.mat
+  artifactKey: Guid(24a93f840138a444ebeb9c6b79d19837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/15ChannelLightBar/VRSL-LightBar-FixtureMat-Vertical-15CH.mat using Guid(24a93f840138a444ebeb9c6b79d19837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2c05ff4e5ec35f8ff165548a11004c') in 0.437451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
 ========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 29.11 ms, found 10 plugins.
-Preloading 2 native plugins for Editor in 0.05 ms.
-Unloading 95 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 95 unused Assets / (8.5 MB). Loaded Objects now: 5088.
-Memory consumption went from 207.2 MB to 198.7 MB.
-Total: 56.714100 ms (FindLiveObjects: 0.313100 ms CreateObjectMapping: 0.161400 ms MarkObjects: 53.472200 ms  DeleteObjects: 2.766800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/HQ Meshes/MoverLight-WashLight-Mesh/MoverLight-WashLight-HQMesh.fbx
+  artifactKey: Guid(eca90e54bc37b0b4a87c21cbb41d4a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/HQ Meshes/MoverLight-WashLight-Mesh/MoverLight-WashLight-HQMesh.fbx using Guid(eca90e54bc37b0b4a87c21cbb41d4a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7662b25862a131cf7944b1805c470381') in 0.062589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
 ========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 27.67 ms, found 10 plugins.
-Preloading 2 native plugins for Editor in 0.06 ms.
-Unloading 95 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 95 unused Assets / (8.5 MB). Loaded Objects now: 5088.
-Memory consumption went from 207.1 MB to 198.6 MB.
-Total: 58.196200 ms (FindLiveObjects: 0.413900 ms CreateObjectMapping: 0.345500 ms MarkObjects: 54.903400 ms  DeleteObjects: 2.532200 ms)
-
-Prepare: number of updated asset objects reloaded= 10
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-ParLight/LegacyMode/VRSL-ParLight-FixtureMat-Legacy.mat
+  artifactKey: Guid(c5b3f6e0c9572e34cbd4254d75682812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-ParLight/LegacyMode/VRSL-ParLight-FixtureMat-Legacy.mat using Guid(c5b3f6e0c9572e34cbd4254d75682812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cbd0286415d8555a9590c6e5adcc404') in 0.355893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
 ========================================================================
-Received Prepare
-Default GameObject BitMask: InternalUI already registered
-Default GameObject BitMask: HardwareObjects already registered
-Refreshing native plugins compatible for Editor in 25.96 ms, found 10 plugins.
-Preloading 2 native plugins for Editor in 0.05 ms.
-Unloading 95 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 95 unused Assets / (8.5 MB). Loaded Objects now: 5088.
-Memory consumption went from 207.1 MB to 198.6 MB.
-Total: 52.220200 ms (FindLiveObjects: 0.339700 ms CreateObjectMapping: 0.194300 ms MarkObjects: 48.531700 ms  DeleteObjects: 3.153800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Washlight/VRSL-WashMover-HQ-FixtureMat-Horizontal.mat
+  artifactKey: Guid(db4559a0e25bdb640bbf8a67da6f0f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Washlight/VRSL-WashMover-HQ-FixtureMat-Horizontal.mat using Guid(db4559a0e25bdb640bbf8a67da6f0f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e976012686fc46a5c9bb4f485e040217') in 0.518193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-LightBarAndFlashers/LegacyMode/VRSL-LightBar-FixtureMat-Legacy.mat
+  artifactKey: Guid(5f1aad60793c4ab4285326ea866128c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-LightBarAndFlashers/LegacyMode/VRSL-LightBar-FixtureMat-Legacy.mat using Guid(5f1aad60793c4ab4285326ea866128c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f11c040517a0124977fc932fde9b7e') in 0.029329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-LightBarAndFlashers/VerticalMode/VRSL-LightBar-FixtureMat-Vertrical.mat
+  artifactKey: Guid(a93898bae61f1a74097d9519fa405b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-LightBarAndFlashers/VerticalMode/VRSL-LightBar-FixtureMat-Vertrical.mat using Guid(a93898bae61f1a74097d9519fa405b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9e69d1571fd3e095a0fa3a9619fb8f6') in 0.035684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-LightBarAndFlashers/VerticalMode/5-Channel/VRSL-LightBar-FixtureMat-Vertrical-5CH.mat
+  artifactKey: Guid(2e8b0a6286f92b043b4332d8c7b2d021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-LightBarAndFlashers/VerticalMode/5-Channel/VRSL-LightBar-FixtureMat-Vertrical-5CH.mat using Guid(2e8b0a6286f92b043b4332d8c7b2d021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd120630da3d4e7c72a47fd0748648c22') in 0.061932 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Spotlight/LegacyMode/VRSL-StandardMover-FixtureMat-HQ-Legacy.mat
+  artifactKey: Guid(45d990fabfd258948bc309cfff641182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Spotlight/LegacyMode/VRSL-StandardMover-FixtureMat-HQ-Legacy.mat using Guid(45d990fabfd258948bc309cfff641182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726264b5c70f11668c3094345483e3aa') in 0.567131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-LightBarAndFlashers/VerticalMode/VRSL-Flasher-FixtureMat-Vertrical.mat
+  artifactKey: Guid(9a6b72e4468b14041bbb5ff6431c5a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-LightBarAndFlashers/VerticalMode/VRSL-Flasher-FixtureMat-Vertrical.mat using Guid(9a6b72e4468b14041bbb5ff6431c5a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d3ba39db4c4e7b12543f5c3112e01db') in 0.267766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-Blinder/LegacyMode/5-Channel/VRSL-Blinder-FixtureMat-Legacy-5CH.mat
+  artifactKey: Guid(7f039751354c07048935e75254b37f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-Blinder/LegacyMode/5-Channel/VRSL-Blinder-FixtureMat-Legacy-5CH.mat using Guid(7f039751354c07048935e75254b37f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77872f2ef721912be9c0a923999f5eec') in 0.026383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/AudioLink/StandardMover/VRSL-AudioLink-StandardMover-FixtureMat.mat
+  artifactKey: Guid(5b1ec4b5ba730ad4c8f042820e37bae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/AudioLink/StandardMover/VRSL-AudioLink-StandardMover-FixtureMat.mat using Guid(5b1ec4b5ba730ad4c8f042820e37bae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a70a723c59919bad28a5a723a3ea2d77') in 0.268738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Spotlight/VRSL-StandardMover-FixtureMat-HQ-Horizontal.mat
+  artifactKey: Guid(8b31c10163e7f8d488144bf9a55686c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Spotlight/VRSL-StandardMover-FixtureMat-HQ-Horizontal.mat using Guid(8b31c10163e7f8d488144bf9a55686c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06dafc79e0c22dd19d4f66b97852631a') in 0.385777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/3D DJ/Fixtures/Fixture 2.blend
+  artifactKey: Guid(d4c4892e8d8346940850ae4ae329f764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Fixture 2.blend using Guid(d4c4892e8d8346940850ae4ae329f764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ae1bca6c86a7886a4a6d2dec75e159e') in 0.019629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-Blinder/VRSL-Blinder-FixtureMat-Horizontal.mat
+  artifactKey: Guid(6c72424903ecd004bae3a1ae350f16e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-Blinder/VRSL-Blinder-FixtureMat-Horizontal.mat using Guid(6c72424903ecd004bae3a1ae350f16e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e57dcf9642781833676c092f086f6d9') in 0.030024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db09b48917a0b91e302d852bd04a9168') in 0.386619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/WashLight--RTP-SplitMesh-SingleSided-HQ.fbx
+  artifactKey: Guid(217a2239725e7da41b06787fd790b7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/WashLight--RTP-SplitMesh-SingleSided-HQ.fbx using Guid(217a2239725e7da41b06787fd790b7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e399f84fddf590489a9339da3476763') in 0.048570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 38
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-LightBarAndFlashers/LegacyMode/VRSL-Flasher-FixtureMat-Legacy.mat
+  artifactKey: Guid(ffc15f7e378ac8f458f1d38c6f2ca6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-LightBarAndFlashers/LegacyMode/VRSL-Flasher-FixtureMat-Legacy.mat using Guid(ffc15f7e378ac8f458f1d38c6f2ca6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43f4797890829079ced887ffa44205c4') in 0.020149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/AudioLink/StaticLight-Blinder/VRSL-AudioLink-Flasher-FixtureMat.mat
+  artifactKey: Guid(7499ccd1ef8ed9243a8d495386a91ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/AudioLink/StaticLight-Blinder/VRSL-AudioLink-Flasher-FixtureMat.mat using Guid(7499ccd1ef8ed9243a8d495386a91ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd613f94401412c2f52344430576c31d9') in 0.215895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/AudioLink/WashMover/VRSL-AudioLink-WashMover-FixtureMat.mat
+  artifactKey: Guid(8036e184e66d8d54da31bdefb608f58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/AudioLink/WashMover/VRSL-AudioLink-WashMover-FixtureMat.mat using Guid(8036e184e66d8d54da31bdefb608f58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf591b6080053b72f515df689ba4199') in 0.264597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Washlight/LegacyMode/VRSL-WashMover-VolumetricMat-HQ-Legacy.mat
+  artifactKey: Guid(1059c690482231a4e9edd1d9923d44ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Washlight/LegacyMode/VRSL-WashMover-VolumetricMat-HQ-Legacy.mat using Guid(1059c690482231a4e9edd1d9923d44ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a74711c7248ca9182cfba61f152ea4dd') in 0.030237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-Blinder/VerticalMode/5-Channel/VRSL-Blinder-FixtureMat-Vertical-5CH.mat
+  artifactKey: Guid(7fa1f35e3c939a8439878f0c63a4057f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/StaticLight-Blinder/VerticalMode/5-Channel/VRSL-Blinder-FixtureMat-Vertical-5CH.mat using Guid(7fa1f35e3c939a8439878f0c63a4057f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '719aff2359375d42fb3320d715dcc2da') in 0.025289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Washlight/VerticalMode/VRSL-WashMover-HQ-FixtureMat-Vertical.mat
+  artifactKey: Guid(dfc0f1ded2085e14a80a8e5cf621daa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/MoverLight - Washlight/VerticalMode/VRSL-WashMover-HQ-FixtureMat-Vertical.mat using Guid(dfc0f1ded2085e14a80a8e5cf621daa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c90db51d52959b421e837ecac938d9da') in 0.385317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 118.047130 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de7f33207f7a41ac7e51e4baf0c0bf40') in 0.470523 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 20.020857 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91fccb98d24e6f4a1614a4394a600dbe') in 0.472142 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 48.244655 seconds.
+  path: Assets/3D DJ/Playback/Data Extract.mat
+  artifactKey: Guid(b312d249b2905c449b9756b3b436cc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Data Extract.mat using Guid(b312d249b2905c449b9756b3b436cc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7a09b3d24886db37dac71be03b1d28') in 0.013682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/3D DJ/Playback/Depth Extract Step.mat
+  artifactKey: Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Extract Step.mat using Guid(de59399d0ae32544a8afd850a17068d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b38afbe0c223065c6e28f3f8b5db6c3') in 0.010989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 136.147751 seconds.
+  path: Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab
+  artifactKey: Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Fixtures/Holo Emitter Fixture.prefab using Guid(9330ab3b3cd704a409cf81572cba8ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b191517f29c0032bb831b6fea5ccf49d') in 0.032611 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 59.518691 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat
+  artifactKey: Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Face Index Preview.mat using Guid(e1847987706c6624ca6a95c393f6c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c614592a0b372fce3d0e448646f31db') in 0.167323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Preview.mat
+  artifactKey: Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Preview.mat using Guid(cb081a8bc87f6c7449d184815a6f71a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fc9988398ed82f697809151969aaafd') in 0.159774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat
+  artifactKey: Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D DJ/Playback/Depth Build/Static Normals Preview.mat using Guid(7a35d3f0194b9f0408fac554a3b1f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2444389732b801fa900caf026e932245') in 0.153801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
