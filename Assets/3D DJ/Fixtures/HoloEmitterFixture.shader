@@ -87,6 +87,13 @@ Shader "HoloEmitterFixture"
 		}
 
 
+		float3 ASESafeNormalize(float3 inVec)
+		{
+			float dp3 = max(1.175494351e-38, dot(inVec, inVec));
+			return inVec* rsqrt(dp3);
+		}
+
+
 		float MyCustomExpression15_g464( float x )
 		{
 			 if ((x < 0.0f || x > 0.0f || x == 0.0f))
@@ -165,7 +172,7 @@ Shader "HoloEmitterFixture"
 			float3 temp_cast_1 = (pow( 2.0 , 19.0 )).xxx;
 			float3 DJ_Position166 = ( ( localBinaryStripToInt1_g452 - temp_cast_1 ) / float3( 100,100,100 ) );
 			float3 worldToObj92 = mul( unity_WorldToObject, float4( DJ_Position166, 1 ) ).xyz;
-			float3 temp_output_94_0 = cross( _Vector0 , worldToObj92 );
+			float3 normalizeResult363 = ASESafeNormalize( cross( _Vector0 , worldToObj92 ) );
 			float3 temp_output_1_0_g464 = worldToObj92;
 			float3 temp_output_2_0_g464 = _Vector0;
 			float dotResult3_g464 = dot( temp_output_1_0_g464 , temp_output_2_0_g464 );
@@ -175,9 +182,9 @@ Shader "HoloEmitterFixture"
 			float temp_output_285_0 = radians( 55.0 );
 			float clampResult283 = clamp( temp_output_275_0 , -temp_output_285_0 , temp_output_285_0 );
 			float3 ase_vertex3Pos = v.vertex.xyz;
-			float3 rotatedValue77 = RotateAroundAxis( float3( 0,0,0 ), ase_vertex3Pos, normalize( temp_output_94_0 ), clampResult283 );
+			float3 rotatedValue77 = RotateAroundAxis( float3( 0,0,0 ), ase_vertex3Pos, normalizeResult363, clampResult283 );
 			float3 ase_vertexNormal = v.normal.xyz;
-			float3 rotatedValue323 = RotateAroundAxis( float3( 0,0,0 ), ase_vertexNormal, normalize( temp_output_94_0 ), clampResult283 );
+			float3 rotatedValue323 = RotateAroundAxis( float3( 0,0,0 ), ase_vertexNormal, normalizeResult363, clampResult283 );
 			float3x3 Rotated_Fixture_Vertice_Positions235 = float3x3(rotatedValue77, rotatedValue323, float3( 0,0,0 ));
 			float3 ase_parentObjectScale = (1.0/float3( length( unity_WorldToObject[ 0 ].xyz ), length( unity_WorldToObject[ 1 ].xyz ), length( unity_WorldToObject[ 2 ].xyz ) ));
 			float temp_output_276_0 = ( _BeamLength / ase_parentObjectScale.x );
@@ -352,7 +359,7 @@ Shader "HoloEmitterFixture"
 /*ASEBEGIN
 Version=19202
 Node;AmplifyShaderEditor.CommentaryNode;354;398,-866;Inherit;False;1988;1109;Texture Assignment;16;289;100;221;291;290;305;73;288;287;309;70;308;310;312;311;348;;1,1,1,1;0;0
-Node;AmplifyShaderEditor.CommentaryNode;353;-1890,1054;Inherit;False;2517.7;847.7729;Ball Rotation;17;88;94;92;91;282;323;53;324;77;325;235;285;284;283;275;357;358;;1,1,1,1;0;0
+Node;AmplifyShaderEditor.CommentaryNode;353;-1890,1054;Inherit;False;2517.7;847.7729;Ball Rotation;19;88;94;92;91;282;323;53;324;77;325;235;285;284;283;275;357;358;363;364;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.CommentaryNode;352;-4594,158;Inherit;False;2404;667;Find random position in the 3DJ Cube;21;118;120;114;240;242;105;246;250;251;109;257;263;113;252;261;262;248;316;317;307;236;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.CommentaryNode;351;-3298,-1090;Inherit;False;2996;923;Calculate the end position of the beam vertex;17;68;102;99;67;136;135;134;127;237;97;230;45;46;47;276;267;232;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.CommentaryNode;350;-994,126;Inherit;False;612;323;Comment;4;166;193;194;223;;1,1,1,1;0;0
@@ -430,10 +437,8 @@ Node;AmplifyShaderEditor.GetLocalVarNode;88;-1840,1152;Inherit;False;166;DJ Posi
 Node;AmplifyShaderEditor.CrossProductOpNode;94;-1024,1136;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.TransformPositionNode;92;-1520,1104;Inherit;False;World;Object;False;Fast;True;1;0;FLOAT3;0,0,0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.Vector3Node;91;-1504,1360;Inherit;False;Constant;_Vector0;Vector 0;5;0;Create;True;0;0;0;False;0;False;0,0,1;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.RotateAboutAxisNode;323;-280.928,1452.079;Inherit;False;True;4;0;FLOAT3;1,0,0;False;1;FLOAT;50;False;2;FLOAT3;0,0,0;False;3;FLOAT3;1,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.PosVertexDataNode;53;-1019,1565;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.NormalVertexDataNode;324;-1023.058,1716.773;Inherit;False;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RotateAboutAxisNode;77;-278,1298;Inherit;False;True;4;0;FLOAT3;1,0,0;False;1;FLOAT;50;False;2;FLOAT3;0,0,0;False;3;FLOAT3;1,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.MatrixFromVectors;325;76.11084,1374.608;Inherit;False;FLOAT3x3;True;4;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3x3;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;235;289.7,1377.9;Inherit;False;Rotated Fixture Vertice Positions;-1;True;1;0;FLOAT3x3;0,0,0,0,0,1,1,0,1;False;1;FLOAT3x3;0
 Node;AmplifyShaderEditor.RadiansOpNode;285;-1002,1443;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
@@ -459,11 +464,15 @@ Node;AmplifyShaderEditor.DitheringNode;133;3520,1552;Inherit;False;1;False;4;0;F
 Node;AmplifyShaderEditor.Compare;343;3248,1552;Inherit;False;2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.StickyNoteNode;356;2928,1824;Inherit;False;252;152;New Note;;1,1,1,1;Discard the beams entirely if they are out of the frustrum of the ball;0;0
 Node;AmplifyShaderEditor.RangedFloatNode;282;-1200,1440;Inherit;False;Constant;_MaxAngle;Max Angle;8;0;Create;True;0;0;0;False;0;False;55;0;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.FunctionNode;275;-1060,1305;Inherit;False;AngleBetweenVectors;-1;;464;764081594a5aa0b4d9781b5f2fcaa355;0;2;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.Compare;358;-592,1120;Inherit;False;2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;357;-368,1152;Inherit;False;In Ball Frustrum;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;359;2672,1536;Inherit;False;357;In Ball Frustrum;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.Compare;355;2976,1600;Inherit;False;0;4;0;FLOAT;0;False;1;FLOAT;1;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.RotateAboutAxisNode;77;-278,1298;Inherit;False;False;4;0;FLOAT3;0,0,0;False;1;FLOAT;50;False;2;FLOAT3;0,0,0;False;3;FLOAT3;1,0,0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.RotateAboutAxisNode;323;-280.928,1452.079;Inherit;False;False;4;0;FLOAT3;1,0,0;False;1;FLOAT;50;False;2;FLOAT3;0,0,0;False;3;FLOAT3;1,0,0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.NormalizeNode;363;-640,1280;Inherit;False;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.StickyNoteNode;364;-800,1168;Inherit;False;150;100;New Note;;1,1,1,1;This normalize is here to remove nans;0;0
+Node;AmplifyShaderEditor.FunctionNode;275;-1060,1305;Inherit;False;AngleBetweenVectors;-1;;464;764081594a5aa0b4d9781b5f2fcaa355;0;2;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;1;FLOAT;0
 WireConnection;328;0;79;0
 WireConnection;329;0;79;0
 WireConnection;0;0;70;0
@@ -546,12 +555,6 @@ WireConnection;236;0;105;0
 WireConnection;94;0;91;0
 WireConnection;94;1;92;0
 WireConnection;92;0;88;0
-WireConnection;323;0;94;0
-WireConnection;323;1;283;0
-WireConnection;323;3;324;0
-WireConnection;77;0;94;0
-WireConnection;77;1;283;0
-WireConnection;77;3;53;0
 WireConnection;325;0;77;0
 WireConnection;325;1;323;0
 WireConnection;235;0;325;0
@@ -582,12 +585,19 @@ WireConnection;311;2;100;0
 WireConnection;133;0;343;0
 WireConnection;343;0;130;2
 WireConnection;343;2;355;0
-WireConnection;275;1;92;0
-WireConnection;275;2;91;0
 WireConnection;358;0;275;0
 WireConnection;358;1;285;0
 WireConnection;357;0;358;0
 WireConnection;355;0;359;0
 WireConnection;355;2;344;0
+WireConnection;77;0;363;0
+WireConnection;77;1;283;0
+WireConnection;77;3;53;0
+WireConnection;323;0;363;0
+WireConnection;323;1;283;0
+WireConnection;323;3;324;0
+WireConnection;363;0;94;0
+WireConnection;275;1;92;0
+WireConnection;275;2;91;0
 ASEEND*/
-//CHKSM=81803C927EF7D2AD272F5913249EC4FF6F194581
+//CHKSM=7A1EE700B03C732A4BEAD443DBA9B135597366CB
