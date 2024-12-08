@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1040
   m_ShowMode: 0
-  m_Title: HoloEmitt..*
+  m_Title: HoloEmitte..
   m_RootView: {fileID: 4}
   m_MinSize: {x: 100, y: 50}
   m_MaxSize: {x: 8096, y: 8096}
@@ -43,7 +43,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 102
+  controlID: 230
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 103
+  controlID: 231
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 104
+  controlID: 232
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1163,7 +1163,7 @@ MonoBehaviour:
   m_MinSize: {x: 480, y: 270}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: HoloEmitt..*
+    m_Text: HoloEmitte..
     m_Image: {fileID: 5596697988196858232, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
@@ -1219,20 +1219,20 @@ MonoBehaviour:
   m_lastTimeSaved: 919.6635042
   m_cacheSaveOp: 0
   m_mainGraphInstance: {fileID: 0}
-  m_cameraOffset: {x: 1383.764, y: 227.94318}
-  m_cameraZoom: 1.0877756
+  m_cameraOffset: {x: 2647.802, y: -652.2615}
+  m_cameraZoom: 1
   m_minNodePos: {x: -5504, y: -1280}
   m_maxNodePos: {x: 4399, y: 2096}
   m_isDirty: 0
   m_saveIsDirty: 0
   m_repaintIsDirty: 0
   m_liveShaderEditing: 0
-  m_shaderIsModified: 1
+  m_shaderIsModified: 0
   m_lastOpenedLocation: Assets/3D DJ/Fixtures/HoloEmitterFixture.shader
   m_zoomChanged: 0
   m_lastWindowWidth: 1920
   m_graphCount: 470
-  m_currentInactiveTime: 674.9902279
+  m_currentInactiveTime: -949.1350020999998
   m_currentNodeAvailability: 1
   m_nodeParametersWindowMaximized: 1
   m_paletteWindowMaximized: 1
@@ -1269,8 +1269,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1254
     y: 73
-    width: 664.6
-    height: 1037.8
+    width: 665
+    height: 926
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1419,7 +1419,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/3D DJ/Fixtures
+    - Assets/3D DJ/Record/Output
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1427,16 +1427,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/3D DJ/Fixtures
+  - Assets/3D DJ/Record/Output
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Storage\Personal\Coding\VRChat\SONAR 3DJ Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 46450100
-    m_LastClickedID: 83270
-    m_ExpandedIDs: 000000004a6900002044010000ca9a3bffffff7f
+    m_SelectedIDs: 6c670100
+    m_LastClickedID: 92012
+    m_ExpandedIDs: 0000000034690000acaf000014b0000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1464,7 +1464,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004a690000
+    m_ExpandedIDs: 0000000034690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1608,7 +1608,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1ef9ffff
+      m_ExpandedIDs: 789fffff909fffff9ab8ffff86e7ffff16e8ffff1ee8ffffd6faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1989,9 +1989,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.47924614, y: -16.246729, z: -6.835865}
+    m_Target: {x: 18.717953, y: -8.246508, z: -8.684206}
     speed: 2
-    m_Value: {x: -0.47924614, y: -16.246729, z: -6.835865}
+    m_Value: {x: 18.717953, y: -8.246508, z: -8.684206}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2037,13 +2037,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.13696137, y: 0.84429264, z: -0.4567178, w: -0.24612468}
+    m_Target: {x: 0.08647385, y: 0.89958847, z: -0.2218654, w: 0.3671537}
     speed: 2
-    m_Value: {x: -0.1362246, y: 0.8443414, z: -0.4567499, w: -0.24476536}
+    m_Value: {x: 0.085775144, y: 0.9003424, z: -0.22203912, w: 0.36431432}
   m_Size:
-    m_Target: 10.428839
+    m_Target: 10.898136
     speed: 2
-    m_Value: 3.67461
+    m_Value: 10.428839
   m_Ortho:
     m_Target: 0
     speed: 2
