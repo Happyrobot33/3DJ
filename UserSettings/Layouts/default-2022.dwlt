@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1040
   m_ShowMode: 0
-  m_Title: HoloEmitte..
+  m_Title: HoloEmitt..*
   m_RootView: {fileID: 4}
   m_MinSize: {x: 100, y: 50}
   m_MaxSize: {x: 8096, y: 8096}
@@ -43,7 +43,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -1163,7 +1163,7 @@ MonoBehaviour:
   m_MinSize: {x: 480, y: 270}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: HoloEmitte..
+    m_Text: HoloEmitt..*
     m_Image: {fileID: 5596697988196858232, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
@@ -1215,11 +1215,11 @@ MonoBehaviour:
   m_selectionMode: 1
   m_duplicatePreventionBuffer:
     m_availableUVChannelsArray: ffffffffffffffffffffffffffffffff
-  m_inactivityTime: 1306.9097141999998
+  m_inactivityTime: 1100.8979804
   m_lastTimeSaved: 919.6635042
   m_cacheSaveOp: 0
   m_mainGraphInstance: {fileID: 0}
-  m_cameraOffset: {x: 2647.802, y: -652.2615}
+  m_cameraOffset: {x: 1872.4609, y: -680.5665}
   m_cameraZoom: 1
   m_minNodePos: {x: -5504, y: -1280}
   m_maxNodePos: {x: 4399, y: 2096}
@@ -1227,12 +1227,12 @@ MonoBehaviour:
   m_saveIsDirty: 0
   m_repaintIsDirty: 0
   m_liveShaderEditing: 0
-  m_shaderIsModified: 0
+  m_shaderIsModified: 1
   m_lastOpenedLocation: Assets/3D DJ/Fixtures/HoloEmitterFixture.shader
   m_zoomChanged: 0
   m_lastWindowWidth: 1920
-  m_graphCount: 470
-  m_currentInactiveTime: -949.1350020999998
+  m_graphCount: 471
+  m_currentInactiveTime: 370.6201057999999
   m_currentNodeAvailability: 1
   m_nodeParametersWindowMaximized: 1
   m_paletteWindowMaximized: 1
@@ -1434,9 +1434,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 6c670100
-    m_LastClickedID: 92012
-    m_ExpandedIDs: 0000000034690000acaf000014b0000000ca9a3bffffff7f
+    m_SelectedIDs: 16b00000
+    m_LastClickedID: 45078
+    m_ExpandedIDs: 0000000034690000beaf000018b0000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1608,7 +1608,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 789fffff909fffff9ab8ffff86e7ffff16e8ffff1ee8ffffd6faffff
+      m_ExpandedIDs: 7e1fffffd6faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1989,9 +1989,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 18.717953, y: -8.246508, z: -8.684206}
+    m_Target: {x: 12.805113, y: -7.8228383, z: 11.513587}
     speed: 2
-    m_Value: {x: 18.717953, y: -8.246508, z: -8.684206}
+    m_Value: {x: 12.805113, y: -7.8228383, z: 11.513587}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2037,13 +2037,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.08647385, y: 0.89958847, z: -0.2218654, w: 0.3671537}
+    m_Target: {x: -0.26984897, y: -0.22748065, z: 0.069696695, w: -0.9334597}
     speed: 2
-    m_Value: {x: 0.085775144, y: 0.9003424, z: -0.22203912, w: 0.36431432}
+    m_Value: {x: -0.26964027, y: -0.22879246, z: 0.070074394, w: -0.9327582}
   m_Size:
     m_Target: 10.898136
     speed: 2
-    m_Value: 10.428839
+    m_Value: 10.898136
   m_Ortho:
     m_Target: 0
     speed: 2
