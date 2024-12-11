@@ -62,7 +62,12 @@ namespace com.happyrobot33.holographicreprojector
 
         public void SliderUpdated()
         {
-            manager.playerHeadOffset = slider.value;
+            manager.SetPlayerHeadOffset(slider.value);
+        }
+
+        public void TakeOwnership()
+        {
+            manager._TakeOwnership();
         }
 
         public void PlayerDropdownUpdated()
