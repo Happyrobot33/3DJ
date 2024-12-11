@@ -70,6 +70,16 @@ namespace com.happyrobot33.holographicreprojector
             manager._TakeOwnership();
         }
 
+        public void ToggleGlobalPlayback()
+        {
+            manager._ToggleGlobalPlayback();
+        }
+
+        public void ToggleLocalPlayback()
+        {
+            manager._ToggleLocalPlayback();
+        }
+
         public void PlayerDropdownUpdated()
         {
             //find the player with that name
