@@ -29,8 +29,8 @@ namespace com.happyrobot33.holographicreprojector
             Manager[] managers = FindObjectsOfType<Manager>();
             foreach (Manager manager in managers)
             {
-                manager.SetupGlobalTextures();
-                manager.EnforceCameraAspectRatio();
+                manager._SetupGlobalTextures();
+                manager._EnforceCameraAspectRatio();
             }
         }
 
@@ -293,9 +293,9 @@ namespace com.happyrobot33.holographicreprojector
 
             manager.SetupRenderTextureExtractionZones();
 
-            manager.EnforceCameraAspectRatio();
+            manager._EnforceCameraAspectRatio();
 
-            manager.SetupGlobalTextures();
+            manager._SetupGlobalTextures();
         }
 
         private Vector2Int DrawRTArea(Manager manager, Texture texture, Rect ParentRect, GUIStyle imageStyle, Vector2Int topLeft, bool showHandles)

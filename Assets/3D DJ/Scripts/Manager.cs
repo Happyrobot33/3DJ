@@ -8,6 +8,10 @@ using VRC.SDK3.Components;
 
 namespace com.happyrobot33.holographicreprojector
 {
+    using BestHTTP.SecureProtocol.Org.BouncyCastle.Asn1.Ocsp;
+
+    using Texel;
+
     using TMPro;
     using UnityEngine.Rendering.PostProcessing;
     using VRC.SDK3.Data;
@@ -37,7 +41,7 @@ namespace com.happyrobot33.holographicreprojector
         None
     }
 
-    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
+    [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
     public class Manager : UdonSharpBehaviour
     {
         public const string MANAGERNAME = "3DJManager";
@@ -51,6 +55,7 @@ namespace com.happyrobot33.holographicreprojector
         [DeveloperOnly]
         public GameObject mainPlaybackCube;
         public RenderTexture VideoTexture;
+        public AccessControl accessControl;
 
         [DeveloperOnly]
         public string worldID;
@@ -100,9 +105,43 @@ namespace com.happyrobot33.holographicreprojector
         [DeveloperOnly]
         public CustomRenderTexture RecordTexture;
 
-        private VRCPlayerApi playerToRecord;
+        private VRCPlayerApi _playerToRecord;
+        private VRCPlayerApi playerToRecord
+        {
+            get { return _playerToRecord; }
+            set
+            {
+                _playerToRecord = value;
+                _playerToRecordName = value.displayName;
+            }
+        }
+
+        [UdonSynced]
+        [FieldChangeCallback(nameof(playerToRecordName))]
+        private string _playerToRecordName;
+        private string playerToRecordName
+        {
+            get { return _playerToRecordName; }
+            set
+            {
+                _playerToRecordName = value;
+                //we need to find the player by their name
+                VRCPlayerApi[] players = new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()];
+                VRCPlayerApi.GetPlayers(players);
+                foreach (VRCPlayerApi player in players)
+                {
+                    if (player.displayName == value)
+                    {
+                        _playerToRecord = player;
+                        break;
+                    }
+                }
+            }
+        }
         private Camera[] Cameras;
         private Source mode = Source.Playback;
+
+        [UdonSynced]
         public float playerHeadOffset = 0.0f;
 
         #region Inspector Variables
@@ -133,11 +172,11 @@ namespace com.happyrobot33.holographicreprojector
             //make sure the recorder is off
             Recorder.SetActive(false);
 
-            EnforceCameraAspectRatio();
-            SetupGlobalTextures();
+            _EnforceCameraAspectRatio();
+            _SetupGlobalTextures();
         }
 
-        public void SetupGlobalTextures()
+        public void _SetupGlobalTextures()
         {
             //initialize the global textures
             VRCShader.SetGlobalTexture(
@@ -271,7 +310,7 @@ namespace com.happyrobot33.holographicreprojector
             {
                 //get the player position
                 Vector3 playerPos = playerToRecord.GetPosition();
-                Vector3[] points = GeneratePositionArray();
+                Vector3[] points = _GeneratePositionArray();
 
                 //get the min and max bounds
                 //TODO: Expose radius as a slider
@@ -313,7 +352,7 @@ namespace com.happyrobot33.holographicreprojector
             }
         }
 
-        private Vector3[] GeneratePositionArray()
+        private Vector3[] _GeneratePositionArray()
         {
             //encapsulate some positions
             //build up a list of points
@@ -393,7 +432,7 @@ namespace com.happyrobot33.holographicreprojector
             );
         }
 
-        public void EnforceCameraAspectRatio()
+        public void _EnforceCameraAspectRatio()
         {
             //ensure all the cameras under us are locked to 1:1 aspect ratio, as otherwise they will try to automatically update and fuck things up
             Camera[] cams = Recorder.GetComponentsInChildren<Camera>();
@@ -405,9 +444,39 @@ namespace com.happyrobot33.holographicreprojector
 
         public void ChangePlayer(VRCPlayerApi player)
         {
+            //only allow if the local player is allowed to
+            if (!accessControl._HasAccess(Networking.LocalPlayer))
+            {
+                return;
+            }
+
             //reset the player offset height
             playerHeadOffset = 0f;
             playerToRecord = player;
+
+            RequestSerialization();
+        }
+
+        public void SetPlayerHeadOffset(float offset)
+        {
+            if (!accessControl._HasAccess(Networking.LocalPlayer))
+            {
+                return;
+            }
+
+            playerHeadOffset = offset;
+
+            RequestSerialization();
+        }
+
+        public void _TakeOwnership()
+        {
+            if (!accessControl._HasAccess(Networking.LocalPlayer))
+            {
+                return;
+            }
+
+            Networking.SetOwner(Networking.LocalPlayer, gameObject);
         }
 
         public override void OnPlayerLeft(VRCPlayerApi player)
