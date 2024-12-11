@@ -1,4 +1,3 @@
-
 using System;
 using UnityEngine;
 
@@ -49,9 +48,12 @@ namespace com.happyrobot33.holographicreprojector
                 string worldId = pipelineManager.blueprintId;
                 //strip it down to remove wrld_ and all -
                 worldId = worldId.Replace("wrld_", "");
-                worldId = worldId.Replace("-","");
+                worldId = worldId.Replace("-", "");
 
                 manager.worldID = worldId;
+
+                //save prefab
+                ApplyInstanceOverride(manager);
             }
 
             //draw the default inspector
@@ -101,6 +103,7 @@ namespace com.happyrobot33.holographicreprojector
                         if (GUILayout.Button("Visualize"))
                         {
                             manager.CurrentlyEditingArea = possibleArea;
+                            ApplyInstanceOverride(manager);
                         }
 
                         //end horizontal
@@ -112,6 +115,7 @@ namespace com.happyrobot33.holographicreprojector
             if (GUILayout.Button(manager.DeveloperMode ? "Exit Developer Mode" : "Enter Developer Mode"))
             {
                 manager.DeveloperMode = !manager.DeveloperMode;
+                ApplyInstanceOverride(manager);
             }
 
             EditorGUILayout.BeginHorizontal();
@@ -133,7 +137,7 @@ namespace com.happyrobot33.holographicreprojector
 
             try
             {
-                #region Video region management
+    #region Video region management
 
                 //determine the aspect ratio of the video texture
                 float videoPlayerAspect = manager.VideoTexture.width / (float)manager.VideoTexture.height;
@@ -162,13 +166,13 @@ namespace com.happyrobot33.holographicreprojector
 
                 topLeft = Manager.CalculateTopLeftUV(manager, manager.DataAnchor, manager.DataUVPosition, manager.DataTexture);
                 DrawRTArea(manager, manager.DataExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == Areas.Data);
-                #endregion
+    #endregion
 
-                #region Debug Information
+    #region Debug Information
                 //calculate the cell size based on horizontal width / 3
                 /* int cellSize = UVSize.x / 3;
                 EditorGUILayout.LabelField(string.Format("Cell Size: {0}x{0}", cellSize)); */
-                #endregion
+    #endregion
             }
             catch (Exception e)
             {
@@ -208,6 +212,12 @@ namespace com.happyrobot33.holographicreprojector
                 serializedObject.ApplyModifiedProperties();
                 UpdateAllTextureInternals(manager);
             }
+        }
+
+        private static void ApplyInstanceOverride(UnityEngine.Object obj)
+        {
+            PrefabUtility.RecordPrefabInstancePropertyModifications(obj);
+            EditorUtility.SetDirty(obj);
         }
 
         private static void UpdateAllTextureInternals(Manager manager)
@@ -413,5 +423,5 @@ namespace com.happyrobot33.holographicreprojector
             return finalrect;
         }
     }
-    #endif
+#endif
 }
