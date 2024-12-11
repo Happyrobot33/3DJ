@@ -67,6 +67,7 @@
     <Compile Include="Assets\UdonSharp\UtilityScripts\InteractToggle.cs" />
     <Compile Include="Assets\3D DJ\Scripts\Manager.cs" />
     <Compile Include="Assets\3D DJ\Scripts\ExportArea.cs" />
+    <Compile Include="Assets\3D DJ\Scripts\UIManager.cs" />
     <Compile Include="Assets\UdonSharp\UtilityScripts\Synced\MasterToggleObject.cs" />
     <Compile Include="Assets\UdonSharp\UtilityScripts\PlayerModSetter.cs" />
     <Compile Include="Assets\3D DJ\Scripts\RigidbodySleepLock.cs" />

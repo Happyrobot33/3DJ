@@ -121,12 +121,14 @@ namespace com.happyrobot33.holographicreprojector
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("Record"))
             {
-                manager.SwitchSourceToRecord();
+                manager.SetSource(Source.Record);
+                ApplyInstanceOverride(manager);
             }
 
             if (GUILayout.Button("Playback"))
             {
-                manager.SwitchSourceToPlayback();
+                manager.SetSource(Source.Playback);
+                ApplyInstanceOverride(manager);
             }
             EditorGUILayout.EndHorizontal();
 
