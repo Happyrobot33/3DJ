@@ -16,7 +16,7 @@ Shader "Screenspace Export"
 		#include "UnityCG.cginc"
 		#include "UnityShaderVariables.cginc"
 		#pragma target 3.0
-		#pragma surface surf Unlit keepalpha addshadow fullforwardshadows noambient novertexlights nolightmap  nodynlightmap nodirlightmap nofog vertex:vertexDataFunc 
+		#pragma surface surf Unlit keepalpha addshadow fullforwardshadows noambient novertexlights nolightmap  nodynlightmap nodirlightmap nofog 
 		struct Input
 		{
 			float3 worldPos;
@@ -24,26 +24,6 @@ Shader "Screenspace Export"
 		};
 
 		uniform sampler2D _RT;
-
-
-		float isVR18(  )
-		{
-			     #if defined(USING_STEREO_MATRICES)
-			    return true;
-			    #else
-			    return false;
-			    #endif
-		}
-
-
-		void vertexDataFunc( inout appdata_full v, out Input o )
-		{
-			UNITY_INITIALIZE_OUTPUT( Input, o );
-			float localisVR18 = isVR18();
-			float3 temp_cast_0 = (( localisVR18 == 1.0 ? sqrt( -1.0 ) : 0.0 )).xxx;
-			v.vertex.xyz += temp_cast_0;
-			v.vertex.w = 1;
-		}
 
 		inline half4 LightingUnlit( SurfaceOutput s, half3 lightDir, half atten )
 		{
@@ -88,8 +68,7 @@ WireConnection;10;1;9;0
 WireConnection;9;0;5;0
 WireConnection;5;0;8;0
 WireConnection;0;2;1;0
-WireConnection;0;11;14;0
 WireConnection;14;0;18;0
 WireConnection;14;2;16;0
 ASEEND*/
-//CHKSM=A882659F4AF0AB5E551BBB8A5C04379B38E593B0
+//CHKSM=144F3AF26CE4FA1BB7F18F39C3079A094541F83B
