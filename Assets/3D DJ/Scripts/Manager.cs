@@ -142,7 +142,21 @@ namespace com.happyrobot33.holographicreprojector
         private Source mode = Source.Playback;
 
         [UdonSynced]
+        [DeveloperOnly]
         public float playerHeadOffset = 0.0f;
+
+        /// <summary>
+        /// If the playback is visible globally across the instance. Used to disable playback if the instance is the one recording
+        /// </summary>
+        [UdonSynced]
+        [DeveloperOnly]
+        public bool globalPlayback = true;
+
+        /// <summary>
+        /// If the playback is visible locally. Completely overridden by global playback
+        /// </summary>
+        [DeveloperOnly]
+        public bool localPlayback = true;
 
         #region Inspector Variables
         [Header("Preview Textures")]
@@ -306,6 +320,16 @@ namespace com.happyrobot33.holographicreprojector
 
         void Update()
         {
+            //playback cube visibility
+            if (globalPlayback)
+            {
+                mainPlaybackCube.SetActive(localPlayback);
+            }
+            else
+            {
+                mainPlaybackCube.SetActive(false);
+            }
+
             if (mode == Source.Record)
             {
                 //get the player position
@@ -408,6 +432,22 @@ namespace com.happyrobot33.holographicreprojector
                     Recorder.SetActive(true);
                     break;
             }
+        }
+
+        public void _ToggleGlobalPlayback()
+        {
+            if (!accessControl._HasAccess(Networking.LocalPlayer))
+            {
+                return;
+            }
+
+            globalPlayback = !globalPlayback;
+            RequestSerialization();
+        }
+
+        public void _ToggleLocalPlayback()
+        {
+            localPlayback = !localPlayback;
         }
 
         public void SetupRenderTextureExtractionZones(Texture source = null)
