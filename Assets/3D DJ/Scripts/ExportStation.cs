@@ -20,11 +20,11 @@ namespace com.happyrobot33.holographicreprojector
 
         public override void OnStationEntered(VRCPlayerApi player)
         {
-            inStation = true;
             //only run if local player
             if (!player.isLocal)
                 return;
 
+            inStation = true;
             //enable the camera
             cam.enabled = true;
         }
@@ -40,11 +40,11 @@ namespace com.happyrobot33.holographicreprojector
 
         public override void OnStationExited(VRCPlayerApi player)
         {
-            inStation = false;
             //only run if local player
             if (!player.isLocal)
                 return;
 
+            inStation = false;
             //disable the camera
             cam.enabled = false;
 
