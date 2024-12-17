@@ -10,6 +10,7 @@ namespace com.happyrobot33.holographicreprojector
     {
         public Camera cam;
         public Transform playerFollowPosition;
+        private bool inStation = false;
 
         public override void Interact()
         {
@@ -19,19 +20,27 @@ namespace com.happyrobot33.holographicreprojector
 
         public override void OnStationEntered(VRCPlayerApi player)
         {
+            inStation = true;
             //only run if local player
             if (!player.isLocal)
                 return;
 
             //enable the camera
             cam.enabled = true;
+        }
 
-            //constantly move ourselves to the recorder
-            transform.position = playerFollowPosition.position;
+        void Update()
+        {
+            if (inStation)
+            {
+                //constantly move ourselves to the recorder
+                transform.position = playerFollowPosition.position;
+            }
         }
 
         public override void OnStationExited(VRCPlayerApi player)
         {
+            inStation = false;
             //only run if local player
             if (!player.isLocal)
                 return;
