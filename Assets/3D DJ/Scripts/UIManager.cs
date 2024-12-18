@@ -14,7 +14,7 @@ namespace com.happyrobot33.holographicreprojector
     {
         private Manager manager;
         public Slider slider;
-        public TMP_Dropdown dropdown;
+        public TMP_Dropdown playerDropdown;
         public TMP_Dropdown sourceDropdown;
 
         void Start()
@@ -30,19 +30,19 @@ namespace com.happyrobot33.holographicreprojector
 
         public override void OnPlayerJoined(VRCPlayerApi player)
         {
-            PopulateDropdown();
+            PopulatePlayerDropdown();
         }
 
         public override void OnPlayerLeft(VRCPlayerApi player)
         {
             //we delay 1 frame here so the player list is actually correct
-            SendCustomEventDelayedFrames(nameof(PopulateDropdown), 1);
+            SendCustomEventDelayedFrames(nameof(PopulatePlayerDropdown), 1);
         }
 
-        private void PopulateDropdown()
+        private void PopulatePlayerDropdown()
         {
             //update the dropdown
-            dropdown.ClearOptions();
+            playerDropdown.ClearOptions();
             VRCPlayerApi[] players = new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()];
             VRCPlayerApi.GetPlayers(players);
             string[] options = new string[players.Length];
@@ -50,9 +50,9 @@ namespace com.happyrobot33.holographicreprojector
             {
                 options[i] = players[i].displayName;
             }
-            dropdown.AddOptions(options);
+            playerDropdown.AddOptions(options);
 
-            dropdown.SetValueWithoutNotify(0);
+            playerDropdown.SetValueWithoutNotify(0);
         }
 
         public void DelayedSearch()
@@ -86,7 +86,7 @@ namespace com.happyrobot33.holographicreprojector
             VRCPlayerApi[] players = new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()];
             VRCPlayerApi.GetPlayers(players);
 
-            manager.ChangePlayer(players[dropdown.value]);
+            manager.ChangePlayer(players[playerDropdown.value]);
         }
 
         public void SourceUpdated()
