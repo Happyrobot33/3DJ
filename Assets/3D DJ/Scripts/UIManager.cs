@@ -63,6 +63,7 @@ namespace com.happyrobot33.holographicreprojector
         public void SliderUpdated()
         {
             manager.SetPlayerHeadOffset(slider.value);
+            TakeOwnership();
         }
 
         public void TakeOwnership()
@@ -73,6 +74,7 @@ namespace com.happyrobot33.holographicreprojector
         public void ToggleGlobalPlayback()
         {
             manager._ToggleGlobalPlayback();
+            TakeOwnership();
         }
 
         public void ToggleLocalPlayback()
@@ -87,6 +89,7 @@ namespace com.happyrobot33.holographicreprojector
             VRCPlayerApi.GetPlayers(players);
 
             manager.ChangePlayer(players[playerDropdown.value]);
+            TakeOwnership();
         }
 
         public void SourceUpdated()
@@ -100,6 +103,7 @@ namespace com.happyrobot33.holographicreprojector
                     manager.SetSource(Source.Playback);
                     break;
             }
+            TakeOwnership();
         }
     }
 }
