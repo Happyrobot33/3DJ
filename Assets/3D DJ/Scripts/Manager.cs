@@ -445,6 +445,7 @@ namespace com.happyrobot33.holographicreprojector
             RequestSerialization();
         }
 
+        //TODO: This doesnt work if you dont own the object!!!! Fix!
         public void _ToggleLocalPlayback()
         {
             localPlayback = !localPlayback;
