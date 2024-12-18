@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: RigidbodySleepLock
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: f13bed71d45fcc745bf557b85b3cb254,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 9ea707b9370097740bed3c27cd50400e,
     type: 2}
   udonAssembly: 
   assemblyError: 
