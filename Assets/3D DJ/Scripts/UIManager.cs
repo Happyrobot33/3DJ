@@ -39,7 +39,7 @@ namespace com.happyrobot33.holographicreprojector
             SendCustomEventDelayedFrames(nameof(PopulatePlayerDropdown), 1);
         }
 
-        private void PopulatePlayerDropdown()
+        public void PopulatePlayerDropdown()
         {
             //update the dropdown
             playerDropdown.ClearOptions();
@@ -52,18 +52,57 @@ namespace com.happyrobot33.holographicreprojector
             }
             playerDropdown.AddOptions(options);
 
-            playerDropdown.SetValueWithoutNotify(0);
+            //make sure manager is populated
+            if (manager == null)
+            {
+                return;
+            }
+
+            if (manager.playerToRecord != null)
+            {
+                //set the value to the currently selected player
+                foreach (VRCPlayerApi player in players)
+                {
+                    if (player == manager.playerToRecord)
+                    {
+                        playerDropdown.SetValueWithoutNotify(System.Array.IndexOf(players, player));
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                playerDropdown.SetValueWithoutNotify(0);
+            }
         }
 
         public void DelayedSearch()
         {
             manager = GameObject.Find(Manager.MANAGERNAME).GetComponent<Manager>();
+
+            //subscribe to events
+            manager.AddCallback(
+                ManagerCallback.recordedPlayerChanged,
+                this,
+                nameof(PopulatePlayerDropdown)
+            );
+            manager.AddCallback(
+                ManagerCallback.playerHeadOffsetChanged,
+                this,
+                nameof(UpdateSlider)
+            );
+            manager.AddCallback(ManagerCallback.sourceChanged, this, nameof(UpdateSource));
         }
 
         public void SliderUpdated()
         {
             manager.SetPlayerHeadOffset(slider.value);
             TakeOwnership();
+        }
+
+        public void UpdateSlider()
+        {
+            slider.value = manager.playerHeadOffset;
         }
 
         public void TakeOwnership()
@@ -96,14 +135,19 @@ namespace com.happyrobot33.holographicreprojector
         {
             switch (sourceDropdown.value)
             {
-                case 0:
+                case (int)Source.Record:
                     manager.SetSource(Source.Record);
                     break;
-                case 1:
+                case (int)Source.Playback:
                     manager.SetSource(Source.Playback);
                     break;
             }
             TakeOwnership();
+        }
+
+        public void UpdateSource()
+        {
+            sourceDropdown.SetValueWithoutNotify((int)manager.mode);
         }
     }
 }

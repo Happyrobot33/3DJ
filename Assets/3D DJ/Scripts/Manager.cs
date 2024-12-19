@@ -25,7 +25,7 @@ namespace com.happyrobot33.holographicreprojector
         Playback
     }
 
-    public enum Anchor
+    public enum TextureAnchor
     {
         TopLeft,
         TopRight,
@@ -33,7 +33,7 @@ namespace com.happyrobot33.holographicreprojector
         BottomRight
     }
 
-    public enum Areas
+    public enum AreaType
     {
         Color,
         Depth,
@@ -41,8 +41,17 @@ namespace com.happyrobot33.holographicreprojector
         None
     }
 
+    public enum ManagerCallback
+    {
+        recordedPlayerChanged,
+        globalPlaybackChanged,
+        localPlaybackChanged,
+        playerHeadOffsetChanged,
+        sourceChanged
+    }
+
     [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
-    public class Manager : UdonSharpBehaviour
+    public class Manager : CallbackUdonSharpBehaviour<ManagerCallback>
     {
         public const string MANAGERNAME = "3DJManager";
 
@@ -54,6 +63,12 @@ namespace com.happyrobot33.holographicreprojector
 
         [DeveloperOnly]
         public GameObject mainPlaybackCube;
+
+        /// <summary>
+        /// This is stupid but this is the equivalent of local playback control, but it needs to be a object due to ownership issues
+        /// </summary>
+        [DeveloperOnly]
+        public GameObject localPlaybackParentObject;
         public RenderTexture VideoTexture;
         public AccessControl accessControl;
 
@@ -63,7 +78,7 @@ namespace com.happyrobot33.holographicreprojector
         [Header("Color:")]
         [DeveloperOnly]
         public RenderTexture ColorTexture;
-        public Anchor ColorAnchor;
+        public TextureAnchor ColorAnchor;
         public Vector2Int ColorTextureSize;
         public Vector2Int ColorUVPosition;
 
@@ -76,7 +91,7 @@ namespace com.happyrobot33.holographicreprojector
         [Header("Depth:")]
         [DeveloperOnly]
         public RenderTexture DepthTexture;
-        public Anchor DepthAnchor;
+        public TextureAnchor DepthAnchor;
         public Vector2Int DepthTextureSize;
         public Vector2Int DepthUVPosition;
 
@@ -89,7 +104,7 @@ namespace com.happyrobot33.holographicreprojector
         [Header("Data:")]
         [DeveloperOnly]
         public RenderTexture DataTexture;
-        public Anchor DataAnchor;
+        public TextureAnchor DataAnchor;
         public Vector2Int DataTextureSize;
         public Vector2Int DataUVPosition;
 
@@ -106,20 +121,22 @@ namespace com.happyrobot33.holographicreprojector
         public CustomRenderTexture RecordTexture;
 
         private VRCPlayerApi _playerToRecord;
-        private VRCPlayerApi playerToRecord
+        public VRCPlayerApi playerToRecord
         {
             get { return _playerToRecord; }
             set
             {
                 _playerToRecord = value;
                 _playerToRecordName = value.displayName;
+                //run the callback
+                RunCallback(ManagerCallback.recordedPlayerChanged);
             }
         }
 
         [UdonSynced]
         [FieldChangeCallback(nameof(playerToRecordName))]
         private string _playerToRecordName;
-        private string playerToRecordName
+        public string playerToRecordName
         {
             get { return _playerToRecordName; }
             set
@@ -139,24 +156,55 @@ namespace com.happyrobot33.holographicreprojector
             }
         }
         private Camera[] Cameras;
-        private Source mode = Source.Playback;
+        private Source _mode = Source.Playback;
+        public Source mode
+        {
+            get { return _mode; }
+            set
+            {
+                _mode = value;
+                RunCallback(ManagerCallback.sourceChanged);
+            }
+        }
 
         [UdonSynced]
-        [DeveloperOnly]
-        public float playerHeadOffset = 0.0f;
+        [FieldChangeCallback(nameof(playerHeadOffset))]
+        private float _playerHeadOffset = 0.0f;
+        public float playerHeadOffset
+        {
+            get { return _playerHeadOffset; }
+            set
+            {
+                _playerHeadOffset = value;
+                RunCallback(ManagerCallback.playerHeadOffsetChanged);
+            }
+        }
 
         /// <summary>
         /// If the playback is visible globally across the instance. Used to disable playback if the instance is the one recording
         /// </summary>
         [UdonSynced]
-        [DeveloperOnly]
-        public bool globalPlayback = true;
+        [FieldChangeCallback(nameof(globalPlayback))]
+        private bool _globalPlayback = true;
+        public bool globalPlayback
+        {
+            get { return _globalPlayback; }
+            set
+            {
+                _globalPlayback = value;
+                RunCallback(ManagerCallback.globalPlaybackChanged);
+            }
+        }
 
-        /// <summary>
-        /// If the playback is visible locally. Completely overridden by global playback
-        /// </summary>
-        [DeveloperOnly]
-        public bool localPlayback = true;
+        public bool localPlayback
+        {
+            get { return localPlaybackParentObject.activeSelf; }
+            set
+            {
+                localPlaybackParentObject.SetActive(value);
+                RunCallback(ManagerCallback.localPlaybackChanged);
+            }
+        }
 
         #region Inspector Variables
         [Header("Preview Textures")]
@@ -166,7 +214,7 @@ namespace com.happyrobot33.holographicreprojector
         public bool DeveloperMode;
 
         [DeveloperOnly]
-        public Areas CurrentlyEditingArea;
+        public AreaType CurrentlyEditingArea;
         #endregion
         void Start()
         {
@@ -321,14 +369,7 @@ namespace com.happyrobot33.holographicreprojector
         void Update()
         {
             //playback cube visibility
-            if (globalPlayback)
-            {
-                mainPlaybackCube.SetActive(localPlayback);
-            }
-            else
-            {
-                mainPlaybackCube.SetActive(false);
-            }
+            mainPlaybackCube.SetActive(globalPlayback);
 
             if (mode == Source.Record)
             {
@@ -554,7 +595,7 @@ namespace com.happyrobot33.holographicreprojector
         /// </summary>
         internal static Vector2Int CalculateTopLeftUV(
             Manager manager,
-            Anchor anchor,
+            TextureAnchor anchor,
             Vector2Int position,
             Texture texture
         )
@@ -563,22 +604,22 @@ namespace com.happyrobot33.holographicreprojector
 
             switch (anchor)
             {
-                case Anchor.TopLeft:
+                case TextureAnchor.TopLeft:
                     topLeft = new Vector2Int(position.x, position.y);
                     break;
-                case Anchor.TopRight:
+                case TextureAnchor.TopRight:
                     topLeft = new Vector2Int(
                         manager.VideoTexture.width - texture.width - position.x,
                         position.y
                     );
                     break;
-                case Anchor.BottomLeft:
+                case TextureAnchor.BottomLeft:
                     topLeft = new Vector2Int(
                         position.x,
                         manager.VideoTexture.height - texture.height - position.y
                     );
                     break;
-                case Anchor.BottomRight:
+                case TextureAnchor.BottomRight:
                     topLeft = new Vector2Int(
                         manager.VideoTexture.width - texture.width - position.x,
                         manager.VideoTexture.height - texture.height - position.y
