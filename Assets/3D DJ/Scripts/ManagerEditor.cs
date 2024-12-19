@@ -296,6 +296,8 @@ namespace com.happyrobot33.holographicreprojector
             manager._EnforceCameraAspectRatio();
 
             manager._SetupGlobalTextures();
+
+            manager._ConfigureShaderForPlayback();
         }
 
         private Vector2Int DrawRTArea(Manager manager, Texture texture, Rect ParentRect, GUIStyle imageStyle, Vector2Int topLeft, bool showHandles)

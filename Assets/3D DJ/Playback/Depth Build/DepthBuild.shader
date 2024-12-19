@@ -55,6 +55,7 @@ Shader "DepthBuild"
 		uniform float _HoloAffect;
 		uniform sampler2D _Udon_3DJ_Color;
 		uniform float4 _Udon_3DJ_Color_ST;
+		uniform float _Udon_3DJ_PlaybackActive;
 		uniform float _FadeWhenNear;
 
 
@@ -304,7 +305,8 @@ Shader "DepthBuild"
 			float Final_Geometry_Alpha632 = ( Alpha_Map502 > 0.03921569 ? Alpha_Map502 : ( Raw_Depth_Map503 > 0.03921569 ? 1.0 : 0.0 ) );
 			float cameraDepthFade634 = (( i.eyeDepth -_ProjectionParams.y - 0.0 ) / 0.3);
 			float clampResult635 = clamp( (( _FadeWhenNear )?( ( Final_Geometry_Alpha632 * cameraDepthFade634 ) ):( Final_Geometry_Alpha632 )) , 0.0 , 1.0 );
-			dither474 = step( dither474, ( (( _HoloAffect )?( ( clampResult672 * appendResult652 ) ):( appendResult656 )).a * clampResult635 ) );
+			float4 temp_cast_7 = (( (( _HoloAffect )?( ( clampResult672 * appendResult652 ) ):( appendResult656 )).a * clampResult635 )).xxxx;
+			dither474 = step( dither474, ( _Udon_3DJ_PlaybackActive == 1.0 ? temp_cast_7 : float4( 0,0,0,0 ) ).r );
 			o.Alpha = dither474;
 		}
 
@@ -466,7 +468,6 @@ Node;AmplifyShaderEditor.FunctionNode;462;-1392,1280;Inherit;False;VertexClip;-1
 Node;AmplifyShaderEditor.SimpleTimeNode;616;3600,-336;Inherit;False;1;0;FLOAT;0.008;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;645;3328,-336;Inherit;False;Constant;_HoloScrollSpeed;Holo Scroll Speed;16;0;Create;True;0;0;0;False;0;False;0.008;0.008;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.ClampOpNode;635;6688,1184;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.DitheringNode;474;7376,1184;Inherit;False;1;False;4;0;FLOAT;0;False;1;SAMPLER2D;;False;2;FLOAT4;0,0,0,0;False;3;SAMPLERSTATE;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.BreakToComponentsNode;649;6800,944;Inherit;False;COLOR;1;0;COLOR;0,0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;655;7088,1184;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.DynamicAppendNode;652;6464,-64;Inherit;False;COLOR;4;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;1;False;1;COLOR;0
@@ -525,6 +526,8 @@ Node;AmplifyShaderEditor.SimpleAddOpNode;424;-1782.9,1408.2;Inherit;True;2;2;0;F
 Node;AmplifyShaderEditor.RegisterLocalVarNode;552;-853.0531,1276.013;Inherit;False;Finalized Geometry;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.NormalVertexDataNode;687;6720,2112;Inherit;True;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.CustomExpressionNode;66;-3744,1120;Inherit;False; static float2 sobelSamplePoints[9] = {$	float2(-1, 1), float2(0, 1), float2(1, 1),$	float2(-1, 0), float2(0, 0), float2(1, 0),$	float2(-1, -1), float2(0, -1), float2(1, -1)$}@$$static float sobelXMatrix[9] = {$	1, 0, -1,$	2, 0, -2,$	1, 0, -1$}@$$static float sobelYMatrix[9] = {$	1, 2, 1,$	0, 0, 0,$	-1, -2, -1$}@$$float2 sobel = 0@$for (int i = 0@ i < 9@ i++) {$	float depth = tex2Dlod(Depth, float4(UV + sobelSamplePoints[i] * Thickness, 0.0, 0.0)).r@$	sobel += depth * float2(sobelXMatrix[i], sobelYMatrix[i])@$}$return length(sobel)@;1;Create;3;True;Depth;SAMPLER2D;0,0,0;In;;Inherit;False;True;UV;FLOAT2;0,0;In;;Inherit;False;True;Thickness;FLOAT;0;In;;Inherit;False;Sobel;True;False;0;;False;3;0;SAMPLER2D;0,0,0;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.DitheringNode;474;7728,1184;Inherit;False;1;False;4;0;FLOAT;0;False;1;SAMPLER2D;;False;2;FLOAT4;0,0,0,0;False;3;SAMPLERSTATE;;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FunctionNode;733;7376,1184;Inherit;False;Filter Enabled;-1;;402;c3596b00e3f10084ca2d087f25e7c86f;0;1;1;COLOR;0,0,0,0;False;1;COLOR;0
 WireConnection;515;0;553;0
 WireConnection;515;1;539;0
 WireConnection;516;0;537;0
@@ -594,7 +597,6 @@ WireConnection;462;4;432;0
 WireConnection;462;6;424;0
 WireConnection;616;0;645;0
 WireConnection;635;0;631;0
-WireConnection;474;0;655;0
 WireConnection;649;0;659;0
 WireConnection;655;0;649;3
 WireConnection;655;1;635;0
@@ -669,5 +671,7 @@ WireConnection;552;0;462;0
 WireConnection;66;0;732;5
 WireConnection;66;1;456;0
 WireConnection;66;2;67;0
+WireConnection;474;0;733;0
+WireConnection;733;1;655;0
 ASEEND*/
-//CHKSM=BEC2B19B282CE2492BD38687576B3B013906FDD1
+//CHKSM=1CE4C70E13B92C17AD12C33DD6C9C0C087C0DC30
