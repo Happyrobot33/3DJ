@@ -75,21 +75,21 @@ namespace com.happyrobot33.holographicreprojector
                 {
                     EditorGUILayout.Space();
                     //check for specific headers
-                    Areas possibleArea = Areas.None;
+                    AreaType possibleArea = AreaType.None;
                     switch (field.Name)
                     {
                         case nameof(Manager.ColorTexture):
-                            possibleArea = Areas.Color;
+                            possibleArea = AreaType.Color;
                             break;
                         case nameof(Manager.DepthTexture):
-                            possibleArea = Areas.Depth;
+                            possibleArea = AreaType.Depth;
                             break;
                         case nameof(Manager.DataTexture):
-                            possibleArea = Areas.Data;
+                            possibleArea = AreaType.Data;
                             break;
                     }
 
-                    if (possibleArea != Areas.None)
+                    if (possibleArea != AreaType.None)
                     {
                         //begin horizontal
                         EditorGUILayout.BeginHorizontal();
@@ -98,7 +98,7 @@ namespace com.happyrobot33.holographicreprojector
                     //render the text
                     EditorGUILayout.LabelField(((HeaderAttribute)field.GetCustomAttributes(typeof(HeaderAttribute), true)[0]).header, EditorStyles.boldLabel);
 
-                    if (possibleArea != Areas.None)
+                    if (possibleArea != AreaType.None)
                     {
                         if (GUILayout.Button("Visualize"))
                         {
@@ -161,13 +161,13 @@ namespace com.happyrobot33.holographicreprojector
                     videoRect.height * UVSize.y / manager.VideoTexture.height); */
 
                 Vector2Int topLeft = Manager.CalculateTopLeftUV(manager, manager.ColorAnchor, manager.ColorUVPosition, manager.ColorTexture);
-                DrawRTArea(manager, manager.ColorExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == Areas.Color);
+                DrawRTArea(manager, manager.ColorExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == AreaType.Color);
 
                 topLeft = Manager.CalculateTopLeftUV(manager, manager.DepthAnchor, manager.DepthUVPosition, manager.DepthTexture);
-                DrawRTArea(manager, manager.DepthExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == Areas.Depth);
+                DrawRTArea(manager, manager.DepthExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == AreaType.Depth);
 
                 topLeft = Manager.CalculateTopLeftUV(manager, manager.DataAnchor, manager.DataUVPosition, manager.DataTexture);
-                DrawRTArea(manager, manager.DataExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == Areas.Data);
+                DrawRTArea(manager, manager.DataExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == AreaType.Data);
     #endregion
 
     #region Debug Information

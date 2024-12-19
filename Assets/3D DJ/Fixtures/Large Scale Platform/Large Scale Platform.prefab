@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 4001351054417697079}
   - component: {fileID: 4540786475729242462}
   - component: {fileID: 6668959220183218068}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4001351054417697079
 Transform:
@@ -26,13 +26,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4057575535206466432}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: -0, z: 1.32}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2661207039397725614}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!33 &4540786475729242462
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -141,10 +141,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e402a95dda55ff74e963bfcfb43c3f38,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 072f8a6095f990040a770cebb4d5a8cd, type: 2}
     - target: {fileID: 919132149155446097, guid: e402a95dda55ff74e963bfcfb43c3f38,
         type: 3}
       propertyPath: m_Name
       value: Large Scale Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e402a95dda55ff74e963bfcfb43c3f38,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
