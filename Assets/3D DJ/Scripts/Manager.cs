@@ -370,6 +370,7 @@ namespace com.happyrobot33.holographicreprojector
         {
             //playback cube visibility
             mainPlaybackCube.SetActive(globalPlayback);
+            _ConfigureShaderForPlayback();
 
             if (mode == Source.Record)
             {
@@ -415,6 +416,19 @@ namespace com.happyrobot33.holographicreprojector
                 DataInput.SetFloat("_Scale", scale * 2);
                 DataInput.SetFloat("_Rotation", playerToRecord.GetRotation().eulerAngles.y + 45);
             }
+        }
+
+        public void _ConfigureShaderForPlayback()
+        {
+            //set global boolean for shaders for if playback is active
+            bool playbackActive =
+                globalPlayback
+                && localPlayback /*  && mode == Source.Playback */
+            ;
+            VRCShader.SetGlobalFloat(
+                VRCShader.PropertyToID("_Udon_3DJ_PlaybackActive"),
+                playbackActive ? 1 : 0
+            );
         }
 
         private Vector3[] _GeneratePositionArray()
