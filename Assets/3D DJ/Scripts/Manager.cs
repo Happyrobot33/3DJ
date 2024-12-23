@@ -8,10 +8,7 @@ using VRC.SDK3.Components;
 
 namespace com.happyrobot33.holographicreprojector
 {
-    using BestHTTP.SecureProtocol.Org.BouncyCastle.Asn1.Ocsp;
-
     using Texel;
-
     using TMPro;
     using UnityEngine.Rendering.PostProcessing;
     using VRC.SDK3.Data;
@@ -126,8 +123,13 @@ namespace com.happyrobot33.holographicreprojector
             get { return _playerToRecord; }
             set
             {
+                //if its the same value do nothing
+                if (value == _playerToRecord)
+                {
+                    return;
+                }
                 _playerToRecord = value;
-                _playerToRecordName = value.displayName;
+                playerToRecordName = value.displayName;
                 //run the callback
                 RunCallback(ManagerCallback.recordedPlayerChanged);
             }
@@ -141,6 +143,11 @@ namespace com.happyrobot33.holographicreprojector
             get { return _playerToRecordName; }
             set
             {
+                //if its the same value do nothing
+                if (value == _playerToRecordName)
+                {
+                    return;
+                }
                 _playerToRecordName = value;
                 //we need to find the player by their name
                 VRCPlayerApi[] players = new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()];
@@ -149,10 +156,11 @@ namespace com.happyrobot33.holographicreprojector
                 {
                     if (player.displayName == value)
                     {
-                        _playerToRecord = player;
+                        playerToRecord = player;
                         break;
                     }
                 }
+                RequestSerialization();
             }
         }
         private Camera[] Cameras;
@@ -164,6 +172,7 @@ namespace com.happyrobot33.holographicreprojector
             {
                 _mode = value;
                 RunCallback(ManagerCallback.sourceChanged);
+                RequestSerialization();
             }
         }
 
@@ -177,6 +186,7 @@ namespace com.happyrobot33.holographicreprojector
             {
                 _playerHeadOffset = value;
                 RunCallback(ManagerCallback.playerHeadOffsetChanged);
+                RequestSerialization();
             }
         }
 
@@ -193,6 +203,7 @@ namespace com.happyrobot33.holographicreprojector
             {
                 _globalPlayback = value;
                 RunCallback(ManagerCallback.globalPlaybackChanged);
+                RequestSerialization();
             }
         }
 
@@ -497,7 +508,6 @@ namespace com.happyrobot33.holographicreprojector
             }
 
             globalPlayback = !globalPlayback;
-            RequestSerialization();
         }
 
         //TODO: This doesnt work if you dont own the object!!!! Fix!
@@ -549,8 +559,6 @@ namespace com.happyrobot33.holographicreprojector
             //reset the player offset height
             playerHeadOffset = 0f;
             playerToRecord = player;
-
-            RequestSerialization();
         }
 
         public void SetPlayerHeadOffset(float offset)
@@ -561,8 +569,6 @@ namespace com.happyrobot33.holographicreprojector
             }
 
             playerHeadOffset = offset;
-
-            RequestSerialization();
         }
 
         public void _TakeOwnership()
