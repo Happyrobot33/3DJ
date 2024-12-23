@@ -581,6 +581,11 @@ namespace com.happyrobot33.holographicreprojector
             Networking.SetOwner(Networking.LocalPlayer, gameObject);
         }
 
+        public bool _HasAccess(VRCPlayerApi player)
+        {
+            return accessControl._HasAccess(player);
+        }
+
         public override void OnPlayerLeft(VRCPlayerApi player)
         {
             if (player == playerToRecord)
