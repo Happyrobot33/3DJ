@@ -160,7 +160,12 @@ namespace com.happyrobot33.holographicreprojector
                         break;
                     }
                 }
-                RequestSerialization();
+                //check if we own the object
+                if (Networking.GetOwner(gameObject) == Networking.LocalPlayer)
+                {
+                    //Debug.Log($"Requesting serialization for {nameof(playerToRecordName)}");
+                    RequestSerialization();
+                }
             }
         }
         private Camera[] Cameras;
@@ -172,7 +177,6 @@ namespace com.happyrobot33.holographicreprojector
             {
                 _mode = value;
                 RunCallback(ManagerCallback.sourceChanged);
-                RequestSerialization();
             }
         }
 
@@ -184,9 +188,21 @@ namespace com.happyrobot33.holographicreprojector
             get { return _playerHeadOffset; }
             set
             {
+                //check if the value has changed
+                if (value == _playerHeadOffset)
+                {
+                    return;
+                }
+
                 _playerHeadOffset = value;
                 RunCallback(ManagerCallback.playerHeadOffsetChanged);
-                RequestSerialization();
+
+                //check if we own the object
+                if (Networking.GetOwner(gameObject) == Networking.LocalPlayer)
+                {
+                    //Debug.Log($"Requesting serialization for {nameof(playerToRecordName)}");
+                    RequestSerialization();
+                }
             }
         }
 
@@ -201,9 +217,20 @@ namespace com.happyrobot33.holographicreprojector
             get { return _globalPlayback; }
             set
             {
+                //check if the value has changed
+                if (value == _globalPlayback)
+                {
+                    return;
+                }
+
                 _globalPlayback = value;
                 RunCallback(ManagerCallback.globalPlaybackChanged);
-                RequestSerialization();
+                //check if we own the object
+                if (Networking.GetOwner(gameObject) == Networking.LocalPlayer)
+                {
+                    //Debug.Log($"Requesting serialization for {nameof(playerToRecordName)}");
+                    RequestSerialization();
+                }
             }
         }
 
@@ -574,6 +601,12 @@ namespace com.happyrobot33.holographicreprojector
         public void _TakeOwnership()
         {
             if (!accessControl._HasAccess(Networking.LocalPlayer))
+            {
+                return;
+            }
+
+            //check if already owner, to avoid log spam
+            if (Networking.GetOwner(gameObject) == Networking.LocalPlayer)
             {
                 return;
             }
