@@ -96,13 +96,15 @@ namespace com.happyrobot33.holographicreprojector
 
         public void SliderUpdated()
         {
-            manager.SetPlayerHeadOffset(slider.value);
             TakeOwnership();
+            manager.SetPlayerHeadOffset(slider.value);
         }
 
         public void UpdateSlider()
         {
-            slider.value = manager.playerHeadOffset;
+            //causes ownership loops that break networking
+            //slider.value = manager.playerHeadOffset;
+            slider.SetValueWithoutNotify(manager.playerHeadOffset);
         }
 
         public void TakeOwnership()
