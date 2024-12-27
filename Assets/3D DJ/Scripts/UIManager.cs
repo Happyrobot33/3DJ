@@ -121,7 +121,7 @@ namespace com.happyrobot33.holographicreprojector
         {
             slider.interactable = manager.playerHasAccess;
             playerDropdown.interactable = manager.playerHasAccess;
-            //sourceDropdown.interactable = manager.playerHasAccess;
+            sourceDropdown.interactable = manager.playerHasAccess;
             globalPlaybackButton.interactable = manager.playerHasAccess;
             //localPlaybackButton.interactable = manager.playerHasAccess;
         }
@@ -168,8 +168,8 @@ namespace com.happyrobot33.holographicreprojector
 
         public void ToggleGlobalPlayback()
         {
-            manager._ToggleGlobalPlayback();
             TakeOwnership();
+            manager._ToggleGlobalPlayback();
         }
 
         public void ToggleLocalPlayback()
@@ -179,16 +179,17 @@ namespace com.happyrobot33.holographicreprojector
 
         public void PlayerDropdownUpdated()
         {
+            TakeOwnership();
             //find the player with that name
             VRCPlayerApi[] players = new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()];
             VRCPlayerApi.GetPlayers(players);
 
             manager.ChangePlayer(players[playerDropdown.value]);
-            TakeOwnership();
         }
 
         public void SourceUpdated()
         {
+            TakeOwnership();
             switch (sourceDropdown.value)
             {
                 case (int)Source.Record:
@@ -198,7 +199,6 @@ namespace com.happyrobot33.holographicreprojector
                     manager.SetSource(Source.Playback);
                     break;
             }
-            TakeOwnership();
         }
 
         public void UpdateSource()
