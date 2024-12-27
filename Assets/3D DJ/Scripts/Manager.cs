@@ -44,7 +44,8 @@ namespace com.happyrobot33.holographicreprojector
         globalPlaybackChanged,
         localPlaybackChanged,
         playerHeadOffsetChanged,
-        sourceChanged
+        sourceChanged,
+        accessControlChanged
     }
 
     [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
@@ -420,8 +421,21 @@ namespace com.happyrobot33.holographicreprojector
             return input * percentage;
         }
 
+        [HideInInspector]
+        public bool playerHasAccess = false;
         void Update()
         {
+            //check if the player has access control
+            if (accessControl != null)
+            {
+                bool prevAccess = playerHasAccess;
+                playerHasAccess = accessControl._HasAccess(Networking.LocalPlayer);
+                if (prevAccess != playerHasAccess)
+                {
+                    RunCallback(ManagerCallback.accessControlChanged);
+                }
+            }
+
             //playback cube visibility
             mainPlaybackCube.SetActive(globalPlayback);
             _ConfigureShaderForPlayback();
@@ -614,20 +628,21 @@ namespace com.happyrobot33.holographicreprojector
             playerHeadOffset = offset;
         }
 
-        public void _TakeOwnership()
+        public bool _TakeOwnership()
         {
             if (!accessControl._HasAccess(Networking.LocalPlayer))
             {
-                return;
+                return false;
             }
 
             //check if already owner, to avoid log spam
             if (Networking.GetOwner(gameObject) == Networking.LocalPlayer)
             {
-                return;
+                return true;
             }
 
             Networking.SetOwner(Networking.LocalPlayer, gameObject);
+            return true;
         }
 
         public bool _HasAccess(VRCPlayerApi player)

@@ -17,6 +17,9 @@ namespace com.happyrobot33.holographicreprojector
         public TMP_Dropdown playerDropdown;
         public TMP_Dropdown sourceDropdown;
 
+        public Button globalPlaybackButton;
+        public Button localPlaybackButton;
+
         void Start()
         {
             SendCustomEventDelayedFrames(nameof(DelayedSearch), 1);
@@ -92,6 +95,57 @@ namespace com.happyrobot33.holographicreprojector
                 nameof(UpdateSlider)
             );
             manager.AddCallback(ManagerCallback.sourceChanged, this, nameof(UpdateSource));
+            manager.AddCallback(
+                ManagerCallback.globalPlaybackChanged,
+                this,
+                nameof(UpdateButtonColors)
+            );
+            manager.AddCallback(
+                ManagerCallback.localPlaybackChanged,
+                this,
+                nameof(UpdateButtonColors)
+            );
+
+            UpdateButtonColors();
+
+            manager.AddCallback(
+                ManagerCallback.accessControlChanged,
+                this,
+                nameof(UpdateInteractibility)
+            );
+
+            UpdateInteractibility();
+        }
+
+        public void UpdateInteractibility()
+        {
+            slider.interactable = manager.playerHasAccess;
+            playerDropdown.interactable = manager.playerHasAccess;
+            //sourceDropdown.interactable = manager.playerHasAccess;
+            globalPlaybackButton.interactable = manager.playerHasAccess;
+            //localPlaybackButton.interactable = manager.playerHasAccess;
+        }
+
+        public void UpdateButtonColors()
+        {
+            //set the button background colors
+            if (manager.globalPlayback)
+            {
+                globalPlaybackButton.GetComponent<Image>().color = Color.green;
+            }
+            else
+            {
+                globalPlaybackButton.GetComponent<Image>().color = Color.red;
+            }
+
+            if (manager.localPlayback)
+            {
+                localPlaybackButton.GetComponent<Image>().color = Color.green;
+            }
+            else
+            {
+                localPlaybackButton.GetComponent<Image>().color = Color.red;
+            }
         }
 
         public void SliderUpdated()
