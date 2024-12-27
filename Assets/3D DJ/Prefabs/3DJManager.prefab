@@ -293,6 +293,10 @@ MonoBehaviour:
   DataExtractMaterial: {fileID: 2100000, guid: b312d249b2905c449b9756b3b436cc15, type: 2}
   DataExtractTexture: {fileID: 8600000, guid: 2edf86f5d629f944692f8f4c802725c8, type: 2}
   RecordTexture: {fileID: 8600000, guid: 86309c450e338be458544111d4f51804, type: 2}
+  station: {fileID: 5479137359699250677}
+  designatedPlayerName: 
+  autoPlayerSetupEnabled: 0
+  allowAutoGlobalPlaybackSwitch: 0
   PreviewLayoutTexture: {fileID: 2800000, guid: ae67e204164b10844b1cb588885119d4,
     type: 3}
   DeveloperMode: 0
