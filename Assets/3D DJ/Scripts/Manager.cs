@@ -244,6 +244,22 @@ namespace com.happyrobot33.holographicreprojector
             }
         }
 
+        #region Auto Player Setup System
+        //this is so that when a designated player joins, it will automatically set the mode to record and place them into the station
+        [DeveloperOnly]
+        [Header("Auto Player Setup System")]
+        public VRC.SDK3.Components.VRCStation station;
+        public string designatedPlayerName;
+        /// <summary>
+        /// If the system should automatically setup the specific player when they join
+        /// </summary>
+        public bool autoPlayerSetupEnabled = false;
+        /// <summary>
+        /// If the system should automatically disable/enable global playback when the designated player joins/leaves
+        /// </summary>
+        public bool allowAutoGlobalPlaybackSwitch = false;
+        #endregion
+
         #region Inspector Variables
         [Header("Preview Textures")]
         public Texture PreviewLayoutTexture;
@@ -625,6 +641,41 @@ namespace com.happyrobot33.holographicreprojector
             {
                 //set to local player
                 ChangePlayer(Networking.LocalPlayer);
+            }
+
+            //if the player that left was the designated player
+            if (player.displayName == designatedPlayerName)
+            {
+                if (allowAutoGlobalPlaybackSwitch)
+                {
+                    //re-enable it since the player left
+                    globalPlayback = true;
+                }
+            }
+        }
+
+        public override void OnPlayerJoined(VRCPlayerApi player)
+        {
+            //if the player that joined was the designated player
+            if (player.displayName == designatedPlayerName)
+            {
+                if (allowAutoGlobalPlaybackSwitch)
+                {
+                    //disable it since the player joined
+                    globalPlayback = false;
+                }
+
+                if (autoPlayerSetupEnabled)
+                {
+                    //force the user into the station. Can only do this for the local player
+                    if (Networking.LocalPlayer == player)
+                    {
+                        station.UseStation(player);
+
+                        //switch us into record mode
+                        SetSource(Source.Record);
+                    }
+                }
             }
         }
 
