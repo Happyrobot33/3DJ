@@ -3250,6 +3250,8 @@ MonoBehaviour:
   slider: {fileID: 1804298865955040423}
   playerDropdown: {fileID: 1235324618419614735}
   sourceDropdown: {fileID: 8282152131833566154}
+  globalPlaybackButton: {fileID: 7100449106399600635}
+  localPlaybackButton: {fileID: 2040316590856938244}
 --- !u!114 &7800649315839911623
 MonoBehaviour:
   m_ObjectHideFlags: 0
