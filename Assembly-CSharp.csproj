@@ -161,6 +161,7 @@
     <None Include="Assets\3D DJ\Playback\Depth Build\DepthBuild.shader" />
     <None Include="Assets\3D DJ\Fixtures\Large Scale Platform\Large Scale Platform.shader" />
     <None Include="Assets\Kita&apos;vali 4.8 Assets\Materials\ColourMasking\OptimizedShaders\Feathers Colour Masking\CGI_PoiData.cginc" />
+    <None Include="Assets\3D DJ\Record\Cameras\Camera Shader.shader" />
     <None Include="Assets\3D DJ\Debug\Debug Cameras\DebugHeightmap.shader" />
     <None Include="Assets\Kita&apos;vali 4.8 Assets\Materials\ColourMasking\OptimizedShaders\Eyes Colour Masking\S_Poiyomi_Toon.shader" />
     <None Include="Assets\Kita&apos;vali 4.8 Assets\Materials\ColourMasking\OptimizedShaders\Main Colour Masking\CGI_PoiAlphaToCoverage.cginc" />
