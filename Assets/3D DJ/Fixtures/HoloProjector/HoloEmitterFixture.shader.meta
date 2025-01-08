@@ -2,8 +2,7 @@ fileFormatVersion: 2
 guid: 235c1d2744521df4dad6544253e12fb6
 ShaderImporter:
   externalObjects: {}
-  defaultTextures:
-  - _Udon_3DJ_Data: {fileID: 8600000, guid: 2edf86f5d629f944692f8f4c802725c8, type: 2}
+  defaultTextures: []
   nonModifiableTextures: []
   userData: 
   assetBundleName: 
