@@ -10,11 +10,37 @@ namespace com.happyrobot33.holographicreprojector
 {
     using Texel;
     using TMPro;
+    using UnityEditor;
     using UnityEngine.Rendering.PostProcessing;
     using VRC.SDK3.Data;
 
-    [AttributeUsage(AttributeTargets.Field)]
-    public class DeveloperOnly : PropertyAttribute { }
+    public class DeveloperOnlyAttribute : PropertyAttribute { }
+
+    [CustomPropertyDrawer(typeof(DeveloperOnlyAttribute))]
+    public class DeveloperOnly : PropertyDrawer
+    {
+        public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+        {
+            //get the manager developer only flag
+            Manager manager = GameObject.Find(Manager.MANAGERNAME).GetComponent<Manager>();
+            if (!manager.DeveloperMode)
+            {
+                return 0;
+            }
+            return EditorGUI.GetPropertyHeight(property, label, true);
+        }
+
+        public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+        {
+            //get the manager developer only flag
+            Manager manager = GameObject.Find(Manager.MANAGERNAME).GetComponent<Manager>();
+            if (!manager.DeveloperMode)
+            {
+                return;
+            }
+            EditorGUI.PropertyField(position, property, label, true);
+        }
+    }
 
     public enum Source
     {
@@ -307,6 +333,14 @@ namespace com.happyrobot33.holographicreprojector
             VRCShader.SetGlobalTexture(
                 VRCShader.PropertyToID("_Udon_3DJ_Data"),
                 DataExtractTexture
+            );
+            VRCShader.SetGlobalTexture(
+                VRCShader.PropertyToID("_Udon_3DJ_Raw_Input"),
+                VideoTexture
+            );
+            VRCShader.SetGlobalTexture(
+                VRCShader.PropertyToID("_Udon_3DJ_Raw_Output"),
+                RecordTexture
             );
 
             //convert to float array

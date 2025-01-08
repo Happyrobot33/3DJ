@@ -57,66 +57,35 @@ namespace com.happyrobot33.holographicreprojector
             }
 
             //draw the default inspector
-            //DrawDefaultInspector();
-            System.Reflection.FieldInfo[] fields = target.GetType().GetFields(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
-            foreach (var field in fields)
-            {
-                if (field.GetCustomAttributes(typeof(DeveloperOnly), true).Length == 0)
-                {
-                    EditorGUILayout.PropertyField(serializedObject.FindProperty(field.Name), true);
-                }
-                else if (((Manager)target).DeveloperMode)
-                {
-                    EditorGUILayout.PropertyField(serializedObject.FindProperty(field.Name), true);
-                }
-
-                //make sure headers work
-                if (field.GetCustomAttributes(typeof(HeaderAttribute), true).Length > 0)
-                {
-                    EditorGUILayout.Space();
-                    //check for specific headers
-                    AreaType possibleArea = AreaType.None;
-                    switch (field.Name)
-                    {
-                        case nameof(Manager.ColorTexture):
-                            possibleArea = AreaType.Color;
-                            break;
-                        case nameof(Manager.DepthTexture):
-                            possibleArea = AreaType.Depth;
-                            break;
-                        case nameof(Manager.DataTexture):
-                            possibleArea = AreaType.Data;
-                            break;
-                    }
-
-                    if (possibleArea != AreaType.None)
-                    {
-                        //begin horizontal
-                        EditorGUILayout.BeginHorizontal();
-                    }
-                    
-                    //render the text
-                    EditorGUILayout.LabelField(((HeaderAttribute)field.GetCustomAttributes(typeof(HeaderAttribute), true)[0]).header, EditorStyles.boldLabel);
-
-                    if (possibleArea != AreaType.None)
-                    {
-                        if (GUILayout.Button("Visualize"))
-                        {
-                            manager.CurrentlyEditingArea = possibleArea;
-                            ApplyInstanceOverride(manager);
-                        }
-
-                        //end horizontal
-                        EditorGUILayout.EndHorizontal();
-                    }
-                }
-            }
+            DrawDefaultInspector();
 
             if (GUILayout.Button(manager.DeveloperMode ? "Exit Developer Mode" : "Enter Developer Mode"))
             {
                 manager.DeveloperMode = !manager.DeveloperMode;
                 ApplyInstanceOverride(manager);
             }
+
+            //setup visualize buttons
+            EditorGUILayout.BeginHorizontal();
+            if (GUILayout.Button("Visualize Color"))
+            {
+                manager.CurrentlyEditingArea = AreaType.Color;
+                ApplyInstanceOverride(manager);
+            }
+
+            if (GUILayout.Button("Visualize Depth"))
+            {
+                manager.CurrentlyEditingArea = AreaType.Depth;
+                ApplyInstanceOverride(manager);
+            }
+
+            if (GUILayout.Button("Visualize Data"))
+            {
+                manager.CurrentlyEditingArea = AreaType.Data;
+                ApplyInstanceOverride(manager);
+            }
+
+            EditorGUILayout.EndHorizontal();
 
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("Record"))
@@ -154,12 +123,6 @@ namespace com.happyrobot33.holographicreprojector
                 //show a box in it, with the texture as the content
                 GUI.Box(videoRect, manager.PreviewLayoutTexture, rtStyle);
 
-                //display another box inside the first box based on the UVPositionTopLeft and UVPositionSize
-                /* Rect recordRect = new Rect(videoRect.x + videoRect.width * manager.UVPosition.x / manager.VideoTexture.width,
-                    videoRect.y + videoRect.height * manager.UVPosition.y / manager.VideoTexture.height,
-                    videoRect.width * UVSize.x / manager.VideoTexture.width,
-                    videoRect.height * UVSize.y / manager.VideoTexture.height); */
-
                 Vector2Int topLeft = Manager.CalculateTopLeftUV(manager, manager.ColorAnchor, manager.ColorUVPosition, manager.ColorTexture);
                 DrawRTArea(manager, manager.ColorExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == AreaType.Color);
 
@@ -169,45 +132,11 @@ namespace com.happyrobot33.holographicreprojector
                 topLeft = Manager.CalculateTopLeftUV(manager, manager.DataAnchor, manager.DataUVPosition, manager.DataTexture);
                 DrawRTArea(manager, manager.DataExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == AreaType.Data);
     #endregion
-
-    #region Debug Information
-                //calculate the cell size based on horizontal width / 3
-                /* int cellSize = UVSize.x / 3;
-                EditorGUILayout.LabelField(string.Format("Cell Size: {0}x{0}", cellSize)); */
-    #endregion
             }
             catch (Exception e)
             {
                 GUILayout.Label("Error: " + e.Message);
-                //Debug.LogError(e);
             }
-
-            /* #region Render texture management
-            //watch for changes on the UVSize variable
-            if (EditorGUI.EndChangeCheck() || GUILayout.Button("Force Update"))
-            {
-                //determine the aspect ratio of the record texture
-                const int recordSystemBaseWidth = 639;
-                const int recordSystemBaseHeight = 655;
-                const float recordSystemAspect = recordSystemBaseWidth / (float)recordSystemBaseHeight;
-
-                //make sure the uvsize is divisible by 3 horizontally
-                if (manager.UVSize.x % 3 != 0)
-                {
-                    manager.UVSize = new Vector2Int(manager.UVSize.x + (3 - manager.UVSize.x % 3), manager.UVSize.y);
-                }
-
-                //update the height based on the aspect ratio
-                manager.UVSize.y = (int)(manager.UVSize.x / recordSystemAspect);
-
-                //now we need to update all of the render textures to match
-                manager.RecordTexture.Release();
-                manager.RecordTexture.width = manager.UVSize.x;
-                manager.RecordTexture.height = manager.UVSize.y;
-
-                serializedObject.ApplyModifiedProperties();
-            }
-            //#endregion */
 
             if (EditorGUI.EndChangeCheck())
             {
