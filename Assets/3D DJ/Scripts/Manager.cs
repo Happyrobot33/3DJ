@@ -276,7 +276,7 @@ namespace com.happyrobot33.holographicreprojector
         [DeveloperOnly]
         [Header("Auto Player Setup System")]
         public VRC.SDK3.Components.VRCStation station;
-        public string designatedPlayerName;
+        public string[] designatedPlayerNames;
         /// <summary>
         /// If the system should automatically setup the specific player when they join
         /// </summary>
@@ -684,6 +684,19 @@ namespace com.happyrobot33.holographicreprojector
             return accessControl._HasAccess(player);
         }
 
+        public bool IsDesignatedPlayer(VRCPlayerApi player)
+        {
+            foreach (string name in designatedPlayerNames)
+            {
+                if (player.displayName == name)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public override void OnPlayerLeft(VRCPlayerApi player)
         {
             if (player == playerToRecord)
@@ -693,7 +706,7 @@ namespace com.happyrobot33.holographicreprojector
             }
 
             //if the player that left was the designated player
-            if (player.displayName == designatedPlayerName)
+            if (IsDesignatedPlayer(player))
             {
                 if (allowAutoGlobalPlaybackSwitch)
                 {
@@ -706,7 +719,7 @@ namespace com.happyrobot33.holographicreprojector
         public override void OnPlayerJoined(VRCPlayerApi player)
         {
             //if the player that joined was the designated player
-            if (player.displayName == designatedPlayerName)
+            if (IsDesignatedPlayer(player))
             {
                 if (allowAutoGlobalPlaybackSwitch)
                 {
