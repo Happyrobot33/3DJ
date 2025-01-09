@@ -2,7 +2,9 @@ fileFormatVersion: 2
 guid: e6bd0e27644764d41b4dcb68afd74b21
 ShaderImporter:
   externalObjects: {}
-  defaultTextures: []
+  defaultTextures:
+  - _Udon_3DJ_Color_Upscaled: {fileID: 8600000, guid: 40d4c212118c5b545bb60be32058e0d1,
+      type: 2}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 
