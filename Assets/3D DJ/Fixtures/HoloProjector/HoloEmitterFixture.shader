@@ -510,8 +510,8 @@ Node;AmplifyShaderEditor.FunctionNode;368;156.9193,1212.377;Inherit;False;Filter
 Node;AmplifyShaderEditor.FunctionNode;369;143.8543,1443.233;Inherit;False;Filter Enabled;0;;473;c3596b00e3f10084ca2d087f25e7c86f;0;4;1;COLOR;0,0,0,0;False;7;FLOAT4;0,0,0,0;False;8;FLOAT4;0,0,0,0;False;6;COLOR;0,0,0,0;False;2;COLOR;0;FLOAT4;10
 Node;AmplifyShaderEditor.NormalVertexDataNode;371;-188.7307,1639.282;Inherit;False;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.PosVertexDataNode;370;-130.7307,1114.282;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.FunctionNode;221;458,-829;Inherit;False;Global Textures;2;;468;5151b2ab862399e41a33b2b14a355044;0;0;6;SAMPLER2D;0;SAMPLER2D;5;SAMPLER2D;6;SAMPLER2D;11;SAMPLER2D;7;SAMPLER2D;9
 Node;AmplifyShaderEditor.TexCoordVertexDataNode;291;448,-580;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.FunctionNode;221;456,-815;Inherit;False;Global Textures;2;;468;5151b2ab862399e41a33b2b14a355044;0;0;6;SAMPLER2D;0;SAMPLER2D;5;SAMPLER2D;6;SAMPLER2D;11;SAMPLER2D;7;SAMPLER2D;9
 WireConnection;328;0;79;0
 WireConnection;329;0;79;0
 WireConnection;330;4;144;3
@@ -645,4 +645,4 @@ WireConnection;368;8;370;0
 WireConnection;369;7;323;0
 WireConnection;369;8;371;0
 ASEEND*/
-//CHKSM=4F1EDBF610C753FD0729B10009DD520E19EE629C
+//CHKSM=FDB3C8AA898122CEC3A407477D38C96648234210
