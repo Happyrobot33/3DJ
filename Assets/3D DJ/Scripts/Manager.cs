@@ -113,6 +113,8 @@ namespace com.happyrobot33.holographicreprojector
 
         [DeveloperOnly]
         public CustomRenderTexture ColorExtractTexture;
+        [DeveloperOnly]
+        public CustomRenderTexture UpscaledColorTexture;
 
         [Header("Depth:")]
         [DeveloperOnly]
@@ -327,6 +329,10 @@ namespace com.happyrobot33.holographicreprojector
             VRCShader.SetGlobalTexture(
                 VRCShader.PropertyToID("_Udon_3DJ_Color"),
                 ColorExtractTexture
+            );
+            VRCShader.SetGlobalTexture(
+                VRCShader.PropertyToID("_Udon_3DJ_Color_Upscaled"),
+                UpscaledColorTexture
             );
             VRCShader.SetGlobalTexture(
                 VRCShader.PropertyToID("_Udon_3DJ_Depth"),

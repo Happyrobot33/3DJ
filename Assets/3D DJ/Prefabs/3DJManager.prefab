@@ -279,6 +279,8 @@ MonoBehaviour:
   ColorExtractMaterial: {fileID: 2100000, guid: b4013e4c41d0a6741ad3469d33c7585e,
     type: 2}
   ColorExtractTexture: {fileID: 8600000, guid: 40d4c212118c5b545bb60be32058e0d1, type: 2}
+  UpscaledColorTexture: {fileID: 8600000, guid: 8816408dd339434408e833a39330170d,
+    type: 2}
   DepthTexture: {fileID: 8400000, guid: 283657a5e09fe4444882d8963bc94119, type: 2}
   DepthAnchor: 3
   DepthTextureSize: {x: 960, y: 640}
@@ -294,7 +296,7 @@ MonoBehaviour:
   DataExtractTexture: {fileID: 8600000, guid: 2edf86f5d629f944692f8f4c802725c8, type: 2}
   RecordTexture: {fileID: 8600000, guid: 86309c450e338be458544111d4f51804, type: 2}
   station: {fileID: 5479137359699250677}
-  designatedPlayerName: 
+  designatedPlayerNames: []
   autoPlayerSetupEnabled: 0
   allowAutoGlobalPlaybackSwitch: 0
   PreviewLayoutTexture: {fileID: 2800000, guid: ae67e204164b10844b1cb588885119d4,
