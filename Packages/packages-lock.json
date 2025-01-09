@@ -6,12 +6,6 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "com.happyrobot33.buildsizeviewer": {
-      "version": "file:com.happyrobot33.buildsizeviewer",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "com.happyrobot33.inspectortweaks": {
       "version": "file:com.happyrobot33.inspectortweaks",
       "depth": 0,
