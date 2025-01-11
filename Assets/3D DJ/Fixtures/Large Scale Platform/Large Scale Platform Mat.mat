@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: e6bd0e27644764d41b4dcb68afd74b21, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _IGNOREGLOBALPLAYBACKCONTROL_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -92,7 +93,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _IgnoreGlobalPlaybackControl: 0
+    - _IgnoreGlobalPlaybackControl: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
