@@ -56,6 +56,21 @@ namespace com.happyrobot33.holographicreprojector
                 ApplyInstanceOverride(manager);
             }
 
+            //check for the video texture to have some specific settings
+            if (manager.VideoTexture != null)
+            {
+                if (manager.VideoTexture.filterMode != FilterMode.Point)
+                {
+                    //warning messagebox
+                    EditorGUILayout.HelpBox("Video Texture should have a filter mode of Point!", MessageType.Error);
+                    //make a auto fix button
+                    if (GUILayout.Button("Fix Filter Mode"))
+                    {
+                        manager.VideoTexture.filterMode = FilterMode.Point;
+                    }
+                }
+            }
+
             //draw the default inspector
             DrawDefaultInspector();
 

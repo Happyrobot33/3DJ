@@ -131,6 +131,7 @@ Material:
     - _HoloAffect: 0
     - _HoloRimLight: 1
     - _HoloScrollSpeed: 0.008
+    - _IgnoreGlobalPlaybackControl: 0
     - _IgnoreTopBottom: 0
     - _LODDistance: 20
     - _LODDistance1: 0
@@ -166,7 +167,7 @@ Material:
     - _UVSec: 0
     - _VertexOutlineThickness: 0
     - _ZWrite: 1
-    - __dirty: 0
+    - __dirty: 1
     m_Colors:
     - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
