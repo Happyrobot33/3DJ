@@ -15,7 +15,7 @@ namespace com.happyrobot33.holographicreprojector
     using VRC.SDK3.Data;
 
     public class DeveloperOnlyAttribute : PropertyAttribute { }
-    #if !COMPILER_UDONSHARP && UNITY_EDITOR
+#if !COMPILER_UDONSHARP && UNITY_EDITOR
 
     [CustomPropertyDrawer(typeof(DeveloperOnlyAttribute))]
     public class DeveloperOnly : PropertyDrawer
@@ -42,7 +42,7 @@ namespace com.happyrobot33.holographicreprojector
             EditorGUI.PropertyField(position, property, label, true);
         }
     }
-    #endif
+#endif
 
     public enum Source
     {
