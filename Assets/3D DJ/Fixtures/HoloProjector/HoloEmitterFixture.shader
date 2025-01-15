@@ -245,13 +245,14 @@ Shader "HoloEmitterFixture"
 		{
 			float2 uv_Normal = i.uv_texcoord * _Normal_ST.xy + _Normal_ST.zw;
 			o.Normal = UnpackNormal( tex2D( _Normal, uv_Normal ) );
-			float3 hsvTorgb289 = RGBToHSV( tex2Dlod( _Udon_3DJ_Color_Upscaled, float4( i.uv_texcoord, 0, 8.0) ).rgb );
-			float3 hsvTorgb290 = HSVToRGB( float3(hsvTorgb289.x,hsvTorgb289.y,(0.5 + (hsvTorgb289.z - 0.0) * (1.0 - 0.5) / (1.0 - 0.0))) );
+			float3 hsvTorgb1_g480 = RGBToHSV( tex2Dlod( _Udon_3DJ_Color_Upscaled, float4( i.uv_texcoord, 0, 8.0) ).rgb );
+			float3 hsvTorgb2_g480 = HSVToRGB( float3(hsvTorgb1_g480.x,hsvTorgb1_g480.y,(0.5 + (hsvTorgb1_g480.z - 0.0) * (1.0 - 0.5) / (1.0 - 0.0))) );
+			float3 temp_output_377_0 = hsvTorgb2_g480;
 			float2 uv_MainTex = i.uv_texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
 			float temp_output_100_0 = ( i.vertexColor.g > 0.0 ? 0.0 : 1.0 );
-			float4 lerpResult70 = lerp( float4( hsvTorgb290 , 0.0 ) , tex2D( _MainTex, uv_MainTex ) , temp_output_100_0);
+			float4 lerpResult70 = lerp( float4( temp_output_377_0 , 0.0 ) , tex2D( _MainTex, uv_MainTex ) , temp_output_100_0);
 			o.Albedo = lerpResult70.rgb;
-			float3 lerpResult311 = lerp( hsvTorgb290 , float3( 0,0,0 ) , temp_output_100_0);
+			float3 lerpResult311 = lerp( temp_output_377_0 , float3( 0,0,0 ) , temp_output_100_0);
 			o.Emission = lerpResult311;
 			float2 uv_Metallic = i.uv_texcoord * _Metallic_ST.xy + _Metallic_ST.zw;
 			float4 tex2DNode308 = tex2D( _Metallic, uv_Metallic );
@@ -391,7 +392,7 @@ Shader "HoloEmitterFixture"
 }
 /*ASEBEGIN
 Version=19202
-Node;AmplifyShaderEditor.CommentaryNode;354;398,-866;Inherit;False;1988;1109;Texture Assignment;16;289;100;221;291;290;305;73;288;287;309;70;308;310;312;311;348;;1,1,1,1;0;0
+Node;AmplifyShaderEditor.CommentaryNode;354;398,-866;Inherit;False;1988;1109;Texture Assignment;13;100;221;291;73;288;287;309;70;308;310;312;311;348;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.CommentaryNode;353;-1890,1054;Inherit;False;3125.7;848.7729;Ball Rotation;23;368;91;275;364;363;323;77;357;358;282;283;284;285;235;325;324;53;92;94;88;369;371;370;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.CommentaryNode;352;-4594,158;Inherit;False;2404;667;Find random position in the 3DJ Cube;21;118;120;114;240;242;105;246;250;251;109;257;263;113;252;261;262;248;316;317;307;236;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.CommentaryNode;351;-3298,-1090;Inherit;False;2996;923;Calculate the end position of the beam vertex;17;68;102;99;67;136;135;134;127;237;97;230;45;46;47;276;267;232;;1,1,1,1;0;0
@@ -473,10 +474,7 @@ Node;AmplifyShaderEditor.NormalVertexDataNode;324;-1023.058,1716.773;Inherit;Fal
 Node;AmplifyShaderEditor.RadiansOpNode;285;-1002,1443;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.NegateNode;284;-816,1440;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.ClampOpNode;283;-648,1388;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RGBToHSVNode;289;1232,-752;Inherit;False;1;0;FLOAT3;0,0,0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.Compare;100;2000,0;Inherit;False;2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.HSVToRGBNode;290;1792,-720;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;1;False;2;FLOAT;0.5;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.TFHCRemapNode;305;1520,-624;Inherit;False;5;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;0.5;False;4;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SamplerNode;73;832,-768;Inherit;True;Property;_TextureSample0;Texture Sample 0;5;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;MipLevel;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;8;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.TexturePropertyNode;309;1168,-384;Inherit;True;Property;_Metallic;Metallic;20;0;Create;True;0;0;0;False;0;False;None;7f579a8b8c4deff4cbac5842995d9ead;False;white;Auto;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1
 Node;AmplifyShaderEditor.LerpOp;70;2208,-64;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
@@ -511,7 +509,8 @@ Node;AmplifyShaderEditor.FunctionNode;369;143.8543,1443.233;Inherit;False;Filter
 Node;AmplifyShaderEditor.NormalVertexDataNode;371;-188.7307,1639.282;Inherit;False;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.PosVertexDataNode;370;-130.7307,1114.282;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.TexCoordVertexDataNode;291;448,-580;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.FunctionNode;221;456,-815;Inherit;False;Global Textures;2;;468;5151b2ab862399e41a33b2b14a355044;0;0;6;SAMPLER2D;0;SAMPLER2D;5;SAMPLER2D;6;SAMPLER2D;11;SAMPLER2D;7;SAMPLER2D;9
+Node;AmplifyShaderEditor.FunctionNode;221;456,-815;Inherit;False;Global Textures;2;;474;5151b2ab862399e41a33b2b14a355044;0;0;6;SAMPLER2D;0;SAMPLER2D;5;SAMPLER2D;6;SAMPLER2D;11;SAMPLER2D;7;SAMPLER2D;9
+Node;AmplifyShaderEditor.FunctionNode;377;1588.215,-753.6332;Inherit;False;Brightness Equalize;-1;;480;3cff8996ac8f314489f1f0f7859c2aa6;0;1;4;FLOAT3;0,0,0;False;1;FLOAT3;0
 WireConnection;328;0;79;0
 WireConnection;329;0;79;0
 WireConnection;330;4;144;3
@@ -592,15 +591,10 @@ WireConnection;284;0;285;0
 WireConnection;283;0;275;0
 WireConnection;283;1;284;0
 WireConnection;283;2;285;0
-WireConnection;289;0;73;0
 WireConnection;100;0;348;2
-WireConnection;290;0;289;1
-WireConnection;290;1;289;2
-WireConnection;290;2;305;0
-WireConnection;305;0;289;3
 WireConnection;73;0;221;11
 WireConnection;73;1;291;0
-WireConnection;70;0;290;0
+WireConnection;70;0;377;0
 WireConnection;70;1;288;0
 WireConnection;70;2;100;0
 WireConnection;308;0;309;0
@@ -608,7 +602,7 @@ WireConnection;310;1;308;4
 WireConnection;310;2;100;0
 WireConnection;312;1;308;1
 WireConnection;312;2;100;0
-WireConnection;311;0;290;0
+WireConnection;311;0;377;0
 WireConnection;311;2;100;0
 WireConnection;358;0;275;0
 WireConnection;358;1;285;0
@@ -644,5 +638,6 @@ WireConnection;368;7;77;0
 WireConnection;368;8;370;0
 WireConnection;369;7;323;0
 WireConnection;369;8;371;0
+WireConnection;377;4;73;0
 ASEEND*/
-//CHKSM=FDB3C8AA898122CEC3A407477D38C96648234210
+//CHKSM=C31377A011C50CDFD08E30F9C75033B8925791E4

@@ -118,9 +118,9 @@ Shader "Large Scale Platform"
 			float2 uv37 = 0;
 			float voroi37 = voronoi37( coords37, time37, id37, uv37, 0, voronoiSmoothId37 );
 			float2 appendResult38 = (float2(voroi37 , voroi37));
-			float3 hsvTorgb28 = RGBToHSV( tex2Dlod( _Udon_3DJ_Color_Upscaled, float4( ( i.uv4_texcoord4 + appendResult38 ), 0, 8.0) ).rgb );
-			float3 hsvTorgb29 = HSVToRGB( float3(hsvTorgb28.x,hsvTorgb28.y,(0.5 + (hsvTorgb28.z - 0.0) * (1.0 - 0.5) / (1.0 - 0.0))) );
-			o.Emission = ( tex2D( _Emission, uv_Emission ) + ( tex2DNode3.g * ( ( i.uv3_texcoord3.x >= 0.0 ? tex2D( _Udon_3DJ_Color, i.uv3_texcoord3 ) : float4( 0,0,0,0 ) ) + ( i.uv4_texcoord4.x >= 0.0 ? ( staticSwitch4_g12 == 1.0 ? float4( hsvTorgb29 , 0.0 ) : float4( 0,0,0,0 ) ) : float4( 0,0,0,0 ) ) ) ) ).rgb;
+			float3 hsvTorgb1_g16 = RGBToHSV( tex2Dlod( _Udon_3DJ_Color_Upscaled, float4( ( i.uv4_texcoord4 + appendResult38 ), 0, 8.0) ).rgb );
+			float3 hsvTorgb2_g16 = HSVToRGB( float3(hsvTorgb1_g16.x,hsvTorgb1_g16.y,(0.5 + (hsvTorgb1_g16.z - 0.0) * (1.0 - 0.5) / (1.0 - 0.0))) );
+			o.Emission = ( tex2D( _Emission, uv_Emission ) + ( tex2DNode3.g * ( ( i.uv3_texcoord3.x >= 0.0 ? tex2D( _Udon_3DJ_Color, i.uv3_texcoord3 ) : float4( 0,0,0,0 ) ) + ( i.uv4_texcoord4.x >= 0.0 ? ( staticSwitch4_g12 == 1.0 ? float4( hsvTorgb2_g16 , 0.0 ) : float4( 0,0,0,0 ) ) : float4( 0,0,0,0 ) ) ) ) ).rgb;
 			o.Metallic = tex2DNode3.r;
 			o.Smoothness = tex2DNode3.a;
 			o.Alpha = 1;
@@ -142,9 +142,6 @@ Node;AmplifyShaderEditor.SamplerNode;22;208,-336;Inherit;True;Property;_TextureS
 Node;AmplifyShaderEditor.Compare;6;1040,-496;Inherit;False;3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.Compare;23;1040,-320;Inherit;False;3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SamplerNode;2;-272,-1088;Inherit;True;Property;_Emission;Emission;12;0;Create;True;0;0;0;False;0;False;-1;None;823405bb5f3bf644eb2b853495a944aa;True;0;False;black;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RGBToHSVNode;28;16,16;Inherit;False;1;0;FLOAT3;0,0,0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.HSVToRGBNode;29;576,48;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;1;False;2;FLOAT;0.5;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.TFHCRemapNode;30;304,144;Inherit;False;5;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;0.5;False;4;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;33;-560,96;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.DynamicAppendNode;38;-704,272;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.VoronoiNode;31;-976,128;Inherit;True;0;0;1;4;1;False;1;False;False;False;4;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;3;FLOAT;0;FLOAT2;1;FLOAT2;2
@@ -158,17 +155,13 @@ Node;AmplifyShaderEditor.SimpleMultiplyOpNode;43;1472,-448;Inherit;False;2;2;0;F
 Node;AmplifyShaderEditor.FunctionNode;45;800,-96;Inherit;False;Filter Enabled;0;;12;c3596b00e3f10084ca2d087f25e7c86f;0;4;1;COLOR;0,0,0,0;False;7;FLOAT4;0,0,0,0;False;8;FLOAT4;0,0,0,0;False;6;COLOR;0,0,0,0;False;2;COLOR;0;FLOAT4;10
 Node;AmplifyShaderEditor.FunctionNode;25;-739,-112;Inherit;False;Global Textures;2;;13;5151b2ab862399e41a33b2b14a355044;0;0;6;SAMPLER2D;0;SAMPLER2D;5;SAMPLER2D;6;SAMPLER2D;11;SAMPLER2D;7;SAMPLER2D;9
 Node;AmplifyShaderEditor.SamplerNode;27;-368,16;Inherit;True;Property;_TextureSample1;Texture Sample 0;7;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;MipLevel;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;8;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.FunctionNode;48;253.2468,40.00668;Inherit;False;Brightness Equalize;-1;;16;3cff8996ac8f314489f1f0f7859c2aa6;0;1;4;FLOAT3;0,0,0;False;1;FLOAT3;0
 WireConnection;22;0;11;6
 WireConnection;22;1;21;0
 WireConnection;6;0;21;1
 WireConnection;6;2;22;0
 WireConnection;23;0;26;1
 WireConnection;23;2;45;0
-WireConnection;28;0;27;0
-WireConnection;29;0;28;1
-WireConnection;29;1;28;2
-WireConnection;29;2;30;0
-WireConnection;30;0;28;3
 WireConnection;33;0;26;0
 WireConnection;33;1;38;0
 WireConnection;38;0;37;0
@@ -188,8 +181,9 @@ WireConnection;0;3;3;1
 WireConnection;0;4;3;4
 WireConnection;43;0;3;2
 WireConnection;43;1;44;0
-WireConnection;45;1;29;0
+WireConnection;45;1;48;0
 WireConnection;27;0;25;11
 WireConnection;27;1;33;0
+WireConnection;48;4;27;0
 ASEEND*/
-//CHKSM=19EB56AB8F401C4E203A5E7037DF899B737A3757
+//CHKSM=6C52CD1CAB376012AB591F02CD71A7328758B391
