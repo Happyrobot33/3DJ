@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 26692285103742924}
   - component: {fileID: 4031020633496555625}
   - component: {fileID: 1159105850695345315}
+  - component: {fileID: 4564140403888837135}
   m_Layer: 0
   m_Name: Control Desk
   m_TagString: Untagged
@@ -355,6 +356,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4564140403888837135
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798549806525597046}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9003942712651250658, guid: 9787f1356b2cb56449561fd4ea6ad04c, type: 3}
 --- !u!1 &988161969654832051
 GameObject:
   m_ObjectHideFlags: 0
