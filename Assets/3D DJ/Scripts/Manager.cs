@@ -71,6 +71,7 @@ namespace com.happyrobot33.holographicreprojector
         recordedPlayerChanged,
         globalPlaybackChanged,
         localPlaybackChanged,
+        blackoutChanged,
         playerHeadOffsetChanged,
         sourceChanged,
         accessControlChanged
@@ -256,6 +257,31 @@ namespace com.happyrobot33.holographicreprojector
 
                 _globalPlayback = value;
                 RunCallback(ManagerCallback.globalPlaybackChanged);
+                //check if we own the object
+                if (Networking.GetOwner(gameObject) == Networking.LocalPlayer)
+                {
+                    //Debug.Log($"Requesting serialization for {nameof(playerToRecordName)}");
+                    RequestSerialization();
+                }
+            }
+        }
+
+        [UdonSynced]
+        [FieldChangeCallback(nameof(blackout))]
+        private bool _blackout = false;
+        public bool blackout
+        {
+            get { return _blackout; }
+            set
+            {
+                //check if the value has changed
+                if (value == _blackout)
+                {
+                    return;
+                }
+
+                _blackout = value;
+                RunCallback(ManagerCallback.blackoutChanged);
                 //check if we own the object
                 if (Networking.GetOwner(gameObject) == Networking.LocalPlayer)
                 {
@@ -539,6 +565,11 @@ namespace com.happyrobot33.holographicreprojector
                 VRCShader.PropertyToID("_Udon_3DJ_PlaybackActive"),
                 playbackActive ? 1 : 0
             );
+
+            VRCShader.SetGlobalFloat(
+                VRCShader.PropertyToID("_Udon_3DJ_Blackout"),
+                blackout ? 1 : 0
+            );
         }
 
         private Vector3[] _GeneratePositionArray()
@@ -609,7 +640,16 @@ namespace com.happyrobot33.holographicreprojector
             globalPlayback = !globalPlayback;
         }
 
-        //TODO: This doesnt work if you dont own the object!!!! Fix!
+        public void _ToggleBlackout()
+        {
+            if (!accessControl._HasAccess(Networking.LocalPlayer))
+            {
+                return;
+            }
+
+            blackout = !blackout;
+        }
+
         public void _ToggleLocalPlayback()
         {
             localPlayback = !localPlayback;

@@ -19,6 +19,7 @@ namespace com.happyrobot33.holographicreprojector
 
         public Button globalPlaybackButton;
         public Button localPlaybackButton;
+        public Button blackoutButton;
 
         void Start()
         {
@@ -105,6 +106,11 @@ namespace com.happyrobot33.holographicreprojector
                 this,
                 nameof(UpdateButtonColors)
             );
+            manager.AddCallback(
+                ManagerCallback.blackoutChanged,
+                this,
+                nameof(UpdateButtonColors)
+            );
 
             UpdateButtonColors();
 
@@ -123,6 +129,7 @@ namespace com.happyrobot33.holographicreprojector
             playerDropdown.interactable = manager.playerHasAccess;
             sourceDropdown.interactable = manager.playerHasAccess;
             globalPlaybackButton.interactable = manager.playerHasAccess;
+            blackoutButton.interactable = manager.playerHasAccess;
             //localPlaybackButton.interactable = manager.playerHasAccess;
         }
 
@@ -145,6 +152,15 @@ namespace com.happyrobot33.holographicreprojector
             else
             {
                 localPlaybackButton.GetComponent<Image>().color = Color.red;
+            }
+
+            if (manager.blackout)
+            {
+                blackoutButton.GetComponent<Image>().color = Color.green;
+            }
+            else
+            {
+                blackoutButton.GetComponent<Image>().color = Color.red;
             }
         }
 
@@ -175,6 +191,11 @@ namespace com.happyrobot33.holographicreprojector
         public void ToggleLocalPlayback()
         {
             manager._ToggleLocalPlayback();
+        }
+
+        public void ToggleBlackout()
+        {
+            manager._ToggleBlackout();
         }
 
         public void PlayerDropdownUpdated()
