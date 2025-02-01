@@ -510,6 +510,12 @@ namespace com.happyrobot33.holographicreprojector
 
             if (mode == Source.Record)
             {
+                //check if the player is valid, if not do nothing
+                if (playerToRecord == null || !Utilities.IsValid(playerToRecord))
+                {
+                    return;
+                }
+
                 //get the player position
                 Vector3 playerPos = playerToRecord.GetPosition();
                 Vector3[] points = _GeneratePositionArray();
@@ -780,13 +786,19 @@ namespace com.happyrobot33.holographicreprojector
                     //force the user into the station. Can only do this for the local player
                     if (Networking.LocalPlayer == player)
                     {
-                        station.UseStation(player);
+                        //station.UseStation(player);
+                        SendCustomEventDelayedSeconds(nameof(_DelayedStationUse), 1);
 
                         //switch us into record mode
                         SetSource(Source.Record);
                     }
                 }
             }
+        }
+
+        public void _DelayedStationUse()
+        {
+            station.UseStation(Networking.LocalPlayer);
         }
 
         private void SetupSource(
