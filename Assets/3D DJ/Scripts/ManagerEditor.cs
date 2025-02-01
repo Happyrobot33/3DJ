@@ -6,15 +6,44 @@ namespace com.happyrobot33.holographicreprojector
 #if !COMPILER_UDONSHARP && UNITY_EDITOR
     using UdonSharpEditor;
     using UnityEditor;
+    using UnityEditor.Callbacks;
     using UnityEditor.SceneManagement;
     using UnityEngine.SceneManagement;
     using VRC.Core;
+    using VRC.SDKBase.Editor.BuildPipeline;
 
     //custom editor to have a button to cycle the player
 
     [CustomEditor(typeof(Manager))]
-    public class ManagerEditor : Editor
+    public class ManagerEditor : Editor, IVRCSDKBuildRequestedCallback
     {
+        public int callbackOrder => 0;
+
+        public bool OnBuildRequested(VRCSDKRequestedBuildType requestedBuildType)
+        {
+            //find the manager in the scene
+            Manager manager = FindObjectOfType<Manager>(true);
+
+            if(manager)
+            {
+                UpdateAllTextureInternals(manager);
+            }
+
+            return true;
+        }
+
+        [PostProcessScene]
+		public static void OnPostProcessScene()
+		{
+            //find the manager in the scene
+            Manager manager = FindObjectOfType<Manager>(true);
+
+            if(manager)
+            {
+                UpdateAllTextureInternals(manager);
+            }
+        }
+
         //subscribe a function to EditorApplication.update
         [InitializeOnLoadMethod]
         private static void SubscribeToEditorUpdate()
@@ -123,7 +152,7 @@ namespace com.happyrobot33.holographicreprojector
 
             try
             {
-    #region Video region management
+                #region Video region management
 
                 //determine the aspect ratio of the video texture
                 float videoPlayerAspect = manager.VideoTexture.width / (float)manager.VideoTexture.height;
@@ -146,7 +175,7 @@ namespace com.happyrobot33.holographicreprojector
 
                 topLeft = Manager.CalculateTopLeftUV(manager, manager.DataAnchor, manager.DataUVPosition, manager.DataTexture);
                 DrawRTArea(manager, manager.DataExtractTexture, videoRect, rtStyle, topLeft, manager.CurrentlyEditingArea == AreaType.Data);
-    #endregion
+                #endregion
             }
             catch (Exception e)
             {
