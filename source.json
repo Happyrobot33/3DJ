@@ -1,0 +1,12 @@
+{
+    "name":"3DJ",
+    "id":"com.happyrobot33.3dj.repo",
+    "url":"https://www.matthewherber.com/3DJ/index.json",
+    "author": {
+        "name": "Happyrobot33"
+    },
+    "description":"The main level repository for the 3DJ system",
+    "githubRepos": [
+        "Happyrobot33/3DJ"
+    ]
+}
