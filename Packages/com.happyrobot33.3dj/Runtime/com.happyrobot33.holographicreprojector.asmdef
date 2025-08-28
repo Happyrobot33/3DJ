@@ -1,0 +1,19 @@
+{
+    "name": "com.happyrobot33.holographicreprojector",
+    "rootNamespace": "",
+    "references": [
+        "GUID:99835874ee819da44948776e0df4ff1d",
+        "GUID:5ab8f44f66460ef42ba90de1b3c03470",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:d60799ab2a985554ea1a39cd38695018"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
