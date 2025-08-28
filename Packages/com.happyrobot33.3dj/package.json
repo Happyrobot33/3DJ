@@ -14,7 +14,7 @@
   },
   "gitDependencies": {},
   "vpmDependencies": {
-    "com.vrchat.worlds" : "3.7.4 - 3.7"
+    "com.vrchat.worlds" : "3.7.4 - 3.8"
   },
   "legacyFolders": {
     "Assets/3DJ" : "d1b4d6e8bc0a1f74cb036e3823487085"
