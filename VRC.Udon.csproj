@@ -73,9 +73,9 @@
     <Compile Include="Packages\com.vrchat.worlds\Runtime\Udon\EventProxies\OnAudioFilterReadProxy.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Runtime\Udon\INetworkReadyReceiver.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Runtime\Udon\EventProxies\AbstractUdonBehaviourEventProxy.cs" />
+    <Compile Include="Packages\com.vrchat.worlds\Runtime\Udon\WrapperModules\ExternVRCInstantiate.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Runtime\Udon\EventProxies\OnCollisionStayProxy.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Runtime\Udon\ProgramSources\SerializedUdonProgramAsset.cs" />
-    <Compile Include="Packages\com.vrchat.worlds\Runtime\Udon\WrapperModules\ExternVRCInstantiate.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Runtime\Udon\Serialization\Formatters\UdonProgramFormatter.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Runtime\Udon\Serialization\Formatters\DataTokenFormatter.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Runtime\Udon\UdonNetworkTypes.cs" />

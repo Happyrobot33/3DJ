@@ -6,6 +6,14 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.happyrobot33.3dj": {
+      "version": "file:com.happyrobot33.3dj",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.textmeshpro": "2.1.6"
+      }
+    },
     "com.happyrobot33.buildsizeviewer": {
       "version": "file:com.happyrobot33.buildsizeviewer",
       "depth": 0,

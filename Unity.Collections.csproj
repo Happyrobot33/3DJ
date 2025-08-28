@@ -115,8 +115,8 @@
     <Compile Include="Library\PackageCache\com.unity.collections@2.1.4\Unity.Collections\Telemetry.cs" />
     <Compile Include="Library\PackageCache\com.unity.collections@2.1.4\Unity.Collections\UnsafeList.cs" />
     <Compile Include="Library\PackageCache\com.unity.collections@2.1.4\Unity.Collections\FixedStringMethods.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collections@2.1.4\Unity.Collections\GenerateTestsForBurstCompatibilityAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.collections@2.1.4\Unity.Collections\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collections@2.1.4\Unity.Collections\GenerateTestsForBurstCompatibilityAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.collections@2.1.4\Unity.Collections\Jobs\RegisterGenericJobTypeAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.collections@2.1.4\Unity.Collections\AutoFreeAllocator.cs" />
     <Compile Include="Library\PackageCache\com.unity.collections@2.1.4\Unity.Collections\DataStreamExtensions.cs" />

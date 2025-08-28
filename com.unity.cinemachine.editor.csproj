@@ -94,8 +94,8 @@
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.9.7\Editor\Editors\Cinemachine3rdPersonFollowEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.9.7\Editor\Utility\VcamStageEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.9.7\Editor\Editors\CinemachineMixingCameraEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.9.7\Editor\Editors\CinemachineHardLookAtEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.9.7\Editor\Windows\CinemachineSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.9.7\Editor\Editors\CinemachineHardLookAtEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.9.7\Editor\Experimental\CinemachineNewVirtualCameraEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.9.7\Editor\Impulse\CinemachineImpulseEnvelopePropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.9.7\Editor\Editors\CinemachinePathEditor.cs" />

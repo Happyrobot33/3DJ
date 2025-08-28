@@ -69,7 +69,6 @@
     <Compile Include="Packages\com.poiyomi.toon\_PoiyomiShaders\Scripts\ThryEditor\External\Editor\VRCAutoAnchor.cs" />
     <Compile Include="Packages\com.poiyomi.toon\_PoiyomiShaders\Scripts\ThryEditor\External\Editor\AbiAutoAnchor.cs" />
     <Compile Include="Packages\com.poiyomi.toon\_PoiyomiShaders\Scripts\ThryEditor\External\Editor\AbiAutoLock.cs" />
-    <Compile Include="Assets\3D DJ\Editor\SaveRenderTextureToFile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.postprocessing@3.4.0\PostProcessing\Shaders\Editor\CurveGrid.shader" />
@@ -1148,11 +1147,13 @@
     <ProjectReference Include="ThryAssemblyDefinition.csproj" />
     <ProjectReference Include="Unity.Rider.Editor.csproj" />
     <ProjectReference Include="VRC.ExampleCentral.Editor.csproj" />
+    <ProjectReference Include="AmplifyShaderEditor.csproj" />
     <ProjectReference Include="VRC.SDKBase.Editor.BuildPipeline.csproj" />
     <ProjectReference Include="Unity.Mathematics.Editor.csproj" />
     <ProjectReference Include="VRSL.Core.csproj" />
     <ProjectReference Include="AudioLink.csproj" />
     <ProjectReference Include="VRSL.Editor.csproj" />
+    <ProjectReference Include="com.happyrobot33.3dj.Editor.csproj" />
     <ProjectReference Include="Unity.XR.Management.Editor.csproj" />
     <ProjectReference Include="Unity.Collections.csproj" />
     <ProjectReference Include="VRC.Udon.Serialization.OdinSerializer.csproj" />

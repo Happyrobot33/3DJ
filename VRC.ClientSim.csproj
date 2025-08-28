@@ -126,8 +126,8 @@
     <Compile Include="Packages\com.vrchat.worlds\Integrations\ClientSim\Runtime\Events\EventTypes\ClientSimMouseReleasedEvent.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Integrations\ClientSim\Runtime\Input\Interfaces\IClientSimUdonInputEventSender.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Integrations\ClientSim\Runtime\Stubs\UdonProductStub.cs" />
-    <Compile Include="Packages\com.vrchat.worlds\Integrations\ClientSim\Runtime\System\ClientSimHighlightManager.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Integrations\ClientSim\Runtime\System\ClientSimStoreManager.cs" />
+    <Compile Include="Packages\com.vrchat.worlds\Integrations\ClientSim\Runtime\System\ClientSimHighlightManager.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Integrations\ClientSim\Runtime\System\Interfaces\IClientSimSceneManager.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Integrations\ClientSim\Runtime\Player\Interfaces\IClientSimPlayerCameraProvider.cs" />
     <Compile Include="Packages\com.vrchat.worlds\Integrations\ClientSim\Runtime\System\ClientSimBaseInput.cs" />

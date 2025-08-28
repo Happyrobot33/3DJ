@@ -117,8 +117,8 @@
     <Compile Include="Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\ControlPanel\VRCSdkControlPanelSettings.cs" />
     <Compile Include="Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\ControlPanel\VRCSdkControlPanelHelp.cs" />
     <Compile Include="Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCSdkBuilderExceptions.cs" />
-    <Compile Include="Packages\com.vrchat.base\Editor\VRCSDK\PerceptualPostProcessor.cs" />
     <Compile Include="Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\Components\VRC_DestructibleStandardEditor.cs" />
+    <Compile Include="Packages\com.vrchat.base\Editor\VRCSDK\PerceptualPostProcessor.cs" />
     <Compile Include="Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\Components\VRC_SpatialAudioSourceEditor.cs" />
     <Compile Include="Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\API\VRCApiExceptions.cs" />
     <Compile Include="Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\Components\VRCPlayerModEditorWindow.cs" />
