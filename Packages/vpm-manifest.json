@@ -35,13 +35,13 @@
       "dependencies": {}
     },
     "com.vrchat.worlds": {
-      "version": "3.7.4",
+      "version": "3.8.2",
       "dependencies": {
-        "com.vrchat.base": "3.7.4"
+        "com.vrchat.base": "3.8.2"
       }
     },
     "com.vrchat.base": {
-      "version": "3.7.4",
+      "version": "3.8.2",
       "dependencies": {}
     },
     "dev.architech.protv": {

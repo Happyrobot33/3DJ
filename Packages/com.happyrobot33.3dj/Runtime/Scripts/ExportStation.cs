@@ -12,6 +12,17 @@ namespace com.happyrobot33.holographicreprojector
         public Transform playerFollowPosition;
         private bool inStation = false;
 
+        void Start()
+        {
+            //get the vrcstation
+            VRCStation station = GetComponent<VRCStation>();
+            if (station != null)
+            {
+                //FORCE this to ourself
+                station.stationEnterPlayerLocation = transform;
+            }
+        }
+
         public override void Interact()
         {
             VRCStation station = GetComponent<VRCStation>();
