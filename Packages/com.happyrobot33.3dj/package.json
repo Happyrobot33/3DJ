@@ -1,7 +1,7 @@
 {
   "name": "com.happyrobot33.3dj",
   "displayName": "3DJ",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "unity": "2019.4",
   "description": "3DJ Hologram system for replicating avatars across instances",
   "license": "MIT",
@@ -14,7 +14,7 @@
   },
   "gitDependencies": {},
   "vpmDependencies": {
-    "com.vrchat.worlds" : "3.7.4 - 3.8"
+    "com.vrchat.worlds" : "3.7.4 - 3.10"
   },
   "legacyFolders": {
     "Assets/3DJ" : "d1b4d6e8bc0a1f74cb036e3823487085"
