@@ -178,24 +178,26 @@ Shader "DepthBuild"
 		void vertexDataFunc( inout appdata_full v, out Input o )
 		{
 			UNITY_INITIALIZE_OUTPUT( Input, o );
-			sampler2D Texture1_g400 = _Udon_3DJ_Data;
-			float4 TexelSize1_g400 = _Udon_3DJ_Data_TexelSize;
-			float2 appendResult25_g398 = (float2(( _Udon_3DJ_Data_TexelSize.z / ( 20 + 1 ) ) , ( _Udon_3DJ_Data_TexelSize.w / 3.0 )));
-			float2 StripStart1_g400 = appendResult25_g398;
-			int StripWidth1_g400 = 20;
-			int PixelSize1_g400 = (int)( _Udon_3DJ_Data_TexelSize.z / 20 );
-			float3 localBinaryStripToInt1_g400 = BinaryStripToInt( Texture1_g400 , TexelSize1_g400 , StripStart1_g400 , StripWidth1_g400 , PixelSize1_g400 );
-			float3 break17_g398 = ( localBinaryStripToInt1_g400 / float3( 100,100,1 ) );
-			float DJ_Rotation536 = (( _LockRotation )?( 0.0 ):( break17_g398.x ));
-			sampler2D Texture1_g399 = _Udon_3DJ_Data;
-			float4 TexelSize1_g399 = _Udon_3DJ_Data_TexelSize;
-			float2 appendResult7_g398 = (float2(( _Udon_3DJ_Data_TexelSize.z / ( 20 + 1 ) ) , ( ( _Udon_3DJ_Data_TexelSize.w / 3.0 ) * 2.0 )));
-			float2 StripStart1_g399 = appendResult7_g398;
-			int StripWidth1_g399 = 20;
-			int PixelSize1_g399 = (int)( _Udon_3DJ_Data_TexelSize.z / 20 );
-			float3 localBinaryStripToInt1_g399 = BinaryStripToInt( Texture1_g399 , TexelSize1_g399 , StripStart1_g399 , StripWidth1_g399 , PixelSize1_g399 );
+			sampler2D Texture1_g389 = _Udon_3DJ_Data;
+			float4 TexelSize1_g389 = _Udon_3DJ_Data_TexelSize;
+			float temp_output_10_0_g388 = ( _Udon_3DJ_Data_TexelSize.z / 20 );
+			float temp_output_39_0_g388 = ( temp_output_10_0_g388 / 2.0 );
+			float2 appendResult25_g388 = (float2(temp_output_39_0_g388 , ( _Udon_3DJ_Data_TexelSize.w / 3.0 )));
+			float2 StripStart1_g389 = appendResult25_g388;
+			int StripWidth1_g389 = 20;
+			int PixelSize1_g389 = (int)( _Udon_3DJ_Data_TexelSize.z / 20 );
+			float3 localBinaryStripToInt1_g389 = BinaryStripToInt( Texture1_g389 , TexelSize1_g389 , StripStart1_g389 , StripWidth1_g389 , PixelSize1_g389 );
+			float3 break17_g388 = ( localBinaryStripToInt1_g389 / float3( 100,100,1 ) );
+			float DJ_Rotation536 = (( _LockRotation )?( 0.0 ):( break17_g388.x ));
+			sampler2D Texture1_g391 = _Udon_3DJ_Data;
+			float4 TexelSize1_g391 = _Udon_3DJ_Data_TexelSize;
+			float2 appendResult7_g388 = (float2(temp_output_39_0_g388 , ( ( _Udon_3DJ_Data_TexelSize.w / 3.0 ) * 2.0 )));
+			float2 StripStart1_g391 = appendResult7_g388;
+			int StripWidth1_g391 = 20;
+			int PixelSize1_g391 = (int)temp_output_10_0_g388;
+			float3 localBinaryStripToInt1_g391 = BinaryStripToInt( Texture1_g391 , TexelSize1_g391 , StripStart1_g391 , StripWidth1_g391 , PixelSize1_g391 );
 			float3 temp_cast_2 = (pow( 2.0 , 19.0 )).xxx;
-			float3 DJ_Position548 = (( _LockPosition )?( float3( 0,0,0 ) ):( ( ( localBinaryStripToInt1_g399 - temp_cast_2 ) / float3( 100,100,100 ) ) ));
+			float3 DJ_Position548 = (( _LockPosition )?( float3( 0,0,0 ) ):( ( ( localBinaryStripToInt1_g391 - temp_cast_2 ) / float3( 100,100,100 ) ) ));
 			float2 uv_Udon_3DJ_Depth = v.texcoord.xy * _Udon_3DJ_Depth_ST.xy + _Udon_3DJ_Depth_ST.zw;
 			float pixelWidth306 =  1.0f / _Udon_3DJ_Depth_TexelSize.z;
 			float pixelHeight306 = 1.0f / _Udon_3DJ_Depth_TexelSize.w;
@@ -226,7 +228,7 @@ Shader "DepthBuild"
 			float3 ase_vertex3Pos = v.vertex.xyz;
 			float3 temp_cast_3 = (sqrt( -1.0 )).xxx;
 			float3 Finalized_Geometry552 = ( ( ( Raw_Depth_Map503 - (( _Sobel )?( ( localSobel66 > _SobelThreshold ? 1.0 : 0.0 ) ):( 0.0 )) ) > 0.0 ? 0.0 : 1.0 ) == 0.0 ? ( staticSwitch676 + ase_vertex3Pos ) : temp_cast_3 );
-			float DJ_Scale538 = break17_g398.y;
+			float DJ_Scale538 = break17_g388.y;
 			float3 rotatedValue526 = RotateAroundAxis( DJ_Position548, ( ( Finalized_Geometry552 * DJ_Scale538 ) + DJ_Position548 ), float3( 0,1,0 ), radians( DJ_Rotation536 ) );
 			float3 objToWorld522 = mul( unity_ObjectToWorld, float4( float3( 0,0,0 ), 1 ) ).xyz;
 			float4 transform520 = mul(unity_WorldToObject,float4( ( rotatedValue526 - objToWorld522 ) , 0.0 ));
@@ -425,14 +427,12 @@ Node;AmplifyShaderEditor.WorldToObjectTransfNode;520;4208,1632;Inherit;False;1;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;521;4560,1648;Inherit;False;2;2;0;FLOAT4;0,0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT4;0
 Node;AmplifyShaderEditor.GetLocalVarNode;525;2432,1952;Inherit;False;548;DJ Position;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.RotateAboutAxisNode;526;3520,1648;Inherit;False;False;4;0;FLOAT3;0,1,0;False;1;FLOAT;0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.GetLocalVarNode;537;2112,1808;Inherit;False;538;DJ Scale;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;528;2944,1696;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.RadiansOpNode;527;3120,1600;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;529;2928,1600;Inherit;False;536;DJ Rotation;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;549;3104,1792;Inherit;False;548;DJ Position;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.GetLocalVarNode;573;4432,1440;Inherit;False;552;Finalized Geometry;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.GetLocalVarNode;553;2224,1600;Inherit;False;552;Finalized Geometry;1;0;OBJECT;;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.GetLocalVarNode;539;2544,1680;Inherit;False;538;DJ Scale;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.TransformPositionNode;522;3904,1840;Inherit;False;Object;World;False;Fast;True;1;0;FLOAT3;0,0,0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.ObjectScaleNode;524;4208,1936;Inherit;False;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.SimpleDivideOpNode;523;4496,1872;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0
@@ -531,7 +531,6 @@ Node;AmplifyShaderEditor.RegisterLocalVarNode;548;3552,2272;Inherit;False;DJ Pos
 Node;AmplifyShaderEditor.ToggleSwitchNode;567;3232,2272;Inherit;False;Property;_LockPosition;Lock Position;21;0;Create;True;0;0;0;False;0;False;0;True;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.FunctionNode;732;-5872,1696;Inherit;False;Global Textures;0;;397;5151b2ab862399e41a33b2b14a355044;0;0;6;SAMPLER2D;0;SAMPLER2D;5;SAMPLER2D;6;SAMPLER2D;11;SAMPLER2D;7;SAMPLER2D;9
 Node;AmplifyShaderEditor.SamplerNode;2;-5504,1728;Inherit;True;Property;_TextureSample0;Texture Sample 0;1;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.FunctionNode;731;2768,2112;Inherit;False;Get DJ Data;9;;398;fd74dea831d77af4ea5f66eb0518196e;0;1;14;SAMPLER2D;;False;3;FLOAT;31;FLOAT;32;FLOAT3;13
 Node;AmplifyShaderEditor.SimpleAddOpNode;424;-1782.9,1408.2;Inherit;True;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;552;-853.0531,1276.013;Inherit;False;Finalized Geometry;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.NormalVertexDataNode;687;6720,2112;Inherit;True;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
@@ -541,6 +540,9 @@ Node;AmplifyShaderEditor.FunctionNode;734;7376,1184;Inherit;False;Filter Enabled
 Node;AmplifyShaderEditor.PosVertexDataNode;420;-2100,1809;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.GetLocalVarNode;735;7661.936,1045.589;Inherit;False;503;Raw Depth Map;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.StaticSwitch;675;8080,608;Inherit;False;Property;_Mode;Mode;26;0;Create;True;0;0;0;False;0;False;0;0;0;True;;KeywordEnum;6;Standard;Normals;NoDeformation;VertexPosition;FaceIndex;FaceDepth;Create;True;True;All;9;1;COLOR;0,0,0,0;False;0;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;4;COLOR;0,0,0,0;False;5;COLOR;0,0,0,0;False;6;COLOR;0,0,0,0;False;7;COLOR;0,0,0,0;False;8;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.GetLocalVarNode;537;2112,1808;Inherit;False;538;DJ Scale;1;0;OBJECT;;False;1;FLOAT;0
+Node;AmplifyShaderEditor.GetLocalVarNode;539;2544,1680;Inherit;False;538;DJ Scale;1;0;OBJECT;;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FunctionNode;737;2768,2112;Inherit;False;Get DJ Data;9;;388;fd74dea831d77af4ea5f66eb0518196e;0;1;14;SAMPLER2D;;False;3;FLOAT;31;FLOAT;32;FLOAT3;13
 WireConnection;515;0;553;0
 WireConnection;515;1;539;0
 WireConnection;516;0;537;0
@@ -668,10 +670,10 @@ WireConnection;725;0;2;1
 WireConnection;725;1;726;0
 WireConnection;725;2;2;1
 WireConnection;536;0;568;0
-WireConnection;568;0;731;31
-WireConnection;538;0;731;32
+WireConnection;568;0;737;31
+WireConnection;538;0;737;32
 WireConnection;548;0;567;0
-WireConnection;567;0;731;13
+WireConnection;567;0;737;13
 WireConnection;2;0;732;5
 WireConnection;2;1;456;0
 WireConnection;424;0;676;0
@@ -689,4 +691,4 @@ WireConnection;675;3;677;0
 WireConnection;675;4;683;0
 WireConnection;675;5;735;0
 ASEEND*/
-//CHKSM=4FE36302FFA5E7EF53081865BC53C3134026EB5C
+//CHKSM=61B635F1A02B55DB15F4872CEDD0B4FBC84A713D

@@ -173,15 +173,17 @@ Shader "HoloEmitterFixture"
 				float staticSwitch4_g472 = _Udon_3DJ_PlaybackActive;
 			#endif
 			float3 _ObjectSpaceForward = float3(0,0,1);
-			sampler2D Texture1_g465 = _Udon_3DJ_Data;
-			float4 TexelSize1_g465 = _Udon_3DJ_Data_TexelSize;
-			float2 appendResult7_g464 = (float2(( _Udon_3DJ_Data_TexelSize.z / ( 20 + 1 ) ) , ( ( _Udon_3DJ_Data_TexelSize.w / 3.0 ) * 2.0 )));
-			float2 StripStart1_g465 = appendResult7_g464;
-			int StripWidth1_g465 = 20;
-			int PixelSize1_g465 = (int)( _Udon_3DJ_Data_TexelSize.z / 20 );
-			float3 localBinaryStripToInt1_g465 = BinaryStripToInt( Texture1_g465 , TexelSize1_g465 , StripStart1_g465 , StripWidth1_g465 , PixelSize1_g465 );
+			sampler2D Texture1_g467 = _Udon_3DJ_Data;
+			float4 TexelSize1_g467 = _Udon_3DJ_Data_TexelSize;
+			float temp_output_10_0_g464 = ( _Udon_3DJ_Data_TexelSize.z / 20 );
+			float temp_output_39_0_g464 = ( temp_output_10_0_g464 / 2.0 );
+			float2 appendResult7_g464 = (float2(temp_output_39_0_g464 , ( ( _Udon_3DJ_Data_TexelSize.w / 3.0 ) * 2.0 )));
+			float2 StripStart1_g467 = appendResult7_g464;
+			int StripWidth1_g467 = 20;
+			int PixelSize1_g467 = (int)temp_output_10_0_g464;
+			float3 localBinaryStripToInt1_g467 = BinaryStripToInt( Texture1_g467 , TexelSize1_g467 , StripStart1_g467 , StripWidth1_g467 , PixelSize1_g467 );
 			float3 temp_cast_1 = (pow( 2.0 , 19.0 )).xxx;
-			float3 DJ_Position166 = ( ( localBinaryStripToInt1_g465 - temp_cast_1 ) / float3( 100,100,100 ) );
+			float3 DJ_Position166 = ( ( localBinaryStripToInt1_g467 - temp_cast_1 ) / float3( 100,100,100 ) );
 			float3 worldToObj92 = mul( unity_WorldToObject, float4( DJ_Position166, 1 ) ).xyz;
 			float3 normalizeResult363 = ASESafeNormalize( cross( _ObjectSpaceForward , worldToObj92 ) );
 			float3 temp_output_1_0_g469 = worldToObj92;
@@ -214,14 +216,14 @@ Shader "HoloEmitterFixture"
 			float mulTime120 = _Time.y * ( temp_output_261_0 * decodeFloatRGBA317 );
 			float3 appendResult105 = (float3(sin( ( objToWorld248.x + mulTime109 ) ) , cos( ( objToWorld248.y + mulTime118 ) ) , sin( ( objToWorld248.z + mulTime120 ) )));
 			float3 Random_Position_In_Unit_Cube236 = appendResult105;
-			sampler2D Texture1_g466 = _Udon_3DJ_Data;
-			float4 TexelSize1_g466 = _Udon_3DJ_Data_TexelSize;
-			float2 appendResult25_g464 = (float2(( _Udon_3DJ_Data_TexelSize.z / ( 20 + 1 ) ) , ( _Udon_3DJ_Data_TexelSize.w / 3.0 )));
-			float2 StripStart1_g466 = appendResult25_g464;
-			int StripWidth1_g466 = 20;
-			int PixelSize1_g466 = (int)( _Udon_3DJ_Data_TexelSize.z / 20 );
-			float3 localBinaryStripToInt1_g466 = BinaryStripToInt( Texture1_g466 , TexelSize1_g466 , StripStart1_g466 , StripWidth1_g466 , PixelSize1_g466 );
-			float3 break17_g464 = ( localBinaryStripToInt1_g466 / float3( 100,100,1 ) );
+			sampler2D Texture1_g465 = _Udon_3DJ_Data;
+			float4 TexelSize1_g465 = _Udon_3DJ_Data_TexelSize;
+			float2 appendResult25_g464 = (float2(temp_output_39_0_g464 , ( _Udon_3DJ_Data_TexelSize.w / 3.0 )));
+			float2 StripStart1_g465 = appendResult25_g464;
+			int StripWidth1_g465 = 20;
+			int PixelSize1_g465 = (int)( _Udon_3DJ_Data_TexelSize.z / 20 );
+			float3 localBinaryStripToInt1_g465 = BinaryStripToInt( Texture1_g465 , TexelSize1_g465 , StripStart1_g465 , StripWidth1_g465 , PixelSize1_g465 );
+			float3 break17_g464 = ( localBinaryStripToInt1_g465 / float3( 100,100,1 ) );
 			float DJ_Scale194 = break17_g464.y;
 			float3 rotatedValue136 = RotateAroundAxis( float3( 0,0,0 ), ( Random_Position_In_Unit_Cube236 * ( DJ_Scale194 * 0.5 ) ), float3( 0,1,0 ), 45.0 );
 			float3 worldToObj68 = mul( unity_WorldToObject, float4( ( DJ_Position166 + rotatedValue136 ), 1 ) ).xyz;
@@ -270,15 +272,17 @@ Shader "HoloEmitterFixture"
 			#else
 				float staticSwitch4_g470 = _Udon_3DJ_PlaybackActive;
 			#endif
-			sampler2D Texture1_g465 = _Udon_3DJ_Data;
-			float4 TexelSize1_g465 = _Udon_3DJ_Data_TexelSize;
-			float2 appendResult7_g464 = (float2(( _Udon_3DJ_Data_TexelSize.z / ( 20 + 1 ) ) , ( ( _Udon_3DJ_Data_TexelSize.w / 3.0 ) * 2.0 )));
-			float2 StripStart1_g465 = appendResult7_g464;
-			int StripWidth1_g465 = 20;
-			int PixelSize1_g465 = (int)( _Udon_3DJ_Data_TexelSize.z / 20 );
-			float3 localBinaryStripToInt1_g465 = BinaryStripToInt( Texture1_g465 , TexelSize1_g465 , StripStart1_g465 , StripWidth1_g465 , PixelSize1_g465 );
+			sampler2D Texture1_g467 = _Udon_3DJ_Data;
+			float4 TexelSize1_g467 = _Udon_3DJ_Data_TexelSize;
+			float temp_output_10_0_g464 = ( _Udon_3DJ_Data_TexelSize.z / 20 );
+			float temp_output_39_0_g464 = ( temp_output_10_0_g464 / 2.0 );
+			float2 appendResult7_g464 = (float2(temp_output_39_0_g464 , ( ( _Udon_3DJ_Data_TexelSize.w / 3.0 ) * 2.0 )));
+			float2 StripStart1_g467 = appendResult7_g464;
+			int StripWidth1_g467 = 20;
+			int PixelSize1_g467 = (int)temp_output_10_0_g464;
+			float3 localBinaryStripToInt1_g467 = BinaryStripToInt( Texture1_g467 , TexelSize1_g467 , StripStart1_g467 , StripWidth1_g467 , PixelSize1_g467 );
 			float3 temp_cast_4 = (pow( 2.0 , 19.0 )).xxx;
-			float3 DJ_Position166 = ( ( localBinaryStripToInt1_g465 - temp_cast_4 ) / float3( 100,100,100 ) );
+			float3 DJ_Position166 = ( ( localBinaryStripToInt1_g467 - temp_cast_4 ) / float3( 100,100,100 ) );
 			float3 worldToObj92 = mul( unity_WorldToObject, float4( DJ_Position166, 1 ) ).xyz;
 			float3 temp_output_1_0_g469 = worldToObj92;
 			float3 _ObjectSpaceForward = float3(0,0,1);
@@ -438,7 +442,7 @@ Node;AmplifyShaderEditor.GetLocalVarNode;134;-3248,-304;Inherit;False;194;DJ Sca
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;127;-2720,-352;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.GetLocalVarNode;237;-3072,-400;Inherit;False;236;Random Position In Unit Cube;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.LengthOpNode;97;-1120,-656;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.StaticSwitch;230;-1136,-1040;Inherit;False;Property;_LimitBeamDistance;Limit Beam Distance;21;0;Create;True;0;0;0;False;0;False;0;0;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.StaticSwitch;230;-1136,-1040;Inherit;False;Property;_LimitBeamDistance;Limit Beam Distance;21;0;Create;True;0;0;0;False;0;False;0;0;0;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.NormalizeNode;45;-1568,-1040;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;46;-1360,-1040;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.RangedFloatNode;47;-1808,-976;Inherit;False;Property;_BeamLength;Beam Length;22;0;Create;True;0;0;0;False;0;False;2;1;0;0;0;1;FLOAT;0
@@ -640,4 +644,4 @@ WireConnection;369;7;323;0
 WireConnection;369;8;371;0
 WireConnection;377;4;73;0
 ASEEND*/
-//CHKSM=C31377A011C50CDFD08E30F9C75033B8925791E4
+//CHKSM=D15F4611489D175B97FF5EFF87BE5B94C6E5AE9C
