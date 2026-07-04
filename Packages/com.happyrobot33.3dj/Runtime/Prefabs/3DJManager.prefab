@@ -268,6 +268,7 @@ MonoBehaviour:
   Recorder: {fileID: 7638465422609839357}
   DataInput: {fileID: 2100000, guid: 8a552e94a9b30954a8e0cab569428037, type: 2}
   mainPlaybackCube: {fileID: 4524497402747181280}
+  reflectionProbe: {fileID: 6288431421900481804}
   localPlaybackParentObject: {fileID: 8778007989454137184}
   VideoTexture: {fileID: 8400000, guid: 232bd40c01a5c0647b3580635bf3d801, type: 2}
   accessControl: {fileID: 0}
@@ -460,7 +461,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 100, y: 100, z: 100}
+  m_BoxSize: {x: 1, y: 1, z: 1}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000

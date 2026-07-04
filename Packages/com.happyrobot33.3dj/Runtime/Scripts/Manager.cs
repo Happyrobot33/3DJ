@@ -91,6 +91,9 @@ namespace com.happyrobot33.holographicreprojector
         [DeveloperOnly]
         public GameObject mainPlaybackCube;
 
+        [DeveloperOnly]
+        public ReflectionProbe reflectionProbe;
+
         /// <summary>
         /// This is stupid but this is the equivalent of local playback control, but it needs to be a object due to ownership issues
         /// </summary>
@@ -544,6 +547,8 @@ namespace com.happyrobot33.holographicreprojector
 
                 //set the scale of the recorder
                 Recorder.transform.localScale = new Vector3(scale, scale, scale);
+
+                reflectionProbe.size = new Vector3(scale * 2, scale * 2, scale * 2);
 
                 //setup the camera properties
                 foreach (Camera cam in Cameras)
